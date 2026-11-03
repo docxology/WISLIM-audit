@@ -51,6 +51,7 @@ REQUIRED_FIELDS = (
     "kind",
     "title",
     "severity",
+    "status",
     "workstream",
     "labels",
     "source_lines",
@@ -144,6 +145,8 @@ def check_manifest(issues: list[dict[str, Any]]) -> list[str]:
             errors.append(f"{iid}: unknown kind {issue.get('kind')!r}")
         if issue.get("severity") not in SEVERITIES:
             errors.append(f"{iid}: unknown severity {issue.get('severity')!r}")
+        if issue.get("status") != "observation":
+            errors.append(f"{iid}: status must be 'observation'")
         source = issue.get("source_id")
         if source in seen_sources:
             errors.append(f"{iid}: duplicate source_id {source!r} also used by {seen_sources[source]}")
@@ -244,6 +247,7 @@ def render_file(
         f"kind: {issue['kind']}",
         f'title: "{issue["title"]}"',
         f"severity: {issue['severity']}",
+        f"status: {issue['status']}",
         f"workstream: {issue['workstream']}",
         f"labels: [{labels}]",
         f'source_lines: "{issue["source_lines"]}"',
@@ -256,7 +260,7 @@ def render_file(
         f"# {issue['id']}: {issue['title']}",
         "",
         f"> **Severity:** {issue['severity']} · **Kind:** {issue['kind']} · "
-        f"**Status:** observation · **Source:** `{issue['source_id']}`  ",
+        f"**Status:** {issue['status']} · **Source:** `{issue['source_id']}`  ",
         f"> **GitHub issue:** {github}  ",
         f"> **Audit modules:** {modules}  ",
         f"> **Source lines:** {issue['source_lines']}",
@@ -368,7 +372,8 @@ def render_index(issues: list[dict[str, Any]]) -> str:
         "Source coverage: `C01`–`C35` (35 claims), `AS01`–`AS20` (20 red-team",
         "scenarios), and `WS01`–`WS11` (11 workstreams). Every issue carries at",
         "least one verbatim primary quotation from the publication, checked against",
-        "`source/WISLIM-v2.0.1.txt`, plus a full publication reference.",
+        "`source/WISLIM-v2.0.1.txt`, plus a full publication reference. Every record",
+        "also carries `status: observation` and a note that the issue is optional.",
         "",
         "| Severity (impact estimate) | Count |",
         "|---|---:|",

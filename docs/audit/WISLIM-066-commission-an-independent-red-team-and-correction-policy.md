@@ -4,6 +4,7 @@ source_id: WS11
 kind: workstream
 title: "Commission an independent red team and correction policy"
 severity: high
+status: observation
 workstream: red-team
 labels: [audit, workstream, severity:high, workstream:red-team]
 source_lines: "n/a (workstream)"

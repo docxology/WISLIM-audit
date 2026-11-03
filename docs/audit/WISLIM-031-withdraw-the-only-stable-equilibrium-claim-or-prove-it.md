@@ -4,6 +4,7 @@ source_id: C31
 kind: claim
 title: "Withdraw the 'only stable equilibrium' claim or prove it"
 severity: high
+status: observation
 workstream: formal
 labels: [audit, claim, severity:high, workstream:formal]
 source_lines: "12721"

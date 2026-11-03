@@ -37,10 +37,11 @@ publication reference, one or more verbatim primary quotations, evidence, a
 steelman reply for claim issues, proposed remediation, and suggested checks for
 reviewers. Each record is mirrored to a GitHub issue.
 
-Each issue is an audit observation, not a required fix. It can be impactful or
-relevant without being fatal, and the author may decline a proposed response
-with reasons. Severity estimates potential impact if the concern applies; it
-does not mean the work is invalid or that a change is mandatory.
+Each issue is an audit observation, not a required fix. Every record carries
+`status: observation` and a status note saying the issue can be impactful or
+relevant without being fatal; the author may decline a proposed response with
+reasons. Severity estimates potential impact if the concern applies; it does
+not mean the work is invalid or that a change is mandatory.
 
 | # | Finding | Severity | Where |
 |---|---|---|---|

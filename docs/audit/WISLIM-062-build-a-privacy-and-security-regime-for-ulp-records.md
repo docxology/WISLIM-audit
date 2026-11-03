@@ -4,6 +4,7 @@ source_id: WS07
 kind: workstream
 title: "Build a privacy and security regime for ULP records"
 severity: high
+status: observation
 workstream: security
 labels: [audit, workstream, severity:high, workstream:security]
 source_lines: "n/a (workstream)"

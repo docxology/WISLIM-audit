@@ -319,6 +319,10 @@ def check_issue_register(v: Validator, lines: list[str]) -> None:
     claims = {claim["id"]: claim for claim in load_json(CLAIMS)["claims"]}
     metadata = load_json(METADATA)
     for issue in issues:
+        v.check(
+            issue.get("status") == "observation",
+            f"{issue['id']}: status is not 'observation'",
+        )
         path = ROOT / issue["file"]
         if not path.is_file():
             continue
@@ -363,6 +367,10 @@ def check_issue_register(v: Validator, lines: list[str]) -> None:
         v.check(
             "**Status:** observation" in text,
             f"{issue['id']}: record does not mark the issue as an observation",
+        )
+        v.check(
+            "status: observation" in text,
+            f"{issue['id']}: frontmatter does not record status: observation",
         )
         v.check(
             "audit observation, not a required fix" in text,

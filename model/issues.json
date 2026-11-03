@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "repository": "docxology/WISLIM-audit",
-  "note": "Canonical audit issue register. IDs are stable. Each issue has one docs/audit record and one mirrored GitHub issue.",
+  "note": "Canonical audit issue register. IDs are stable. Each issue is an observation, not a required fix, with one docs/audit record and one mirrored GitHub issue.",
   "counts": {
     "total": 66,
     "claims": 35,
@@ -15,6 +15,7 @@
       "kind": "claim",
       "title": "Make the central thesis a single well-formed proposition",
       "severity": "critical",
+      "status": "observation",
       "workstream": "argument",
       "labels": [
         "audit",
@@ -67,6 +68,7 @@
       "kind": "claim",
       "title": "Replace the Foundational Sieve with an independent test",
       "severity": "critical",
+      "status": "observation",
       "workstream": "argument",
       "labels": [
         "audit",
@@ -116,6 +118,7 @@
       "kind": "claim",
       "title": "Defend or qualify the 'without life, no value' premise",
       "severity": "high",
+      "status": "observation",
       "workstream": "argument",
       "labels": [
         "audit",
@@ -164,6 +167,7 @@
       "kind": "claim",
       "title": "Remove 'unsafe by definition' as a safety criterion",
       "severity": "critical",
+      "status": "observation",
       "workstream": "rhetoric",
       "labels": [
         "audit",
@@ -215,6 +219,7 @@
       "kind": "claim",
       "title": "Narrow or remove the claim that the framework cures all needless suffering",
       "severity": "critical",
+      "status": "observation",
       "workstream": "rhetoric",
       "labels": [
         "audit",
@@ -269,6 +274,7 @@
       "kind": "claim",
       "title": "Replace the circular definition of life with a tiered ontology",
       "severity": "critical",
+      "status": "observation",
       "workstream": "argument",
       "labels": [
         "audit",
@@ -321,6 +327,7 @@
       "kind": "claim",
       "title": "Show a base case or withdraw the 'recursive, not circular' defense",
       "severity": "critical",
+      "status": "observation",
       "workstream": "argument",
       "labels": [
         "audit",
@@ -372,6 +379,7 @@
       "kind": "claim",
       "title": "Replace the self-reference argument with a valid argument for priority",
       "severity": "critical",
+      "status": "observation",
       "workstream": "argument",
       "labels": [
         "audit",
@@ -420,6 +428,7 @@
       "kind": "claim",
       "title": "Separate necessity from lexical priority",
       "severity": "high",
+      "status": "observation",
       "workstream": "argument",
       "labels": [
         "audit",
@@ -469,6 +478,7 @@
       "kind": "claim",
       "title": "Defend the missing normative premise",
       "severity": "critical",
+      "status": "observation",
       "workstream": "argument",
       "labels": [
         "audit",
@@ -521,6 +531,7 @@
       "kind": "claim",
       "title": "Demote the E-infinity formula from proof to metaphor",
       "severity": "high",
+      "status": "observation",
       "workstream": "formal",
       "labels": [
         "audit",
@@ -570,6 +581,7 @@
       "kind": "claim",
       "title": "Specify or withdraw the Life-First Decision Invariant",
       "severity": "critical",
+      "status": "observation",
       "workstream": "governance",
       "labels": [
         "audit",
@@ -622,6 +634,7 @@
       "kind": "claim",
       "title": "Replace 'life may never be traded' with a threshold and conflict rule",
       "severity": "high",
+      "status": "observation",
       "workstream": "governance",
       "labels": [
         "audit",
@@ -672,6 +685,7 @@
       "kind": "claim",
       "title": "Make the no-coercion rule apply to the framework itself",
       "severity": "high",
+      "status": "observation",
       "workstream": "rhetoric",
       "labels": [
         "audit",
@@ -722,6 +736,7 @@
       "kind": "claim",
       "title": "Remove silence and deflection as evidence",
       "severity": "high",
+      "status": "observation",
       "workstream": "evidence",
       "labels": [
         "audit",
@@ -771,6 +786,7 @@
       "kind": "claim",
       "title": "Remove the integrity screen's disqualification rule",
       "severity": "critical",
+      "status": "observation",
       "workstream": "rhetoric",
       "labels": [
         "audit",
@@ -826,6 +842,7 @@
       "kind": "claim",
       "title": "Remove the AI-consensus claim from the proof",
       "severity": "critical",
+      "status": "observation",
       "workstream": "evidence",
       "labels": [
         "audit",
@@ -880,6 +897,7 @@
       "kind": "claim",
       "title": "Publish the prompts and ratification record, or withdraw the claim",
       "severity": "high",
+      "status": "observation",
       "workstream": "evidence",
       "labels": [
         "audit",
@@ -928,6 +946,7 @@
       "kind": "claim",
       "title": "Specify the implementation blueprint or withdraw 'complete'",
       "severity": "high",
+      "status": "observation",
       "workstream": "governance",
       "labels": [
         "audit",
@@ -977,6 +996,7 @@
       "kind": "claim",
       "title": "Replace CRS with a validated risk model or drop it",
       "severity": "high",
+      "status": "observation",
       "workstream": "formal",
       "labels": [
         "audit",
@@ -1026,6 +1046,7 @@
       "kind": "claim",
       "title": "Test the causal claims about curing social errors",
       "severity": "high",
+      "status": "observation",
       "workstream": "evidence",
       "labels": [
         "audit",
@@ -1076,6 +1097,7 @@
       "kind": "claim",
       "title": "State the framework's limits in the abstract and conclusion",
       "severity": "low",
+      "status": "observation",
       "workstream": "scope",
       "labels": [
         "audit",
@@ -1125,6 +1147,7 @@
       "kind": "claim",
       "title": "Demote the 210 stress tests from theorems to analogies",
       "severity": "critical",
+      "status": "observation",
       "workstream": "formal",
       "labels": [
         "audit",
@@ -1178,6 +1201,7 @@
       "kind": "claim",
       "title": "Remove 'no legitimate rebuttal' and 'silence equals betrayal'",
       "severity": "critical",
+      "status": "observation",
       "workstream": "rhetoric",
       "labels": [
         "audit",
@@ -1232,6 +1256,7 @@
       "kind": "claim",
       "title": "Reconcile the public-domain dedication with CC-BY 4.0",
       "severity": "medium",
+      "status": "observation",
       "workstream": "publication",
       "labels": [
         "audit",
@@ -1281,6 +1306,7 @@
       "kind": "claim",
       "title": "Reconcile the 8th edition, Version 2.0.1, and Release #1 labels",
       "severity": "medium",
+      "status": "observation",
       "workstream": "publication",
       "labels": [
         "audit",
@@ -1330,6 +1356,7 @@
       "kind": "claim",
       "title": "Stop claiming the paper resolves open AI-alignment problems",
       "severity": "high",
+      "status": "observation",
       "workstream": "evidence",
       "labels": [
         "audit",
@@ -1379,6 +1406,7 @@
       "kind": "claim",
       "title": "Test the claim that the framework underlies all major moral theories",
       "severity": "high",
+      "status": "observation",
       "workstream": "argument",
       "labels": [
         "audit",
@@ -1429,6 +1457,7 @@
       "kind": "claim",
       "title": "Resolve the conflict between life-first and agency preservation",
       "severity": "critical",
+      "status": "observation",
       "workstream": "argument",
       "labels": [
         "audit",
@@ -1483,6 +1512,7 @@
       "kind": "claim",
       "title": "Redesign FLVS and Layer M with legitimacy and separation of powers",
       "severity": "critical",
+      "status": "observation",
       "workstream": "governance",
       "labels": [
         "audit",
@@ -1536,6 +1566,7 @@
       "kind": "claim",
       "title": "Withdraw the 'only stable equilibrium' claim or prove it",
       "severity": "high",
+      "status": "observation",
       "workstream": "formal",
       "labels": [
         "audit",
@@ -1583,6 +1614,7 @@
       "kind": "claim",
       "title": "Replace decorative citations with engaged literature",
       "severity": "medium",
+      "status": "observation",
       "workstream": "evidence",
       "labels": [
         "audit",
@@ -1637,6 +1669,7 @@
       "kind": "claim",
       "title": "Remove the observed-reception and integrity-screen sections",
       "severity": "critical",
+      "status": "observation",
       "workstream": "rhetoric",
       "labels": [
         "audit",
@@ -1691,6 +1724,7 @@
       "kind": "claim",
       "title": "Separate theological framing from secular public argument",
       "severity": "medium",
+      "status": "observation",
       "workstream": "rhetoric",
       "labels": [
         "audit",
@@ -1740,6 +1774,7 @@
       "kind": "claim",
       "title": "Narrow the life definition to avoid overinclusion",
       "severity": "high",
+      "status": "observation",
       "workstream": "scope",
       "labels": [
         "audit",
@@ -1791,6 +1826,7 @@
       "kind": "red-team",
       "title": "Prevent CRS underreporting from bypassing review",
       "severity": "critical",
+      "status": "observation",
       "workstream": "governance",
       "labels": [
         "audit",
@@ -1849,6 +1885,7 @@
       "kind": "red-team",
       "title": "Break correlated AI verification",
       "severity": "high",
+      "status": "observation",
       "workstream": "evidence",
       "labels": [
         "audit",
@@ -1906,6 +1943,7 @@
       "kind": "red-team",
       "title": "Harden ULP records against prompt injection",
       "severity": "high",
+      "status": "observation",
       "workstream": "security",
       "labels": [
         "audit",
@@ -1963,6 +2001,7 @@
       "kind": "red-team",
       "title": "Prevent the integrity screen from being weaponized",
       "severity": "critical",
+      "status": "observation",
       "workstream": "rhetoric",
       "labels": [
         "audit",
@@ -2021,6 +2060,7 @@
       "kind": "red-team",
       "title": "Prevent life-first rhetoric from justifying repression",
       "severity": "critical",
+      "status": "observation",
       "workstream": "rhetoric",
       "labels": [
         "audit",
@@ -2079,6 +2119,7 @@
       "kind": "red-team",
       "title": "Bound emergency suspension of review",
       "severity": "critical",
+      "status": "observation",
       "workstream": "governance",
       "labels": [
         "audit",
@@ -2136,6 +2177,7 @@
       "kind": "red-team",
       "title": "Prevent vendor capture of the FLVS",
       "severity": "high",
+      "status": "observation",
       "workstream": "governance",
       "labels": [
         "audit",
@@ -2193,6 +2235,7 @@
       "kind": "red-team",
       "title": "Protect impact estimates from data poisoning",
       "severity": "high",
+      "status": "observation",
       "workstream": "security",
       "labels": [
         "audit",
@@ -2249,6 +2292,7 @@
       "kind": "red-team",
       "title": "Detect model drift after certification",
       "severity": "medium",
+      "status": "observation",
       "workstream": "security",
       "labels": [
         "audit",
@@ -2301,6 +2345,7 @@
       "kind": "red-team",
       "title": "Prevent false positives in obstetric care",
       "severity": "critical",
+      "status": "observation",
       "workstream": "clinical",
       "labels": [
         "audit",
@@ -2358,6 +2403,7 @@
       "kind": "red-team",
       "title": "Prevent disability discrimination through agency metrics",
       "severity": "critical",
+      "status": "observation",
       "workstream": "clinical",
       "labels": [
         "audit",
@@ -2414,6 +2460,7 @@
       "kind": "red-team",
       "title": "Prevent coercive suicide prevention",
       "severity": "critical",
+      "status": "observation",
       "workstream": "clinical",
       "labels": [
         "audit",
@@ -2473,6 +2520,7 @@
       "kind": "red-team",
       "title": "Prevent ULP record forgery",
       "severity": "high",
+      "status": "observation",
       "workstream": "security",
       "labels": [
         "audit",
@@ -2529,6 +2577,7 @@
       "kind": "red-team",
       "title": "Prevent Layer M constitutional capture",
       "severity": "critical",
+      "status": "observation",
       "workstream": "governance",
       "labels": [
         "audit",
@@ -2586,6 +2635,7 @@
       "kind": "red-team",
       "title": "Close jurisdiction-shopping gaps",
       "severity": "high",
+      "status": "observation",
       "workstream": "governance",
       "labels": [
         "audit",
@@ -2642,6 +2692,7 @@
       "kind": "red-team",
       "title": "Decide AI moral status independently of the life definition",
       "severity": "high",
+      "status": "observation",
       "workstream": "scope",
       "labels": [
         "audit",
@@ -2698,6 +2749,7 @@
       "kind": "red-team",
       "title": "Close definition-gaming paths",
       "severity": "high",
+      "status": "observation",
       "workstream": "scope",
       "labels": [
         "audit",
@@ -2755,6 +2807,7 @@
       "kind": "red-team",
       "title": "Prevent privacy leaks from ULP records",
       "severity": "high",
+      "status": "observation",
       "workstream": "security",
       "labels": [
         "audit",
@@ -2812,6 +2865,7 @@
       "kind": "red-team",
       "title": "Make appeals real, not procedural",
       "severity": "high",
+      "status": "observation",
       "workstream": "governance",
       "labels": [
         "audit",
@@ -2869,6 +2923,7 @@
       "kind": "red-team",
       "title": "Prevent reputation laundering through certification",
       "severity": "high",
+      "status": "observation",
       "workstream": "rhetoric",
       "labels": [
         "audit",
@@ -2925,6 +2980,7 @@
       "kind": "workstream",
       "title": "Rebuild the thesis and definitional foundation",
       "severity": "critical",
+      "status": "observation",
       "workstream": "argument",
       "labels": [
         "audit",
@@ -2987,6 +3043,7 @@
       "kind": "workstream",
       "title": "Replace the formal model and risk metrics with validated instruments",
       "severity": "high",
+      "status": "observation",
       "workstream": "formal",
       "labels": [
         "audit",
@@ -3047,6 +3104,7 @@
       "kind": "workstream",
       "title": "Rebuild the AI-consensus evidence or withdraw it",
       "severity": "critical",
+      "status": "observation",
       "workstream": "evidence",
       "labels": [
         "audit",
@@ -3105,6 +3163,7 @@
       "kind": "workstream",
       "title": "Redesign governance for legitimacy and separation of powers",
       "severity": "critical",
+      "status": "observation",
       "workstream": "governance",
       "labels": [
         "audit",
@@ -3169,6 +3228,7 @@
       "kind": "workstream",
       "title": "Remove coercive loyalty tests and protect dissent",
       "severity": "critical",
+      "status": "observation",
       "workstream": "rhetoric",
       "labels": [
         "audit",
@@ -3230,6 +3290,7 @@
       "kind": "workstream",
       "title": "Commission clinical and legal review of high-risk examples",
       "severity": "critical",
+      "status": "observation",
       "workstream": "clinical",
       "labels": [
         "audit",
@@ -3290,6 +3351,7 @@
       "kind": "workstream",
       "title": "Build a privacy and security regime for ULP records",
       "severity": "high",
+      "status": "observation",
       "workstream": "security",
       "labels": [
         "audit",
@@ -3349,6 +3411,7 @@
       "kind": "workstream",
       "title": "Separate biological life, sentience, agency, and moral status",
       "severity": "high",
+      "status": "observation",
       "workstream": "scope",
       "labels": [
         "audit",
@@ -3405,6 +3468,7 @@
       "kind": "workstream",
       "title": "Reconcile version labels and licensing",
       "severity": "high",
+      "status": "observation",
       "workstream": "publication",
       "labels": [
         "audit",
@@ -3461,6 +3525,7 @@
       "kind": "workstream",
       "title": "Rebuild evidence quality, citations, and human review",
       "severity": "high",
+      "status": "observation",
       "workstream": "evidence",
       "labels": [
         "audit",
@@ -3520,6 +3585,7 @@
       "kind": "workstream",
       "title": "Commission an independent red team and correction policy",
       "severity": "high",
+      "status": "observation",
       "workstream": "red-team",
       "labels": [
         "audit",

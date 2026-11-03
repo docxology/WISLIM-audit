@@ -4,6 +4,7 @@ source_id: C14
 kind: claim
 title: "Make the no-coercion rule apply to the framework itself"
 severity: high
+status: observation
 workstream: rhetoric
 labels: [audit, claim, severity:high, workstream:rhetoric]
 source_lines: "238"

@@ -4,6 +4,7 @@ source_id: C03
 kind: claim
 title: "Defend or qualify the 'without life, no value' premise"
 severity: high
+status: observation
 workstream: argument
 labels: [audit, claim, severity:high, workstream:argument]
 source_lines: "132"

@@ -4,6 +4,7 @@ source_id: C06
 kind: claim
 title: "Replace the circular definition of life with a tiered ontology"
 severity: critical
+status: observation
 workstream: argument
 labels: [audit, claim, severity:critical, workstream:argument]
 source_lines: "778"

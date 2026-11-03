@@ -4,6 +4,7 @@ source_id: C35
 kind: claim
 title: "Narrow the life definition to avoid overinclusion"
 severity: high
+status: observation
 workstream: scope
 labels: [audit, claim, severity:high, workstream:scope]
 source_lines: "788"

@@ -4,6 +4,7 @@ source_id: AS19
 kind: red-team
 title: "Make appeals real, not procedural"
 severity: high
+status: observation
 workstream: governance
 labels: [audit, red-team, severity:high, workstream:governance]
 source_lines: "n/a (red-team scenario)"

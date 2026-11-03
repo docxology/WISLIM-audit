@@ -4,6 +4,7 @@ source_id: WS02
 kind: workstream
 title: "Replace the formal model and risk metrics with validated instruments"
 severity: high
+status: observation
 workstream: formal
 labels: [audit, workstream, severity:high, workstream:formal]
 source_lines: "n/a (workstream)"

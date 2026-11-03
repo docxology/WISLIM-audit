@@ -4,6 +4,7 @@ source_id: AS17
 kind: red-team
 title: "Close definition-gaming paths"
 severity: high
+status: observation
 workstream: scope
 labels: [audit, red-team, severity:high, workstream:scope]
 source_lines: "n/a (red-team scenario)"

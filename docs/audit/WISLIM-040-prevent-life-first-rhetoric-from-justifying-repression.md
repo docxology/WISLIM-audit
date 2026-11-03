@@ -4,6 +4,7 @@ source_id: AS05
 kind: red-team
 title: "Prevent life-first rhetoric from justifying repression"
 severity: critical
+status: observation
 workstream: rhetoric
 labels: [audit, red-team, severity:critical, workstream:rhetoric]
 source_lines: "n/a (red-team scenario)"

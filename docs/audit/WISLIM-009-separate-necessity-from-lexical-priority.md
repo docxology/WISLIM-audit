@@ -4,6 +4,7 @@ source_id: C09
 kind: claim
 title: "Separate necessity from lexical priority"
 severity: high
+status: observation
 workstream: argument
 labels: [audit, claim, severity:high, workstream:argument]
 source_lines: "3262"

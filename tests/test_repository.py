@@ -127,7 +127,9 @@ class IssueRegisterTests(unittest.TestCase):
         for issue in self.issues:
             text = (ROOT / issue["file"]).read_text(encoding="utf-8")
             with self.subTest(issue=issue["id"]):
+                self.assertEqual(issue["status"], "observation")
                 self.assertIn("**Status:** observation", text)
+                self.assertIn("status: observation", text)
                 self.assertIn("audit observation, not a required fix", text)
                 self.assertIn("does not mean the overall work fails", text)
                 self.assertNotIn("The manuscript resolves the defect", text)

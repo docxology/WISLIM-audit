@@ -4,6 +4,7 @@ source_id: C27
 kind: claim
 title: "Stop claiming the paper resolves open AI-alignment problems"
 severity: high
+status: observation
 workstream: evidence
 labels: [audit, claim, severity:high, workstream:evidence]
 source_lines: "320"

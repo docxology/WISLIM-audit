@@ -4,6 +4,7 @@ source_id: C11
 kind: claim
 title: "Demote the E-infinity formula from proof to metaphor"
 severity: high
+status: observation
 workstream: formal
 labels: [audit, claim, severity:high, workstream:formal]
 source_lines: "431"

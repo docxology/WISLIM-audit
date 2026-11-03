@@ -4,6 +4,7 @@ source_id: C10
 kind: claim
 title: "Defend the missing normative premise"
 severity: critical
+status: observation
 workstream: argument
 labels: [audit, claim, severity:critical, workstream:argument]
 source_lines: "1282"

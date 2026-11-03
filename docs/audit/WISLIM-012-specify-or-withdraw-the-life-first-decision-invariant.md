@@ -4,6 +4,7 @@ source_id: C12
 kind: claim
 title: "Specify or withdraw the Life-First Decision Invariant"
 severity: critical
+status: observation
 workstream: governance
 labels: [audit, claim, severity:critical, workstream:governance]
 source_lines: "204"

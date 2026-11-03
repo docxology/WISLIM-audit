@@ -4,6 +4,7 @@ source_id: WS01
 kind: workstream
 title: "Rebuild the thesis and definitional foundation"
 severity: critical
+status: observation
 workstream: argument
 labels: [audit, workstream, severity:critical, workstream:argument]
 source_lines: "n/a (workstream)"

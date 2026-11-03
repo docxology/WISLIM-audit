@@ -4,6 +4,7 @@ source_id: AS11
 kind: red-team
 title: "Prevent disability discrimination through agency metrics"
 severity: critical
+status: observation
 workstream: clinical
 labels: [audit, red-team, severity:critical, workstream:clinical]
 source_lines: "n/a (red-team scenario)"

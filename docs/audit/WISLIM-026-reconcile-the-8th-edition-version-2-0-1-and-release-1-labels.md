@@ -4,6 +4,7 @@ source_id: C26
 kind: claim
 title: "Reconcile the 8th edition, Version 2.0.1, and Release #1 labels"
 severity: medium
+status: observation
 workstream: publication
 labels: [audit, claim, severity:medium, workstream:publication]
 source_lines: "25"

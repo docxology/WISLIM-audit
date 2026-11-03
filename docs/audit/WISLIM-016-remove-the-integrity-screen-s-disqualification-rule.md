@@ -4,6 +4,7 @@ source_id: C16
 kind: claim
 title: "Remove the integrity screen's disqualification rule"
 severity: critical
+status: observation
 workstream: rhetoric
 labels: [audit, claim, severity:critical, workstream:rhetoric]
 source_lines: "380"

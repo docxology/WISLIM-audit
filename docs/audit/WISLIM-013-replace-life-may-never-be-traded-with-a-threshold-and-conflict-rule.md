@@ -4,6 +4,7 @@ source_id: C13
 kind: claim
 title: "Replace 'life may never be traded' with a threshold and conflict rule"
 severity: high
+status: observation
 workstream: governance
 labels: [audit, claim, severity:high, workstream:governance]
 source_lines: "230"

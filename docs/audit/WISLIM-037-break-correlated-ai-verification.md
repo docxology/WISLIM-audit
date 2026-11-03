@@ -4,6 +4,7 @@ source_id: AS02
 kind: red-team
 title: "Break correlated AI verification"
 severity: high
+status: observation
 workstream: evidence
 labels: [audit, red-team, severity:high, workstream:evidence]
 source_lines: "n/a (red-team scenario)"

@@ -4,6 +4,7 @@ source_id: C28
 kind: claim
 title: "Test the claim that the framework underlies all major moral theories"
 severity: high
+status: observation
 workstream: argument
 labels: [audit, claim, severity:high, workstream:argument]
 source_lines: "8902"

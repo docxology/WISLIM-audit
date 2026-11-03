@@ -4,6 +4,7 @@ source_id: C21
 kind: claim
 title: "Test the causal claims about curing social errors"
 severity: high
+status: observation
 workstream: evidence
 labels: [audit, claim, severity:high, workstream:evidence]
 source_lines: "1853"

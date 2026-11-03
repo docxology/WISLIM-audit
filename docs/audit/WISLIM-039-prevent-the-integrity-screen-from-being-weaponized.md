@@ -4,6 +4,7 @@ source_id: AS04
 kind: red-team
 title: "Prevent the integrity screen from being weaponized"
 severity: critical
+status: observation
 workstream: rhetoric
 labels: [audit, red-team, severity:critical, workstream:rhetoric]
 source_lines: "n/a (red-team scenario)"

@@ -4,6 +4,7 @@ source_id: C25
 kind: claim
 title: "Reconcile the public-domain dedication with CC-BY 4.0"
 severity: medium
+status: observation
 workstream: publication
 labels: [audit, claim, severity:medium, workstream:publication]
 source_lines: "13255"

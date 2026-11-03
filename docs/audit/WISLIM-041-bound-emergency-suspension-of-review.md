@@ -4,6 +4,7 @@ source_id: AS06
 kind: red-team
 title: "Bound emergency suspension of review"
 severity: critical
+status: observation
 workstream: governance
 labels: [audit, red-team, severity:critical, workstream:governance]
 source_lines: "n/a (red-team scenario)"

@@ -4,6 +4,7 @@ source_id: C34
 kind: claim
 title: "Separate theological framing from secular public argument"
 severity: medium
+status: observation
 workstream: rhetoric
 labels: [audit, claim, severity:medium, workstream:rhetoric]
 source_lines: "41"

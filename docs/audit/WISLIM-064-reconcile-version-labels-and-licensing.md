@@ -4,6 +4,7 @@ source_id: WS09
 kind: workstream
 title: "Reconcile version labels and licensing"
 severity: high
+status: observation
 workstream: publication
 labels: [audit, workstream, severity:high, workstream:publication]
 source_lines: "n/a (workstream)"

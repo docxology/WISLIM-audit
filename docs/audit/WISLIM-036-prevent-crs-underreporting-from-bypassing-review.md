@@ -4,6 +4,7 @@ source_id: AS01
 kind: red-team
 title: "Prevent CRS underreporting from bypassing review"
 severity: critical
+status: observation
 workstream: governance
 labels: [audit, red-team, severity:critical, workstream:governance]
 source_lines: "n/a (red-team scenario)"

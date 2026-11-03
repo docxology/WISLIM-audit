@@ -4,6 +4,7 @@ source_id: C33
 kind: claim
 title: "Remove the observed-reception and integrity-screen sections"
 severity: critical
+status: observation
 workstream: rhetoric
 labels: [audit, claim, severity:critical, workstream:rhetoric]
 source_lines: "364"

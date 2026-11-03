@@ -4,6 +4,7 @@ source_id: WS04
 kind: workstream
 title: "Redesign governance for legitimacy and separation of powers"
 severity: critical
+status: observation
 workstream: governance
 labels: [audit, workstream, severity:critical, workstream:governance]
 source_lines: "n/a (workstream)"

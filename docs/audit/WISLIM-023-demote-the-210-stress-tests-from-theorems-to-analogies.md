@@ -4,6 +4,7 @@ source_id: C23
 kind: claim
 title: "Demote the 210 stress tests from theorems to analogies"
 severity: critical
+status: observation
 workstream: formal
 labels: [audit, claim, severity:critical, workstream:formal]
 source_lines: "13217"

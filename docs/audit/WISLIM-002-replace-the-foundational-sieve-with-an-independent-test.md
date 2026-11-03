@@ -4,6 +4,7 @@ source_id: C02
 kind: claim
 title: "Replace the Foundational Sieve with an independent test"
 severity: critical
+status: observation
 workstream: argument
 labels: [audit, claim, severity:critical, workstream:argument]
 source_lines: "62"

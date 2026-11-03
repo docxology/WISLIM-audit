@@ -4,6 +4,7 @@ source_id: WS10
 kind: workstream
 title: "Rebuild evidence quality, citations, and human review"
 severity: high
+status: observation
 workstream: evidence
 labels: [audit, workstream, severity:high, workstream:evidence]
 source_lines: "n/a (workstream)"

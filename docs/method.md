@@ -62,10 +62,10 @@ line citation. The validator checks that each normalized quotation is a
 substring of the source text within the cited line's window. This is deliberate:
 a finding that cannot be anchored to the paper is not part of the register.
 Remediation is written as options for the author, not as instructions or
-deployment gates. Each record carries a status note saying the issue is an
-audit observation, not a required fix; an author may decline a proposed
-response with reasons. Issue titles name a concern and a possible response, so
-they should be read as suggestions rather than commands.
+deployment gates. Each issue carries `status: observation` and a status note
+saying it is an audit observation, not a required fix; an author may decline a
+proposed response with reasons. Issue titles name a concern and a possible
+response, so they should be read as suggestions rather than commands.
 
 ## Evidence classes
 

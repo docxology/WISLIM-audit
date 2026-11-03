@@ -4,6 +4,7 @@ source_id: C17
 kind: claim
 title: "Remove the AI-consensus claim from the proof"
 severity: critical
+status: observation
 workstream: evidence
 labels: [audit, claim, severity:critical, workstream:evidence]
 source_lines: "198"

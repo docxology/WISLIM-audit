@@ -4,6 +4,7 @@ source_id: C05
 kind: claim
 title: "Narrow or remove the claim that the framework cures all needless suffering"
 severity: critical
+status: observation
 workstream: rhetoric
 labels: [audit, claim, severity:critical, workstream:rhetoric]
 source_lines: "178"

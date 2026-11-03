@@ -4,6 +4,7 @@ source_id: C30
 kind: claim
 title: "Redesign FLVS and Layer M with legitimacy and separation of powers"
 severity: critical
+status: observation
 workstream: governance
 labels: [audit, claim, severity:critical, workstream:governance]
 source_lines: "868"

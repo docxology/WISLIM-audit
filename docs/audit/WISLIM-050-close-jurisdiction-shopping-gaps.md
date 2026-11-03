@@ -4,6 +4,7 @@ source_id: AS15
 kind: red-team
 title: "Close jurisdiction-shopping gaps"
 severity: high
+status: observation
 workstream: governance
 labels: [audit, red-team, severity:high, workstream:governance]
 source_lines: "n/a (red-team scenario)"

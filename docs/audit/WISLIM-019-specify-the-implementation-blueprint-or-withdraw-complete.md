@@ -4,6 +4,7 @@ source_id: C19
 kind: claim
 title: "Specify the implementation blueprint or withdraw 'complete'"
 severity: high
+status: observation
 workstream: governance
 labels: [audit, claim, severity:high, workstream:governance]
 source_lines: "1509"

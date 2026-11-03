@@ -4,6 +4,7 @@ source_id: C24
 kind: claim
 title: "Remove 'no legitimate rebuttal' and 'silence equals betrayal'"
 severity: critical
+status: observation
 workstream: rhetoric
 labels: [audit, claim, severity:critical, workstream:rhetoric]
 source_lines: "13229"

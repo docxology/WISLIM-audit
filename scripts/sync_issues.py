@@ -158,7 +158,7 @@ def render_body(
         f"# {issue['id']}: {issue['title']}",
         "",
         f"**Severity:** {issue['severity']} · **Kind:** {issue['kind']} · "
-        f"**Status:** observation · **Source:** `{issue['source_id']}`  ",
+        f"**Status:** {issue['status']} · **Source:** `{issue['source_id']}`  ",
         f"**Workstream:** `{issue['workstream']}`  ",
         f"**Register record:** [`{issue['file']}`]({record_url(issue, repo)})  ",
         f"**Audit modules:** {modules}  ",

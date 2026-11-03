@@ -4,6 +4,7 @@ source_id: AS20
 kind: red-team
 title: "Prevent reputation laundering through certification"
 severity: high
+status: observation
 workstream: rhetoric
 labels: [audit, red-team, severity:high, workstream:rhetoric]
 source_lines: "n/a (red-team scenario)"

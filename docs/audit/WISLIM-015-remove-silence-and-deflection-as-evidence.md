@@ -4,6 +4,7 @@ source_id: C15
 kind: claim
 title: "Remove silence and deflection as evidence"
 severity: high
+status: observation
 workstream: evidence
 labels: [audit, claim, severity:high, workstream:evidence]
 source_lines: "342"

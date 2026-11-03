@@ -4,6 +4,7 @@ source_id: AS18
 kind: red-team
 title: "Prevent privacy leaks from ULP records"
 severity: high
+status: observation
 workstream: security
 labels: [audit, red-team, severity:high, workstream:security]
 source_lines: "n/a (red-team scenario)"

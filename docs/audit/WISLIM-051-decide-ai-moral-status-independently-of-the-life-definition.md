@@ -4,6 +4,7 @@ source_id: AS16
 kind: red-team
 title: "Decide AI moral status independently of the life definition"
 severity: high
+status: observation
 workstream: scope
 labels: [audit, red-team, severity:high, workstream:scope]
 source_lines: "n/a (red-team scenario)"

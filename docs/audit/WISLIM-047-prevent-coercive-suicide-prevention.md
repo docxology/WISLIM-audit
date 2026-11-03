@@ -4,6 +4,7 @@ source_id: AS12
 kind: red-team
 title: "Prevent coercive suicide prevention"
 severity: critical
+status: observation
 workstream: clinical
 labels: [audit, red-team, severity:critical, workstream:clinical]
 source_lines: "n/a (red-team scenario)"

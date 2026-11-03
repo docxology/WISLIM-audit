@@ -26,7 +26,8 @@ response; read them as suggestions, not instructions.
 Source coverage: `C01`–`C35` (35 claims), `AS01`–`AS20` (20 red-team
 scenarios), and `WS01`–`WS11` (11 workstreams). Every issue carries at
 least one verbatim primary quotation from the publication, checked against
-`source/WISLIM-v2.0.1.txt`, plus a full publication reference.
+`source/WISLIM-v2.0.1.txt`, plus a full publication reference. Every record
+also carries `status: observation` and a note that the issue is optional.
 
 | Severity (impact estimate) | Count |
 |---|---:|

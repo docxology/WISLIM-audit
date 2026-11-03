@@ -4,6 +4,7 @@ source_id: WS06
 kind: workstream
 title: "Commission clinical and legal review of high-risk examples"
 severity: critical
+status: observation
 workstream: clinical
 labels: [audit, workstream, severity:critical, workstream:clinical]
 source_lines: "n/a (workstream)"

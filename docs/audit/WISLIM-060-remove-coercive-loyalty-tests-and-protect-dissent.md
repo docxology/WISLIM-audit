@@ -4,6 +4,7 @@ source_id: WS05
 kind: workstream
 title: "Remove coercive loyalty tests and protect dissent"
 severity: critical
+status: observation
 workstream: rhetoric
 labels: [audit, workstream, severity:critical, workstream:rhetoric]
 source_lines: "n/a (workstream)"

@@ -4,6 +4,7 @@ source_id: C04
 kind: claim
 title: "Remove 'unsafe by definition' as a safety criterion"
 severity: critical
+status: observation
 workstream: rhetoric
 labels: [audit, claim, severity:critical, workstream:rhetoric]
 source_lines: "417"

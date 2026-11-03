@@ -68,6 +68,7 @@ The validator checks:
 - every issue carries a publication reference and at least one primary
   quotation, and every quotation is a verbatim substring of the source at its
   `line`;
+- every issue carries `status: observation` and the non-fatal status note;
 - explicit source-line citations are within bounds;
 - required files exist;
 - relative Markdown links resolve;

@@ -4,6 +4,7 @@ source_id: AS14
 kind: red-team
 title: "Prevent Layer M constitutional capture"
 severity: critical
+status: observation
 workstream: governance
 labels: [audit, red-team, severity:critical, workstream:governance]
 source_lines: "n/a (red-team scenario)"

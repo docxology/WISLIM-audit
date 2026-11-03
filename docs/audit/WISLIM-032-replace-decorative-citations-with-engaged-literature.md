@@ -4,6 +4,7 @@ source_id: C32
 kind: claim
 title: "Replace decorative citations with engaged literature"
 severity: medium
+status: observation
 workstream: evidence
 labels: [audit, claim, severity:medium, workstream:evidence]
 source_lines: "392"

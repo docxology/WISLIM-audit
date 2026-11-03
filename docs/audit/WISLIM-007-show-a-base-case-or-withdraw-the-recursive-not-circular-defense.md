@@ -4,6 +4,7 @@ source_id: C07
 kind: claim
 title: "Show a base case or withdraw the 'recursive, not circular' defense"
 severity: critical
+status: observation
 workstream: argument
 labels: [audit, claim, severity:critical, workstream:argument]
 source_lines: "2625"

@@ -4,6 +4,7 @@ source_id: AS09
 kind: red-team
 title: "Detect model drift after certification"
 severity: medium
+status: observation
 workstream: security
 labels: [audit, red-team, severity:medium, workstream:security]
 source_lines: "n/a (red-team scenario)"

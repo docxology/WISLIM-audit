@@ -4,6 +4,7 @@ source_id: C01
 kind: claim
 title: "Make the central thesis a single well-formed proposition"
 severity: critical
+status: observation
 workstream: argument
 labels: [audit, claim, severity:critical, workstream:argument]
 source_lines: "58"

@@ -4,6 +4,7 @@ source_id: AS07
 kind: red-team
 title: "Prevent vendor capture of the FLVS"
 severity: high
+status: observation
 workstream: governance
 labels: [audit, red-team, severity:high, workstream:governance]
 source_lines: "n/a (red-team scenario)"

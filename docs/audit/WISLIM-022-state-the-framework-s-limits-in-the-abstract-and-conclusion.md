@@ -4,6 +4,7 @@ source_id: C22
 kind: claim
 title: "State the framework's limits in the abstract and conclusion"
 severity: low
+status: observation
 workstream: scope
 labels: [audit, claim, severity:low, workstream:scope]
 source_lines: "1827"

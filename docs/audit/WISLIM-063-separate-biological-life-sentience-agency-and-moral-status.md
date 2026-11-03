@@ -4,6 +4,7 @@ source_id: WS08
 kind: workstream
 title: "Separate biological life, sentience, agency, and moral status"
 severity: high
+status: observation
 workstream: scope
 labels: [audit, workstream, severity:high, workstream:scope]
 source_lines: "n/a (workstream)"

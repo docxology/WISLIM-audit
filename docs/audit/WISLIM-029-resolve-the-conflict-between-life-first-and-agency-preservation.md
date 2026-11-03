@@ -4,6 +4,7 @@ source_id: C29
 kind: claim
 title: "Resolve the conflict between life-first and agency preservation"
 severity: critical
+status: observation
 workstream: argument
 labels: [audit, claim, severity:critical, workstream:argument]
 source_lines: "1365"

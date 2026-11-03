@@ -4,6 +4,7 @@ source_id: C18
 kind: claim
 title: "Publish the prompts and ratification record, or withdraw the claim"
 severity: high
+status: observation
 workstream: evidence
 labels: [audit, claim, severity:high, workstream:evidence]
 source_lines: "1108"

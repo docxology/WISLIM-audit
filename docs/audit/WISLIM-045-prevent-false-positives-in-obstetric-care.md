@@ -4,6 +4,7 @@ source_id: AS10
 kind: red-team
 title: "Prevent false positives in obstetric care"
 severity: critical
+status: observation
 workstream: clinical
 labels: [audit, red-team, severity:critical, workstream:clinical]
 source_lines: "n/a (red-team scenario)"

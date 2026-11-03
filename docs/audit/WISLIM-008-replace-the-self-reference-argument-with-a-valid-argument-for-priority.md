@@ -4,6 +4,7 @@ source_id: C08
 kind: claim
 title: "Replace the self-reference argument with a valid argument for priority"
 severity: critical
+status: observation
 workstream: argument
 labels: [audit, claim, severity:critical, workstream:argument]
 source_lines: "824"

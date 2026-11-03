@@ -4,6 +4,7 @@ source_id: C20
 kind: claim
 title: "Replace CRS with a validated risk model or drop it"
 severity: high
+status: observation
 workstream: formal
 labels: [audit, claim, severity:high, workstream:formal]
 source_lines: "2158"

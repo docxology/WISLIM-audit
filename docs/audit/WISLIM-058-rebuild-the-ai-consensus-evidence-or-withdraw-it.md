@@ -4,6 +4,7 @@ source_id: WS03
 kind: workstream
 title: "Rebuild the AI-consensus evidence or withdraw it"
 severity: critical
+status: observation
 workstream: evidence
 labels: [audit, workstream, severity:critical, workstream:evidence]
 source_lines: "n/a (workstream)"
