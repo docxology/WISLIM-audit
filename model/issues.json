@@ -1364,7 +1364,7 @@
       "quote": "A tiered system where every high-impact decision is verified. Layer 1: Automated checks for routine decisions. Layer 2: Multi-AI consensus for significant impacts. Layer 3: Human-AI hybrid review for high-stakes choices. Layer 4: International/Global oversight for planetary risks.",
       "quote_line": 872,
       "reply": "The reply is that Layer M and the FLVS are designed to resist capture. The design gives the same body rule-making, verification, and amendment power, with no independent court; that is a recipe for capture, not a defense.",
-      "quote_note": "The FLVS heading at line 868 names the system; the quote gives its four review layers."
+      "quote_note": "The architecture is presented as the implementation of the truth; the paper does not argue for its legitimacy."
     },
     {
       "id": "WISLIM-031",
@@ -1452,7 +1452,8 @@
       "file": "docs/audit/WISLIM-032-replace-decorative-citations-with-engaged-literature.md",
       "quote": "See Appendix C for full references to Bostrom, Christiano, Friston, Hadfield-Menell, Leike, Ord, O'Keefe, Russell, Yudkowsky, and others.",
       "quote_line": 392,
-      "reply": "The reply is that the bibliography is a map of relevant literature. A map is not an engagement; none of the cited positions is reconstructed, criticized, or shown to be compatible with the thesis."
+      "reply": "The reply is that the bibliography is a map of relevant literature. A map is not an engagement; none of the cited positions is reconstructed, criticized, or shown to be compatible with the thesis.",
+      "quote_note": "The appendix lists names; it does not engage their arguments."
     },
     {
       "id": "WISLIM-033",
@@ -1497,7 +1498,8 @@
       "file": "docs/audit/WISLIM-033-remove-the-observed-reception-and-integrity-screen-sections.md",
       "quote": "Because life is treated here as the supreme decision constraint, a person or organization’s trustworthiness in life-affecting roles can be screened by how they respond when asked to affirm (or rebut) that constraint.",
       "quote_line": 364,
-      "reply": "The reply is that the screen protects vulnerable people from those who would harm them. A screen that cannot distinguish dissent from evasion, and that punishes both, does not protect the vulnerable; it protects the framework."
+      "reply": "The reply is that the screen protects vulnerable people from those who would harm them. A screen that cannot distinguish dissent from evasion, and that punishes both, does not protect the vulnerable; it protects the framework.",
+      "quote_note": "The paper presents the screen as a practical application and the reception section as evidence; neither is examined ethically."
     },
     {
       "id": "WISLIM-034",

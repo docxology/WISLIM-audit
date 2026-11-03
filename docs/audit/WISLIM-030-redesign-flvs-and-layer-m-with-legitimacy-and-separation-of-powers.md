@@ -26,7 +26,7 @@ github_issue: 30
 >
 > — `source/WISLIM-v2.0.1.txt:872`
 
-The FLVS heading at line 868 names the system; the quote gives its four review layers.
+The architecture is presented as the implementation of the truth; the paper does not argue for its legitimacy.
 
 ## Summary
 

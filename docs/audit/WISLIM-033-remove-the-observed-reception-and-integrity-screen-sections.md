@@ -26,6 +26,8 @@ github_issue: 33
 >
 > — `source/WISLIM-v2.0.1.txt:364`
 
+The paper presents the screen as a practical application and the reception section as evidence; neither is examined ethically.
+
 ## Summary
 
 The observed-reception and integrity-screen sections are ethically appropriate. Verdict: `harmful`. The sections pathologize non-response and propose a loyalty test for life-affecting roles. This can discriminate against dissenters, vulnerable people, and people with disabilities, and it violates autonomy and epistemic humility.

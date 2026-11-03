@@ -26,6 +26,8 @@ github_issue: 32
 >
 > — `source/WISLIM-v2.0.1.txt:392`
 
+The appendix lists names; it does not engage their arguments.
+
 ## Summary
 
 The paper's citations support its claims. Verdict: `decorative`. The citations are name-drops. Friston is irrelevant to the argument. The paper does not engage the is-ought gap, moral pluralism, or the technical AI-safety literature. Some bibliographic details are inconsistent.
