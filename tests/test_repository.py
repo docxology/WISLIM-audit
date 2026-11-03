@@ -225,6 +225,15 @@ class ReviewRegisterTests(unittest.TestCase):
         ).read_text(encoding="utf-8")
         self.assertIn("https://github.com/docxology/WISLIM-audit", email)
 
+    def test_verification_receipt_records_quote_check(self):
+        text = (
+            ROOT / "reviews" / "oph-lfdi-57" / "verification.md"
+        ).read_text(encoding="utf-8")
+        self.assertIn("1c5a908ed3441c5d09628183af18c362dbc58bea", text)
+        self.assertIn("23/23", text)
+        self.assertIn("2026-11-03", text)
+        self.assertIn("positive-infinity", text)
+
 
 if __name__ == "__main__":
     unittest.main()

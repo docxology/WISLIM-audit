@@ -136,8 +136,9 @@ Tracking: `OPH-REV-012`.
 - OPH does define observers without requiring biological life. The review's
   description of that scope choice is accurate (`LFDI_Alignment_Audit-57.txt:2`).
 - OPH does not use LFDI or WISLIM in the public repository at the audited
-  commit. The review is therefore an external critique, not a report of an
-  internal OPH commitment.
+  commit (confirmed by a tree-wide search at the pinned commit; see
+  `verification.md`). The review is therefore an external critique, not a
+  report of an internal OPH commitment.
 - OPH's program is incomplete by its own account, so a critique of overclaiming
   would have a target. The review's mistake is to convert "incomplete" into
   "terminally failed" without the missing argument.

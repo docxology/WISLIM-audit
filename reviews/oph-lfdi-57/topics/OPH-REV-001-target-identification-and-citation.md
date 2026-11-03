@@ -32,7 +32,7 @@ The target is identifiable, which is a strength. The citation is not reproducibl
 
 ## Extrinsic assessment
 
-PhilPapers MUEFOC confirms the title and Bernhard Mueller as lead author, and marks the paper in progress / unpublished. The public OPH repository separates the flagship paper, the book, and the technical papers; the flagship paper is titled 'Finite Observer Consensus as a Reconstruction Principle'. The review's target is therefore real but bibliographically under-specified.
+PhilPapers MUEFOC (checked live 2026-11-03) confirms the title and Bernhard Mueller as lead author among thirteen named authors, and records the work as a manuscript with a PhilArchive copy (1,062 downloads as of 2026-11-03). The public OPH repository separates the flagship paper, the book, and the technical papers; the flagship paper is titled 'Finite Observer Consensus as a Reconstruction Principle'. The review's target is therefore real but bibliographically under-specified.
 
 ## OPH evidence
 

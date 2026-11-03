@@ -114,6 +114,7 @@ REQUIRED_FILES = [
     "reviews/oph-lfdi-57/source/LFDI_Alignment_Audit-57.txt",
     "reviews/oph-lfdi-57/source/metadata.json",
     "reviews/oph-lfdi-57/model/review.json",
+    "reviews/oph-lfdi-57/verification.md",
     "evidence/README.md",
     "evidence/provenance.md",
     "evidence/philpapers.md",
@@ -684,6 +685,21 @@ def check_content(v: Validator) -> None:
     v.check(
         "https://github.com/docxology/WISLIM-audit" in email,
         "response-email.md is missing the plaintext repository URL",
+    )
+    verification = (
+        ROOT / "reviews" / "oph-lfdi-57" / "verification.md"
+    ).read_text(encoding="utf-8")
+    v.check(
+        "1c5a908ed3441c5d09628183af18c362dbc58bea" in verification,
+        "verification receipt is missing the pinned OPH commit",
+    )
+    v.check(
+        "23/23" in verification,
+        "verification receipt is missing the OPH quote check result",
+    )
+    v.check(
+        "2026-11-03" in verification,
+        "verification receipt is missing the verification date",
     )
 
 

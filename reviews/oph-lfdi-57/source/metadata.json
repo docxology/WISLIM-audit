@@ -38,7 +38,10 @@
     ],
     "philpapers": "MUEFOC",
     "url": "https://philpapers.org/rec/MUEFOC",
-    "status": "in progress / unpublished at PhilPapers"
+    "status": "manuscript on PhilPapers with a PhilArchive copy",
+    "philpapers_checked": "2026-11-03",
+    "philpapers_downloads": 1062,
+    "philpapers_external_repository": "https://github.com/FloatingPragma/observer-patch-holography"
   },
   "external_source": {
     "repository": "https://github.com/docxology/observer-patch-holography",

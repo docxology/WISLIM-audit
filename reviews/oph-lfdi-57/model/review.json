@@ -24,7 +24,7 @@
       "oph_status": "addressed",
       "summary": "The review names a real PhilPapers manuscript but gives no version, DOI, or full author list. The exact title is not the title of the flagship technical paper in the public OPH repository.",
       "intrinsic": "The target is identifiable, which is a strength. The citation is not reproducible: 'et al.' hides twelve coauthors, no version or date is given, and the document is not linked. 'Official' has no issuing body. A reader cannot tell which manuscript version was audited.",
-      "extrinsic": "PhilPapers MUEFOC confirms the title and Bernhard Mueller as lead author, and marks the paper in progress / unpublished. The public OPH repository separates the flagship paper, the book, and the technical papers; the flagship paper is titled 'Finite Observer Consensus as a Reconstruction Principle'. The review's target is therefore real but bibliographically under-specified.",
+      "extrinsic": "PhilPapers MUEFOC (checked live 2026-11-03) confirms the title and Bernhard Mueller as lead author among thirteen named authors, and records the work as a manuscript with a PhilArchive copy (1,062 downloads as of 2026-11-03). The public OPH repository separates the flagship paper, the book, and the technical papers; the flagship paper is titled 'Finite Observer Consensus as a Reconstruction Principle'. The review's target is therefore real but bibliographically under-specified.",
       "oph_evidence": [
         {
           "path": "paper/README.md",
