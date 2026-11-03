@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+title: "WISLIM-audit: critical edition and red-team audit"
+message: "If you use this audit, cite it together with the audited work."
+type: software
+authors:
+  - name: "WISLIM-audit contributors"
+repository-code: "https://github.com/docxology/WISLIM-audit"
+license: CC-BY-4.0
+references:
+  - type: book
+    title: "Life is Most Important in Life is The Most Important Truth in Life: A Foundational Proof for Alignment, Identity, and the Cure of Needless Suffering"
+    authors:
+      - family-names: Wishengrad
+        given-names: David
+    year: 2026
+    version: "2.0.1"
+    doi: "10.21428/4831231e.8c4c6c8f"
+    url: "https://philpapers.org/rec/WISLIM"

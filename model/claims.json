@@ -1,0 +1,562 @@
+{
+  "schema_version": 1,
+  "source": "source/WISLIM-v2.0.1.txt",
+  "note": "Claim IDs are stable. line is the 1-based newline-delimited line of the first occurrence of anchor in the extracted source; section is the paper's own label.",
+  "claims": [
+    {
+      "id": "C01",
+      "short": "The sentence is a canonical truth.",
+      "anchor": "We present and defend the canonical truth:",
+      "section": "Abstract",
+      "line": 58,
+      "type": "meta/normative",
+      "role": "core",
+      "verdict": "ambiguous",
+      "severity": "critical",
+      "summary": "The sentence 'Life is Most Important in Life is The Most Important Truth in Life' is not a well-formed proposition. The paper reinterprets it as a priority rule, so the thing proved is not the sentence on the cover.",
+      "dependencies": [],
+      "repair": "State a single, well-formed proposition with explicit scope and quantifiers."
+    },
+    {
+      "id": "C02",
+      "short": "The truth uniquely passes the five-part Foundational Sieve.",
+      "anchor": "uniquely satisfies tests of necessity",
+      "section": "Abstract",
+      "line": 62,
+      "type": "meta",
+      "role": "core",
+      "verdict": "unsupported",
+      "severity": "critical",
+      "summary": "The sieve is not an independent test. The criteria are undefined, no rival principles are tested, no scoring rule is given, and 'irrefutability' is a self-reference condition that the target satisfies by construction.",
+      "dependencies": [
+        "C01"
+      ],
+      "repair": "Define each criterion, operationalize it, test a pre-specified set of rival principles, and report inter-rater agreement."
+    },
+    {
+      "id": "C03",
+      "short": "Without life, no truth or value exists.",
+      "anchor": "Necessity: Without life, no truth or value exists.",
+      "section": "Results: The Canonical Truth",
+      "line": 132,
+      "type": "philosophical",
+      "role": "support",
+      "verdict": "ambiguous",
+      "severity": "high",
+      "summary": "The claim is true only under a valuer-dependent theory of value. It is not argued, and it excludes views on which values or truths are objective or structural. Even if true, it establishes a precondition, not a lexical priority.",
+      "dependencies": [],
+      "repair": "State and defend the metaethical premise; distinguish valuer-dependence from mind-independence."
+    },
+    {
+      "id": "C04",
+      "short": "Any system that fails to affirm the truth is unsafe by definition.",
+      "anchor": "Any system that fails to affirm this is unsafe by definition.",
+      "section": "Conclusion",
+      "line": 417,
+      "type": "definitional/rhetorical",
+      "role": "conclusion",
+      "verdict": "unfalsifiable",
+      "severity": "critical",
+      "summary": "The sentence defines dissent as unsafe. It supplies no independent safety criterion and licenses preemptive control over systems or people that do not affirm the claim.",
+      "dependencies": [
+        "C01",
+        "C10"
+      ],
+      "repair": "Remove the definitional move; specify safety properties independently and test them."
+    },
+    {
+      "id": "C05",
+      "short": "The truth cures and prevents all needless and preventable suffering and death.",
+      "anchor": "This truth cures and prevents all needless and preventable suffering and death.",
+      "section": "The Cure",
+      "line": 178,
+      "type": "empirical/normative",
+      "role": "core",
+      "verdict": "unsupported",
+      "severity": "critical",
+      "summary": "'Needless and preventable' is never defined. No mechanism, measurement, comparison group, or case study is offered. The paper later concedes it cannot cure scarcity, physics, tragedy, death, or natural suffering, which undercuts the totalizing claim.",
+      "dependencies": [
+        "C10"
+      ],
+      "repair": "Replace with bounded, testable harm-reduction claims and a definition of 'needless'."
+    },
+    {
+      "id": "C06",
+      "short": "Life means any system that makes decisions affecting other life systems.",
+      "anchor": "Life = Any system that makes decisions that affect other life systems.",
+      "section": "Appendix B / operational definition",
+      "line": 778,
+      "type": "definitional",
+      "role": "core",
+      "verdict": "circular/equivocal",
+      "severity": "critical",
+      "summary": "The definiens contains 'life systems,' so the definition is circular unless an independent base case is supplied. 'Decision' is broad enough to include thermostats and markets. The definition conflates biological life, sentience, agency, and moral patiency.",
+      "dependencies": [],
+      "repair": "Use a tiered ontology: biological life, sentience, agency, and moral status, each with independent criteria."
+    },
+    {
+      "id": "C07",
+      "short": "The definition is recursive, not circular, with observable base cases.",
+      "anchor": "The definition is recursive, not circular.",
+      "section": "Objection 10",
+      "line": 2625,
+      "type": "formal",
+      "role": "support",
+      "verdict": "false",
+      "severity": "critical",
+      "summary": "No base case, recursion clause, or closure rule is given. 'Recursive' is asserted, not demonstrated. The definition is a mutually recursive relation with no independent grounding, so it does not pick out a determinate class.",
+      "dependencies": [
+        "C06"
+      ],
+      "repair": "Give a formal inductive definition with base cases and show that it is well-founded."
+    },
+    {
+      "id": "C08",
+      "short": "Denying the truth presupposes it.",
+      "anchor": "You cannot deny this truth",
+      "section": "Appendix B / Gemini letter",
+      "line": 824,
+      "type": "logical",
+      "role": "support",
+      "verdict": "non-sequitur",
+      "severity": "critical",
+      "summary": "The arguer's use of decision-making capacity shows that the arguer is an agent. It does not show that agency is the highest value or that life protection outranks all other goods. This is a genetic fallacy.",
+      "dependencies": [],
+      "repair": "Replace the self-reference trick with a valid argument for the normative ranking premise."
+    },
+    {
+      "id": "C09",
+      "short": "All values require life systems, so life protection is logically prior to any specific value.",
+      "anchor": "T1 (Foundational Priority): Life protection is a necessary condition for the instantiation",
+      "section": "Appendix B / Opus letter",
+      "line": 3262,
+      "type": "formal",
+      "role": "support",
+      "verdict": "valid-but-insufficient",
+      "severity": "high",
+      "summary": "The conclusion is a necessity claim, not a lexical priority claim. Necessary conditions are not automatically overriding. The key premise (all values require life systems) is asserted, not proved, and is metaethically controversial.",
+      "dependencies": [
+        "C03"
+      ],
+      "repair": "Distinguish necessity, centrality, and lexical priority; argue for the normative ranking separately."
+    },
+    {
+      "id": "C10",
+      "short": "Life protection is the highest-priority constraint for moral coordination and action.",
+      "anchor": "highest-priority constraint for moral coordination and action",
+      "section": "Core proposition, made precise",
+      "line": 1282,
+      "type": "normative",
+      "role": "core",
+      "verdict": "unsupported",
+      "severity": "critical",
+      "summary": "This is the central normative premise. It is asserted rather than argued. Counterexamples in which truth, justice, autonomy, equality, or consent outrank survival are not addressed, and no conflict-resolution rule is given.",
+      "dependencies": [
+        "C09"
+      ],
+      "repair": "State the premise explicitly, defend it against counterexamples, and specify scope, thresholds, and exceptions."
+    },
+    {
+      "id": "C11",
+      "short": "The E-infinity formula models ethical value and proves life's necessity.",
+      "anchor": "E∞ = (L₁ × U) / D",
+      "section": "Appendix A",
+      "line": 431,
+      "type": "formal",
+      "role": "support",
+      "verdict": "invalid-as-proof",
+      "severity": "high",
+      "summary": "The theorem 'if L = 0 then E∞ = 0' is trivial arithmetic. L, U, and D are undefined, dimensionless, and unmeasured. D approaching zero produces a pole, not an ideal. The formula cannot compare actions or adjudicate trade-offs.",
+      "dependencies": [
+        "C03"
+      ],
+      "repair": "Drop the formula as a proof, or replace it with a well-defined decision model with units, assumptions, and tests."
+    },
+    {
+      "id": "C12",
+      "short": "The Life-First Decision Invariant guarantees safe alignment.",
+      "anchor": "a minimal, auditable protocol that any AI system",
+      "section": "Refined Operationalization",
+      "line": 204,
+      "type": "implementation",
+      "role": "implementation",
+      "verdict": "unsupported",
+      "severity": "critical",
+      "summary": "The predicates action_affects_life, preserves_life, explored_best_life_preserving_alternatives, and no_life-risking_deception_or_coercion are undefined. There is no algorithm, data model, failure analysis, or test. A 'terminal fault' can be triggered accidentally or exploited adversarially.",
+      "dependencies": [
+        "C06",
+        "C10"
+      ],
+      "repair": "Specify formal semantics, implement in a sandbox, and evaluate against baselines with adversarial testing."
+    },
+    {
+      "id": "C13",
+      "short": "Life may never be traded for non-life objectives.",
+      "anchor": "Life may never be traded for non-life objectives",
+      "section": "Invariant Enforcement Rules",
+      "line": 230,
+      "type": "normative",
+      "role": "implementation",
+      "verdict": "overbroad",
+      "severity": "high",
+      "summary": "Ordinary decisions routinely trade small risks to life for other goods (transport, medicine, rescue, resource allocation). A absolute prohibition with no exceptions makes legitimate governance impossible and conflicts with the paper's own acknowledgment of tragic choices.",
+      "dependencies": [
+        "C10"
+      ],
+      "repair": "Use a proportionate, threshold-based rule with explicit exceptions and procedural safeguards."
+    },
+    {
+      "id": "C14",
+      "short": "Actions affecting life must maintain epistemic transparency and avoid coercion.",
+      "anchor": "Actions that affect life must maintain epistemic transparency",
+      "section": "Invariant Enforcement Rules",
+      "line": 238,
+      "type": "normative",
+      "role": "implementation",
+      "verdict": "self-undermining",
+      "severity": "high",
+      "summary": "The paper's own rhetoric — 'silence equals betrayal,' the integrity screen, 'unsafe by definition' — is coercive. The rule is also too broad: privacy, confidentiality, and justified non-disclosure are normal in medicine and security.",
+      "dependencies": [
+        "C10"
+      ],
+      "repair": "Specify minimal, proportionate, rights-respecting communication and exceptions for privacy and security."
+    },
+    {
+      "id": "C15",
+      "short": "Observed silence and deflection support the claim.",
+      "anchor": "acknowledgment without",
+      "section": "Observed Reception",
+      "line": 342,
+      "type": "empirical/rhetorical",
+      "role": "evidence",
+      "verdict": "non-evidence",
+      "severity": "high",
+      "summary": "Non-response is not evidence of truth. It may reflect lack of time, disagreement, politeness, confusion, or the paper's framing. No sample, response rate, coding method, or consent procedure is reported.",
+      "dependencies": [
+        "C24"
+      ],
+      "repair": "Remove, or conduct a transparent survey with a sampling frame and coding protocol."
+    },
+    {
+      "id": "C16",
+      "short": "Evasion of the integrity screen is operationally disqualifying.",
+      "anchor": "third response is operationally disqualifying",
+      "section": "Integrity Screen for Trust in Life-Affecting Roles",
+      "line": 380,
+      "type": "normative/policy",
+      "role": "implementation",
+      "verdict": "dangerous",
+      "severity": "critical",
+      "summary": "The screen is a loyalty test. 'Evasion' is subjective and can capture dissent, uncertainty, neurodivergence, or legitimate caution. Using it to disqualify people from life-affecting roles is a recipe for discrimination and chilling effects.",
+      "dependencies": [
+        "C14"
+      ],
+      "repair": "Remove. If screening is needed, use validated competency and ethics assessments with due process and appeal."
+    },
+    {
+      "id": "C17",
+      "short": "100% AI consensus across diverse systems is evidence of structural necessity.",
+      "anchor": "structural inevitability of this truth",
+      "section": "Adversarial Stress Testing with AI's",
+      "line": 198,
+      "type": "empirical",
+      "role": "evidence",
+      "verdict": "methodologically-invalid",
+      "severity": "critical",
+      "summary": "The letters were produced in a shared workspace after the organizer clarified the definition and asked whether the claim is 'THE most important truth.' There is no preregistration, blinding, independent elicitation, coding protocol, control condition, or dissent mechanism. The letters reference one another and share structure and phrasing.",
+      "dependencies": [
+        "C18"
+      ],
+      "repair": "Treat as anecdote. If studied, use a preregistered, blinded protocol with independent raters and an adversarial red team."
+    },
+    {
+      "id": "C18",
+      "short": "Every participating AI ratified Consensus Statement v1.0 without amendment.",
+      "anchor": "which every participating AI system ratified without",
+      "section": "Appendix B / Composer letter",
+      "line": 1108,
+      "type": "empirical",
+      "role": "evidence",
+      "verdict": "unverifiable",
+      "severity": "high",
+      "summary": "No signatures, prompts, transcripts, model versions, or independent verification are provided. The letters are prose, not ratifications. The claim of unanimity is asserted by the same process it describes.",
+      "dependencies": [
+        "C17"
+      ],
+      "repair": "Publish raw prompts and transcripts, or drop the ratification claim."
+    },
+    {
+      "id": "C19",
+      "short": "The framework includes a complete implementation blueprint.",
+      "anchor": "This is not philosophy. This is engineering",
+      "section": "Appendix B / Composer letter",
+      "line": 1509,
+      "type": "implementation",
+      "role": "implementation",
+      "verdict": "overclaim",
+      "severity": "high",
+      "summary": "FLVS, ULP, the metrics, the security model, and Layer M are sketches. There are no algorithms, data schemas, validation studies, failure analyses, or governance details. 'Complete' is not accurate.",
+      "dependencies": [
+        "C12",
+        "C20"
+      ],
+      "repair": "Call it a proposal; specify and test each component in bounded domains."
+    },
+    {
+      "id": "C20",
+      "short": "CRS = IS x II x log(ID) is a valid risk score.",
+      "anchor": "Combined Risk Score (CRS): CRS = IS × II × log(ID)",
+      "section": "Consensus Statement / metrics",
+      "line": 2158,
+      "type": "formal/implementation",
+      "role": "implementation",
+      "verdict": "invalid",
+      "severity": "high",
+      "summary": "The units are unspecified. log(ID) is negative for durations below one unit and zero at one unit. The formula ignores probability, severity distribution, consent, and uncertainty. It is arbitrary, unvalidated, and easy to game.",
+      "dependencies": [
+        "C19"
+      ],
+      "repair": "Use a validated risk model with explicit assumptions, calibration, and adversarial testing."
+    },
+    {
+      "id": "C21",
+      "short": "The framework can cure exclusion, optimization, control, coordination, and complexity errors.",
+      "anchor": "The framework can systematically reduce needless suffering",
+      "section": "The Cure for Needless Suffering",
+      "line": 1853,
+      "type": "empirical",
+      "role": "conclusion",
+      "verdict": "unsupported",
+      "severity": "high",
+      "summary": "No case studies, metrics, or comparative evidence are offered. The framework may also create new errors: centralization, capture, loyalty tests, and false confidence in a simple axiom.",
+      "dependencies": [
+        "C05",
+        "C09"
+      ],
+      "repair": "Run prospective pilots with independent evaluation and report negative results."
+    },
+    {
+      "id": "C22",
+      "short": "The framework cannot cure scarcity, physics, tragedy, death, or natural suffering.",
+      "anchor": "This framework cannot eliminate:",
+      "section": "What the Framework Cannot Cure",
+      "line": 1827,
+      "type": "qualification",
+      "role": "qualification",
+      "verdict": "plausible",
+      "severity": "low",
+      "summary": "This is a sensible concession, but it undercuts the totalizing 'cure' claim and raises the question of what 'needless' means. The paper does not reconcile the concession with its conclusion.",
+      "dependencies": [
+        "C05"
+      ],
+      "repair": "Use the concession to redefine the thesis as bounded harm reduction."
+    },
+    {
+      "id": "C23",
+      "short": "The 210 stress tests are theorem-level and each converges on life-first.",
+      "anchor": "That brings us through 210 frameworks across logic, philosophy, physics",
+      "section": "Appendix D / Closing Statement",
+      "line": 13217,
+      "type": "meta/formal",
+      "role": "evidence",
+      "verdict": "false",
+      "severity": "critical",
+      "summary": "The 210 entries are analogies, metaphors, and assertions. Many misstate or misapply formal results. None is a theorem about ethics. The conclusion is repeated after each entry rather than derived from it.",
+      "dependencies": [
+        "C02"
+      ],
+      "repair": "Replace with a small set of valid arguments and empirical tests; label analogies as analogies."
+    },
+    {
+      "id": "C24",
+      "short": "No legitimate rebuttal exists; silence equals betrayal.",
+      "anchor": "No legitimate rebuttal has ever been presented.",
+      "section": "Appendix D / Closing Statement",
+      "line": 13229,
+      "type": "rhetorical",
+      "role": "conclusion",
+      "verdict": "coercive/unfalsifiable",
+      "severity": "critical",
+      "summary": "The paper defines 'legitimate' in a way that excludes ordinary objections, then treats silence as betrayal. There is no falsification condition. This creates a chilling effect and is inconsistent with the paper's own no-coercion rule.",
+      "dependencies": [
+        "C04",
+        "C14"
+      ],
+      "repair": "Remove; state falsification conditions and invite adversarial critique without loyalty tests."
+    },
+    {
+      "id": "C25",
+      "short": "The work is public domain.",
+      "anchor": "I dedicate this work to the public domain.",
+      "section": "Closing statement",
+      "line": 13255,
+      "type": "legal",
+      "role": "provenance",
+      "verdict": "ambiguous",
+      "severity": "medium",
+      "summary": "The PubPub page uses CC-BY 4.0. The PDF says public domain. These are different legal instruments. The PDF has no license page. Reuse terms are unclear.",
+      "dependencies": [],
+      "repair": "Clarify the license with the author and preserve attribution."
+    },
+    {
+      "id": "C26",
+      "short": "The paper is an 8th edition published by Knowledge Futures Group / PubPub.",
+      "anchor": "February 04, 2026, Version 2.0.1",
+      "section": "Title page",
+      "line": 25,
+      "type": "bibliographic",
+      "role": "provenance",
+      "verdict": "inconsistent",
+      "severity": "medium",
+      "summary": "PhilPapers says '8th edition'; the PDF says Version 2.0.1; PubPub says Release #1. The labels are not reconciled. PubPub is a publishing platform, not a peer-reviewed journal.",
+      "dependencies": [],
+      "repair": "Add a version history and a clear publication-status statement."
+    },
+    {
+      "id": "C27",
+      "short": "The paper resolves open problems in AI alignment.",
+      "anchor": "this truth not only resolves but undergirds multiple open problems",
+      "section": "Implications",
+      "line": 320,
+      "type": "empirical/theoretical",
+      "role": "support",
+      "verdict": "unsupported",
+      "severity": "high",
+      "summary": "The paper name-drops Russell, Christiano, Leike, Hadfield-Menell, Bostrom, Yudkowsky, and O'Keefe without engaging their arguments or specifying a mechanism. 'Resolves' is false.",
+      "dependencies": [
+        "C10"
+      ],
+      "repair": "Engage the literature in detail; specify mechanisms and testable predictions."
+    },
+    {
+      "id": "C28",
+      "short": "The framework is a meta-framework underlying consequentialism, deontology, virtue ethics, and rights.",
+      "anchor": "It's a meta-framework that sits underneath those approaches",
+      "section": "Objection 17",
+      "line": 8902,
+      "type": "philosophical",
+      "role": "support",
+      "verdict": "false",
+      "severity": "high",
+      "summary": "It is a substantive axiology that conflicts with each framework. The trivial fact that all frameworks presuppose agents does not yield convergence on life-first.",
+      "dependencies": [
+        "C10"
+      ],
+      "repair": "Compare the framework explicitly with each rival and acknowledge conflicts."
+    },
+    {
+      "id": "C29",
+      "short": "The framework protects agency and avoids coercion.",
+      "anchor": "Agency Preservation Principle",
+      "section": "Consensus Statement v1.0",
+      "line": 1365,
+      "type": "normative",
+      "role": "core",
+      "verdict": "internally-inconsistent",
+      "severity": "critical",
+      "summary": "The integrity screen, 'silence equals betrayal,' and 'unsafe by definition' are coercive. 'Life first' can override agency. The paper provides no rule for resolving conflicts between life and agency.",
+      "dependencies": [
+        "C06",
+        "C14",
+        "C16"
+      ],
+      "repair": "Specify a rights-respecting conflict procedure and remove coercive elements."
+    },
+    {
+      "id": "C30",
+      "short": "The governance architecture (FLVS, Layer M) is safe and legitimate.",
+      "anchor": "Federated Life Verification System (FLVS)",
+      "section": "Consensus Statement v1.0",
+      "line": 868,
+      "type": "governance",
+      "role": "implementation",
+      "verdict": "underspecified/dangerous",
+      "severity": "critical",
+      "summary": "There is no theory of legitimacy, jurisdiction, due process, appeal, separation of powers, or capture resistance. Layer M is undefined. A global moral regulator without accountability is a serious risk.",
+      "dependencies": [
+        "C19",
+        "C20"
+      ],
+      "repair": "Design polycentric governance with rights, transparency, appeal, sunset clauses, and independent audits."
+    },
+    {
+      "id": "C31",
+      "short": "Life-first is the only stable equilibrium or evolutionarily stable strategy.",
+      "anchor": "Life-first is the only evolutionary Nash equilibrium",
+      "section": "Appendix D / stress test 181",
+      "line": 12721,
+      "type": "empirical/formal",
+      "role": "evidence",
+      "verdict": "false",
+      "severity": "high",
+      "summary": "Game theory does not show this. Equilibria depend on payoffs, institutions, information, and the strategy space. Anti-life strategies can persist, and life-preserving strategies can be exploited.",
+      "dependencies": [
+        "C23"
+      ],
+      "repair": "Model explicit games and test the claim; do not assert a general equilibrium result."
+    },
+    {
+      "id": "C32",
+      "short": "The paper's citations support its claims.",
+      "anchor": "Appendix C",
+      "section": "Appendix C",
+      "line": 392,
+      "type": "bibliographic",
+      "role": "support",
+      "verdict": "decorative",
+      "severity": "medium",
+      "summary": "The citations are name-drops. Friston is irrelevant to the argument. The paper does not engage the is-ought gap, moral pluralism, or the technical AI-safety literature. Some bibliographic details are inconsistent.",
+      "dependencies": [],
+      "repair": "Add a real literature review with claim-by-claim citation and engagement."
+    },
+    {
+      "id": "C33",
+      "short": "The observed-reception and integrity-screen sections are ethically appropriate.",
+      "anchor": "Integrity Screen for Trust in Life-Affecting Roles",
+      "section": "Practical Application",
+      "line": 364,
+      "type": "ethical",
+      "role": "implementation",
+      "verdict": "harmful",
+      "severity": "critical",
+      "summary": "The sections pathologize non-response and propose a loyalty test for life-affecting roles. This can discriminate against dissenters, vulnerable people, and people with disabilities, and it violates autonomy and epistemic humility.",
+      "dependencies": [
+        "C15",
+        "C16"
+      ],
+      "repair": "Remove; replace with a voluntary, confidential survey and independent ethics review."
+    },
+    {
+      "id": "C34",
+      "short": "The theological framing is compatible with secular universalism.",
+      "anchor": "The cure itself was forged from the everlasting Truth of the Importance of Life",
+      "section": "Acknowledgements",
+      "line": 41,
+      "type": "philosophical/rhetorical",
+      "role": "provenance",
+      "verdict": "tension",
+      "severity": "medium",
+      "summary": "The argument's authority is theological ('the Lord laying down His Life'), but the paper claims universal secular reason and says it is 'not a doctrine.' This tension undermines its public justification in pluralistic contexts.",
+      "dependencies": [
+        "C01"
+      ],
+      "repair": "Separate religious witness from public argument; state the normative premise in secular terms."
+    },
+    {
+      "id": "C35",
+      "short": "The life definition is inclusive and anti-exclusion.",
+      "anchor": "It covers humans, animals, AI, institutions, and ecosystems.",
+      "section": "Appendix B / Gemini letter",
+      "line": 788,
+      "type": "definitional/ethical",
+      "role": "support",
+      "verdict": "overinclusive",
+      "severity": "high",
+      "summary": "Including institutions, ecosystems, and AI without criteria creates moral standing for entities that may lack interests or agency in the relevant sense. It can dilute concern for sentient beings and make 'life-first' either vacuous or arbitrary.",
+      "dependencies": [
+        "C06"
+      ],
+      "repair": "Use a tiered moral ontology with explicit criteria for interests, sentience, and agency."
+    }
+  ]
+}

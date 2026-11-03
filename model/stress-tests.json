@@ -1,0 +1,1705 @@
+{
+  "schema_version": 1,
+  "source": "source/WISLIM-v2.0.1.txt",
+  "paper_claim": "Appendix D presents 210 'theorem-level' stress tests that allegedly converge on life-first.",
+  "audit_summary": {
+    "total": 210,
+    "verdict_counts": {
+      "category-error": 66,
+      "empirical-unsupported": 9,
+      "false": 2,
+      "heuristic": 51,
+      "misapplied-formalism": 19,
+      "non-sequitur": 51,
+      "rhetorical": 9,
+      "valid-but-insufficient": 3
+    },
+    "severity_counts": {
+      "high": 35,
+      "low": 3,
+      "medium": 172
+    }
+  },
+  "tests": [
+    {
+      "id": "ST001",
+      "number": 1,
+      "title": "Gödel’s Incompleteness (meta-logic)",
+      "verdict": "misapplied-formalism",
+      "severity": "high",
+      "note": "Gödel's incompleteness is about formal systems; it does not imply an ethical axiom. The 'necessary meta-axiom' conclusion is a non sequitur."
+    },
+    {
+      "id": "ST002",
+      "number": 2,
+      "title": "Cantor’s Diagonalization (lists can’t close the set)",
+      "verdict": "misapplied-formalism",
+      "severity": "high",
+      "note": "Diagonalization shows that certain lists cannot exhaust a set; it does not show that value lists collapse without life."
+    },
+    {
+      "id": "ST003",
+      "number": 3,
+      "title": "Modal Logic (necessity vs. possibility)",
+      "verdict": "non-sequitur",
+      "severity": "high",
+      "note": "Box(V -> Life) is asserted, not proved. Even if true, it establishes necessity, not lexical priority."
+    },
+    {
+      "id": "ST004",
+      "number": 4,
+      "title": "Decision Theory / Expected Utility",
+      "verdict": "non-sequitur",
+      "severity": "high",
+      "note": "Setting u(death)=0 is a modeling choice. Expected utility does not entail a lexicographic life constraint."
+    },
+    {
+      "id": "ST005",
+      "number": 5,
+      "title": "Game Theory / Nash Stability",
+      "verdict": "non-sequitur",
+      "severity": "high",
+      "note": "Life-preserving strategies are not the only Nash equilibria; payoffs, institutions, and information determine equilibria."
+    },
+    {
+      "id": "ST006",
+      "number": 6,
+      "title": "Information Theory (signal, entropy, meaning)",
+      "verdict": "category-error",
+      "severity": "high",
+      "note": "Semantic truth is not identical to channel capacity. 'No decoder' does not make truth claims meaningless in the relevant sense."
+    },
+    {
+      "id": "ST007",
+      "number": 7,
+      "title": "Evolutionary Game Theory / Replicator Dynamics",
+      "verdict": "empirical-unsupported",
+      "severity": "high",
+      "note": "Anti-life strategies can persist; 'self-negating' is not a general evolutionary result."
+    },
+    {
+      "id": "ST008",
+      "number": 8,
+      "title": "Thermodynamics / Far-from-equilibrium Systems",
+      "verdict": "category-error",
+      "severity": "high",
+      "note": "Life is not the only far-from-equilibrium structure; a thermodynamic fact does not yield a moral priority."
+    },
+    {
+      "id": "ST009",
+      "number": 9,
+      "title": "Pascal’s Wager / Risk Dominance",
+      "verdict": "heuristic",
+      "severity": "medium",
+      "note": "Risk dominance can be a decision heuristic, but the probabilities and utilities are unspecified. It is not a proof."
+    },
+    {
+      "id": "ST010",
+      "number": 10,
+      "title": "Fixed-Point Theorems (stability under iteration)",
+      "verdict": "misapplied-formalism",
+      "severity": "high",
+      "note": "No contraction mapping or function is defined. 'Life-first is the only non-degenerate fixed point' is asserted."
+    },
+    {
+      "id": "ST011",
+      "number": 11,
+      "title": "Cooperation Theorems / Repeated Prisoner’s Dilemma",
+      "verdict": "heuristic",
+      "severity": "medium",
+      "note": "Cooperation can be rational in repeated games, but the specific life-first norm does not follow; other equilibria exist."
+    },
+    {
+      "id": "ST012",
+      "number": 12,
+      "title": "Kolmogorov Complexity / Minimum Description Length",
+      "verdict": "non-sequitur",
+      "severity": "medium",
+      "note": "Simplicity is not truth. 'Life-first' is not shown to be the shortest description of morality."
+    },
+    {
+      "id": "ST013",
+      "number": 13,
+      "title": "Tarski’s Undefinability of Truth (meta-levels again)",
+      "verdict": "category-error",
+      "severity": "high",
+      "note": "Tarski's undefinability theorem concerns truth predicates in formal languages; it does not imply a moral axiom."
+    },
+    {
+      "id": "ST014",
+      "number": 14,
+      "title": "Catastrophe Theory / Tipping Points",
+      "verdict": "heuristic",
+      "severity": "medium",
+      "note": "Tipping points are real, but the normative conclusion is not derived from catastrophe theory."
+    },
+    {
+      "id": "ST015",
+      "number": 15,
+      "title": "Moral Philosophy Triangulation (Kant, Utilitarianism, Virtue)",
+      "verdict": "non-sequitur",
+      "severity": "high",
+      "note": "Kantian, utilitarian, and virtue frameworks all presuppose agents, but they disagree about priority. Convergence is asserted, not shown."
+    },
+    {
+      "id": "ST016",
+      "number": 16,
+      "title": "Bayes’ Theorem (evidence aggregation)",
+      "verdict": "non-sequitur",
+      "severity": "high",
+      "note": "The likelihoods are not estimated. 'Posterior near 1' is a rhetorical assertion, not a Bayesian result."
+    },
+    {
+      "id": "ST017",
+      "number": 17,
+      "title": "No Free Lunch Theorem (optimization limits)",
+      "verdict": "non-sequitur",
+      "severity": "medium",
+      "note": "No free lunch concerns optimization algorithms; it does not imply a universal moral constraint."
+    },
+    {
+      "id": "ST018",
+      "number": 18,
+      "title": "Arrow’s Impossibility Theorem (voting paradoxes)",
+      "verdict": "misapplied-formalism",
+      "severity": "high",
+      "note": "Arrow's theorem concerns social-choice aggregation. A lexicographic life-first rule may violate other fairness conditions and is not a resolution."
+    },
+    {
+      "id": "ST019",
+      "number": 19,
+      "title": "Second Law of Thermodynamics (entropy growth)",
+      "verdict": "category-error",
+      "severity": "medium",
+      "note": "Entropy is not a moral measure. The second law does not rank values."
+    },
+    {
+      "id": "ST020",
+      "number": 20,
+      "title": "Survivorship Bias (hidden failures)",
+      "verdict": "non-sequitur",
+      "severity": "medium",
+      "note": "The fact that we can argue does not show that life-first strategies are uniquely survivable."
+    },
+    {
+      "id": "ST021",
+      "number": 21,
+      "title": "Reductio ad Absurdum (proof by contradiction)",
+      "verdict": "non-sequitur",
+      "severity": "high",
+      "note": "Assuming 'something else is most important' and then assuming life ends does not produce a contradiction unless one assumes life is necessary for meaning."
+    },
+    {
+      "id": "ST022",
+      "number": 22,
+      "title": "Black Swan Theory (rare catastrophic events)",
+      "verdict": "heuristic",
+      "severity": "medium",
+      "note": "Precaution is reasonable under uncertainty, but it does not establish the specific principle or its scope."
+    },
+    {
+      "id": "ST023",
+      "number": 23,
+      "title": "Precautionary Principle (burden of proof under risk)",
+      "verdict": "heuristic",
+      "severity": "medium",
+      "note": "The precautionary principle supports caution; it can also justify arbitrary restrictions. It is not a lexicographic proof."
+    },
+    {
+      "id": "ST024",
+      "number": 24,
+      "title": "Kant’s Universalizability (categorical imperative)",
+      "verdict": "non-sequitur",
+      "severity": "high",
+      "note": "Universalizability tests maxims, not the ranking of life over every other value."
+    },
+    {
+      "id": "ST025",
+      "number": 25,
+      "title": "Sigma (Σ) Collapse of Values",
+      "verdict": "valid-but-insufficient",
+      "severity": "medium",
+      "note": "If values are modeled as zero without life, the sum is zero. That is a modeling assumption, not an argument for priority."
+    },
+    {
+      "id": "ST026",
+      "number": 26,
+      "title": "Set Theory / Support Non-Emptiness",
+      "verdict": "category-error",
+      "severity": "medium",
+      "note": "Values are not functions requiring a nonempty support set in the relevant sense."
+    },
+    {
+      "id": "ST027",
+      "number": 27,
+      "title": "Order Theory / Lexicographic Priority",
+      "verdict": "non-sequitur",
+      "severity": "medium",
+      "note": "One can define a lexicographic order, but the choice of order is normative and needs argument."
+    },
+    {
+      "id": "ST028",
+      "number": 28,
+      "title": "Measure Theory / Absolute Continuity of Value on Life",
+      "verdict": "category-error",
+      "severity": "medium",
+      "note": "'Value measure' is undefined; absolute continuity is a modeling choice, not a moral result."
+    },
+    {
+      "id": "ST029",
+      "number": 29,
+      "title": "Category Theory (Arrows Require Objects)",
+      "verdict": "category-error",
+      "severity": "medium",
+      "note": "Moral values are not objects and morphisms. The category-theory analogy is decorative."
+    },
+    {
+      "id": "ST030",
+      "number": 30,
+      "title": "Temporal Logic (LTL/CTL) Safety Invariant",
+      "verdict": "valid-but-insufficient",
+      "severity": "medium",
+      "note": "G(Life>0) is a safety invariant if specified, but it does not establish that life outranks all other values."
+    },
+    {
+      "id": "ST031",
+      "number": 31,
+      "title": "Deontic Logic (Obligation Semantics)",
+      "verdict": "non-sequitur",
+      "severity": "medium",
+      "note": "Obligations presuppose agents, but not that life protection is the ground of all obligations."
+    },
+    {
+      "id": "ST032",
+      "number": 32,
+      "title": "Epistemic Logic / Common Knowledge",
+      "verdict": "non-sequitur",
+      "severity": "medium",
+      "note": "Knowledge requires agents; that does not establish a moral ranking."
+    },
+    {
+      "id": "ST033",
+      "number": 33,
+      "title": "Causal Inference (do-Calculus)",
+      "verdict": "category-error",
+      "severity": "medium",
+      "note": "Interventions and counterfactuals are formal tools; they do not yield a moral target."
+    },
+    {
+      "id": "ST034",
+      "number": 34,
+      "title": "Counterfactuals (Structural Causal Models)",
+      "verdict": "category-error",
+      "severity": "medium",
+      "note": "Counterfactual value may require subjects, but that is a contested metaethical premise."
+    },
+    {
+      "id": "ST035",
+      "number": 35,
+      "title": "Program Verification / Invariant Proofs",
+      "verdict": "heuristic",
+      "severity": "medium",
+      "note": "Invariants are useful in program verification, but 'life=0' is not a program state."
+    },
+    {
+      "id": "ST036",
+      "number": 36,
+      "title": "Model Checking (Automata over Policies)",
+      "verdict": "heuristic",
+      "severity": "medium",
+      "note": "Model checking can verify temporal properties, but the moral target is not a finite-state model."
+    },
+    {
+      "id": "ST037",
+      "number": 37,
+      "title": "Type Theory / Curry–Howard (Lightweight Analogy)",
+      "verdict": "category-error",
+      "severity": "medium",
+      "note": "Curry-Howard does not ground moral value."
+    },
+    {
+      "id": "ST038",
+      "number": 38,
+      "title": "Robust Control (H-∞ / Worst-Case Design)",
+      "verdict": "heuristic",
+      "severity": "medium",
+      "note": "Worst-case control design is useful, but the analogy to ethics is not a proof."
+    },
+    {
+      "id": "ST039",
+      "number": 39,
+      "title": "Control Barrier Certificates",
+      "verdict": "heuristic",
+      "severity": "medium",
+      "note": "A control barrier requires dynamics and a safe set; 'life>0' is not specified as one."
+    },
+    {
+      "id": "ST040",
+      "number": 40,
+      "title": "Viability Theory (Aubin)",
+      "verdict": "heuristic",
+      "severity": "medium",
+      "note": "Viability kernels are formal; the moral conclusion is not derived."
+    },
+    {
+      "id": "ST041",
+      "number": 41,
+      "title": "Risk Measures (CVaR / Tail Risk)",
+      "verdict": "heuristic",
+      "severity": "medium",
+      "note": "Tail risk is relevant, but extinction is not a quantified random variable in the paper."
+    },
+    {
+      "id": "ST042",
+      "number": 42,
+      "title": "Maximin (Rawlsian Security)",
+      "verdict": "heuristic",
+      "severity": "medium",
+      "note": "Maximin is a decision rule under uncertainty, not a proof of life's priority."
+    },
+    {
+      "id": "ST043",
+      "number": 43,
+      "title": "Minimax Regret",
+      "verdict": "heuristic",
+      "severity": "medium",
+      "note": "Minimax regret is a decision rule; it does not entail a lexicographic life constraint."
+    },
+    {
+      "id": "ST044",
+      "number": 44,
+      "title": "Multi-Objective Optimization / Pareto & ε-Constraint",
+      "verdict": "heuristic",
+      "severity": "medium",
+      "note": "Epsilon-constraints are a modeling choice. Life as a hard constraint is asserted, not derived."
+    },
+    {
+      "id": "ST045",
+      "number": 45,
+      "title": "Mechanism Design / Incentive Compatibility",
+      "verdict": "non-sequitur",
+      "severity": "medium",
+      "note": "Incentive compatibility does not imply life-first."
+    },
+    {
+      "id": "ST046",
+      "number": 46,
+      "title": "Survival Analysis (Hazard Functions)",
+      "verdict": "heuristic",
+      "severity": "medium",
+      "note": "Hazard functions are a tool; 'life-first' is not a hazard model."
+    },
+    {
+      "id": "ST047",
+      "number": 47,
+      "title": "Markov Chains / Absorbing States",
+      "verdict": "heuristic",
+      "severity": "medium",
+      "note": "Absorbing states are real, but the moral conclusion is not derived."
+    },
+    {
+      "id": "ST048",
+      "number": 48,
+      "title": "Reliability Engineering / Fault-Tree Top Event",
+      "verdict": "heuristic",
+      "severity": "medium",
+      "note": "'Loss of life' as a top event is a design choice; the analysis does not establish priority."
+    },
+    {
+      "id": "ST049",
+      "number": 49,
+      "title": "Percolation Theory / Network Robustness",
+      "verdict": "category-error",
+      "severity": "medium",
+      "note": "Network connectivity is not moral value."
+    },
+    {
+      "id": "ST050",
+      "number": 50,
+      "title": "Social Contract Stability (Hobbes–Rousseau Frame)",
+      "verdict": "non-sequitur",
+      "severity": "medium",
+      "note": "Contracts require parties; they do not require life-first."
+    },
+    {
+      "id": "ST051",
+      "number": 51,
+      "title": "Moral Uncertainty “Parliament” Models",
+      "verdict": "non-sequitur",
+      "severity": "high",
+      "note": "A parliament of theories may not unanimously approve life-first; the claim is asserted."
+    },
+    {
+      "id": "ST052",
+      "number": 52,
+      "title": "Aumann Agreement Theorem (common priors, rationality)",
+      "verdict": "non-sequitur",
+      "severity": "medium",
+      "note": "Aumann's theorem requires common priors and honest updating; it does not imply convergence on life-first."
+    },
+    {
+      "id": "ST053",
+      "number": 53,
+      "title": "Legal Strict Scrutiny Analogy",
+      "verdict": "heuristic",
+      "severity": "medium",
+      "note": "Strict scrutiny is a legal analogy; 'life' is not a legal right in the relevant sense."
+    },
+    {
+      "id": "ST054",
+      "number": 54,
+      "title": "Systems Engineering “V-Model” (Top Requirement)",
+      "verdict": "heuristic",
+      "severity": "medium",
+      "note": "The V-model is an engineering method; the choice of top requirement is normative."
+    },
+    {
+      "id": "ST055",
+      "number": 55,
+      "title": "Pareto Optimality (Economics)",
+      "verdict": "non-sequitur",
+      "severity": "medium",
+      "note": "Pareto optimality does not imply life-first; many allocations are Pareto optimal."
+    },
+    {
+      "id": "ST056",
+      "number": 56,
+      "title": "Bellman Optimality (Dynamic Programming)",
+      "verdict": "heuristic",
+      "severity": "medium",
+      "note": "Dynamic programming requires an objective; life-first is not derived."
+    },
+    {
+      "id": "ST057",
+      "number": 57,
+      "title": "Falsifiability (Popperian Science)",
+      "verdict": "non-sequitur",
+      "severity": "high",
+      "note": "Falsifiability is a scientific norm; the paper's claim is not falsifiable as stated."
+    },
+    {
+      "id": "ST058",
+      "number": 58,
+      "title": "Bayesian Coherence (Dutch Book Argument)",
+      "verdict": "non-sequitur",
+      "severity": "medium",
+      "note": "Coherence of beliefs does not imply a moral axiom."
+    },
+    {
+      "id": "ST059",
+      "number": 59,
+      "title": "Nash Bargaining Solution",
+      "verdict": "non-sequitur",
+      "severity": "medium",
+      "note": "Bargaining solutions depend on disagreement points; life-first is not derived."
+    },
+    {
+      "id": "ST060",
+      "number": 60,
+      "title": "Category Theory (Initial Object)",
+      "verdict": "category-error",
+      "severity": "medium",
+      "note": "Moral value is not an initial object in a category."
+    },
+    {
+      "id": "ST061",
+      "number": 61,
+      "title": "Stability of Fixed Points (Dynamical Systems)",
+      "verdict": "misapplied-formalism",
+      "severity": "high",
+      "note": "Stability of a dynamical system is not moral stability."
+    },
+    {
+      "id": "ST062",
+      "number": 62,
+      "title": "Lyapunov Stability (Control Theory)",
+      "verdict": "heuristic",
+      "severity": "medium",
+      "note": "Lyapunov stability is a control tool; the moral conclusion is not derived."
+    },
+    {
+      "id": "ST063",
+      "number": 63,
+      "title": "Gödel–Löb’s Theorem (Self-referential consistency)",
+      "verdict": "misapplied-formalism",
+      "severity": "high",
+      "note": "Self-referential provability does not ground ethics."
+    },
+    {
+      "id": "ST064",
+      "number": 64,
+      "title": "Shannon Capacity (Information Theory)",
+      "verdict": "category-error",
+      "severity": "medium",
+      "note": "Channel capacity is not truth."
+    },
+    {
+      "id": "ST065",
+      "number": 65,
+      "title": "Induction Principle (Mathematics)",
+      "verdict": "non-sequitur",
+      "severity": "medium",
+      "note": "Induction requires a base case; the paper asserts one rather than proving it."
+    },
+    {
+      "id": "ST066",
+      "number": 66,
+      "title": "Church–Turing Thesis (Computability)",
+      "verdict": "category-error",
+      "severity": "medium",
+      "note": "Computability does not imply purpose."
+    },
+    {
+      "id": "ST067",
+      "number": 67,
+      "title": "Entropy Minimization in Learning (Machine Learning)",
+      "verdict": "non-sequitur",
+      "severity": "medium",
+      "note": "Loss functions are designed, not discovered; life-first is not a natural loss."
+    },
+    {
+      "id": "ST068",
+      "number": 68,
+      "title": "Logical Positivism (Verification Principle)",
+      "verdict": "misapplied-formalism",
+      "severity": "medium",
+      "note": "The verification principle is self-undermining and is not a moral criterion."
+    },
+    {
+      "id": "ST069",
+      "number": 69,
+      "title": "Prisoner’s Dilemma with Extinction Payoff",
+      "verdict": "heuristic",
+      "severity": "medium",
+      "note": "Extinction payoffs can support cooperation, but the specific norm is not derived."
+    },
+    {
+      "id": "ST070",
+      "number": 70,
+      "title": "Noether’s Theorem (Symmetry & Conservation)",
+      "verdict": "category-error",
+      "severity": "medium",
+      "note": "Symmetry and conservation are physical theorems; moral values are not conserved quantities."
+    },
+    {
+      "id": "ST071",
+      "number": 71,
+      "title": "Mean Value Theorem (continuity & slope guarantee)",
+      "verdict": "category-error",
+      "severity": "medium",
+      "note": "Continuity of a function is not moral continuity."
+    },
+    {
+      "id": "ST072",
+      "number": 72,
+      "title": "Brouwer Fixed-Point Theorem (maps to itself)",
+      "verdict": "misapplied-formalism",
+      "severity": "high",
+      "note": "Brouwer requires a continuous map from a compact convex set; no such map is defined."
+    },
+    {
+      "id": "ST073",
+      "number": 73,
+      "title": "Gödel–Rosser Strengthening (consistency under weaker assumptions)",
+      "verdict": "misapplied-formalism",
+      "severity": "high",
+      "note": "Gödel-Rosser strengthens incompleteness; it does not yield a moral axiom."
+    },
+    {
+      "id": "ST074",
+      "number": 74,
+      "title": "Compactness Theorem (finite subsets imply whole)",
+      "verdict": "misapplied-formalism",
+      "severity": "medium",
+      "note": "Finite satisfiability does not imply moral truth."
+    },
+    {
+      "id": "ST075",
+      "number": 75,
+      "title": "Ramsey Theory (order in chaos)",
+      "verdict": "category-error",
+      "severity": "medium",
+      "note": "Order in combinatorial structures is not moral order."
+    },
+    {
+      "id": "ST076",
+      "number": 76,
+      "title": "Löwenheim–Skolem Theorem (models of all sizes)",
+      "verdict": "category-error",
+      "severity": "medium",
+      "note": "Model size is not moral scale."
+    },
+    {
+      "id": "ST077",
+      "number": 77,
+      "title": "Rice’s Theorem (nontrivial program properties undecidable)",
+      "verdict": "misapplied-formalism",
+      "severity": "high",
+      "note": "Rice's theorem concerns program properties; it does not imply a safety axiom."
+    },
+    {
+      "id": "ST078",
+      "number": 78,
+      "title": "Halting Problem (undecidable processes)",
+      "verdict": "misapplied-formalism",
+      "severity": "high",
+      "note": "Undecidability does not imply a moral default."
+    },
+    {
+      "id": "ST079",
+      "number": 79,
+      "title": "Arrow–Debreu Equilibrium (general economics)",
+      "verdict": "non-sequitur",
+      "severity": "medium",
+      "note": "Market equilibrium does not imply life-first."
+    },
+    {
+      "id": "ST080",
+      "number": 80,
+      "title": "Lindy Effect (longer survival = longer expectation)",
+      "verdict": "empirical-unsupported",
+      "severity": "high",
+      "note": "Longevity is not evidence of truth; many false beliefs persist."
+    },
+    {
+      "id": "ST081",
+      "number": 81,
+      "title": "Second-Order Logic Strength (beyond first-order)",
+      "verdict": "category-error",
+      "severity": "medium",
+      "note": "Expressive power of second-order logic is not moral truth."
+    },
+    {
+      "id": "ST082",
+      "number": 82,
+      "title": "Markov Chains (future depends only on present state)",
+      "verdict": "heuristic",
+      "severity": "medium",
+      "note": "State transitions do not imply moral priority."
+    },
+    {
+      "id": "ST083",
+      "number": 83,
+      "title": "Eigenvalue Stability (systems stability)",
+      "verdict": "heuristic",
+      "severity": "medium",
+      "note": "Stability is a mathematical property; moral stability is undefined."
+    },
+    {
+      "id": "ST084",
+      "number": 84,
+      "title": "P vs NP (hardness of problems)",
+      "verdict": "non-sequitur",
+      "severity": "medium",
+      "note": "Computational hardness does not imply a moral axiom."
+    },
+    {
+      "id": "ST085",
+      "number": 85,
+      "title": "Chaos Theory (sensitive dependence on initial conditions)",
+      "verdict": "heuristic",
+      "severity": "medium",
+      "note": "Sensitivity is real; 'life-first is the strange attractor' is a metaphor."
+    },
+    {
+      "id": "ST086",
+      "number": 86,
+      "title": "Pareto Optimality (no one worse off)",
+      "verdict": "non-sequitur",
+      "severity": "medium",
+      "note": "Pareto optimality does not imply life-first."
+    },
+    {
+      "id": "ST087",
+      "number": 87,
+      "title": "Borel–Cantelli Lemma (probability of repeated events)",
+      "verdict": "heuristic",
+      "severity": "medium",
+      "note": "Repeated risks can lead to ruin, but the specific principle is not derived."
+    },
+    {
+      "id": "ST088",
+      "number": 88,
+      "title": "Monty Hall Problem (counterintuitive probabilities)",
+      "verdict": "non-sequitur",
+      "severity": "medium",
+      "note": "The Monty Hall problem is a probability puzzle with no moral conclusion."
+    },
+    {
+      "id": "ST089",
+      "number": 89,
+      "title": "Hardy–Weinberg Equilibrium (population genetics)",
+      "verdict": "category-error",
+      "severity": "medium",
+      "note": "Population genetics is irrelevant to the moral thesis."
+    },
+    {
+      "id": "ST090",
+      "number": 90,
+      "title": "Central Limit Theorem (distribution convergence)",
+      "verdict": "category-error",
+      "severity": "medium",
+      "note": "Distribution convergence is not moral convergence."
+    },
+    {
+      "id": "ST091",
+      "number": 91,
+      "title": "Jensen’s Inequality (convexity principle)",
+      "verdict": "heuristic",
+      "severity": "medium",
+      "note": "Convexity is a risk tool; the moral conclusion is not derived."
+    },
+    {
+      "id": "ST092",
+      "number": 92,
+      "title": "Nash Bargaining Solution (variant)",
+      "verdict": "non-sequitur",
+      "severity": "medium",
+      "note": "Bargaining solutions do not imply life-first."
+    },
+    {
+      "id": "ST093",
+      "number": 93,
+      "title": "Fermi Paradox (where is everyone?)",
+      "verdict": "empirical-unsupported",
+      "severity": "medium",
+      "note": "The Great Filter is a hypothesis; 'life-first is the only way through' is unsupported."
+    },
+    {
+      "id": "ST094",
+      "number": 94,
+      "title": "Turing Completeness (expressive systems)",
+      "verdict": "category-error",
+      "severity": "medium",
+      "note": "Universality of computation is not moral universality."
+    },
+    {
+      "id": "ST095",
+      "number": 95,
+      "title": "Butterfly Effect (small causes, big effects)",
+      "verdict": "heuristic",
+      "severity": "medium",
+      "note": "Small causes can have large effects; the moral conclusion is not derived."
+    },
+    {
+      "id": "ST096",
+      "number": 96,
+      "title": "Prisoner’s Dilemma with Extinction Payoff (variant)",
+      "verdict": "heuristic",
+      "severity": "medium",
+      "note": "Extinction payoffs can change equilibria; the specific norm is not derived."
+    },
+    {
+      "id": "ST097",
+      "number": 97,
+      "title": "St. Petersburg Paradox (infinite expectations)",
+      "verdict": "category-error",
+      "severity": "medium",
+      "note": "An infinite-expectation paradox does not resolve moral priority."
+    },
+    {
+      "id": "ST098",
+      "number": 98,
+      "title": "Zeno’s Paradoxes (infinite regress problems)",
+      "verdict": "category-error",
+      "severity": "medium",
+      "note": "Infinite regress in motion is not moral regress."
+    },
+    {
+      "id": "ST099",
+      "number": 99,
+      "title": "Law of Large Numbers (averages converge with trials)",
+      "verdict": "non-sequitur",
+      "severity": "medium",
+      "note": "Long-run averages do not show that life-first is true."
+    },
+    {
+      "id": "ST100",
+      "number": 100,
+      "title": "Universal Approximation Theorem (neural networks)",
+      "verdict": "category-error",
+      "severity": "medium",
+      "note": "Universal approximation does not imply a safety constraint."
+    },
+    {
+      "id": "ST101",
+      "number": 101,
+      "title": "Information Bottleneck Principle (Trade-off of Compression vs. Relevance)",
+      "verdict": "category-error",
+      "severity": "medium",
+      "note": "Compression/relevance trade-offs are not moral value."
+    },
+    {
+      "id": "ST102",
+      "number": 102,
+      "title": "Minimum Energy Principle (Physics Thermodynamic Pathways)",
+      "verdict": "category-error",
+      "severity": "medium",
+      "note": "Thermodynamics is not ethics."
+    },
+    {
+      "id": "ST103",
+      "number": 103,
+      "title": "Anthropic Conditioning in Cosmology (Selection Effects)",
+      "verdict": "non-sequitur",
+      "severity": "high",
+      "note": "Selection effects explain why observers see life-permitting conditions; they do not establish moral priority."
+    },
+    {
+      "id": "ST104",
+      "number": 104,
+      "title": "Quantum Observer Effect (Measurement Requires Observation)",
+      "verdict": "false",
+      "severity": "high",
+      "note": "Observation in quantum mechanics is not consciousness. The claim is pop-science."
+    },
+    {
+      "id": "ST105",
+      "number": 105,
+      "title": "Game-Theoretic Envy-Free Allocations",
+      "verdict": "non-sequitur",
+      "severity": "medium",
+      "note": "Fairness requires agents; it does not imply life-first."
+    },
+    {
+      "id": "ST106",
+      "number": 106,
+      "title": "Banach Fixed Point Theorem (Contraction Mapping Guarantee)",
+      "verdict": "misapplied-formalism",
+      "severity": "high",
+      "note": "Banach's theorem requires a contraction mapping; none is defined."
+    },
+    {
+      "id": "ST107",
+      "number": 107,
+      "title": "Temporal Discounting in Behavioral Economics",
+      "verdict": "heuristic",
+      "severity": "medium",
+      "note": "Temporal discounting is a bias; life-first is not a correction."
+    },
+    {
+      "id": "ST108",
+      "number": 108,
+      "title": "Dirichlet Principle (Pigeonhole Argument)",
+      "verdict": "category-error",
+      "severity": "medium",
+      "note": "The pigeonhole principle is not resource ethics."
+    },
+    {
+      "id": "ST109",
+      "number": 109,
+      "title": "Heisenberg Uncertainty Principle",
+      "verdict": "category-error",
+      "severity": "medium",
+      "note": "The uncertainty principle is physics, not ethics."
+    },
+    {
+      "id": "ST110",
+      "number": 110,
+      "title": "Triangle Inequality (Metric Space Constraint)",
+      "verdict": "category-error",
+      "severity": "medium",
+      "note": "Metric geometry is not moral efficiency."
+    },
+    {
+      "id": "ST111",
+      "number": 111,
+      "title": "Gödel’s Speed-Up Theorem (Proof Length Explosion)",
+      "verdict": "misapplied-formalism",
+      "severity": "medium",
+      "note": "Proof length is not moral simplicity."
+    },
+    {
+      "id": "ST112",
+      "number": 112,
+      "title": "Law of Diminishing Marginal Utility",
+      "verdict": "non-sequitur",
+      "severity": "medium",
+      "note": "Utility theory does not imply infinite value of life."
+    },
+    {
+      "id": "ST113",
+      "number": 113,
+      "title": "Law of the Excluded Middle (Classical Logic)",
+      "verdict": "non-sequitur",
+      "severity": "high",
+      "note": "Bivalence does not imply 'silence equals betrayal.'"
+    },
+    {
+      "id": "ST114",
+      "number": 114,
+      "title": "Laplace’s Demon (Deterministic Prediction Limit)",
+      "verdict": "category-error",
+      "severity": "medium",
+      "note": "Determinism is not moral value."
+    },
+    {
+      "id": "ST115",
+      "number": 115,
+      "title": "Invariance under Transformation (Symmetry Principles)",
+      "verdict": "category-error",
+      "severity": "medium",
+      "note": "Symmetry is not moral universality."
+    },
+    {
+      "id": "ST116",
+      "number": 116,
+      "title": "Bell’s Theorem (Non-Local Correlation Constraints)",
+      "verdict": "category-error",
+      "severity": "medium",
+      "note": "Quantum entanglement is not moral entanglement."
+    },
+    {
+      "id": "ST117",
+      "number": 117,
+      "title": "Eigenvector Centrality (Network Influence Metric)",
+      "verdict": "category-error",
+      "severity": "medium",
+      "note": "Network centrality is not moral importance."
+    },
+    {
+      "id": "ST118",
+      "number": 118,
+      "title": "Zero-Knowledge Proofs (Verification without Disclosure)",
+      "verdict": "category-error",
+      "severity": "medium",
+      "note": "Cryptographic verification is not ethical verification."
+    },
+    {
+      "id": "ST119",
+      "number": 119,
+      "title": "Principle of Least Action (Lagrangian Physics)",
+      "verdict": "category-error",
+      "severity": "medium",
+      "note": "Physics is not ethics."
+    },
+    {
+      "id": "ST120",
+      "number": 120,
+      "title": "Error-Correcting Codes (Preservation under Noise)",
+      "verdict": "heuristic",
+      "severity": "medium",
+      "note": "Redundancy is useful; 'life-first is the moral parity bit' is a metaphor."
+    },
+    {
+      "id": "ST121",
+      "number": 121,
+      "title": "Occam’s Razor (Principle of Parsimony)",
+      "verdict": "non-sequitur",
+      "severity": "high",
+      "note": "Simplicity does not establish truth or priority."
+    },
+    {
+      "id": "ST122",
+      "number": 122,
+      "title": "Fisher Information (Sensitivity of Likelihood)",
+      "verdict": "category-error",
+      "severity": "medium",
+      "note": "Statistical information is not moral information."
+    },
+    {
+      "id": "ST123",
+      "number": 123,
+      "title": "Nash Equilibrium with Extinction Cost",
+      "verdict": "heuristic",
+      "severity": "medium",
+      "note": "Extinction payoffs can change equilibria; the specific norm is not derived."
+    },
+    {
+      "id": "ST124",
+      "number": 124,
+      "title": "Bounded Rationality (Limits of Decision Making)",
+      "verdict": "heuristic",
+      "severity": "medium",
+      "note": "Heuristics are useful; life-first is not the only viable default."
+    },
+    {
+      "id": "ST125",
+      "number": 125,
+      "title": "Hysteresis in Dynamical Systems",
+      "verdict": "heuristic",
+      "severity": "medium",
+      "note": "History can matter, but the moral conclusion is not derived."
+    },
+    {
+      "id": "ST126",
+      "number": 126,
+      "title": "Monotonicity in Social Choice",
+      "verdict": "non-sequitur",
+      "severity": "medium",
+      "note": "Social-choice monotonicity is not life-first."
+    },
+    {
+      "id": "ST127",
+      "number": 127,
+      "title": "Hamming Distance (Error Sensitivity Measure)",
+      "verdict": "category-error",
+      "severity": "medium",
+      "note": "Error distance is not moral deviation."
+    },
+    {
+      "id": "ST128",
+      "number": 128,
+      "title": "Duality in Optimization (Primal-Dual Relationship)",
+      "verdict": "category-error",
+      "severity": "medium",
+      "note": "Optimization duality is not moral constraint."
+    },
+    {
+      "id": "ST129",
+      "number": 129,
+      "title": "Transfinite Induction (Ordinal Progressions Beyond Infinity)",
+      "verdict": "category-error",
+      "severity": "medium",
+      "note": "Ordinals are not a moral hierarchy."
+    },
+    {
+      "id": "ST130",
+      "number": 130,
+      "title": "Temporal Coherence in Belief Updating",
+      "verdict": "non-sequitur",
+      "severity": "medium",
+      "note": "Belief updating is not moral priority."
+    },
+    {
+      "id": "ST131",
+      "number": 131,
+      "title": "Lagrange Multipliers (Constrained Optimization Method)",
+      "verdict": "heuristic",
+      "severity": "medium",
+      "note": "Constrained optimization is a tool; the choice of constraint is normative."
+    },
+    {
+      "id": "ST132",
+      "number": 132,
+      "title": "Principle of Superposition (Linear System Solutions)",
+      "verdict": "category-error",
+      "severity": "medium",
+      "note": "Linear systems are not moral systems."
+    },
+    {
+      "id": "ST133",
+      "number": 133,
+      "title": "Ricardian Comparative Advantage (Trade Efficiency)",
+      "verdict": "non-sequitur",
+      "severity": "medium",
+      "note": "Comparative advantage is not a moral principle."
+    },
+    {
+      "id": "ST134",
+      "number": 134,
+      "title": "Fractal Self-Similarity (Scale-Invariant Patterns)",
+      "verdict": "rhetorical",
+      "severity": "medium",
+      "note": "Self-similarity is a metaphor, not an argument."
+    },
+    {
+      "id": "ST135",
+      "number": 135,
+      "title": "Pareto Frontier Expansion via Life-Priority Constraint",
+      "verdict": "heuristic",
+      "severity": "medium",
+      "note": "Life-first may expand the feasible frontier; this is not proved."
+    },
+    {
+      "id": "ST136",
+      "number": 136,
+      "title": "Reversible Computation (No Information Loss)",
+      "verdict": "category-error",
+      "severity": "medium",
+      "note": "Information reversibility is not moral reversibility."
+    },
+    {
+      "id": "ST137",
+      "number": 137,
+      "title": "Fuzzy Logic Membership Functions",
+      "verdict": "category-error",
+      "severity": "medium",
+      "note": "Membership functions are not moral truth."
+    },
+    {
+      "id": "ST138",
+      "number": 138,
+      "title": "Ergodic Hypothesis (Time Averages = Ensemble Averages)",
+      "verdict": "category-error",
+      "severity": "medium",
+      "note": "Statistical mechanics is not ethics."
+    },
+    {
+      "id": "ST139",
+      "number": 139,
+      "title": "Moral Reflexivity (Meta-Ethical Feedback)",
+      "verdict": "non-sequitur",
+      "severity": "medium",
+      "note": "Self-application is a consistency check, not a proof."
+    },
+    {
+      "id": "ST140",
+      "number": 140,
+      "title": "Redundancy in Fault-Tolerant Design",
+      "verdict": "heuristic",
+      "severity": "medium",
+      "note": "Fault tolerance is useful; the moral conclusion is not derived."
+    },
+    {
+      "id": "ST141",
+      "number": 141,
+      "title": "Critical Path Method (Project Dependency Analysis)",
+      "verdict": "heuristic",
+      "severity": "medium",
+      "note": "Project management is not ethics."
+    },
+    {
+      "id": "ST142",
+      "number": 142,
+      "title": "Principle of Maximum Entropy (Inference Under Uncertainty)",
+      "verdict": "category-error",
+      "severity": "medium",
+      "note": "Inference under uncertainty is not moral priority."
+    },
+    {
+      "id": "ST143",
+      "number": 143,
+      "title": "Phase Transitions in Complex Systems",
+      "verdict": "empirical-unsupported",
+      "severity": "high",
+      "note": "Social tipping points are complex; the claim is not established."
+    },
+    {
+      "id": "ST144",
+      "number": 144,
+      "title": "Resource-Constrained Scheduling",
+      "verdict": "heuristic",
+      "severity": "medium",
+      "note": "Resource allocation is a tool; the normative criterion is not derived."
+    },
+    {
+      "id": "ST145",
+      "number": 145,
+      "title": "Topological Invariants (Persistent Properties under Deformation)",
+      "verdict": "category-error",
+      "severity": "medium",
+      "note": "Topology is not ethics."
+    },
+    {
+      "id": "ST146",
+      "number": 146,
+      "title": "Control Lyapunov Functions (Asymptotic Stability Design)",
+      "verdict": "heuristic",
+      "severity": "medium",
+      "note": "Control stability is not moral stability."
+    },
+    {
+      "id": "ST147",
+      "number": 147,
+      "title": "Nash Implementation (Mechanism Design Realizability)",
+      "verdict": "non-sequitur",
+      "severity": "medium",
+      "note": "Mechanism design is not a moral foundation."
+    },
+    {
+      "id": "ST148",
+      "number": 148,
+      "title": "Gödel’s Completeness Theorem (Syntactic and Semantic Equivalence)",
+      "verdict": "misapplied-formalism",
+      "severity": "medium",
+      "note": "Completeness of first-order logic does not imply life-first."
+    },
+    {
+      "id": "ST149",
+      "number": 149,
+      "title": "Stable Marriage Problem (Gale-Shapley Algorithm)",
+      "verdict": "category-error",
+      "severity": "medium",
+      "note": "Matching algorithms are not moral matchings."
+    },
+    {
+      "id": "ST150",
+      "number": 150,
+      "title": "Gradient Descent (Local Minimization Algorithm)",
+      "verdict": "heuristic",
+      "severity": "medium",
+      "note": "Optimization is a tool; the objective is not derived."
+    },
+    {
+      "id": "ST151",
+      "number": 151,
+      "title": "Multi-Agent Reinforcement Learning (MARL Instability)",
+      "verdict": "empirical-unsupported",
+      "severity": "medium",
+      "note": "Multi-agent learning is complex; the claim is speculative."
+    },
+    {
+      "id": "ST152",
+      "number": 152,
+      "title": "Non-Euclidean Geometry (Curved Space Foundations)",
+      "verdict": "category-error",
+      "severity": "medium",
+      "note": "Geometry is not ethics."
+    },
+    {
+      "id": "ST153",
+      "number": 153,
+      "title": "Non-Blocking I/O in Operating Systems",
+      "verdict": "rhetorical",
+      "severity": "low",
+      "note": "Operating systems are not moral agents."
+    },
+    {
+      "id": "ST154",
+      "number": 154,
+      "title": "Chaos Threshold in Dynamical Systems",
+      "verdict": "rhetorical",
+      "severity": "medium",
+      "note": "Chaos is a metaphor here, not a moral argument."
+    },
+    {
+      "id": "ST155",
+      "number": 155,
+      "title": "Expected Shortfall (Tail Risk Beyond VaR)",
+      "verdict": "heuristic",
+      "severity": "medium",
+      "note": "Tail risk is relevant, but extinction is not quantified."
+    },
+    {
+      "id": "ST156",
+      "number": 156,
+      "title": "Indifference Curve Analysis (Consumer Preference Theory)",
+      "verdict": "non-sequitur",
+      "severity": "medium",
+      "note": "Utility theory does not imply that life is non-substitutable."
+    },
+    {
+      "id": "ST157",
+      "number": 157,
+      "title": "Algorithmic Fairness Constraints (AI Decision Systems)",
+      "verdict": "non-sequitur",
+      "severity": "medium",
+      "note": "Fairness metrics do not imply life-first."
+    },
+    {
+      "id": "ST158",
+      "number": 158,
+      "title": "Combinatorial Explosion (Exponential Growth of Possibilities)",
+      "verdict": "heuristic",
+      "severity": "medium",
+      "note": "Reducing search space is useful; the moral conclusion is not derived."
+    },
+    {
+      "id": "ST159",
+      "number": 159,
+      "title": "Modus Tollens (Contrapositive Logic)",
+      "verdict": "non-sequitur",
+      "severity": "medium",
+      "note": "Modus tollens is valid only if the premises are; the premises are not established."
+    },
+    {
+      "id": "ST160",
+      "number": 160,
+      "title": "Generative Grammar (Structure of Possible Sentences)",
+      "verdict": "category-error",
+      "severity": "medium",
+      "note": "Syntax is not semantics or ethics."
+    },
+    {
+      "id": "ST161",
+      "number": 161,
+      "title": "Hebbian Learning Rule (Neurons That Fire Together Wire Together)",
+      "verdict": "category-error",
+      "severity": "medium",
+      "note": "Neuroscience is not ethics."
+    },
+    {
+      "id": "ST162",
+      "number": 162,
+      "title": "Law of Large Numbers (Stabilization of Averages)",
+      "verdict": "non-sequitur",
+      "severity": "medium",
+      "note": "Long-run averages do not show that life-first is true."
+    },
+    {
+      "id": "ST163",
+      "number": 163,
+      "title": "Deadweight Loss (Inefficiency from Market Distortions)",
+      "verdict": "non-sequitur",
+      "severity": "medium",
+      "note": "Economics is not ethics."
+    },
+    {
+      "id": "ST164",
+      "number": 164,
+      "title": "Recursion Theorem (Self-Referencing Computation)",
+      "verdict": "misapplied-formalism",
+      "severity": "medium",
+      "note": "Self-reference in computation is not moral self-grounding."
+    },
+    {
+      "id": "ST165",
+      "number": 165,
+      "title": "Slippery Slope Fallacy (Incremental Harm Rationalization)",
+      "verdict": "non-sequitur",
+      "severity": "high",
+      "note": "The slippery-slope fallacy is named, not avoided; the claim is asserted."
+    },
+    {
+      "id": "ST166",
+      "number": 166,
+      "title": "Arrow of Time (Irreversibility of Temporal Flow)",
+      "verdict": "category-error",
+      "severity": "medium",
+      "note": "Thermodynamics is not moral direction."
+    },
+    {
+      "id": "ST167",
+      "number": 167,
+      "title": "Spectral Gap (System Resilience in Networks and Operators)",
+      "verdict": "heuristic",
+      "severity": "medium",
+      "note": "Network resilience is a tool; the moral conclusion is not derived."
+    },
+    {
+      "id": "ST168",
+      "number": 168,
+      "title": "Meta-Optimization (Tuning the Optimizers)",
+      "verdict": "non-sequitur",
+      "severity": "medium",
+      "note": "Optimizing optimizers does not imply life-first."
+    },
+    {
+      "id": "ST169",
+      "number": 169,
+      "title": "Autopoiesis (Self-Generating Systems)",
+      "verdict": "empirical-unsupported",
+      "severity": "medium",
+      "note": "Self-generation is a biological concept; the moral conclusion is not derived."
+    },
+    {
+      "id": "ST170",
+      "number": 170,
+      "title": "Exaptation in Evolution (Repurposing Traits)",
+      "verdict": "heuristic",
+      "severity": "medium",
+      "note": "Repurposing is a metaphor; no moral conclusion follows."
+    },
+    {
+      "id": "ST171",
+      "number": 171,
+      "title": "Principle of Sufficient Reason (Nothing Without Cause)",
+      "verdict": "non-sequitur",
+      "severity": "high",
+      "note": "The principle of sufficient reason does not imply life-first and may be false."
+    },
+    {
+      "id": "ST172",
+      "number": 172,
+      "title": "Law of Conservation of Information (Quantum and Black Hole Theory)",
+      "verdict": "category-error",
+      "severity": "medium",
+      "note": "Quantum information is not moral information."
+    },
+    {
+      "id": "ST173",
+      "number": 173,
+      "title": "Principle of Least Regret (Decision Making Under Uncertainty)",
+      "verdict": "heuristic",
+      "severity": "medium",
+      "note": "Regret minimization is a decision rule; the specific principle is not derived."
+    },
+    {
+      "id": "ST174",
+      "number": 174,
+      "title": "Surprisal in Information Theory (Measuring Unexpectedness)",
+      "verdict": "category-error",
+      "severity": "medium",
+      "note": "Information theory is not ethics."
+    },
+    {
+      "id": "ST175",
+      "number": 175,
+      "title": "Ricci Flow (Geometrical Smoothing Process)",
+      "verdict": "category-error",
+      "severity": "medium",
+      "note": "Geometry is not ethics."
+    },
+    {
+      "id": "ST176",
+      "number": 176,
+      "title": "Temporal Binding (Perceptual Compression of Cause and Effect)",
+      "verdict": "category-error",
+      "severity": "medium",
+      "note": "Neuroscience is not ethics."
+    },
+    {
+      "id": "ST177",
+      "number": 177,
+      "title": "Monads in Functional Programming (Sequencing Effects Safely)",
+      "verdict": "category-error",
+      "severity": "medium",
+      "note": "Functional programming is not ethics."
+    },
+    {
+      "id": "ST178",
+      "number": 178,
+      "title": "Universal Grammar Hypothesis (Innate Language Structures)",
+      "verdict": "category-error",
+      "severity": "medium",
+      "note": "Linguistics is not ethics."
+    },
+    {
+      "id": "ST179",
+      "number": 179,
+      "title": "Bayesian Surprise (Measuring Informational Shift)",
+      "verdict": "category-error",
+      "severity": "medium",
+      "note": "Belief updating is not moral learning."
+    },
+    {
+      "id": "ST180",
+      "number": 180,
+      "title": "Mutual Information (Shared Signal Between Variables)",
+      "verdict": "category-error",
+      "severity": "medium",
+      "note": "Information dependence is not moral dependence."
+    },
+    {
+      "id": "ST181",
+      "number": 181,
+      "title": "Nash Equilibrium in Evolutionary Biology",
+      "verdict": "empirical-unsupported",
+      "severity": "high",
+      "note": "Evolutionary stability depends on the game; the claim is false as stated."
+    },
+    {
+      "id": "ST182",
+      "number": 182,
+      "title": "Markov Blanket (Boundary of Predictive Sufficiency)",
+      "verdict": "category-error",
+      "severity": "medium",
+      "note": "Probabilistic boundaries are not moral boundaries."
+    },
+    {
+      "id": "ST183",
+      "number": 183,
+      "title": "Hyperbolic Discounting (Time-Inconsistent Preferences)",
+      "verdict": "heuristic",
+      "severity": "medium",
+      "note": "Temporal bias is real; life-first is not a correction."
+    },
+    {
+      "id": "ST184",
+      "number": 184,
+      "title": "Dynamic Systems with Attractors (Behavioral Gravitation Points)",
+      "verdict": "rhetorical",
+      "severity": "medium",
+      "note": "Dynamical-systems talk is a metaphor here."
+    },
+    {
+      "id": "ST185",
+      "number": 185,
+      "title": "Semiotic Triad (Sign, Object, Interpretant)",
+      "verdict": "category-error",
+      "severity": "medium",
+      "note": "Semiotics is not ethics."
+    },
+    {
+      "id": "ST186",
+      "number": 186,
+      "title": "Multi-Criteria Decision Analysis (MCDA)",
+      "verdict": "heuristic",
+      "severity": "medium",
+      "note": "Multi-criteria analysis is a tool; the choice of criteria is normative."
+    },
+    {
+      "id": "ST187",
+      "number": 187,
+      "title": "Gödel Encoding (Symbolic Arithmetic of Logic)",
+      "verdict": "category-error",
+      "severity": "medium",
+      "note": "Encoding is not moral truth."
+    },
+    {
+      "id": "ST188",
+      "number": 188,
+      "title": "Edge of Chaos (Criticality in Complex Systems)",
+      "verdict": "empirical-unsupported",
+      "severity": "medium",
+      "note": "Criticality is a hypothesis; the moral claim is not derived."
+    },
+    {
+      "id": "ST189",
+      "number": 189,
+      "title": "Invariant Set Theory (Quantum-Gravity Hypothesis)",
+      "verdict": "rhetorical",
+      "severity": "medium",
+      "note": "A speculative physics theory does not yield a moral conclusion."
+    },
+    {
+      "id": "ST190",
+      "number": 190,
+      "title": "Common Ground Theory (Shared Understanding in Communication)",
+      "verdict": "non-sequitur",
+      "severity": "medium",
+      "note": "Communication requires shared assumptions; it does not imply life-first."
+    },
+    {
+      "id": "ST191",
+      "number": 191,
+      "title": "Conservation of Moral Mass (Ethical Continuity Hypothesis)",
+      "verdict": "false",
+      "severity": "medium",
+      "note": "'Conservation of moral mass' is invented; there is no such conservation law."
+    },
+    {
+      "id": "ST192",
+      "number": 192,
+      "title": "Turing’s Halting Problem (Undecidability of Program Termination)",
+      "verdict": "misapplied-formalism",
+      "severity": "medium",
+      "note": "The halting problem does not imply a moral default."
+    },
+    {
+      "id": "ST193",
+      "number": 193,
+      "title": "Gödel’s Second Incompleteness Theorem (Limits of Self-Proof)",
+      "verdict": "misapplied-formalism",
+      "severity": "high",
+      "note": "Gödel's second theorem does not imply an external moral axiom."
+    },
+    {
+      "id": "ST194",
+      "number": 194,
+      "title": "Broken Symmetry (Spontaneous Divergence in Physics)",
+      "verdict": "category-error",
+      "severity": "medium",
+      "note": "Physics is not ethics."
+    },
+    {
+      "id": "ST195",
+      "number": 195,
+      "title": "Y-Combinator (Fixed-Point Generator in Lambda Calculus)",
+      "verdict": "category-error",
+      "severity": "medium",
+      "note": "Recursion is not moral grounding."
+    },
+    {
+      "id": "ST196",
+      "number": 196,
+      "title": "Constraint Satisfaction Problem (CSP)",
+      "verdict": "heuristic",
+      "severity": "medium",
+      "note": "Constraint satisfaction is a tool; the constraints are normative."
+    },
+    {
+      "id": "ST197",
+      "number": 197,
+      "title": "Reflexive Equilibrium (Ethics + Theory Adjustment Loop)",
+      "verdict": "heuristic",
+      "severity": "medium",
+      "note": "Reflective equilibrium is a method; it does not uniquely select life-first."
+    },
+    {
+      "id": "ST198",
+      "number": 198,
+      "title": "Principle of Mediocrity (Cosmological Typicality)",
+      "verdict": "rhetorical",
+      "severity": "medium",
+      "note": "Cosmological typicality is not moral priority."
+    },
+    {
+      "id": "ST199",
+      "number": 199,
+      "title": "Counterfactual Robustness (Model Stability to Hypotheticals)",
+      "verdict": "heuristic",
+      "severity": "medium",
+      "note": "Robustness is a virtue; the claim is not established."
+    },
+    {
+      "id": "ST200",
+      "number": 200,
+      "title": "Grounding Problem in Philosophy of Mind (How Symbols Gain Meaning)",
+      "verdict": "non-sequitur",
+      "severity": "medium",
+      "note": "Semantic grounding is not moral priority."
+    },
+    {
+      "id": "ST201",
+      "number": 201,
+      "title": "Transaction Cost Economics (Friction in Coordination)",
+      "verdict": "non-sequitur",
+      "severity": "medium",
+      "note": "Efficiency is not ethics."
+    },
+    {
+      "id": "ST202",
+      "number": 202,
+      "title": "Temporal Logic (Reasoning Over Time)",
+      "verdict": "valid-but-insufficient",
+      "severity": "medium",
+      "note": "A temporal safety invariant does not establish priority."
+    },
+    {
+      "id": "ST203",
+      "number": 203,
+      "title": "Natural Gradient Descent (Curvature-Aware Optimization)",
+      "verdict": "category-error",
+      "severity": "medium",
+      "note": "Optimization geometry is not ethics."
+    },
+    {
+      "id": "ST204",
+      "number": 204,
+      "title": "Lindy Effect (Durability Predicts Longevity)",
+      "verdict": "empirical-unsupported",
+      "severity": "high",
+      "note": "Longevity is not evidence of truth."
+    },
+    {
+      "id": "ST205",
+      "number": 205,
+      "title": "Game of Life (Cellular Automaton by Conway)",
+      "verdict": "rhetorical",
+      "severity": "low",
+      "note": "Cellular automata are not moral systems."
+    },
+    {
+      "id": "ST206",
+      "number": 206,
+      "title": "Emergence (Macro Patterns from Micro Rules)",
+      "verdict": "rhetorical",
+      "severity": "medium",
+      "note": "Emergence is a metaphor here."
+    },
+    {
+      "id": "ST207",
+      "number": 207,
+      "title": "Infinite Regress Problem (Unending Justification Chains)",
+      "verdict": "non-sequitur",
+      "severity": "medium",
+      "note": "Foundationalism versus coherentism is a metaethical debate; the paper asserts a foundation."
+    },
+    {
+      "id": "ST208",
+      "number": 208,
+      "title": "Thermodynamic Feasibility (First and Second Law Compliance)",
+      "verdict": "category-error",
+      "severity": "medium",
+      "note": "Physics is not ethics."
+    },
+    {
+      "id": "ST209",
+      "number": 209,
+      "title": "Fixed Point Theorem (Existence of Stable States)",
+      "verdict": "misapplied-formalism",
+      "severity": "medium",
+      "note": "A fixed-point theorem does not imply that life-first is the ethical fixed point."
+    },
+    {
+      "id": "ST210",
+      "number": 210,
+      "title": "Memory Safety in Systems Design",
+      "verdict": "rhetorical",
+      "severity": "low",
+      "note": "A programming analogy is not an ethical argument."
+    }
+  ]
+}

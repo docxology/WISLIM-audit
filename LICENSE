@@ -1,0 +1,23 @@
+# License
+
+## Audit text
+
+The original audit text in this repository is licensed under the Creative
+Commons Attribution 4.0 International License (CC-BY 4.0):
+
+https://creativecommons.org/licenses/by/4.0/
+
+You may share and adapt the audit text for any purpose, provided you give
+appropriate credit and indicate whether changes were made.
+
+## Audited source
+
+The audited paper is a separate work by David Wishengrad. The PubPub release
+page states CC-BY 4.0; the PDF also says the author dedicates the work to the
+public domain. This repository does not resolve that ambiguity and does not
+relicense the source. See `evidence/provenance.md`.
+
+## No warranty
+
+This audit is provided for research and criticism. It is not legal, medical,
+clinical, safety, or compliance advice.

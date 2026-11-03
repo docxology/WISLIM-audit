@@ -1,0 +1,40 @@
+{
+  "work": "Life is Most Important in Life is The Most Important Truth in Life: A Foundational Proof for Alignment, Identity, and the Cure of Needless Suffering",
+  "author": "David Wishengrad",
+  "version": "2.0.1",
+  "date": "2026-02-04",
+  "pages": 289,
+  "pdf_bytes": 348857,
+  "pdf_sha256": "7716807d081e497364a14475ef6f8a6b06e6cabaa6858749bb17e6a904e7dfcd",
+  "text_file": "WISLIM-v2.0.1.txt",
+  "text_lines": 13255,
+  "text_words": 40538,
+  "text_bytes": 343221,
+  "text_sha256": "aab7d298543fdf39c636706458c74118a663f8ae33c5fd2d71bca2b6f02d59f1",
+  "extraction": "pdftotext -layout",
+  "line_number_basis": "1-based newline-delimited lines in source/WISLIM-v2.0.1.txt; 13,255 lines; form-feed page breaks are not counted as lines",
+  "philpapers": {
+    "id": "WISLIM",
+    "url": "https://philpapers.org/rec/WISLIM",
+    "label": "8th edition",
+    "publisher": "Knowledge Futures Group / PubPub (2026)",
+    "doi": "10.21428/4831231e.8c4c6c8f",
+    "added": "2025-09-02",
+    "downloads_total": 1843,
+    "downloads_6_months": 679,
+    "citations": 0
+  },
+  "pubpub": {
+    "url": "https://life-is-most-important-in-life.pubpub.org/pub/n81ngqkw/release/1",
+    "published": "2026-02-04",
+    "release": 1,
+    "license": "CC-BY-4.0"
+  },
+  "license": {
+    "pubpub": "CC-BY-4.0",
+    "pdf_dedication": "public domain",
+    "status": "ambiguous; unresolved"
+  },
+  "provenance": "PDF supplied by the user in the audit session and copied without modification.",
+  "audit_date": "2026-11-03"
+}
