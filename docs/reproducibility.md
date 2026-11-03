@@ -5,6 +5,7 @@
 - Python 3.11 or newer, standard library only.
 - `pdftotext` (Poppler) to re-extract the text.
 - `shasum` or `sha256sum` to verify hashes.
+- `gh` (GitHub CLI, authenticated) only for the GitHub issue mirror.
 - `pytest` is optional; the validator runs without it.
 
 The repository intentionally avoids third-party Python dependencies. The
@@ -62,6 +63,9 @@ The validator checks:
 - source line, word, and byte counts;
 - claim IDs, required fields, line bounds, and anchor text;
 - the 210 stress tests and summary counts;
+- the 66-issue register: stable IDs, C01–C35/AS01–AS20/WS01–WS11 coverage,
+  generated records, and the GitHub issue map;
+- every issue quote is a verbatim substring of the source at `quote_line`;
 - explicit source-line citations are within bounds;
 - required files exist;
 - relative Markdown links resolve;
@@ -79,8 +83,31 @@ If `pytest` is installed, the same tests also run under pytest:
 python3 -m pytest -q
 ```
 
-The tests are a thin wrapper around the validator. They use only the standard
-library, so the repository remains runnable without pytest.
+The tests exercise the validator, the source hashes, the claim and stress-test
+registries, and the 66-issue register. They use only the standard library, so
+the repository remains runnable without pytest.
+
+## Issue register and GitHub mirror
+
+The canonical register is `model/issues.json`. It holds 35 claim issues
+(`C01`–`C35`), 20 red-team issues (`AS01`–`AS20`), and 11 workstream issues
+(`WS01`–`WS11`). Each issue has one generated record under `docs/audit/`.
+
+```sh
+make register                  # regenerate docs/audit/ records and index
+make issues                    # create missing issues and refresh bodies
+make issues-check              # read-only comparison with GitHub
+```
+
+`model/issue-map.json` records the GitHub number, URL, title, and state for each
+issue. `scripts/sync_issues.py` never creates a duplicate: it matches the
+`WISLIM-NNN:` title prefix, adopts any existing issue, and updates bodies in
+place. The `make verify` target is offline and does not contact GitHub;
+`make issues-check` is the networked check and requires an authenticated `gh`.
+
+The issue bodies are derived from the records, not independently edited. To
+change an issue, edit `model/issues.json`, run `make register`, then
+`make issues`. GitHub comments are not mirrored back into the repository.
 
 ## Rebuild the stress-test catalog
 

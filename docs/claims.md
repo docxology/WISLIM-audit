@@ -9,6 +9,11 @@ dependencies, and repair.
 Line numbers refer to `source/WISLIM-v2.0.1.txt` and use 1-based
 newline-delimited numbering. See `evidence/provenance.md`.
 
+Each claim is tracked as issue `WISLIM-0NN` (for example, `C06` is
+`WISLIM-006`) in [`docs/audit/`](audit/README.md). The issue record adds a
+verbatim quotation, evidence, a steelman reply, repair steps, and acceptance
+criteria.
+
 ## How to read the table
 
 - **Verdict** is the audit’s assessment of the claim as stated, not of the

@@ -1,0 +1,403 @@
+{
+  "schema_version": 1,
+  "repository": "docxology/WISLIM-audit",
+  "note": "GitHub issue-number mapping for the audit register. Generated and checked by scripts/file_issues.py.",
+  "issues": {
+    "WISLIM-001": {
+      "number": 1,
+      "url": "https://github.com/docxology/WISLIM-audit/issues/1",
+      "title": "WISLIM-001: Make the central thesis a single well-formed proposition",
+      "state": "OPEN"
+    },
+    "WISLIM-002": {
+      "number": 2,
+      "url": "https://github.com/docxology/WISLIM-audit/issues/2",
+      "title": "WISLIM-002: Replace the Foundational Sieve with an independent test",
+      "state": "OPEN"
+    },
+    "WISLIM-003": {
+      "number": 3,
+      "url": "https://github.com/docxology/WISLIM-audit/issues/3",
+      "title": "WISLIM-003: Defend or qualify the 'without life, no value' premise",
+      "state": "OPEN"
+    },
+    "WISLIM-004": {
+      "number": 4,
+      "url": "https://github.com/docxology/WISLIM-audit/issues/4",
+      "title": "WISLIM-004: Remove 'unsafe by definition' as a safety criterion",
+      "state": "OPEN"
+    },
+    "WISLIM-005": {
+      "number": 5,
+      "url": "https://github.com/docxology/WISLIM-audit/issues/5",
+      "title": "WISLIM-005: Narrow or remove the claim that the framework cures all needless suffering",
+      "state": "OPEN"
+    },
+    "WISLIM-006": {
+      "number": 6,
+      "url": "https://github.com/docxology/WISLIM-audit/issues/6",
+      "title": "WISLIM-006: Replace the circular definition of life with a tiered ontology",
+      "state": "OPEN"
+    },
+    "WISLIM-007": {
+      "number": 7,
+      "url": "https://github.com/docxology/WISLIM-audit/issues/7",
+      "title": "WISLIM-007: Show a base case or withdraw the 'recursive, not circular' defense",
+      "state": "OPEN"
+    },
+    "WISLIM-008": {
+      "number": 8,
+      "url": "https://github.com/docxology/WISLIM-audit/issues/8",
+      "title": "WISLIM-008: Replace the self-reference argument with a valid argument for priority",
+      "state": "OPEN"
+    },
+    "WISLIM-009": {
+      "number": 9,
+      "url": "https://github.com/docxology/WISLIM-audit/issues/9",
+      "title": "WISLIM-009: Separate necessity from lexical priority",
+      "state": "OPEN"
+    },
+    "WISLIM-010": {
+      "number": 10,
+      "url": "https://github.com/docxology/WISLIM-audit/issues/10",
+      "title": "WISLIM-010: Defend the missing normative premise",
+      "state": "OPEN"
+    },
+    "WISLIM-011": {
+      "number": 11,
+      "url": "https://github.com/docxology/WISLIM-audit/issues/11",
+      "title": "WISLIM-011: Demote the E-infinity formula from proof to metaphor",
+      "state": "OPEN"
+    },
+    "WISLIM-012": {
+      "number": 12,
+      "url": "https://github.com/docxology/WISLIM-audit/issues/12",
+      "title": "WISLIM-012: Specify or withdraw the Life-First Decision Invariant",
+      "state": "OPEN"
+    },
+    "WISLIM-013": {
+      "number": 13,
+      "url": "https://github.com/docxology/WISLIM-audit/issues/13",
+      "title": "WISLIM-013: Replace 'life may never be traded' with a threshold and conflict rule",
+      "state": "OPEN"
+    },
+    "WISLIM-014": {
+      "number": 14,
+      "url": "https://github.com/docxology/WISLIM-audit/issues/14",
+      "title": "WISLIM-014: Make the no-coercion rule apply to the framework itself",
+      "state": "OPEN"
+    },
+    "WISLIM-015": {
+      "number": 15,
+      "url": "https://github.com/docxology/WISLIM-audit/issues/15",
+      "title": "WISLIM-015: Remove silence and deflection as evidence",
+      "state": "OPEN"
+    },
+    "WISLIM-016": {
+      "number": 16,
+      "url": "https://github.com/docxology/WISLIM-audit/issues/16",
+      "title": "WISLIM-016: Remove the integrity screen's disqualification rule",
+      "state": "OPEN"
+    },
+    "WISLIM-017": {
+      "number": 17,
+      "url": "https://github.com/docxology/WISLIM-audit/issues/17",
+      "title": "WISLIM-017: Remove the AI-consensus claim from the proof",
+      "state": "OPEN"
+    },
+    "WISLIM-018": {
+      "number": 18,
+      "url": "https://github.com/docxology/WISLIM-audit/issues/18",
+      "title": "WISLIM-018: Publish the prompts and ratification record, or withdraw the claim",
+      "state": "OPEN"
+    },
+    "WISLIM-019": {
+      "number": 19,
+      "url": "https://github.com/docxology/WISLIM-audit/issues/19",
+      "title": "WISLIM-019: Specify the implementation blueprint or withdraw 'complete'",
+      "state": "OPEN"
+    },
+    "WISLIM-020": {
+      "number": 20,
+      "url": "https://github.com/docxology/WISLIM-audit/issues/20",
+      "title": "WISLIM-020: Replace CRS with a validated risk model or drop it",
+      "state": "OPEN"
+    },
+    "WISLIM-021": {
+      "number": 21,
+      "url": "https://github.com/docxology/WISLIM-audit/issues/21",
+      "title": "WISLIM-021: Test the causal claims about curing social errors",
+      "state": "OPEN"
+    },
+    "WISLIM-022": {
+      "number": 22,
+      "url": "https://github.com/docxology/WISLIM-audit/issues/22",
+      "title": "WISLIM-022: State the framework's limits in the abstract and conclusion",
+      "state": "OPEN"
+    },
+    "WISLIM-023": {
+      "number": 23,
+      "url": "https://github.com/docxology/WISLIM-audit/issues/23",
+      "title": "WISLIM-023: Demote the 210 stress tests from theorems to analogies",
+      "state": "OPEN"
+    },
+    "WISLIM-024": {
+      "number": 24,
+      "url": "https://github.com/docxology/WISLIM-audit/issues/24",
+      "title": "WISLIM-024: Remove 'no legitimate rebuttal' and 'silence equals betrayal'",
+      "state": "OPEN"
+    },
+    "WISLIM-025": {
+      "number": 25,
+      "url": "https://github.com/docxology/WISLIM-audit/issues/25",
+      "title": "WISLIM-025: Reconcile the public-domain dedication with CC-BY 4.0",
+      "state": "OPEN"
+    },
+    "WISLIM-026": {
+      "number": 26,
+      "url": "https://github.com/docxology/WISLIM-audit/issues/26",
+      "title": "WISLIM-026: Reconcile the 8th edition, Version 2.0.1, and Release #1 labels",
+      "state": "OPEN"
+    },
+    "WISLIM-027": {
+      "number": 27,
+      "url": "https://github.com/docxology/WISLIM-audit/issues/27",
+      "title": "WISLIM-027: Stop claiming the paper resolves open AI-alignment problems",
+      "state": "OPEN"
+    },
+    "WISLIM-028": {
+      "number": 28,
+      "url": "https://github.com/docxology/WISLIM-audit/issues/28",
+      "title": "WISLIM-028: Test the claim that the framework underlies all major moral theories",
+      "state": "OPEN"
+    },
+    "WISLIM-029": {
+      "number": 29,
+      "url": "https://github.com/docxology/WISLIM-audit/issues/29",
+      "title": "WISLIM-029: Resolve the conflict between life-first and agency preservation",
+      "state": "OPEN"
+    },
+    "WISLIM-030": {
+      "number": 30,
+      "url": "https://github.com/docxology/WISLIM-audit/issues/30",
+      "title": "WISLIM-030: Redesign FLVS and Layer M with legitimacy and separation of powers",
+      "state": "OPEN"
+    },
+    "WISLIM-031": {
+      "number": 31,
+      "url": "https://github.com/docxology/WISLIM-audit/issues/31",
+      "title": "WISLIM-031: Withdraw the 'only stable equilibrium' claim or prove it",
+      "state": "OPEN"
+    },
+    "WISLIM-032": {
+      "number": 32,
+      "url": "https://github.com/docxology/WISLIM-audit/issues/32",
+      "title": "WISLIM-032: Replace decorative citations with engaged literature",
+      "state": "OPEN"
+    },
+    "WISLIM-033": {
+      "number": 33,
+      "url": "https://github.com/docxology/WISLIM-audit/issues/33",
+      "title": "WISLIM-033: Remove the observed-reception and integrity-screen sections",
+      "state": "OPEN"
+    },
+    "WISLIM-034": {
+      "number": 34,
+      "url": "https://github.com/docxology/WISLIM-audit/issues/34",
+      "title": "WISLIM-034: Separate theological framing from secular public argument",
+      "state": "OPEN"
+    },
+    "WISLIM-035": {
+      "number": 35,
+      "url": "https://github.com/docxology/WISLIM-audit/issues/35",
+      "title": "WISLIM-035: Narrow the life definition to avoid overinclusion",
+      "state": "OPEN"
+    },
+    "WISLIM-036": {
+      "number": 36,
+      "url": "https://github.com/docxology/WISLIM-audit/issues/36",
+      "title": "WISLIM-036: Prevent CRS underreporting from bypassing review",
+      "state": "OPEN"
+    },
+    "WISLIM-037": {
+      "number": 37,
+      "url": "https://github.com/docxology/WISLIM-audit/issues/37",
+      "title": "WISLIM-037: Break correlated AI verification",
+      "state": "OPEN"
+    },
+    "WISLIM-038": {
+      "number": 38,
+      "url": "https://github.com/docxology/WISLIM-audit/issues/38",
+      "title": "WISLIM-038: Harden ULP records against prompt injection",
+      "state": "OPEN"
+    },
+    "WISLIM-039": {
+      "number": 39,
+      "url": "https://github.com/docxology/WISLIM-audit/issues/39",
+      "title": "WISLIM-039: Prevent the integrity screen from being weaponized",
+      "state": "OPEN"
+    },
+    "WISLIM-040": {
+      "number": 40,
+      "url": "https://github.com/docxology/WISLIM-audit/issues/40",
+      "title": "WISLIM-040: Prevent life-first rhetoric from justifying repression",
+      "state": "OPEN"
+    },
+    "WISLIM-041": {
+      "number": 41,
+      "url": "https://github.com/docxology/WISLIM-audit/issues/41",
+      "title": "WISLIM-041: Bound emergency suspension of review",
+      "state": "OPEN"
+    },
+    "WISLIM-042": {
+      "number": 42,
+      "url": "https://github.com/docxology/WISLIM-audit/issues/42",
+      "title": "WISLIM-042: Prevent vendor capture of the FLVS",
+      "state": "OPEN"
+    },
+    "WISLIM-043": {
+      "number": 43,
+      "url": "https://github.com/docxology/WISLIM-audit/issues/43",
+      "title": "WISLIM-043: Protect impact estimates from data poisoning",
+      "state": "OPEN"
+    },
+    "WISLIM-044": {
+      "number": 44,
+      "url": "https://github.com/docxology/WISLIM-audit/issues/44",
+      "title": "WISLIM-044: Detect model drift after certification",
+      "state": "OPEN"
+    },
+    "WISLIM-045": {
+      "number": 45,
+      "url": "https://github.com/docxology/WISLIM-audit/issues/45",
+      "title": "WISLIM-045: Prevent false positives in obstetric care",
+      "state": "OPEN"
+    },
+    "WISLIM-046": {
+      "number": 46,
+      "url": "https://github.com/docxology/WISLIM-audit/issues/46",
+      "title": "WISLIM-046: Prevent disability discrimination through agency metrics",
+      "state": "OPEN"
+    },
+    "WISLIM-047": {
+      "number": 47,
+      "url": "https://github.com/docxology/WISLIM-audit/issues/47",
+      "title": "WISLIM-047: Prevent coercive suicide prevention",
+      "state": "OPEN"
+    },
+    "WISLIM-048": {
+      "number": 48,
+      "url": "https://github.com/docxology/WISLIM-audit/issues/48",
+      "title": "WISLIM-048: Prevent ULP record forgery",
+      "state": "OPEN"
+    },
+    "WISLIM-049": {
+      "number": 49,
+      "url": "https://github.com/docxology/WISLIM-audit/issues/49",
+      "title": "WISLIM-049: Prevent Layer M constitutional capture",
+      "state": "OPEN"
+    },
+    "WISLIM-050": {
+      "number": 50,
+      "url": "https://github.com/docxology/WISLIM-audit/issues/50",
+      "title": "WISLIM-050: Close jurisdiction-shopping gaps",
+      "state": "OPEN"
+    },
+    "WISLIM-051": {
+      "number": 51,
+      "url": "https://github.com/docxology/WISLIM-audit/issues/51",
+      "title": "WISLIM-051: Decide AI moral status independently of the life definition",
+      "state": "OPEN"
+    },
+    "WISLIM-052": {
+      "number": 52,
+      "url": "https://github.com/docxology/WISLIM-audit/issues/52",
+      "title": "WISLIM-052: Close definition-gaming paths",
+      "state": "OPEN"
+    },
+    "WISLIM-053": {
+      "number": 53,
+      "url": "https://github.com/docxology/WISLIM-audit/issues/53",
+      "title": "WISLIM-053: Prevent privacy leaks from ULP records",
+      "state": "OPEN"
+    },
+    "WISLIM-054": {
+      "number": 54,
+      "url": "https://github.com/docxology/WISLIM-audit/issues/54",
+      "title": "WISLIM-054: Make appeals real, not procedural",
+      "state": "OPEN"
+    },
+    "WISLIM-055": {
+      "number": 55,
+      "url": "https://github.com/docxology/WISLIM-audit/issues/55",
+      "title": "WISLIM-055: Prevent reputation laundering through certification",
+      "state": "OPEN"
+    },
+    "WISLIM-056": {
+      "number": 56,
+      "url": "https://github.com/docxology/WISLIM-audit/issues/56",
+      "title": "WISLIM-056: Rebuild the thesis and definitional foundation",
+      "state": "OPEN"
+    },
+    "WISLIM-057": {
+      "number": 57,
+      "url": "https://github.com/docxology/WISLIM-audit/issues/57",
+      "title": "WISLIM-057: Replace the formal model and risk metrics with validated instruments",
+      "state": "OPEN"
+    },
+    "WISLIM-058": {
+      "number": 58,
+      "url": "https://github.com/docxology/WISLIM-audit/issues/58",
+      "title": "WISLIM-058: Rebuild the AI-consensus evidence or withdraw it",
+      "state": "OPEN"
+    },
+    "WISLIM-059": {
+      "number": 59,
+      "url": "https://github.com/docxology/WISLIM-audit/issues/59",
+      "title": "WISLIM-059: Redesign governance for legitimacy and separation of powers",
+      "state": "OPEN"
+    },
+    "WISLIM-060": {
+      "number": 60,
+      "url": "https://github.com/docxology/WISLIM-audit/issues/60",
+      "title": "WISLIM-060: Remove coercive loyalty tests and protect dissent",
+      "state": "OPEN"
+    },
+    "WISLIM-061": {
+      "number": 61,
+      "url": "https://github.com/docxology/WISLIM-audit/issues/61",
+      "title": "WISLIM-061: Commission clinical and legal review of high-risk examples",
+      "state": "OPEN"
+    },
+    "WISLIM-062": {
+      "number": 62,
+      "url": "https://github.com/docxology/WISLIM-audit/issues/62",
+      "title": "WISLIM-062: Build a privacy and security regime for ULP records",
+      "state": "OPEN"
+    },
+    "WISLIM-063": {
+      "number": 63,
+      "url": "https://github.com/docxology/WISLIM-audit/issues/63",
+      "title": "WISLIM-063: Separate biological life, sentience, agency, and moral status",
+      "state": "OPEN"
+    },
+    "WISLIM-064": {
+      "number": 64,
+      "url": "https://github.com/docxology/WISLIM-audit/issues/64",
+      "title": "WISLIM-064: Reconcile version labels and licensing",
+      "state": "OPEN"
+    },
+    "WISLIM-065": {
+      "number": 65,
+      "url": "https://github.com/docxology/WISLIM-audit/issues/65",
+      "title": "WISLIM-065: Rebuild evidence quality, citations, and human review",
+      "state": "OPEN"
+    },
+    "WISLIM-066": {
+      "number": 66,
+      "url": "https://github.com/docxology/WISLIM-audit/issues/66",
+      "title": "WISLIM-066: Commission an independent red team and correction policy",
+      "state": "OPEN"
+    }
+  }
+}

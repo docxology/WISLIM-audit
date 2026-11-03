@@ -9,6 +9,7 @@ The validator is intentionally dependency-free. It checks:
 - the 210-row stress-test catalog and its summary counts;
 - every explicit source-line citation is within bounds;
 - required audit, red-team, and evidence modules exist;
+- the 66-issue register, its Markdown records, and the GitHub issue map agree;
 - relative Markdown links resolve.
 
 Run from the repository root:
@@ -20,6 +21,7 @@ from __future__ import annotations
 
 import argparse
 import hashlib
+import importlib.util
 import json
 import re
 import sys
@@ -86,9 +88,16 @@ REQUIRED_FILES = [
     "source/WISLIM-v2.0.1.txt",
     "model/claims.json",
     "model/stress-tests.json",
+    "model/issues.json",
+    "model/issue-map.json",
     "tools/build_stress_catalog.py",
     "tools/validate.py",
+    "scripts/build_issue_register.py",
+    "scripts/sync_issues.py",
     "tests/test_repository.py",
+    "Makefile",
+    ".github/workflows/verify.yml",
+    "docs/audit/README.md",
     "docs/method.md",
     "docs/glossary.md",
     "docs/reproducibility.md",
@@ -124,6 +133,7 @@ REQUIRED_FILES += [f"audit/{i:02d}-{name}.md" for i, name in enumerate([
 ])]
 
 SOURCE_CITATION_RE = re.compile(r"source/WISLIM-v2\.0\.1\.txt:(\d+)")
+SHORTHAND_CITATION_RE = re.compile(r"`:(\d{1,5})`")
 MARKDOWN_LINK_RE = re.compile(r"\[[^\]]*\]\(([^)]+)\)")
 FENCE_RE = re.compile(r"```.*?```", re.DOTALL)
 INLINE_CODE_RE = re.compile(r"`[^`]*`")
@@ -271,6 +281,123 @@ def check_stress(v: Validator) -> None:
     v.equal(dict(severities), summary.get("severity_counts"), "stress severity counts")
 
 
+def load_register_module():
+    path = ROOT / "scripts" / "build_issue_register.py"
+    spec = importlib.util.spec_from_file_location("build_issue_register", path)
+    if spec is None or spec.loader is None:
+        raise RuntimeError(f"cannot load {path}")
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    return module
+
+
+def normalize_passage(text: str) -> str:
+    text = normalize(text)
+    return re.sub(r"(?<=[A-Za-z0-9])-\s+(?=[A-Za-z])", "-", text)
+
+
+def check_issue_register(v: Validator, lines: list[str]) -> None:
+    register = load_register_module()
+    issues = register.load_issues()
+    for error in register.check_all(issues):
+        v.check(False, f"issue register: {error}")
+
+    v.equal(len(issues), 66, "issue count")
+    v.equal(sum(1 for issue in issues if issue["kind"] == "claim"), 35, "claim issue count")
+    v.equal(sum(1 for issue in issues if issue["kind"] == "red-team"), 20, "red-team issue count")
+    v.equal(
+        sum(1 for issue in issues if issue["kind"] == "workstream"),
+        11,
+        "workstream issue count",
+    )
+    data = load_json(ROOT / "model" / "issues.json")
+    v.equal(data.get("counts", {}).get("total"), len(issues), "issue manifest total")
+    v.equal(data.get("counts", {}).get("claims"), 35, "issue manifest claim count")
+    v.equal(data.get("counts", {}).get("red_team"), 20, "issue manifest red-team count")
+    v.equal(data.get("counts", {}).get("workstreams"), 11, "issue manifest workstream count")
+
+    claims = {claim["id"]: claim for claim in load_json(CLAIMS)["claims"]}
+    for issue in issues:
+        path = ROOT / issue["file"]
+        if not path.is_file():
+            continue
+        text = path.read_text(encoding="utf-8")
+        for heading in (
+            "## Quoted passage",
+            "## Summary",
+            "## Evidence",
+            "## Acceptance criteria",
+            "## Tracking",
+        ):
+            v.check(
+                heading in text,
+                f"{issue['id']}: record is missing {heading}",
+            )
+        if issue["kind"] == "claim":
+            v.check(
+                "## Steelman and reply" in text,
+                f"{issue['id']}: claim record is missing the steelman reply",
+            )
+            v.check(
+                bool(str(issue.get("reply", "")).strip()),
+                f"{issue['id']}: claim has no reply text",
+            )
+        v.check(
+            "github_issue:" in text,
+            f"{issue['id']}: record is missing the github_issue field",
+        )
+        quote = str(issue.get("quote", "")).strip()
+        quote_line = issue.get("quote_line")
+        v.check(len(quote) >= 25, f"{issue['id']}: quote is too short")
+        v.check(
+            isinstance(quote_line, int) and 1 <= quote_line <= len(lines),
+            f"{issue['id']}: quote_line is out of bounds",
+        )
+        if isinstance(quote_line, int) and 1 <= quote_line <= len(lines):
+            window = normalize_passage("\n".join(lines[quote_line - 1 : quote_line + 20]))
+            v.check(
+                normalize_passage(quote) in window,
+                f"{issue['id']}: quote does not appear at line {quote_line}",
+            )
+        if issue["kind"] == "claim":
+            claim = claims.get(issue["source_id"])
+            v.check(claim is not None, f"{issue['id']}: no matching claim record")
+            if claim:
+                distance = abs(quote_line - claim["line"]) if isinstance(quote_line, int) else 99
+                v.check(
+                    distance <= 8,
+                    f"{issue['id']}: quote starts {distance} lines from claim line {claim['line']}",
+                )
+                v.equal(issue["severity"], claim["severity"], f"{issue['id']}: severity")
+                evidence_text = " ".join(issue["evidence"])
+                v.check(
+                    f"`{claim['verdict']}`" in evidence_text,
+                    f"{issue['id']}: evidence does not carry verdict {claim['verdict']!r}",
+                )
+
+    mapping = register.load_map()
+    v.equal(len(mapping), len(issues), "GitHub issue map entries")
+    numbers = [entry.get("number") for entry in mapping.values()]
+    v.check(
+        all(isinstance(number, int) and number > 0 for number in numbers),
+        "GitHub issue map numbers must be positive integers",
+    )
+    v.check(
+        len(set(numbers)) == len(numbers),
+        "GitHub issue map numbers must be unique",
+    )
+    for issue in issues:
+        entry = mapping.get(issue["id"])
+        if not isinstance(entry, dict):
+            continue
+        number = entry.get("number")
+        v.check(
+            isinstance(number, int)
+            and entry.get("url", "").endswith(f"/issues/{number}"),
+            f"{issue['id']}: GitHub issue URL does not match its number",
+        )
+
+
 def iter_markdown() -> list[Path]:
     return sorted(
         path
@@ -288,6 +415,13 @@ def check_citations(v: Validator, line_count: int) -> None:
             v.check(
                 1 <= line <= line_count,
                 f"{rel}: source citation line {line} is out of bounds (1..{line_count})",
+            )
+        for match in SHORTHAND_CITATION_RE.finditer(text):
+            line = int(match.group(1))
+            rel = path.relative_to(ROOT)
+            v.check(
+                1 <= line <= line_count,
+                f"{rel}: shorthand citation :{line} is out of bounds (1..{line_count})",
             )
 
 
@@ -327,14 +461,24 @@ def check_content(v: Validator) -> None:
     readme = (ROOT / "README.md").read_text(encoding="utf-8")
     v.check("revise, do not adopt" in readme, "README is missing the audit verdict")
     v.check("13,255" in readme, "README is missing the source line count")
+    v.check("docs/audit/" in readme, "README is missing the issue register")
+    v.check("66 records" in readme, "README is missing the issue count")
+    v.check("make verify" in readme, "README is missing the verification command")
     agents = (ROOT / "AGENTS.md").read_text(encoding="utf-8")
     v.check("source is immutable" in agents.lower(), "AGENTS is missing source immutability")
+    v.check("WISLIM-001" in agents, "AGENTS is missing the stable issue ID rule")
+    v.check("make register" in agents, "AGENTS is missing the register workflow")
     provenance = (ROOT / "evidence" / "provenance.md").read_text(encoding="utf-8")
     v.check("splitlines" in provenance, "provenance is missing the line-numbering caveat")
     v.check("13,544" in provenance, "provenance is missing the splitlines count")
     v.check(
         "public domain" in provenance.lower(),
         "provenance is missing the license ambiguity",
+    )
+    reproducibility = (ROOT / "docs" / "reproducibility.md").read_text(encoding="utf-8")
+    v.check(
+        "make issues" in reproducibility,
+        "reproducibility is missing the GitHub mirror workflow",
     )
 
 
@@ -354,6 +498,7 @@ def main(argv: list[str] | None = None) -> int:
         check_claims(v, lines)
         check_stress(v)
         check_citations(v, len(lines))
+    check_issue_register(v, lines)
     check_required(v)
     check_links(v)
     check_content(v)
@@ -373,6 +518,7 @@ def main(argv: list[str] | None = None) -> int:
         print(f"  source: {metadata['text_lines']:,} lines, {metadata['text_words']:,} words")
         print(f"  claims: {len(CLAIM_IDS)}")
         print(f"  stress tests: {len(STRESS_IDS)}")
+        print("  audit issues: 66")
         print(f"  markdown files: {len(iter_markdown())}")
         if v.warnings:
             print("Warnings:")

@@ -31,6 +31,11 @@ Foundational Proof for Alignment, Identity, and the Cure of Needless Suffering*
 
 ## What the audit found
 
+The ten findings below are the headline verdict. Every finding is decomposed
+into reproducible issues in `docs/audit/`: 66 records, each with a verbatim
+source quotation, evidence, a steelman reply for claim issues, a required
+repair, and acceptance criteria. Each record is mirrored to a GitHub issue.
+
 | # | Finding | Severity | Where |
 |---|---|---|---|
 | 1 | The slogan is not a single proposition; the paper proves a different, weaker claim. | Critical | `audit/02-logical-form-and-ambiguity.md` |
@@ -64,25 +69,39 @@ strong metaphysical and governance claims.
 | `audit/` | Modular argument-by-argument audit, steelman, failure modes, and repair roadmap. |
 | `red-team/` | Threat model, adversarial scenarios, capture/gaming analysis, and abuse cases. |
 | `evidence/` | PhilPapers record, provenance, citation audit, and AI-letter audit. |
+| `model/issues.json` | Canonical 66-issue register (35 claims, 20 red-team, 11 workstreams). |
+| `docs/audit/` | One Markdown record per issue plus the generated register index. |
+| `scripts/` | Register builder and GitHub issue mirror tooling. |
 | `tools/` | Standard-library validation and indexing tools. |
-| `tests/` | Pytest-compatible checks over the repository's own claims and links. |
+| `tests/` | Standard-library checks over the repository's own claims, quotes, and links. |
 | `docs/` | Method, glossary, claim index, stress-test index, and reproducibility notes. |
 
 The intended reading order is `audit/00-verdict.md` → `audit/01-scope-and-method.md`
-→ the numbered audit modules → `red-team/README.md` → `audit/14-repair-roadmap.md`.
+→ the numbered audit modules → `red-team/README.md` → `audit/14-repair-roadmap.md`
+→ `docs/audit/README.md`.
 
 ## Reproduce
 
 ```sh
+make verify                    # validator, register check, and unittest suite
+make issues-check              # verify the GitHub mirror (requires gh auth)
+```
+
+The equivalent explicit commands are:
+
+```sh
 python3 tools/validate.py
+python3 scripts/build_issue_register.py --check
 python3 -m unittest discover -s tests -v
-# optional, if pytest is installed:
-python3 -m pytest -q
+python3 scripts/sync_issues.py --check
 ```
 
 The validator and tests need only the Python standard library. They check source
-checksums, claim IDs, source-line bounds, the 210-test catalog, and internal
-Markdown links.
+checksums, claim IDs, source-line bounds, verbatim quotations, the 210-test
+catalog, the 66-issue register, the GitHub issue map, and internal Markdown
+links. GitHub Actions runs `make verify` on every push and pull request.
+Rebuilding the register or the GitHub mirror needs `gh`; validation of the local
+tree does not.
 
 ## Status and limitations
 
