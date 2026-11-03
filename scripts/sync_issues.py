@@ -226,8 +226,10 @@ def index_remote(remote: list[dict[str, Any]]) -> dict[str, dict[str, Any]]:
     return indexed
 
 
-def ensure_labels(repo: str, dry_run: bool) -> None:
+def ensure_labels(repo: str, dry_run: bool, existing: set[str]) -> None:
     for name in sorted(LABELS):
+        if name in existing:
+            continue
         color, description = LABELS[name]
         if dry_run:
             print(f"would ensure label {name}")
@@ -278,8 +280,8 @@ def sync(repo: str, issues: list[dict[str, Any]], dry_run: bool) -> int:
     data = load_store()
     registry: dict[str, dict[str, Any]] = data.setdefault("issues", {})
 
-    ensure_labels(repo, dry_run)
     if dry_run:
+        ensure_labels(repo, True, set())
         for issue in issues:
             body = render_body(issue, {}, repo)
             print(f"would create {issue['id']}: {issue['title']} ({len(body)} chars)")
@@ -288,6 +290,13 @@ def sync(repo: str, issues: list[dict[str, Any]], dry_run: bool) -> int:
 
     remote = remote_issues(repo)
     by_id = index_remote(remote)
+
+    # Labels already visible on the issues need no REST label calls, which
+    # have a separate and much smaller rate budget than issue reads/edits.
+    existing_labels = {
+        name for item in remote for name in item.get("label_names", [])
+    }
+    ensure_labels(repo, False, existing_labels)
 
     # 1. Create or adopt every issue, in stable ID order.
     for issue in issues:
@@ -432,12 +441,8 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--repo", default=None, help="override the GitHub repository")
     args = parser.parse_args(argv)
 
-    try:
-        gh("auth", "status")
-    except (GhError, FileNotFoundError) as error:
-        print(f"FAIL: gh is not available or not authenticated: {error}", file=sys.stderr)
-        return 1
-
+    # Do not gate on `gh auth status`: it can report a stale keyring token while
+    # authenticated API calls still work. Repository access is the real test.
     issues = load_issues()
     errors = check_manifest(issues)
     if errors:
@@ -449,8 +454,8 @@ def main(argv: list[str] | None = None) -> int:
     repo = args.repo or repo_slug()
     try:
         gh("repo", "view", repo, "--json", "name", "--jq", ".name")
-    except GhError as error:
-        print(f"FAIL: cannot access {repo}: {error}", file=sys.stderr)
+    except (GhError, FileNotFoundError) as error:
+        print(f"FAIL: cannot access {repo} with gh: {error}", file=sys.stderr)
         return 1
 
     if args.check:
