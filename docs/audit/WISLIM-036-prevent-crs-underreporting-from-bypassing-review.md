@@ -7,7 +7,7 @@ severity: critical
 workstream: governance
 labels: [audit, red-team, severity:critical, workstream:governance]
 source_lines: "n/a (red-team scenario)"
-quote_line: 2158
+quote_lines: [2158, 2186]
 audit_modules: [red-team/adversarial-scenarios.md]
 related: [WISLIM-020, WISLIM-057]
 github_issue: 36
@@ -20,13 +20,26 @@ github_issue: 36
 > **Audit modules:** red-team/adversarial-scenarios.md  
 > **Source lines:** n/a (red-team scenario)
 
-## Quoted passage
+## Publication reference
+
+David Wishengrad, *Life is Most Important in Life is The Most Important Truth in Life: A Foundational Proof for Alignment, Identity, and the Cure of Needless Suffering*, Version 2.0.1 (4 February 2026), 289 pages. DOI [`10.21428/4831231e.8c4c6c8f`](https://doi.org/10.21428/4831231e.8c4c6c8f); PhilPapers [`WISLIM`](https://philpapers.org/rec/WISLIM).
+
+Source of record: `source/WISLIM-v2.0.1.pdf` (SHA-256 `7716807d081e497364a14475ef6f8a6b06e6cabaa6858749bb17e6a904e7dfcd`). Quotations use the newline-delimited text at `source/WISLIM-v2.0.1.txt` (13,255 lines), extracted with `pdftotext -layout`.
+
+> **Audit status:** critical first pass, not peer review. Severity and
+> remediation are provisional judgments, not safety certification.
+
+## Primary quotations
 
 > Combined Risk Score (CRS): CRS = IS × II × log(ID) - Determines verification tier and latency budgets
 >
 > — `source/WISLIM-v2.0.1.txt:2158`
 
-The three inputs are self-reported, and the paper provides no independent feed or audit.
+**Audit note.** The three inputs are self-reported, and the paper provides no independent feed or audit.
+
+> Metric gaming: Underreporting scope/intensity/duration; Goodharting ΔA
+>
+> — `source/WISLIM-v2.0.1.txt:2186`
 
 ## Summary
 
@@ -46,7 +59,11 @@ The hospital supplies the three CRS inputs that determine its review tier, and n
 
 The score is only as good as its inputs. Self-reporting makes the review tier an honor system, and an honor system cannot carry decisions that may kill people.
 
-## Required repair
+## Proposed remediation
+
+These are options for the author's consideration, not requirements. The
+audit does not settle the underlying normative questions, so this list is
+a starting point rather than a prescription.
 
 1. Independent data feeds
 2. Random audits
@@ -54,7 +71,10 @@ The score is only as good as its inputs. Self-reporting makes the review tier an
 4. Criminal liability for false reporting
 5. Publish aggregate CRS distributions.
 
-## Acceptance criteria
+## Suggested checks for reviewers
+
+If the author chooses to revise, these checks would help a reviewer test
+whether the revision addresses the issue. They are not deployment gates.
 
 - [ ] An independent data feed or random audit detects a seeded 20% underreport of IS, II, or ID before the decision is approved.
 - [ ] The control is exercised against the scenario in a red-team test.

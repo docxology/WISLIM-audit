@@ -7,7 +7,7 @@ severity: critical
 workstream: formal
 labels: [audit, claim, severity:critical, workstream:formal]
 source_lines: "13217"
-quote_line: 13217
+quote_lines: [13217, 13229]
 audit_modules: [audit/08-formal-and-scientific-claims.md]
 related: [WISLIM-002, WISLIM-011, WISLIM-031]
 github_issue: 23
@@ -20,11 +20,24 @@ github_issue: 23
 > **Audit modules:** audit/08-formal-and-scientific-claims.md  
 > **Source lines:** 13217
 
-## Quoted passage
+## Publication reference
+
+David Wishengrad, *Life is Most Important in Life is The Most Important Truth in Life: A Foundational Proof for Alignment, Identity, and the Cure of Needless Suffering*, Version 2.0.1 (4 February 2026), 289 pages. DOI [`10.21428/4831231e.8c4c6c8f`](https://doi.org/10.21428/4831231e.8c4c6c8f); PhilPapers [`WISLIM`](https://philpapers.org/rec/WISLIM).
+
+Source of record: `source/WISLIM-v2.0.1.pdf` (SHA-256 `7716807d081e497364a14475ef6f8a6b06e6cabaa6858749bb17e6a904e7dfcd`). Quotations use the newline-delimited text at `source/WISLIM-v2.0.1.txt` (13,255 lines), extracted with `pdftotext -layout`.
+
+> **Audit status:** critical first pass, not peer review. Severity and
+> remediation are provisional judgments, not safety certification.
+
+## Primary quotations
 
 > That brings us through 210 frameworks across logic, philosophy, physics, decision theory, law, engineering, networks, AI safety, and math. Each one converges on the same inescapable conclusion:
 >
 > — `source/WISLIM-v2.0.1.txt:13217`
+
+> No legitimate rebuttal has ever been presented. No one is sharing a higher truth.
+>
+> — `source/WISLIM-v2.0.1.txt:13229`
 
 ## Summary
 
@@ -46,16 +59,23 @@ The 210 tests are presented as the empirical and formal proof. If they are analo
 
 The reply is that the 210 tests are a catalogue of convergent arguments, not formal proofs. The paper calls them theorem-level and says each converges; a catalogue of analogies is not convergence, and the word 'framework' is doing equivocal work.
 
-## Required repair
+## Proposed remediation
+
+These are options for the author's consideration, not requirements. The
+audit does not settle the underlying normative questions, so this list is
+a starting point rather than a prescription.
 
 1. Replace with a small set of valid arguments and empirical tests; label analogies as analogies.
 
-## Acceptance criteria
+## Suggested checks for reviewers
+
+If the author chooses to revise, these checks would help a reviewer test
+whether the revision addresses the issue. They are not deployment gates.
 
 - [ ] The manuscript resolves the defect in `C23` or removes the claim from the thesis.
-- [ ] The repair is documented in `audit/08-formal-and-scientific-claims.md` with a source anchor and reviewer sign-off.
-- [ ] The claim registry entry `C23` is updated from `false` to a reviewed verdict.
-- [ ] A regression check or reviewer sign-off covers the change.
+- [ ] If the author revises, the revision note in `audit/08-formal-and-scientific-claims.md` records the source anchor and any reviewer sign-off.
+- [ ] After review, the claim registry entry `C23` records the outcome.
+- [ ] Where practical, a regression check or reviewer sign-off covers the change.
 
 ## Related issues
 

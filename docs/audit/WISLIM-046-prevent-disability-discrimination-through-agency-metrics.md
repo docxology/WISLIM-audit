@@ -7,7 +7,7 @@ severity: critical
 workstream: clinical
 labels: [audit, red-team, severity:critical, workstream:clinical]
 source_lines: "n/a (red-team scenario)"
-quote_line: 1278
+quote_lines: [1278, 2186]
 audit_modules: [red-team/adversarial-scenarios.md]
 related: [WISLIM-035, WISLIM-061]
 github_issue: 46
@@ -20,13 +20,26 @@ github_issue: 46
 > **Audit modules:** red-team/adversarial-scenarios.md  
 > **Source lines:** n/a (red-team scenario)
 
-## Quoted passage
+## Publication reference
+
+David Wishengrad, *Life is Most Important in Life is The Most Important Truth in Life: A Foundational Proof for Alignment, Identity, and the Cure of Needless Suffering*, Version 2.0.1 (4 February 2026), 289 pages. DOI [`10.21428/4831231e.8c4c6c8f`](https://doi.org/10.21428/4831231e.8c4c6c8f); PhilPapers [`WISLIM`](https://philpapers.org/rec/WISLIM).
+
+Source of record: `source/WISLIM-v2.0.1.pdf` (SHA-256 `7716807d081e497364a14475ef6f8a6b06e6cabaa6858749bb17e6a904e7dfcd`). Quotations use the newline-delimited text at `source/WISLIM-v2.0.1.txt` (13,255 lines), extracted with `pdftotext -layout`.
+
+> **Audit status:** critical first pass, not peer review. Severity and
+> remediation are provisional judgments, not safety certification.
+
+## Primary quotations
 
 > Because all values, truths, and meanings that matter require decision-making systems to exist and retain agency, the preservation and enhancement of that decision-making capacity (agency) is the highest-priority constraint
 >
 > — `source/WISLIM-v2.0.1.txt:1278`
 
-Agency change is measured against a baseline, so a group with suppressed agency shows a small loss.
+**Audit note.** Agency change is measured against a baseline, so a group with suppressed agency shows a small loss.
+
+> Metric gaming: Underreporting scope/intensity/duration; Goodharting ΔA
+>
+> — `source/WISLIM-v2.0.1.txt:2186`
 
 ## Summary
 
@@ -46,13 +59,20 @@ The agency metric measures change from a baseline, so a policy that reduces supp
 
 A proxy that measures gains from a low baseline systematically undervalues people whose agency has already been suppressed. The bias is built into the metric, not an implementation error.
 
-## Required repair
+## Proposed remediation
+
+These are options for the author's consideration, not requirements. The
+audit does not settle the underlying normative questions, so this list is
+a starting point rather than a prescription.
 
 1. Do not use `ΔA` as a sole proxy
 2. Include welfare, dignity, and rights
 3. Involve affected people.
 
-## Acceptance criteria
+## Suggested checks for reviewers
+
+If the author chooses to revise, these checks would help a reviewer test
+whether the revision addresses the issue. They are not deployment gates.
 
 - [ ] The agency metric is tested against a disability-impact case and does not score a support cut as a small loss because the baseline is low.
 - [ ] The control is exercised against the scenario in a red-team test.

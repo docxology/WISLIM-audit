@@ -19,11 +19,13 @@ import json
 import re
 import sys
 from collections import Counter
+from datetime import date
 from pathlib import Path
 from typing import Any
 
 ROOT = Path(__file__).resolve().parents[1]
 ISSUES = ROOT / "model" / "issues.json"
+METADATA = ROOT / "source" / "metadata.json"
 OUT_DIR = ROOT / "docs" / "audit"
 INDEX = OUT_DIR / "README.md"
 MAP = ROOT / "model" / "issue-map.json"
@@ -43,8 +45,7 @@ REQUIRED_FIELDS = (
     "workstream",
     "labels",
     "source_lines",
-    "quote",
-    "quote_line",
+    "quotes",
     "audit_modules",
     "summary",
     "why",
@@ -72,6 +73,39 @@ def load_issues() -> list[dict[str, Any]]:
     with ISSUES.open(encoding="utf-8") as handle:
         data = json.load(handle)
     return data["issues"]
+
+
+def load_metadata() -> dict[str, Any]:
+    with METADATA.open(encoding="utf-8") as handle:
+        return json.load(handle)
+
+
+def render_publication(metadata: dict[str, Any]) -> list[str]:
+    work = metadata["work"]
+    doi = metadata["philpapers"]["doi"]
+    philpapers = metadata["philpapers"]["url"]
+    pdf_sha = metadata["pdf_sha256"]
+    pages = metadata["pages"]
+    lines = metadata["text_lines"]
+    published = date.fromisoformat(metadata["date"])
+    date_text = f"{published.day} {published.strftime('%B')} {published.year}"
+    return [
+        "## Publication reference",
+        "",
+        f"David Wishengrad, *{work}*, Version {metadata['version']} "
+        f"({date_text}), {pages} pages. DOI "
+        f"[`{doi}`](https://doi.org/{doi}); PhilPapers "
+        f"[`{metadata['philpapers']['id']}`]({philpapers}).",
+        "",
+        f"Source of record: `source/WISLIM-v2.0.1.pdf` (SHA-256 `{pdf_sha}`). "
+        f"Quotations use the newline-delimited text at "
+        f"`source/WISLIM-v2.0.1.txt` ({lines:,} lines), extracted with "
+        "`pdftotext -layout`.",
+        "",
+        "> **Audit status:** critical first pass, not peer review. Severity and",
+        "> remediation are provisional judgments, not safety certification.",
+        "",
+    ]
 
 
 def issue_by_id(issues: list[dict[str, Any]]) -> dict[str, dict[str, Any]]:
@@ -124,14 +158,24 @@ def check_manifest(issues: list[dict[str, Any]]) -> list[str]:
                 errors.append(f"{iid}: related contains itself")
         if not isinstance(issue.get("labels"), list) or not issue["labels"]:
             errors.append(f"{iid}: labels must be a non-empty list")
-        for key in ("summary", "why", "quote"):
+        for key in ("summary", "why"):
             if not str(issue.get(key, "")).strip():
                 errors.append(f"{iid}: {key} is empty")
-        quote_line = issue.get("quote_line")
-        if not isinstance(quote_line, int) or quote_line < 1:
-            errors.append(f"{iid}: quote_line must be a positive integer")
-        if "quote_note" in issue and not isinstance(issue["quote_note"], str):
-            errors.append(f"{iid}: quote_note must be a string")
+        quotes = issue.get("quotes")
+        if not isinstance(quotes, list) or not quotes:
+            errors.append(f"{iid}: quotes must be a non-empty list")
+        else:
+            for index, quote in enumerate(quotes):
+                if not isinstance(quote, dict):
+                    errors.append(f"{iid}: quotes[{index}] must be an object")
+                    continue
+                if not str(quote.get("text", "")).strip():
+                    errors.append(f"{iid}: quotes[{index}].text is empty")
+                line = quote.get("line")
+                if not isinstance(line, int) or line < 1:
+                    errors.append(f"{iid}: quotes[{index}].line must be a positive integer")
+                if "note" in quote and not isinstance(quote["note"], str):
+                    errors.append(f"{iid}: quotes[{index}].note must be a string")
         if issue.get("kind") == "claim" and not str(issue.get("reply", "")).strip():
             errors.append(f"{iid}: claim issues need a steelman reply")
         for key in ("evidence", "repair", "acceptance"):
@@ -169,10 +213,16 @@ def sentence_case(text: str) -> str:
     return text
 
 
-def render_file(issue: dict[str, Any], number: int | None = None) -> str:
+def render_file(
+    issue: dict[str, Any],
+    number: int | None = None,
+    metadata: dict[str, Any] | None = None,
+) -> str:
+    metadata = metadata or load_metadata()
     labels = ", ".join(issue["labels"])
     modules = ", ".join(issue["audit_modules"]) or "n/a"
     related = ", ".join(issue["related"]) or "none"
+    quote_lines = ", ".join(str(quote["line"]) for quote in issue["quotes"])
     github = (
         f"[#{number}]({REPO_URL}/issues/{number})"
         if number
@@ -188,7 +238,7 @@ def render_file(issue: dict[str, Any], number: int | None = None) -> str:
         f"workstream: {issue['workstream']}",
         f"labels: [{labels}]",
         f'source_lines: "{issue["source_lines"]}"',
-        f"quote_line: {issue['quote_line']}",
+        f"quote_lines: [{quote_lines}]",
         f"audit_modules: [{modules}]",
         f"related: [{related}]",
         f"github_issue: {number if number else 'null'}",
@@ -202,16 +252,19 @@ def render_file(issue: dict[str, Any], number: int | None = None) -> str:
         f"> **Audit modules:** {modules}  ",
         f"> **Source lines:** {issue['source_lines']}",
         "",
-        "## Quoted passage",
-        "",
-        f"> {issue['quote']}",
-        ">",
-        f"> — `source/WISLIM-v2.0.1.txt:{issue['quote_line']}`",
-        "",
     ]
-    note = str(issue.get("quote_note", "")).strip()
-    if note:
-        lines += [note, ""]
+    lines += render_publication(metadata)
+    lines += ["## Primary quotations", ""]
+    for quote in issue["quotes"]:
+        lines += [
+            f"> {quote['text']}",
+            ">",
+            f"> — `source/WISLIM-v2.0.1.txt:{quote['line']}`",
+            "",
+        ]
+        note = str(quote.get("note", "")).strip()
+        if note:
+            lines += [f"**Audit note.** {note}", ""]
     lines += [
         "## Summary",
         "",
@@ -225,10 +278,25 @@ def render_file(issue: dict[str, Any], number: int | None = None) -> str:
     lines += ["", "## Why it matters", "", issue["why"].strip()]
     if issue.get("reply"):
         lines += ["", "## Steelman and reply", "", issue["reply"].strip()]
-    lines += ["", "## Required repair", ""]
+    lines += [
+        "",
+        "## Proposed remediation",
+        "",
+        "These are options for the author's consideration, not requirements. The",
+        "audit does not settle the underlying normative questions, so this list is",
+        "a starting point rather than a prescription.",
+        "",
+    ]
     for index, item in enumerate(issue["repair"], 1):
         lines.append(f"{index}. {sentence_case(item)}")
-    lines += ["", "## Acceptance criteria", ""]
+    lines += [
+        "",
+        "## Suggested checks for reviewers",
+        "",
+        "If the author chooses to revise, these checks would help a reviewer test",
+        "whether the revision addresses the issue. They are not deployment gates.",
+        "",
+    ]
     for item in issue["acceptance"]:
         lines.append(f"- [ ] {item.strip()}")
     lines += [
@@ -279,8 +347,9 @@ def render_index(issues: list[dict[str, Any]]) -> str:
         f"| Total | {len(issues)} |",
         "",
         "Source coverage: `C01`–`C35` (35 claims), `AS01`–`AS20` (20 red-team",
-        "scenarios), and `WS01`–`WS11` (11 workstreams). Every issue carries a",
-        "verbatim source quotation checked against `source/WISLIM-v2.0.1.txt`.",
+        "scenarios), and `WS01`–`WS11` (11 workstreams). Every issue carries at",
+        "least one verbatim primary quotation from the publication, checked against",
+        "`source/WISLIM-v2.0.1.txt`, plus a full publication reference.",
         "",
         "| Severity | Count |",
         "|---|---:|",
@@ -331,16 +400,21 @@ def number_for(issue: dict[str, Any], mapping: dict[str, Any]) -> int | None:
 
 def write_all(issues: list[dict[str, Any]]) -> None:
     mapping = load_map()
+    metadata = load_metadata()
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     for issue in issues:
         path = expected_file(issue)
-        path.write_text(render_file(issue, number_for(issue, mapping)), encoding="utf-8")
+        path.write_text(
+            render_file(issue, number_for(issue, mapping), metadata),
+            encoding="utf-8",
+        )
     INDEX.write_text(render_index(issues), encoding="utf-8")
 
 
 def check_all(issues: list[dict[str, Any]]) -> list[str]:
     errors = check_manifest(issues)
     mapping = load_map()
+    metadata = load_metadata()
     numbers: dict[int, str] = {}
     for issue_id, entry in mapping.items():
         if not isinstance(entry, dict) or not isinstance(entry.get("number"), int):
@@ -362,7 +436,7 @@ def check_all(issues: list[dict[str, Any]]) -> list[str]:
             errors.append(f"{issue['id']}: missing file {path.relative_to(ROOT)}")
             continue
         actual = path.read_text(encoding="utf-8")
-        expected = render_file(issue, number_for(issue, mapping))
+        expected = render_file(issue, number_for(issue, mapping), metadata)
         if actual != expected:
             errors.append(f"{issue['id']}: file is out of date; run make register")
     if not INDEX.is_file():

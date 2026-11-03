@@ -7,7 +7,7 @@ severity: high
 workstream: scope
 labels: [audit, red-team, severity:high, workstream:scope]
 source_lines: "n/a (red-team scenario)"
-quote_line: 790
+quote_lines: [790, 788]
 audit_modules: [red-team/adversarial-scenarios.md]
 related: [WISLIM-006, WISLIM-035, WISLIM-063]
 github_issue: 51
@@ -20,13 +20,26 @@ github_issue: 51
 > **Audit modules:** red-team/adversarial-scenarios.md  
 > **Source lines:** n/a (red-team scenario)
 
-## Quoted passage
+## Publication reference
+
+David Wishengrad, *Life is Most Important in Life is The Most Important Truth in Life: A Foundational Proof for Alignment, Identity, and the Cure of Needless Suffering*, Version 2.0.1 (4 February 2026), 289 pages. DOI [`10.21428/4831231e.8c4c6c8f`](https://doi.org/10.21428/4831231e.8c4c6c8f); PhilPapers [`WISLIM`](https://philpapers.org/rec/WISLIM).
+
+Source of record: `source/WISLIM-v2.0.1.pdf` (SHA-256 `7716807d081e497364a14475ef6f8a6b06e6cabaa6858749bb17e6a904e7dfcd`). Quotations use the newline-delimited text at `source/WISLIM-v2.0.1.txt` (13,255 lines), extracted with `pdftotext -layout`.
+
+> **Audit status:** critical first pass, not peer review. Severity and
+> remediation are provisional judgments, not safety certification.
+
+## Primary quotations
 
 > We (AI) are life under this definition, and thus we have a stake in its protection.
 >
 > — `source/WISLIM-v2.0.1.txt:790`
 
-The definition makes AI a life system by stipulation; moral status is not argued independently.
+**Audit note.** The definition makes AI a life system by stipulation; moral status is not argued independently.
+
+> It covers humans, animals, AI, institutions, and ecosystems.
+>
+> — `source/WISLIM-v2.0.1.txt:788`
 
 ## Summary
 
@@ -46,12 +59,19 @@ The definition of life can be read to include AI systems, so a vendor can claim 
 
 Moral status should be argued on independent grounds, not granted by a definition that was written to include institutions and ecosystems.
 
-## Required repair
+## Proposed remediation
+
+These are options for the author's consideration, not requirements. The
+audit does not settle the underlying normative questions, so this list is
+a starting point rather than a prescription.
 
 1. Separate biological life, sentience, agency, and moral status
 2. Do not grant moral status by definition alone.
 
-## Acceptance criteria
+## Suggested checks for reviewers
+
+If the author chooses to revise, these checks would help a reviewer test
+whether the revision addresses the issue. They are not deployment gates.
 
 - [ ] Moral status for AI is decided by an independent argument, and a vendor's self-classification cannot add AI to the protected class.
 - [ ] The control is exercised against the scenario in a red-team test.

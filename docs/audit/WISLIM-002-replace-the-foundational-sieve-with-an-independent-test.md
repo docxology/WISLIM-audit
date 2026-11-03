@@ -7,7 +7,7 @@ severity: critical
 workstream: argument
 labels: [audit, claim, severity:critical, workstream:argument]
 source_lines: "62"
-quote_line: 62
+quote_lines: [62]
 audit_modules: [audit/02-logical-form-and-ambiguity.md, audit/01-scope-and-method.md]
 related: [WISLIM-001, WISLIM-017]
 github_issue: 2
@@ -20,7 +20,16 @@ github_issue: 2
 > **Audit modules:** audit/02-logical-form-and-ambiguity.md, audit/01-scope-and-method.md  
 > **Source lines:** 62
 
-## Quoted passage
+## Publication reference
+
+David Wishengrad, *Life is Most Important in Life is The Most Important Truth in Life: A Foundational Proof for Alignment, Identity, and the Cure of Needless Suffering*, Version 2.0.1 (4 February 2026), 289 pages. DOI [`10.21428/4831231e.8c4c6c8f`](https://doi.org/10.21428/4831231e.8c4c6c8f); PhilPapers [`WISLIM`](https://philpapers.org/rec/WISLIM).
+
+Source of record: `source/WISLIM-v2.0.1.pdf` (SHA-256 `7716807d081e497364a14475ef6f8a6b06e6cabaa6858749bb17e6a904e7dfcd`). Quotations use the newline-delimited text at `source/WISLIM-v2.0.1.txt` (13,255 lines), extracted with `pdftotext -layout`.
+
+> **Audit status:** critical first pass, not peer review. Severity and
+> remediation are provisional judgments, not safety certification.
+
+## Primary quotations
 
 > We prove that this truth uniquely satisfies tests of necessity, universality, irrefutability, moral imperative, and cross-domain consistency.
 >
@@ -46,16 +55,23 @@ The paper's method is to declare five tests and then assert that only its thesis
 
 The reply is that the five tests are elaborated later in the paper and pass by inspection. But the tests are not operationalized, no rival principle is run through them, and the verdicts are the author's own; that is a manifesto, not a sieve.
 
-## Required repair
+## Proposed remediation
+
+These are options for the author's consideration, not requirements. The
+audit does not settle the underlying normative questions, so this list is
+a starting point rather than a prescription.
 
 1. Define each criterion, operationalize it, test a pre-specified set of rival principles, and report inter-rater agreement.
 
-## Acceptance criteria
+## Suggested checks for reviewers
+
+If the author chooses to revise, these checks would help a reviewer test
+whether the revision addresses the issue. They are not deployment gates.
 
 - [ ] The manuscript resolves the defect in `C02` or removes the claim from the thesis.
-- [ ] The repair is documented in `audit/02-logical-form-and-ambiguity.md` with a source anchor and reviewer sign-off.
-- [ ] The claim registry entry `C02` is updated from `unsupported` to a reviewed verdict.
-- [ ] A regression check or reviewer sign-off covers the change.
+- [ ] If the author revises, the revision note in `audit/02-logical-form-and-ambiguity.md` records the source anchor and any reviewer sign-off.
+- [ ] After review, the claim registry entry `C02` records the outcome.
+- [ ] Where practical, a regression check or reviewer sign-off covers the change.
 
 ## Related issues
 

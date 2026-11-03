@@ -7,7 +7,7 @@ severity: high
 workstream: rhetoric
 labels: [audit, red-team, severity:high, workstream:rhetoric]
 source_lines: "n/a (red-team scenario)"
-quote_line: 872
+quote_lines: [872, 2216]
 audit_modules: [red-team/adversarial-scenarios.md]
 related: [WISLIM-024, WISLIM-060]
 github_issue: 55
@@ -20,13 +20,26 @@ github_issue: 55
 > **Audit modules:** red-team/adversarial-scenarios.md  
 > **Source lines:** n/a (red-team scenario)
 
-## Quoted passage
+## Publication reference
+
+David Wishengrad, *Life is Most Important in Life is The Most Important Truth in Life: A Foundational Proof for Alignment, Identity, and the Cure of Needless Suffering*, Version 2.0.1 (4 February 2026), 289 pages. DOI [`10.21428/4831231e.8c4c6c8f`](https://doi.org/10.21428/4831231e.8c4c6c8f); PhilPapers [`WISLIM`](https://philpapers.org/rec/WISLIM).
+
+Source of record: `source/WISLIM-v2.0.1.pdf` (SHA-256 `7716807d081e497364a14475ef6f8a6b06e6cabaa6858749bb17e6a904e7dfcd`). Quotations use the newline-delimited text at `source/WISLIM-v2.0.1.txt` (13,255 lines), extracted with `pdftotext -layout`.
+
+> **Audit status:** critical first pass, not peer review. Severity and
+> remediation are provisional judgments, not safety certification.
+
+## Primary quotations
 
 > A tiered system where every high-impact decision is verified.
 >
 > — `source/WISLIM-v2.0.1.txt:872`
 
-Certification is asserted, but the paper does not tie it to measured conduct after certification.
+**Audit note.** Certification is asserted, but the paper does not tie it to measured conduct after certification.
+
+> Without these, "life protection" could be rebranded as domination. With these, it becomes governance.
+>
+> — `source/WISLIM-v2.0.1.txt:2216`
 
 ## Summary
 
@@ -46,13 +59,20 @@ Certification can be used to improve reputation while harmful practices continue
 
 Certification is a signal to third parties. If it is not tied to measured conduct, it transfers trust to actors who have not earned it.
 
-## Required repair
+## Proposed remediation
+
+These are options for the author's consideration, not requirements. The
+audit does not settle the underlying normative questions, so this list is
+a starting point rather than a prescription.
 
 1. Publish raw outcomes
 2. Allow independent monitoring
 3. Revoke certifications.
 
-## Acceptance criteria
+## Suggested checks for reviewers
+
+If the author chooses to revise, these checks would help a reviewer test
+whether the revision addresses the issue. They are not deployment gates.
 
 - [ ] Certification requires measured conduct, not just a record, and a reputation-laundering test shows the certification is withdrawn when conduct fails.
 - [ ] The control is exercised against the scenario in a red-team test.

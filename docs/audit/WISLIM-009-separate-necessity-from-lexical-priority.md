@@ -7,7 +7,7 @@ severity: high
 workstream: argument
 labels: [audit, claim, severity:high, workstream:argument]
 source_lines: "3262"
-quote_line: 3262
+quote_lines: [3262]
 audit_modules: [audit/04-necessity-to-priority.md]
 related: [WISLIM-003, WISLIM-008, WISLIM-010]
 github_issue: 9
@@ -20,7 +20,16 @@ github_issue: 9
 > **Audit modules:** audit/04-necessity-to-priority.md  
 > **Source lines:** 3262
 
-## Quoted passage
+## Publication reference
+
+David Wishengrad, *Life is Most Important in Life is The Most Important Truth in Life: A Foundational Proof for Alignment, Identity, and the Cure of Needless Suffering*, Version 2.0.1 (4 February 2026), 289 pages. DOI [`10.21428/4831231e.8c4c6c8f`](https://doi.org/10.21428/4831231e.8c4c6c8f); PhilPapers [`WISLIM`](https://philpapers.org/rec/WISLIM).
+
+Source of record: `source/WISLIM-v2.0.1.pdf` (SHA-256 `7716807d081e497364a14475ef6f8a6b06e6cabaa6858749bb17e6a904e7dfcd`). Quotations use the newline-delimited text at `source/WISLIM-v2.0.1.txt` (13,255 lines), extracted with `pdftotext -layout`.
+
+> **Audit status:** critical first pass, not peer review. Severity and
+> remediation are provisional judgments, not safety certification.
+
+## Primary quotations
 
 > T1 (Foundational Priority): Life protection is a necessary condition for the instantiation of any value.
 >
@@ -46,16 +55,23 @@ This is the bridge from 'life is necessary for value' to 'life protection is pri
 
 The reply is that 'value' entails a valuer, and valuers are alive. This establishes a causal precondition for valuing, not a lexical priority over every other value; the inference from 'necessary for' to 'outranks' is the gap.
 
-## Required repair
+## Proposed remediation
+
+These are options for the author's consideration, not requirements. The
+audit does not settle the underlying normative questions, so this list is
+a starting point rather than a prescription.
 
 1. Distinguish necessity, centrality, and lexical priority; argue for the normative ranking separately.
 
-## Acceptance criteria
+## Suggested checks for reviewers
+
+If the author chooses to revise, these checks would help a reviewer test
+whether the revision addresses the issue. They are not deployment gates.
 
 - [ ] The manuscript resolves the defect in `C09` or removes the claim from the thesis.
-- [ ] The repair is documented in `audit/04-necessity-to-priority.md` with a source anchor and reviewer sign-off.
-- [ ] The claim registry entry `C09` is updated from `valid-but-insufficient` to a reviewed verdict.
-- [ ] A regression check or reviewer sign-off covers the change.
+- [ ] If the author revises, the revision note in `audit/04-necessity-to-priority.md` records the source anchor and any reviewer sign-off.
+- [ ] After review, the claim registry entry `C09` records the outcome.
+- [ ] Where practical, a regression check or reviewer sign-off covers the change.
 
 ## Related issues
 

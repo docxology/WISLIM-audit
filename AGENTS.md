@@ -13,8 +13,9 @@ source-bound and reproducible.
    in `model/issues.json` are stable. Add new IDs; never renumber or reuse one.
 4. **Separate quotation from verdict.** Quoted source text may contain
    overclaiming language. The audit's own prose must not repeat it as fact.
-   Every issue record carries one verbatim `quote` and `quote_line`; the quote
-   must appear in the source at that line, and the validator checks it.
+   Every issue record carries one or more verbatim `quotes[]` entries, each with
+   a `line`; every quotation must appear in the source at that line, and the
+   validator checks it.
 5. **Distinguish the author's intent from the argument's validity.** Criticize
    arguments, evidence, and institutions, not the author's character or motives.
 6. **Keep the issue register and GitHub mirror in sync.** Edit `docs/audit/*.md`

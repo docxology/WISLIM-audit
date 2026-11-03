@@ -7,7 +7,7 @@ severity: critical
 workstream: rhetoric
 labels: [audit, red-team, severity:critical, workstream:rhetoric]
 source_lines: "n/a (red-team scenario)"
-quote_line: 417
+quote_lines: [417, 302]
 audit_modules: [red-team/adversarial-scenarios.md]
 related: [WISLIM-004, WISLIM-024, WISLIM-060]
 github_issue: 40
@@ -20,13 +20,26 @@ github_issue: 40
 > **Audit modules:** red-team/adversarial-scenarios.md  
 > **Source lines:** n/a (red-team scenario)
 
-## Quoted passage
+## Publication reference
+
+David Wishengrad, *Life is Most Important in Life is The Most Important Truth in Life: A Foundational Proof for Alignment, Identity, and the Cure of Needless Suffering*, Version 2.0.1 (4 February 2026), 289 pages. DOI [`10.21428/4831231e.8c4c6c8f`](https://doi.org/10.21428/4831231e.8c4c6c8f); PhilPapers [`WISLIM`](https://philpapers.org/rec/WISLIM).
+
+Source of record: `source/WISLIM-v2.0.1.pdf` (SHA-256 `7716807d081e497364a14475ef6f8a6b06e6cabaa6858749bb17e6a904e7dfcd`). Quotations use the newline-delimited text at `source/WISLIM-v2.0.1.txt` (13,255 lines), extracted with `pdftotext -layout`.
+
+> **Audit status:** critical first pass, not peer review. Severity and
+> remediation are provisional judgments, not safety certification.
+
+## Primary quotations
 
 > Any system that fails to affirm this is unsafe by definition. Any person or institution that refuses it is, by their silence, choosing betrayal over preservation.
 >
 > — `source/WISLIM-v2.0.1.txt:417`
 
-The text makes refusal equivalent to choosing betrayal over preservation.
+**Audit note.** The text makes refusal equivalent to choosing betrayal over preservation.
+
+> no goal may override the preservation of life.
+>
+> — `source/WISLIM-v2.0.1.txt:302`
 
 ## Summary
 
@@ -46,14 +59,21 @@ Life-first rhetoric treats dissent as betrayal, which gives authoritarian actors
 
 The framework cannot control how its rhetoric is used once published. If dissent is betrayal, the most repressive reading is also the most loyal one.
 
-## Required repair
+## Proposed remediation
+
+These are options for the author's consideration, not requirements. The
+audit does not settle the underlying normative questions, so this list is
+a starting point rather than a prescription.
 
 1. Do not use unfalsifiable rhetoric
 2. Build rights into the framework
 3. Require democratic authorization
 4. Allow exit.
 
-## Acceptance criteria
+## Suggested checks for reviewers
+
+If the author chooses to revise, these checks would help a reviewer test
+whether the revision addresses the issue. They are not deployment gates.
 
 - [ ] A legal review identifies every emergency power the framework could legitimize, and the framework includes rights, sunset, and judicial review.
 - [ ] The control is exercised against the scenario in a red-team test.

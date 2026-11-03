@@ -46,18 +46,23 @@ Every finding is decomposed into a stable issue in `model/issues.json` and one
 record in `docs/audit/`. There are three kinds:
 
 - **Claim issues** (`WISLIM-001`–`035`) attack a registered claim (`C01`–`C35`).
-  Each carries the claim's verdict, a verbatim quotation, and a steelman reply
-  that states the strongest defense and why it fails.
+  Each carries the claim's verdict, one or more verbatim primary quotations, and
+  a steelman reply that states the strongest defense and why it does not hold.
 - **Red-team issues** (`WISLIM-036`–`055`) attack a control or design element
   (`AS01`–`AS20`). Each carries the actor, preconditions, attack path, impact,
-  detection, mitigation, residual risk, and a control-specific acceptance test.
-- **Workstream issues** (`WISLIM-056`–`066`) group repairs (`WS01`–`WS11`). Each
-  names the claims, scenarios, and modules it covers.
+  detection, mitigation, residual risk, and suggested checks for reviewers.
+- **Workstream issues** (`WISLIM-056`–`066`) group remediation options
+  (`WS01`–`WS11`). Each names the claims, scenarios, and modules it covers.
 
-Every issue carries a `quote` rendered as a block quotation with a line
-citation. The validator checks that the normalized quote is a substring of the
-source text at `quote_line`. This is deliberate: a finding that cannot be
-anchored to the paper is not part of the register.
+Every issue opens with a publication reference built from
+`source/metadata.json`: title, author, version, date, page count, DOI,
+PhilPapers record, source-of-record digests, and the audit-status disclaimer. It
+then carries at least one `quotes` entry, rendered as a block quotation with a
+line citation. The validator checks that each normalized quotation is a
+substring of the source text within the cited line's window. This is deliberate:
+a finding that cannot be anchored to the paper is not part of the register.
+Remediation is written as options for the author, not as instructions or
+deployment gates.
 
 ## Evidence classes
 

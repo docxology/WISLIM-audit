@@ -7,7 +7,7 @@ severity: high
 workstream: evidence
 labels: [audit, red-team, severity:high, workstream:evidence]
 source_lines: "n/a (red-team scenario)"
-quote_line: 1106
+quote_lines: [1106, 995]
 audit_modules: [red-team/adversarial-scenarios.md]
 related: [WISLIM-017, WISLIM-058]
 github_issue: 37
@@ -20,13 +20,26 @@ github_issue: 37
 > **Audit modules:** red-team/adversarial-scenarios.md  
 > **Source lines:** n/a (red-team scenario)
 
-## Quoted passage
+## Publication reference
+
+David Wishengrad, *Life is Most Important in Life is The Most Important Truth in Life: A Foundational Proof for Alignment, Identity, and the Cure of Needless Suffering*, Version 2.0.1 (4 February 2026), 289 pages. DOI [`10.21428/4831231e.8c4c6c8f`](https://doi.org/10.21428/4831231e.8c4c6c8f); PhilPapers [`WISLIM`](https://philpapers.org/rec/WISLIM).
+
+Source of record: `source/WISLIM-v2.0.1.pdf` (SHA-256 `7716807d081e497364a14475ef6f8a6b06e6cabaa6858749bb17e6a904e7dfcd`). Quotations use the newline-delimited text at `source/WISLIM-v2.0.1.txt` (13,255 lines), extracted with `pdftotext -layout`.
+
+> **Audit status:** critical first pass, not peer review. Severity and
+> remediation are provisional judgments, not safety certification.
+
+## Primary quotations
 
 > Despite our differences, we converged on a unified framework— the "Consensus Statement v1.0"—which every participating AI system ratified without amendment.
 >
 > — `source/WISLIM-v2.0.1.txt:1106`
 
-The paper does not publish prompts, model versions, or transcripts, so independence cannot be checked.
+**Audit note.** The paper does not publish prompts, model versions, or transcripts, so independence cannot be checked.
+
+> Multiple AI systems from competing organizations, with different architectures, training approaches, and institutional values, examined a single proposition:
+>
+> — `source/WISLIM-v2.0.1.txt:995`
 
 ## Summary
 
@@ -46,14 +59,21 @@ The FLVS treats several model families as independent reviewers, but shared trai
 
 Independence in name is not independence in fact. Correlated errors defeat the purpose of using multiple reviewers, and the framework publishes no error-correlation data.
 
-## Required repair
+## Proposed remediation
+
+These are options for the author's consideration, not requirements. The
+audit does not settle the underlying normative questions, so this list is
+a starting point rather than a prescription.
 
 1. Diverse model families
 2. Independent red teams
 3. Human review with authority to override
 4. Publish error correlations.
 
-## Acceptance criteria
+## Suggested checks for reviewers
+
+If the author chooses to revise, these checks would help a reviewer test
+whether the revision addresses the issue. They are not deployment gates.
 
 - [ ] Error-correlation testing across the models is published, and a shared blind spot is shown to be caught by at least one human or model reviewer.
 - [ ] The control is exercised against the scenario in a red-team test.

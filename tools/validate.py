@@ -317,22 +317,49 @@ def check_issue_register(v: Validator, lines: list[str]) -> None:
     v.equal(data.get("counts", {}).get("workstreams"), 11, "issue manifest workstream count")
 
     claims = {claim["id"]: claim for claim in load_json(CLAIMS)["claims"]}
+    metadata = load_json(METADATA)
     for issue in issues:
         path = ROOT / issue["file"]
         if not path.is_file():
             continue
         text = path.read_text(encoding="utf-8")
         for heading in (
-            "## Quoted passage",
+            "## Publication reference",
+            "## Primary quotations",
             "## Summary",
             "## Evidence",
-            "## Acceptance criteria",
+            "## Proposed remediation",
+            "## Suggested checks for reviewers",
             "## Tracking",
         ):
             v.check(
                 heading in text,
                 f"{issue['id']}: record is missing {heading}",
             )
+        v.check(
+            "## Required repair" not in text,
+            f"{issue['id']}: record still uses the old required-repair heading",
+        )
+        v.check(
+            "## Acceptance criteria" not in text,
+            f"{issue['id']}: record still uses the old acceptance heading",
+        )
+        v.check(
+            metadata["work"] in text,
+            f"{issue['id']}: record is missing the publication title",
+        )
+        v.check(
+            metadata["philpapers"]["doi"] in text,
+            f"{issue['id']}: record is missing the publication DOI",
+        )
+        v.check(
+            metadata["pdf_sha256"] in text,
+            f"{issue['id']}: record is missing the PDF checksum",
+        )
+        v.check(
+            "## Quoted passage" not in text,
+            f"{issue['id']}: record still uses the singular quotation heading",
+        )
         if issue["kind"] == "claim":
             v.check(
                 "## Steelman and reply" in text,
@@ -346,27 +373,45 @@ def check_issue_register(v: Validator, lines: list[str]) -> None:
             "github_issue:" in text,
             f"{issue['id']}: record is missing the github_issue field",
         )
-        quote = str(issue.get("quote", "")).strip()
-        quote_line = issue.get("quote_line")
-        v.check(len(quote) >= 25, f"{issue['id']}: quote is too short")
+        quotes = issue.get("quotes")
         v.check(
-            isinstance(quote_line, int) and 1 <= quote_line <= len(lines),
-            f"{issue['id']}: quote_line is out of bounds",
+            isinstance(quotes, list) and len(quotes) >= 1,
+            f"{issue['id']}: record has no primary quotation",
         )
-        if isinstance(quote_line, int) and 1 <= quote_line <= len(lines):
-            window = normalize_passage("\n".join(lines[quote_line - 1 : quote_line + 20]))
+        quote_lines: list[int] = []
+        for index, quote in enumerate(quotes if isinstance(quotes, list) else []):
+            if not isinstance(quote, dict):
+                continue
+            qtext = str(quote.get("text", "")).strip()
+            qline = quote.get("line")
+            v.check(len(qtext) >= 25, f"{issue['id']}: quotes[{index}] is too short")
             v.check(
-                normalize_passage(quote) in window,
-                f"{issue['id']}: quote does not appear at line {quote_line}",
+                isinstance(qline, int) and 1 <= qline <= len(lines),
+                f"{issue['id']}: quotes[{index}].line is out of bounds",
             )
+            if isinstance(qline, int) and 1 <= qline <= len(lines):
+                quote_lines.append(qline)
+                window = normalize_passage("\n".join(lines[qline - 1 : qline + 20]))
+                v.check(
+                    normalize_passage(qtext) in window,
+                    f"{issue['id']}: quotations[{index}] does not appear at line {qline}",
+                )
+                v.check(
+                    f"source/WISLIM-v2.0.1.txt:{qline}" in text,
+                    f"{issue['id']}: quotations[{index}] has no line citation",
+                )
         if issue["kind"] == "claim":
             claim = claims.get(issue["source_id"])
             v.check(claim is not None, f"{issue['id']}: no matching claim record")
             if claim:
-                distance = abs(quote_line - claim["line"]) if isinstance(quote_line, int) else 99
+                distance = (
+                    min(abs(line - claim["line"]) for line in quote_lines)
+                    if quote_lines
+                    else 99
+                )
                 v.check(
                     distance <= 8,
-                    f"{issue['id']}: quote starts {distance} lines from claim line {claim['line']}",
+                    f"{issue['id']}: no quotation starts within 8 lines of claim line {claim['line']}",
                 )
                 v.equal(issue["severity"], claim["severity"], f"{issue['id']}: severity")
                 evidence_text = " ".join(issue["evidence"])

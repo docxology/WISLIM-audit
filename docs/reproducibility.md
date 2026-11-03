@@ -65,7 +65,9 @@ The validator checks:
 - the 210 stress tests and summary counts;
 - the 66-issue register: stable IDs, C01–C35/AS01–AS20/WS01–WS11 coverage,
   generated records, and the GitHub issue map;
-- every issue quote is a verbatim substring of the source at `quote_line`;
+- every issue carries a publication reference and at least one primary
+  quotation, and every quotation is a verbatim substring of the source at its
+  `line`;
 - explicit source-line citations are within bounds;
 - required files exist;
 - relative Markdown links resolve;

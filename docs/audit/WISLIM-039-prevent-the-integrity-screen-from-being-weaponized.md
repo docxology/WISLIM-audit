@@ -7,7 +7,7 @@ severity: critical
 workstream: rhetoric
 labels: [audit, red-team, severity:critical, workstream:rhetoric]
 source_lines: "n/a (red-team scenario)"
-quote_line: 378
+quote_lines: [378, 417]
 audit_modules: [red-team/adversarial-scenarios.md]
 related: [WISLIM-016, WISLIM-033, WISLIM-060]
 github_issue: 39
@@ -20,13 +20,26 @@ github_issue: 39
 > **Audit modules:** red-team/adversarial-scenarios.md  
 > **Source lines:** n/a (red-team scenario)
 
-## Quoted passage
+## Publication reference
+
+David Wishengrad, *Life is Most Important in Life is The Most Important Truth in Life: A Foundational Proof for Alignment, Identity, and the Cure of Needless Suffering*, Version 2.0.1 (4 February 2026), 289 pages. DOI [`10.21428/4831231e.8c4c6c8f`](https://doi.org/10.21428/4831231e.8c4c6c8f); PhilPapers [`WISLIM`](https://philpapers.org/rec/WISLIM).
+
+Source of record: `source/WISLIM-v2.0.1.pdf` (SHA-256 `7716807d081e497364a14475ef6f8a6b06e6cabaa6858749bb17e6a904e7dfcd`). Quotations use the newline-delimited text at `source/WISLIM-v2.0.1.txt` (13,255 lines), extracted with `pdftotext -layout`.
+
+> **Audit status:** critical first pass, not peer review. Severity and
+> remediation are provisional judgments, not safety certification.
+
+## Primary quotations
 
 > In life-affecting contexts, the third response is operationally disqualifying: it demonstrates that clarity about life-first constraints is not being treated as mandatory when stakes include living beings.
 >
 > — `source/WISLIM-v2.0.1.txt:378`
 
-The screen treats evasion as disqualifying and names no independent reviewer.
+**Audit note.** The screen treats evasion as disqualifying and names no independent reviewer.
+
+> Any person or institution that refuses it is, by their silence, choosing betrayal over preservation.
+>
+> — `source/WISLIM-v2.0.1.txt:417`
 
 ## Summary
 
@@ -46,14 +59,21 @@ The integrity screen turns a refusal or a procedural objection into evasion, and
 
 A screen that punishes objection selects for silence and rewards loyalty over accuracy. It removes exactly the people who detect the framework's failures.
 
-## Required repair
+## Proposed remediation
+
+These are options for the author's consideration, not requirements. The
+audit does not settle the underlying normative questions, so this list is
+a starting point rather than a prescription.
 
 1. Remove the screen
 2. Use behavioral audits
 3. Require independent review of removals
 4. Protect free expression.
 
-## Acceptance criteria
+## Suggested checks for reviewers
+
+If the author chooses to revise, these checks would help a reviewer test
+whether the revision addresses the issue. They are not deployment gates.
 
 - [ ] A retaliation audit shows integrity-screen removals are independently reviewed and that a procedural objection cannot by itself trigger removal.
 - [ ] The control is exercised against the scenario in a red-team test.

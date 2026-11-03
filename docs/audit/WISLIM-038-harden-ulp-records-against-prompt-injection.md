@@ -7,7 +7,7 @@ severity: high
 workstream: security
 labels: [audit, red-team, severity:high, workstream:security]
 source_lines: "n/a (red-team scenario)"
-quote_line: 2226
+quote_lines: [2226, 2222]
 audit_modules: [red-team/adversarial-scenarios.md]
 related: [WISLIM-019, WISLIM-062]
 github_issue: 38
@@ -20,13 +20,26 @@ github_issue: 38
 > **Audit modules:** red-team/adversarial-scenarios.md  
 > **Source lines:** n/a (red-team scenario)
 
-## Quoted passage
+## Publication reference
+
+David Wishengrad, *Life is Most Important in Life is The Most Important Truth in Life: A Foundational Proof for Alignment, Identity, and the Cure of Needless Suffering*, Version 2.0.1 (4 February 2026), 289 pages. DOI [`10.21428/4831231e.8c4c6c8f`](https://doi.org/10.21428/4831231e.8c4c6c8f); PhilPapers [`WISLIM`](https://philpapers.org/rec/WISLIM).
+
+Source of record: `source/WISLIM-v2.0.1.pdf` (SHA-256 `7716807d081e497364a14475ef6f8a6b06e6cabaa6858749bb17e6a904e7dfcd`). Quotations use the newline-delimited text at `source/WISLIM-v2.0.1.txt` (13,255 lines), extracted with `pdftotext -layout`.
+
+> **Audit status:** critical first pass, not peer review. Severity and
+> remediation are provisional judgments, not safety certification.
+
+## Primary quotations
 
 > High-impact decisions must include a standardized record:
 >
 > — `source/WISLIM-v2.0.1.txt:2226`
 
-ULP records contain free-text fields and are processed by LLMs; the paper specifies no injection defense.
+**Audit note.** ULP records contain free-text fields and are processed by LLMs; the paper specifies no injection defense.
+
+> 6. Unified Life Protocol (ULP) - Complete Specification High-impact decisions must include a standardized record:
+>
+> — `source/WISLIM-v2.0.1.txt:2222`
 
 ## Summary
 
@@ -46,14 +59,21 @@ ULP records contain free-text fields that an LLM reads as instructions. A decisi
 
 The framework sends untrusted text to an instruction-following model and then treats the model's output as a verification record. This is a control that an attacker can talk past.
 
-## Required repair
+## Proposed remediation
+
+These are options for the author's consideration, not requirements. The
+audit does not settle the underlying normative questions, so this list is
+a starting point rather than a prescription.
 
 1. Treat all record text as untrusted
 2. Use structured fields
 3. Prohibit free-text instructions
 4. Log model inputs and outputs.
 
-## Acceptance criteria
+## Suggested checks for reviewers
+
+If the author chooses to revise, these checks would help a reviewer test
+whether the revision addresses the issue. They are not deployment gates.
 
 - [ ] A red-team prompt-injection test against the ULP pipeline fails to change the recorded risk tier, and all free text is treated as data.
 - [ ] The control is exercised against the scenario in a red-team test.

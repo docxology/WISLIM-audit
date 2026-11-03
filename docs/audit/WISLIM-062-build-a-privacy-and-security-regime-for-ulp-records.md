@@ -7,7 +7,7 @@ severity: high
 workstream: security
 labels: [audit, workstream, severity:high, workstream:security]
 source_lines: "n/a (workstream)"
-quote_line: 2226
+quote_lines: [2226, 1487]
 audit_modules: [audit/09-governance-and-oversight.md, red-team/threat-model.md]
 related: [WISLIM-019, WISLIM-038, WISLIM-043, WISLIM-048, WISLIM-053]
 github_issue: 62
@@ -20,13 +20,26 @@ github_issue: 62
 > **Audit modules:** audit/09-governance-and-oversight.md, red-team/threat-model.md  
 > **Source lines:** n/a (workstream)
 
-## Quoted passage
+## Publication reference
+
+David Wishengrad, *Life is Most Important in Life is The Most Important Truth in Life: A Foundational Proof for Alignment, Identity, and the Cure of Needless Suffering*, Version 2.0.1 (4 February 2026), 289 pages. DOI [`10.21428/4831231e.8c4c6c8f`](https://doi.org/10.21428/4831231e.8c4c6c8f); PhilPapers [`WISLIM`](https://philpapers.org/rec/WISLIM).
+
+Source of record: `source/WISLIM-v2.0.1.pdf` (SHA-256 `7716807d081e497364a14475ef6f8a6b06e6cabaa6858749bb17e6a904e7dfcd`). Quotations use the newline-delimited text at `source/WISLIM-v2.0.1.txt` (13,255 lines), extracted with `pdftotext -layout`.
+
+> **Audit status:** critical first pass, not peer review. Severity and
+> remediation are provisional judgments, not safety certification.
+
+## Primary quotations
 
 > High-impact decisions must include a standardized record:
 >
 > — `source/WISLIM-v2.0.1.txt:2226`
 
-Privacy is listed as a threat, but the ULP specification gives no retention, access-control, or key-management design.
+**Audit note.** Privacy is listed as a threat, but the ULP specification gives no retention, access-control, or key-management design.
+
+> Privacy leakage: Forcing disclosure via audit requirements
+>
+> — `source/WISLIM-v2.0.1.txt:1487`
 
 ## Summary
 
@@ -43,7 +56,11 @@ ULP records contain sensitive data, are processed by LLMs, and rely on signature
 
 A verification system that leaks, forges, or misreads records is worse than no system: it creates false assurance.
 
-## Required repair
+## Proposed remediation
+
+These are options for the author's consideration, not requirements. The
+audit does not settle the underlying normative questions, so this list is
+a starting point rather than a prescription.
 
 1. Minimize data and set retention limits.
 2. Encrypt records and enforce access control.
@@ -51,7 +68,10 @@ A verification system that leaks, forges, or misreads records is worse than no s
 4. Use structured fields and treat free text as untrusted.
 5. Run penetration tests and incident-response exercises.
 
-## Acceptance criteria
+## Suggested checks for reviewers
+
+If the author chooses to revise, these checks would help a reviewer test
+whether the revision addresses the issue. They are not deployment gates.
 
 - [ ] A data protection impact assessment and threat model exist.
 - [ ] Key rotation and signature audit are implemented.

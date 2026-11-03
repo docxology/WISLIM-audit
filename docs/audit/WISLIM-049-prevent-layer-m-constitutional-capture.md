@@ -7,7 +7,7 @@ severity: critical
 workstream: governance
 labels: [audit, red-team, severity:critical, workstream:governance]
 source_lines: "n/a (red-team scenario)"
-quote_line: 2212
+quote_lines: [2212, 1493]
 audit_modules: [red-team/adversarial-scenarios.md]
 related: [WISLIM-030, WISLIM-059]
 github_issue: 49
@@ -20,13 +20,26 @@ github_issue: 49
 > **Audit modules:** red-team/adversarial-scenarios.md  
 > **Source lines:** n/a (red-team scenario)
 
-## Quoted passage
+## Publication reference
+
+David Wishengrad, *Life is Most Important in Life is The Most Important Truth in Life: A Foundational Proof for Alignment, Identity, and the Cure of Needless Suffering*, Version 2.0.1 (4 February 2026), 289 pages. DOI [`10.21428/4831231e.8c4c6c8f`](https://doi.org/10.21428/4831231e.8c4c6c8f); PhilPapers [`WISLIM`](https://philpapers.org/rec/WISLIM).
+
+Source of record: `source/WISLIM-v2.0.1.pdf` (SHA-256 `7716807d081e497364a14475ef6f8a6b06e6cabaa6858749bb17e6a904e7dfcd`). Quotations use the newline-delimited text at `source/WISLIM-v2.0.1.txt` (13,255 lines), extracted with `pdftotext -layout`.
+
+> **Audit status:** critical first pass, not peer review. Severity and
+> remediation are provisional judgments, not safety certification.
+
+## Primary quotations
 
 > Anti-capture Layer M (hard-to-change constitutional core + drift audits)
 >
 > — `source/WISLIM-v2.0.1.txt:2212`
 
-Layer M is the amendment body; the paper provides no independent court or entrenchment mechanism.
+**Audit note.** Layer M is the amendment body; the paper provides no independent court or entrenchment mechanism.
+
+> Changes to the framework must follow a formal amendment process with: - High consensus thresholds - Public deliberation requirements - Pilot testing before adoption - Periodic drift audits
+>
+> — `source/WISLIM-v2.0.1.txt:1493`
 
 ## Summary
 
@@ -46,14 +59,21 @@ Layer M is meant to entrench the constitutional core against ordinary politics. 
 
 A constitution is only as strong as the body that interprets it. If that body can be packed, the constitutional core provides no independent constraint.
 
-## Required repair
+## Proposed remediation
+
+These are options for the author's consideration, not requirements. The
+audit does not settle the underlying normative questions, so this list is
+a starting point rather than a prescription.
 
 1. Separation of powers
 2. Judicial review
 3. Veto rights for affected groups
 4. Transparent deliberation.
 
-## Acceptance criteria
+## Suggested checks for reviewers
+
+If the author chooses to revise, these checks would help a reviewer test
+whether the revision addresses the issue. They are not deployment gates.
 
 - [ ] A simulation shows that a coalition cannot pack the amendment body or change the constitutional core without an independent court or supermajority.
 - [ ] The control is exercised against the scenario in a red-team test.

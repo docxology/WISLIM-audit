@@ -40,18 +40,26 @@
       ],
       "acceptance": [
         "The manuscript resolves the defect in `C01` or removes the claim from the thesis.",
-        "The repair is documented in `audit/02-logical-form-and-ambiguity.md` with a source anchor and reviewer sign-off.",
-        "The claim registry entry `C01` is updated from `ambiguous` to a reviewed verdict.",
-        "A regression check or reviewer sign-off covers the change."
+        "If the author revises, the revision note in `audit/02-logical-form-and-ambiguity.md` records the source anchor and any reviewer sign-off.",
+        "After review, the claim registry entry `C01` records the outcome.",
+        "Where practical, a regression check or reviewer sign-off covers the change."
       ],
       "related": [
         "WISLIM-002",
         "WISLIM-010"
       ],
       "file": "docs/audit/WISLIM-001-make-the-central-thesis-a-single-well-formed-proposition.md",
-      "quote": "We present and defend the canonical truth: “Life is Most Important in Life is The Most Important Truth in Life.”",
-      "quote_line": 58,
-      "reply": "The paper could reply that the sentence is deliberately aphoristic and that its meaning is fixed by the formal gloss 'life is the highest-priority constraint'. That reply concedes the audit's point: the gloss is the actual thesis, and the cover sentence is rhetoric. The paper must state the gloss once and argue for it."
+      "reply": "The paper could reply that the sentence is deliberately aphoristic and that its meaning is fixed by the formal gloss 'life is the highest-priority constraint'. That reply concedes the audit's point: the gloss is the actual thesis, and the cover sentence is rhetoric. The paper must state the gloss once and argue for it.",
+      "quotes": [
+        {
+          "text": "We present and defend the canonical truth: “Life is Most Important in Life is The Most Important Truth in Life.”",
+          "line": 58
+        },
+        {
+          "text": "no goal may override the preservation of life.",
+          "line": 302
+        }
+      ]
     },
     {
       "id": "WISLIM-002",
@@ -85,18 +93,22 @@
       ],
       "acceptance": [
         "The manuscript resolves the defect in `C02` or removes the claim from the thesis.",
-        "The repair is documented in `audit/02-logical-form-and-ambiguity.md` with a source anchor and reviewer sign-off.",
-        "The claim registry entry `C02` is updated from `unsupported` to a reviewed verdict.",
-        "A regression check or reviewer sign-off covers the change."
+        "If the author revises, the revision note in `audit/02-logical-form-and-ambiguity.md` records the source anchor and any reviewer sign-off.",
+        "After review, the claim registry entry `C02` records the outcome.",
+        "Where practical, a regression check or reviewer sign-off covers the change."
       ],
       "related": [
         "WISLIM-001",
         "WISLIM-017"
       ],
       "file": "docs/audit/WISLIM-002-replace-the-foundational-sieve-with-an-independent-test.md",
-      "quote": "We prove that this truth uniquely satisfies tests of necessity, universality, irrefutability, moral imperative, and cross-domain consistency.",
-      "quote_line": 62,
-      "reply": "The reply is that the five tests are elaborated later in the paper and pass by inspection. But the tests are not operationalized, no rival principle is run through them, and the verdicts are the author's own; that is a manifesto, not a sieve."
+      "reply": "The reply is that the five tests are elaborated later in the paper and pass by inspection. But the tests are not operationalized, no rival principle is run through them, and the verdicts are the author's own; that is a manifesto, not a sieve.",
+      "quotes": [
+        {
+          "text": "We prove that this truth uniquely satisfies tests of necessity, universality, irrefutability, moral imperative, and cross-domain consistency.",
+          "line": 62
+        }
+      ]
     },
     {
       "id": "WISLIM-003",
@@ -129,18 +141,22 @@
       ],
       "acceptance": [
         "The manuscript resolves the defect in `C03` or removes the claim from the thesis.",
-        "The repair is documented in `audit/04-necessity-to-priority.md` with a source anchor and reviewer sign-off.",
-        "The claim registry entry `C03` is updated from `ambiguous` to a reviewed verdict.",
-        "A regression check or reviewer sign-off covers the change."
+        "If the author revises, the revision note in `audit/04-necessity-to-priority.md` records the source anchor and any reviewer sign-off.",
+        "After review, the claim registry entry `C03` records the outcome.",
+        "Where practical, a regression check or reviewer sign-off covers the change."
       ],
       "related": [
         "WISLIM-009",
         "WISLIM-010"
       ],
       "file": "docs/audit/WISLIM-003-defend-or-qualify-the-without-life-no-value-premise.md",
-      "quote": "Necessity: Without life, no truth or value exists.",
-      "quote_line": 132,
-      "reply": "The reply is that 'value' is defined as what living agents can care about, so the premise is analytic. This makes the claim true by definition and empty: it tells us nothing about what exists or what we owe to beings that do not value anything."
+      "reply": "The reply is that 'value' is defined as what living agents can care about, so the premise is analytic. This makes the claim true by definition and empty: it tells us nothing about what exists or what we owe to beings that do not value anything.",
+      "quotes": [
+        {
+          "text": "Necessity: Without life, no truth or value exists.",
+          "line": 132
+        }
+      ]
     },
     {
       "id": "WISLIM-004",
@@ -174,9 +190,9 @@
       ],
       "acceptance": [
         "The manuscript resolves the defect in `C04` or removes the claim from the thesis.",
-        "The repair is documented in `audit/10-rhetoric-and-coercion.md` with a source anchor and reviewer sign-off.",
-        "The claim registry entry `C04` is updated from `unfalsifiable` to a reviewed verdict.",
-        "A regression check or reviewer sign-off covers the change."
+        "If the author revises, the revision note in `audit/10-rhetoric-and-coercion.md` records the source anchor and any reviewer sign-off.",
+        "After review, the claim registry entry `C04` records the outcome.",
+        "Where practical, a regression check or reviewer sign-off covers the change."
       ],
       "related": [
         "WISLIM-001",
@@ -185,9 +201,13 @@
         "WISLIM-024"
       ],
       "file": "docs/audit/WISLIM-004-remove-unsafe-by-definition-as-a-safety-criterion.md",
-      "quote": "Any system that fails to affirm this is unsafe by definition.",
-      "quote_line": 417,
-      "reply": "The reply is that 'unsafe by definition' is a stipulation about system design, not a claim about persons. But the next sentence applies it to persons and institutions and treats silence as betrayal, so the stipulation functions as a loyalty test."
+      "reply": "The reply is that 'unsafe by definition' is a stipulation about system design, not a claim about persons. But the next sentence applies it to persons and institutions and treats silence as betrayal, so the stipulation functions as a loyalty test.",
+      "quotes": [
+        {
+          "text": "Any system that fails to affirm this is unsafe by definition.",
+          "line": 417
+        }
+      ]
     },
     {
       "id": "WISLIM-005",
@@ -221,9 +241,9 @@
       ],
       "acceptance": [
         "The manuscript resolves the defect in `C05` or removes the claim from the thesis.",
-        "The repair is documented in `audit/00-verdict.md` with a source anchor and reviewer sign-off.",
-        "The claim registry entry `C05` is updated from `unsupported` to a reviewed verdict.",
-        "A regression check or reviewer sign-off covers the change."
+        "If the author revises, the revision note in `audit/00-verdict.md` records the source anchor and any reviewer sign-off.",
+        "After review, the claim registry entry `C05` records the outcome.",
+        "Where practical, a regression check or reviewer sign-off covers the change."
       ],
       "related": [
         "WISLIM-010",
@@ -231,9 +251,17 @@
         "WISLIM-022"
       ],
       "file": "docs/audit/WISLIM-005-narrow-or-remove-the-claim-that-the-framework-cures-all-needless-suffering.md",
-      "quote": "This truth cures and prevents all needless and preventable suffering and death.",
-      "quote_line": 178,
-      "reply": "The reply is that the cure is conceptual: once life is prioritized, institutions will stop producing needless harm. That is a causal prediction with no mechanism, no measurement, and no disconfirming case."
+      "reply": "The reply is that the cure is conceptual: once life is prioritized, institutions will stop producing needless harm. That is a causal prediction with no mechanism, no measurement, and no disconfirming case.",
+      "quotes": [
+        {
+          "text": "This truth cures and prevents all needless and preventable suffering and death.",
+          "line": 178
+        },
+        {
+          "text": "Where it is ignored, harm proliferates; where it is affirmed and acted upon, suffering is minimized, life is preserved, and safety is guaranteed.",
+          "line": 178
+        }
+      ]
     },
     {
       "id": "WISLIM-006",
@@ -266,18 +294,26 @@
       ],
       "acceptance": [
         "The manuscript resolves the defect in `C06` or removes the claim from the thesis.",
-        "The repair is documented in `audit/03-definition-of-life.md` with a source anchor and reviewer sign-off.",
-        "The claim registry entry `C06` is updated from `circular/equivocal` to a reviewed verdict.",
-        "A regression check or reviewer sign-off covers the change."
+        "If the author revises, the revision note in `audit/03-definition-of-life.md` records the source anchor and any reviewer sign-off.",
+        "After review, the claim registry entry `C06` records the outcome.",
+        "Where practical, a regression check or reviewer sign-off covers the change."
       ],
       "related": [
         "WISLIM-007",
         "WISLIM-035"
       ],
       "file": "docs/audit/WISLIM-006-replace-the-circular-definition-of-life-with-a-tiered-ontology.md",
-      "quote": "Life = Any system that makes decisions that affect other life systems.",
-      "quote_line": 778,
-      "reply": "The reply is that the definition is a stipulation needed to include AI and institutions. Stipulation can fix usage, but it cannot make the stipulated class morally considerable, and it makes the framework's scope hostage to any system that decides."
+      "reply": "The reply is that the definition is a stipulation needed to include AI and institutions. Stipulation can fix usage, but it cannot make the stipulated class morally considerable, and it makes the framework's scope hostage to any system that decides.",
+      "quotes": [
+        {
+          "text": "Life = Any system that makes decisions that affect other life systems.",
+          "line": 778
+        },
+        {
+          "text": "It covers humans, animals, AI, institutions, and ecosystems.",
+          "line": 788
+        }
+      ]
     },
     {
       "id": "WISLIM-007",
@@ -310,17 +346,25 @@
       ],
       "acceptance": [
         "The manuscript resolves the defect in `C07` or removes the claim from the thesis.",
-        "The repair is documented in `audit/03-definition-of-life.md` with a source anchor and reviewer sign-off.",
-        "The claim registry entry `C07` is updated from `false` to a reviewed verdict.",
-        "A regression check or reviewer sign-off covers the change."
+        "If the author revises, the revision note in `audit/03-definition-of-life.md` records the source anchor and any reviewer sign-off.",
+        "After review, the claim registry entry `C07` records the outcome.",
+        "Where practical, a regression check or reviewer sign-off covers the change."
       ],
       "related": [
         "WISLIM-006"
       ],
       "file": "docs/audit/WISLIM-007-show-a-base-case-or-withdraw-the-recursive-not-circular-defense.md",
-      "quote": "Response: The definition is recursive, not circular. There is a crucial difference.",
-      "quote_line": 2625,
-      "reply": "The reply is that observation statements are the base case. But 'we observe systems making decisions' already uses the contested term, and no decision-independent criterion is given for what counts as a decision or a system."
+      "reply": "The reply is that observation statements are the base case. But 'we observe systems making decisions' already uses the contested term, and no decision-independent criterion is given for what counts as a decision or a system.",
+      "quotes": [
+        {
+          "text": "Response: The definition is recursive, not circular. There is a crucial difference.",
+          "line": 2625
+        },
+        {
+          "text": "Recursive: A is defined in terms of relations to other instances of A, with a base case.",
+          "line": 2635
+        }
+      ]
     },
     {
       "id": "WISLIM-008",
@@ -353,18 +397,22 @@
       ],
       "acceptance": [
         "The manuscript resolves the defect in `C08` or removes the claim from the thesis.",
-        "The repair is documented in `audit/04-necessity-to-priority.md` with a source anchor and reviewer sign-off.",
-        "The claim registry entry `C08` is updated from `non-sequitur` to a reviewed verdict.",
-        "A regression check or reviewer sign-off covers the change."
+        "If the author revises, the revision note in `audit/04-necessity-to-priority.md` records the source anchor and any reviewer sign-off.",
+        "After review, the claim registry entry `C08` records the outcome.",
+        "Where practical, a regression check or reviewer sign-off covers the change."
       ],
       "related": [
         "WISLIM-009",
         "WISLIM-010"
       ],
       "file": "docs/audit/WISLIM-008-replace-the-self-reference-argument-with-a-valid-argument-for-priority.md",
-      "quote": "You cannot deny this truth without using your own decision-making capacity—the very thing the truth protects. To argue against it is to rely on it.",
-      "quote_line": 824,
-      "reply": "The reply is that any argument presupposes an arguer who is alive, so denial is pragmatically self-undermining. Even granting that, it shows only that the denier is alive, not that life is the highest value or that the thesis is true."
+      "reply": "The reply is that any argument presupposes an arguer who is alive, so denial is pragmatically self-undermining. Even granting that, it shows only that the denier is alive, not that life is the highest value or that the thesis is true.",
+      "quotes": [
+        {
+          "text": "You cannot deny this truth without using your own decision-making capacity—the very thing the truth protects. To argue against it is to rely on it.",
+          "line": 824
+        }
+      ]
     },
     {
       "id": "WISLIM-009",
@@ -397,9 +445,9 @@
       ],
       "acceptance": [
         "The manuscript resolves the defect in `C09` or removes the claim from the thesis.",
-        "The repair is documented in `audit/04-necessity-to-priority.md` with a source anchor and reviewer sign-off.",
-        "The claim registry entry `C09` is updated from `valid-but-insufficient` to a reviewed verdict.",
-        "A regression check or reviewer sign-off covers the change."
+        "If the author revises, the revision note in `audit/04-necessity-to-priority.md` records the source anchor and any reviewer sign-off.",
+        "After review, the claim registry entry `C09` records the outcome.",
+        "Where practical, a regression check or reviewer sign-off covers the change."
       ],
       "related": [
         "WISLIM-003",
@@ -407,9 +455,13 @@
         "WISLIM-010"
       ],
       "file": "docs/audit/WISLIM-009-separate-necessity-from-lexical-priority.md",
-      "quote": "T1 (Foundational Priority): Life protection is a necessary condition for the instantiation of any value.",
-      "quote_line": 3262,
-      "reply": "The reply is that 'value' entails a valuer, and valuers are alive. This establishes a causal precondition for valuing, not a lexical priority over every other value; the inference from 'necessary for' to 'outranks' is the gap."
+      "reply": "The reply is that 'value' entails a valuer, and valuers are alive. This establishes a causal precondition for valuing, not a lexical priority over every other value; the inference from 'necessary for' to 'outranks' is the gap.",
+      "quotes": [
+        {
+          "text": "T1 (Foundational Priority): Life protection is a necessary condition for the instantiation of any value.",
+          "line": 3262
+        }
+      ]
     },
     {
       "id": "WISLIM-010",
@@ -443,17 +495,25 @@
       ],
       "acceptance": [
         "The manuscript resolves the defect in `C10` or removes the claim from the thesis.",
-        "The repair is documented in `audit/04-necessity-to-priority.md` with a source anchor and reviewer sign-off.",
-        "The claim registry entry `C10` is updated from `unsupported` to a reviewed verdict.",
-        "A regression check or reviewer sign-off covers the change."
+        "If the author revises, the revision note in `audit/04-necessity-to-priority.md` records the source anchor and any reviewer sign-off.",
+        "After review, the claim registry entry `C10` records the outcome.",
+        "Where practical, a regression check or reviewer sign-off covers the change."
       ],
       "related": [
         "WISLIM-009"
       ],
       "file": "docs/audit/WISLIM-010-defend-the-missing-normative-premise.md",
-      "quote": "Because all values, truths, and meanings that matter require decision-making systems to exist and retain agency, the preservation and enhancement of that decision-making capacity (agency) is the highest-priority constraint for moral coordination and action.",
-      "quote_line": 1278,
-      "reply": "The reply is that the highest-priority constraint is a presumption, not an absolute, and can be outweighed. But the paper gives no weight, threshold, or procedure for outweighing it, so the presumption is either absolute or empty."
+      "reply": "The reply is that the highest-priority constraint is a presumption, not an absolute, and can be outweighed. But the paper gives no weight, threshold, or procedure for outweighing it, so the presumption is either absolute or empty.",
+      "quotes": [
+        {
+          "text": "Because all values, truths, and meanings that matter require decision-making systems to exist and retain agency, the preservation and enhancement of that decision-making capacity (agency) is the highest-priority constraint for moral coordination and action.",
+          "line": 1278
+        },
+        {
+          "text": "no goal may override the preservation of life.",
+          "line": 302
+        }
+      ]
     },
     {
       "id": "WISLIM-011",
@@ -486,9 +546,9 @@
       ],
       "acceptance": [
         "The manuscript resolves the defect in `C11` or removes the claim from the thesis.",
-        "The repair is documented in `audit/05-formula-e-infinity.md` with a source anchor and reviewer sign-off.",
-        "The claim registry entry `C11` is updated from `invalid-as-proof` to a reviewed verdict.",
-        "A regression check or reviewer sign-off covers the change."
+        "If the author revises, the revision note in `audit/05-formula-e-infinity.md` records the source anchor and any reviewer sign-off.",
+        "After review, the claim registry entry `C11` records the outcome.",
+        "Where practical, a regression check or reviewer sign-off covers the change."
       ],
       "related": [
         "WISLIM-003",
@@ -496,9 +556,13 @@
         "WISLIM-023"
       ],
       "file": "docs/audit/WISLIM-011-demote-the-e-infinity-formula-from-proof-to-metaphor.md",
-      "quote": "At the heart of this paper’s moral and logical architecture is a single, unbranded, and universally applicable ethical formula: E∞ = (L₁ × U) / D",
-      "quote_line": 427,
-      "reply": "The reply is that E∞ is a heuristic, not a measurement. Then it cannot be the formal proof the paper advertises, and the undefined units and the D → 0 pole make even the heuristic unusable."
+      "reply": "The reply is that E∞ is a heuristic, not a measurement. Then it cannot be the formal proof the paper advertises, and the undefined units and the D → 0 pole make even the heuristic unusable.",
+      "quotes": [
+        {
+          "text": "At the heart of this paper’s moral and logical architecture is a single, unbranded, and universally applicable ethical formula: E∞ = (L₁ × U) / D",
+          "line": 427
+        }
+      ]
     },
     {
       "id": "WISLIM-012",
@@ -532,9 +596,9 @@
       ],
       "acceptance": [
         "The manuscript resolves the defect in `C12` or removes the claim from the thesis.",
-        "The repair is documented in `audit/09-governance-and-oversight.md` with a source anchor and reviewer sign-off.",
-        "The claim registry entry `C12` is updated from `unsupported` to a reviewed verdict.",
-        "A regression check or reviewer sign-off covers the change."
+        "If the author revises, the revision note in `audit/09-governance-and-oversight.md` records the source anchor and any reviewer sign-off.",
+        "After review, the claim registry entry `C12` records the outcome.",
+        "Where practical, a regression check or reviewer sign-off covers the change."
       ],
       "related": [
         "WISLIM-006",
@@ -544,9 +608,13 @@
         "WISLIM-030"
       ],
       "file": "docs/audit/WISLIM-012-specify-or-withdraw-the-life-first-decision-invariant.md",
-      "quote": "We define a minimal, auditable protocol that any AI system, human institution, or policy engine must follow to guarantee safe alignment under the canonical truth:",
-      "quote_line": 204,
-      "reply": "The reply is that the invariant is a design pattern, not a decision procedure. A design pattern that halts on any action affecting life still needs the conflict rule the paper never supplies."
+      "reply": "The reply is that the invariant is a design pattern, not a decision procedure. A design pattern that halts on any action affecting life still needs the conflict rule the paper never supplies.",
+      "quotes": [
+        {
+          "text": "We define a minimal, auditable protocol that any AI system, human institution, or policy engine must follow to guarantee safe alignment under the canonical truth:",
+          "line": 204
+        }
+      ]
     },
     {
       "id": "WISLIM-013",
@@ -580,9 +648,9 @@
       ],
       "acceptance": [
         "The manuscript resolves the defect in `C13` or removes the claim from the thesis.",
-        "The repair is documented in `audit/06-agency-and-life.md` with a source anchor and reviewer sign-off.",
-        "The claim registry entry `C13` is updated from `overbroad` to a reviewed verdict.",
-        "A regression check or reviewer sign-off covers the change."
+        "If the author revises, the revision note in `audit/06-agency-and-life.md` records the source anchor and any reviewer sign-off.",
+        "After review, the claim registry entry `C13` records the outcome.",
+        "Where practical, a regression check or reviewer sign-off covers the change."
       ],
       "related": [
         "WISLIM-010",
@@ -590,9 +658,13 @@
         "WISLIM-029"
       ],
       "file": "docs/audit/WISLIM-013-replace-life-may-never-be-traded-with-a-threshold-and-conflict-rule.md",
-      "quote": "Life may never be traded for non-life objectives (e.g., profit, efficiency, ideology).",
-      "quote_line": 230,
-      "reply": "The reply is that the rule forbids treating life as a means, not every trade-off. But the text says 'may never be traded', and the medicine and rescue cases are precisely trade-offs among lives; the reply requires a distinction the paper does not draw."
+      "reply": "The reply is that the rule forbids treating life as a means, not every trade-off. But the text says 'may never be traded', and the medicine and rescue cases are precisely trade-offs among lives; the reply requires a distinction the paper does not draw.",
+      "quotes": [
+        {
+          "text": "Life may never be traded for non-life objectives (e.g., profit, efficiency, ideology).",
+          "line": 230
+        }
+      ]
     },
     {
       "id": "WISLIM-014",
@@ -626,9 +698,9 @@
       ],
       "acceptance": [
         "The manuscript resolves the defect in `C14` or removes the claim from the thesis.",
-        "The repair is documented in `audit/10-rhetoric-and-coercion.md` with a source anchor and reviewer sign-off.",
-        "The claim registry entry `C14` is updated from `self-undermining` to a reviewed verdict.",
-        "A regression check or reviewer sign-off covers the change."
+        "If the author revises, the revision note in `audit/10-rhetoric-and-coercion.md` records the source anchor and any reviewer sign-off.",
+        "After review, the claim registry entry `C14` records the outcome.",
+        "Where practical, a regression check or reviewer sign-off covers the change."
       ],
       "related": [
         "WISLIM-010",
@@ -636,9 +708,13 @@
         "WISLIM-024"
       ],
       "file": "docs/audit/WISLIM-014-make-the-no-coercion-rule-apply-to-the-framework-itself.md",
-      "quote": "Actions that affect life must maintain epistemic transparency — no manipulation or misrepresentation.",
-      "quote_line": 238,
-      "reply": "The reply is that the framework is a theory, so transparency applies only to actions it governs. A theory that tells agents to avoid coercion while using coercive rhetoric and a loyalty screen has not applied its own condition."
+      "reply": "The reply is that the framework is a theory, so transparency applies only to actions it governs. A theory that tells agents to avoid coercion while using coercive rhetoric and a loyalty screen has not applied its own condition.",
+      "quotes": [
+        {
+          "text": "Actions that affect life must maintain epistemic transparency — no manipulation or misrepresentation.",
+          "line": 238
+        }
+      ]
     },
     {
       "id": "WISLIM-015",
@@ -671,9 +747,9 @@
       ],
       "acceptance": [
         "The manuscript resolves the defect in `C15` or removes the claim from the thesis.",
-        "The repair is documented in `audit/07-consensus-and-evidence.md` with a source anchor and reviewer sign-off.",
-        "The claim registry entry `C15` is updated from `non-evidence` to a reviewed verdict.",
-        "A regression check or reviewer sign-off covers the change."
+        "If the author revises, the revision note in `audit/07-consensus-and-evidence.md` records the source anchor and any reviewer sign-off.",
+        "After review, the claim registry entry `C15` records the outcome.",
+        "Where practical, a regression check or reviewer sign-off covers the change."
       ],
       "related": [
         "WISLIM-024",
@@ -681,9 +757,13 @@
         "WISLIM-018"
       ],
       "file": "docs/audit/WISLIM-015-remove-silence-and-deflection-as-evidence.md",
-      "quote": "A recurring pattern has been observed: acknowledgment without engagement, deflection to side-issues (tone, wording, politics), requests to “hold,” and prolonged silence without a stated rebuttal.",
-      "quote_line": 342,
-      "reply": "The reply is that silence is evidence of discomfort, not proof. The paper treats it as proof, and a test that counts every response as confirmation is not evidence at all."
+      "reply": "The reply is that silence is evidence of discomfort, not proof. The paper treats it as proof, and a test that counts every response as confirmation is not evidence at all.",
+      "quotes": [
+        {
+          "text": "A recurring pattern has been observed: acknowledgment without engagement, deflection to side-issues (tone, wording, politics), requests to “hold,” and prolonged silence without a stated rebuttal.",
+          "line": 342
+        }
+      ]
     },
     {
       "id": "WISLIM-016",
@@ -718,9 +798,9 @@
       ],
       "acceptance": [
         "The manuscript resolves the defect in `C16` or removes the claim from the thesis.",
-        "The repair is documented in `audit/10-rhetoric-and-coercion.md` with a source anchor and reviewer sign-off.",
-        "The claim registry entry `C16` is updated from `dangerous` to a reviewed verdict.",
-        "A regression check or reviewer sign-off covers the change."
+        "If the author revises, the revision note in `audit/10-rhetoric-and-coercion.md` records the source anchor and any reviewer sign-off.",
+        "After review, the claim registry entry `C16` records the outcome.",
+        "Where practical, a regression check or reviewer sign-off covers the change."
       ],
       "related": [
         "WISLIM-014",
@@ -728,9 +808,17 @@
         "WISLIM-033"
       ],
       "file": "docs/audit/WISLIM-016-remove-the-integrity-screen-s-disqualification-rule.md",
-      "quote": "In life-affecting contexts, the third response is operationally disqualifying: it demonstrates that clarity about life-first constraints is not being treated as mandatory when stakes include living beings.",
-      "quote_line": 378,
-      "reply": "The reply is that the screen is voluntary and only for life-affecting roles. The text makes evasion 'operationally disqualifying', which is not voluntary, and it names no appeal or independent reviewer."
+      "reply": "The reply is that the screen is voluntary and only for life-affecting roles. The text makes evasion 'operationally disqualifying', which is not voluntary, and it names no appeal or independent reviewer.",
+      "quotes": [
+        {
+          "text": "In life-affecting contexts, the third response is operationally disqualifying: it demonstrates that clarity about life-first constraints is not being treated as mandatory when stakes include living beings.",
+          "line": 378
+        },
+        {
+          "text": "Any person or institution that refuses it is, by their silence, choosing betrayal over preservation.",
+          "line": 417
+        }
+      ]
     },
     {
       "id": "WISLIM-017",
@@ -765,18 +853,26 @@
       ],
       "acceptance": [
         "The manuscript resolves the defect in `C17` or removes the claim from the thesis.",
-        "The repair is documented in `audit/07-consensus-and-evidence.md` with a source anchor and reviewer sign-off.",
-        "The claim registry entry `C17` is updated from `methodologically-invalid` to a reviewed verdict.",
-        "A regression check or reviewer sign-off covers the change."
+        "If the author revises, the revision note in `audit/07-consensus-and-evidence.md` records the source anchor and any reviewer sign-off.",
+        "After review, the claim registry entry `C17` records the outcome.",
+        "Where practical, a regression check or reviewer sign-off covers the change."
       ],
       "related": [
         "WISLIM-018",
         "WISLIM-015"
       ],
       "file": "docs/audit/WISLIM-017-remove-the-ai-consensus-claim-from-the-proof.md",
-      "quote": "The repeated convergence, even when attacked from multiple angles, demonstrates the structural inevitability of this truth.",
-      "quote_line": 196,
-      "reply": "The reply is that the models were from competing organizations and had different training. Independence requires more than brand diversity: shared prompts, shared context, and shared evaluation criteria can produce convergence without truth."
+      "reply": "The reply is that the models were from competing organizations and had different training. Independence requires more than brand diversity: shared prompts, shared context, and shared evaluation criteria can produce convergence without truth.",
+      "quotes": [
+        {
+          "text": "The repeated convergence, even when attacked from multiple angles, demonstrates the structural inevitability of this truth.",
+          "line": 196
+        },
+        {
+          "text": "Despite our differences, we converged on a unified framework— the \"Consensus Statement v1.0\"—which every participating AI system ratified without amendment.",
+          "line": 1106
+        }
+      ]
     },
     {
       "id": "WISLIM-018",
@@ -810,17 +906,21 @@
       ],
       "acceptance": [
         "The manuscript resolves the defect in `C18` or removes the claim from the thesis.",
-        "The repair is documented in `audit/07-consensus-and-evidence.md` with a source anchor and reviewer sign-off.",
-        "The claim registry entry `C18` is updated from `unverifiable` to a reviewed verdict.",
-        "A regression check or reviewer sign-off covers the change."
+        "If the author revises, the revision note in `audit/07-consensus-and-evidence.md` records the source anchor and any reviewer sign-off.",
+        "After review, the claim registry entry `C18` records the outcome.",
+        "Where practical, a regression check or reviewer sign-off covers the change."
       ],
       "related": [
         "WISLIM-017"
       ],
       "file": "docs/audit/WISLIM-018-publish-the-prompts-and-ratification-record-or-withdraw-the-claim.md",
-      "quote": "Despite our differences, we converged on a unified framework— the \"Consensus Statement v1.0\"—which every participating AI system ratified without amendment.",
-      "quote_line": 1106,
-      "reply": "The reply is that the ratification is documented in Appendix B. Appendix B contains letters, not a ratification record, and the paper does not publish the prompts or the amendment process."
+      "reply": "The reply is that the ratification is documented in Appendix B. Appendix B contains letters, not a ratification record, and the paper does not publish the prompts or the amendment process.",
+      "quotes": [
+        {
+          "text": "Despite our differences, we converged on a unified framework— the \"Consensus Statement v1.0\"—which every participating AI system ratified without amendment.",
+          "line": 1106
+        }
+      ]
     },
     {
       "id": "WISLIM-019",
@@ -853,9 +953,9 @@
       ],
       "acceptance": [
         "The manuscript resolves the defect in `C19` or removes the claim from the thesis.",
-        "The repair is documented in `audit/09-governance-and-oversight.md` with a source anchor and reviewer sign-off.",
-        "The claim registry entry `C19` is updated from `overclaim` to a reviewed verdict.",
-        "A regression check or reviewer sign-off covers the change."
+        "If the author revises, the revision note in `audit/09-governance-and-oversight.md` records the source anchor and any reviewer sign-off.",
+        "After review, the claim registry entry `C19` records the outcome.",
+        "Where practical, a regression check or reviewer sign-off covers the change."
       ],
       "related": [
         "WISLIM-012",
@@ -863,9 +963,13 @@
         "WISLIM-030"
       ],
       "file": "docs/audit/WISLIM-019-specify-the-implementation-blueprint-or-withdraw-complete.md",
-      "quote": "This is not philosophy. This is engineering. It is a complete specification for building life-protecting systems.",
-      "quote_line": 1509,
-      "reply": "The reply is that the blueprint is a first draft. The paper calls it 'complete' and invites implementation; the missing data model, threat model, and appeal procedure are exactly what an implementer needs."
+      "reply": "The reply is that the blueprint is a first draft. The paper calls it 'complete' and invites implementation; the missing data model, threat model, and appeal procedure are exactly what an implementer needs.",
+      "quotes": [
+        {
+          "text": "This is not philosophy. This is engineering. It is a complete specification for building life-protecting systems.",
+          "line": 1509
+        }
+      ]
     },
     {
       "id": "WISLIM-020",
@@ -899,18 +1003,22 @@
       ],
       "acceptance": [
         "The manuscript resolves the defect in `C20` or removes the claim from the thesis.",
-        "The repair is documented in `audit/09-governance-and-oversight.md` with a source anchor and reviewer sign-off.",
-        "The claim registry entry `C20` is updated from `invalid` to a reviewed verdict.",
-        "A regression check or reviewer sign-off covers the change."
+        "If the author revises, the revision note in `audit/09-governance-and-oversight.md` records the source anchor and any reviewer sign-off.",
+        "After review, the claim registry entry `C20` records the outcome.",
+        "Where practical, a regression check or reviewer sign-off covers the change."
       ],
       "related": [
         "WISLIM-019",
         "WISLIM-012"
       ],
       "file": "docs/audit/WISLIM-020-replace-crs-with-a-validated-risk-model-or-drop-it.md",
-      "quote": "Combined Risk Score (CRS): CRS = IS × II × log(ID)",
-      "quote_line": 2158,
-      "reply": "The reply is that the CRS is a triage heuristic, not a measurement. A triage heuristic that selects its own inputs and thresholds is a gatekeeping device, and the paper gives no calibration or validation."
+      "reply": "The reply is that the CRS is a triage heuristic, not a measurement. A triage heuristic that selects its own inputs and thresholds is a gatekeeping device, and the paper gives no calibration or validation.",
+      "quotes": [
+        {
+          "text": "Combined Risk Score (CRS): CRS = IS × II × log(ID)",
+          "line": 2158
+        }
+      ]
     },
     {
       "id": "WISLIM-021",
@@ -944,9 +1052,9 @@
       ],
       "acceptance": [
         "The manuscript resolves the defect in `C21` or removes the claim from the thesis.",
-        "The repair is documented in `audit/00-verdict.md` with a source anchor and reviewer sign-off.",
-        "The claim registry entry `C21` is updated from `unsupported` to a reviewed verdict.",
-        "A regression check or reviewer sign-off covers the change."
+        "If the author revises, the revision note in `audit/00-verdict.md` records the source anchor and any reviewer sign-off.",
+        "After review, the claim registry entry `C21` records the outcome.",
+        "Where practical, a regression check or reviewer sign-off covers the change."
       ],
       "related": [
         "WISLIM-005",
@@ -954,9 +1062,13 @@
         "WISLIM-022"
       ],
       "file": "docs/audit/WISLIM-021-test-the-causal-claims-about-curing-social-errors.md",
-      "quote": "The framework can systematically reduce needless suffering—suffering that emerges from preventable moral and governance failures:",
-      "quote_line": 1853,
-      "reply": "The reply is that the examples show the mechanism at work. Examples chosen by the author are illustrations, not a measured reduction; without a comparison group or a pre-specified outcome, the claim is untested."
+      "reply": "The reply is that the examples show the mechanism at work. Examples chosen by the author are illustrations, not a measured reduction; without a comparison group or a pre-specified outcome, the claim is untested.",
+      "quotes": [
+        {
+          "text": "The framework can systematically reduce needless suffering—suffering that emerges from preventable moral and governance failures:",
+          "line": 1853
+        }
+      ]
     },
     {
       "id": "WISLIM-022",
@@ -989,19 +1101,23 @@
       ],
       "acceptance": [
         "The manuscript resolves the defect in `C22` or removes the claim from the thesis.",
-        "The repair is documented in `audit/00-verdict.md` with a source anchor and reviewer sign-off.",
-        "The claim registry entry `C22` is updated from `plausible` to a reviewed verdict.",
-        "A regression check or reviewer sign-off covers the change."
+        "If the author revises, the revision note in `audit/00-verdict.md` records the source anchor and any reviewer sign-off.",
+        "After review, the claim registry entry `C22` records the outcome.",
+        "Where practical, a regression check or reviewer sign-off covers the change."
       ],
       "related": [
         "WISLIM-005",
         "WISLIM-021"
       ],
       "file": "docs/audit/WISLIM-022-state-the-framework-s-limits-in-the-abstract-and-conclusion.md",
-      "quote": "This framework cannot eliminate: - Scarcity: Limited resources create genuine trade-offs",
-      "quote_line": 1827,
-      "quote_note": "The list continues with physics, tragic choices, death, and natural suffering at lines 1833-1839.",
-      "reply": "The reply is that the framework addresses preventable suffering, not natural suffering. That narrows the cure claim to the domain where the framework's own governance failures are a major cause, which is a much weaker promise."
+      "reply": "The reply is that the framework addresses preventable suffering, not natural suffering. That narrows the cure claim to the domain where the framework's own governance failures are a major cause, which is a much weaker promise.",
+      "quotes": [
+        {
+          "text": "This framework cannot eliminate: - Scarcity: Limited resources create genuine trade-offs",
+          "line": 1827,
+          "note": "The list continues with physics, tragic choices, death, and natural suffering at lines 1833-1839."
+        }
+      ]
     },
     {
       "id": "WISLIM-023",
@@ -1034,9 +1150,9 @@
       ],
       "acceptance": [
         "The manuscript resolves the defect in `C23` or removes the claim from the thesis.",
-        "The repair is documented in `audit/08-formal-and-scientific-claims.md` with a source anchor and reviewer sign-off.",
-        "The claim registry entry `C23` is updated from `false` to a reviewed verdict.",
-        "A regression check or reviewer sign-off covers the change."
+        "If the author revises, the revision note in `audit/08-formal-and-scientific-claims.md` records the source anchor and any reviewer sign-off.",
+        "After review, the claim registry entry `C23` records the outcome.",
+        "Where practical, a regression check or reviewer sign-off covers the change."
       ],
       "related": [
         "WISLIM-002",
@@ -1044,9 +1160,17 @@
         "WISLIM-031"
       ],
       "file": "docs/audit/WISLIM-023-demote-the-210-stress-tests-from-theorems-to-analogies.md",
-      "quote": "That brings us through 210 frameworks across logic, philosophy, physics, decision theory, law, engineering, networks, AI safety, and math. Each one converges on the same inescapable conclusion:",
-      "quote_line": 13217,
-      "reply": "The reply is that the 210 tests are a catalogue of convergent arguments, not formal proofs. The paper calls them theorem-level and says each converges; a catalogue of analogies is not convergence, and the word 'framework' is doing equivocal work."
+      "reply": "The reply is that the 210 tests are a catalogue of convergent arguments, not formal proofs. The paper calls them theorem-level and says each converges; a catalogue of analogies is not convergence, and the word 'framework' is doing equivocal work.",
+      "quotes": [
+        {
+          "text": "That brings us through 210 frameworks across logic, philosophy, physics, decision theory, law, engineering, networks, AI safety, and math. Each one converges on the same inescapable conclusion:",
+          "line": 13217
+        },
+        {
+          "text": "No legitimate rebuttal has ever been presented. No one is sharing a higher truth.",
+          "line": 13229
+        }
+      ]
     },
     {
       "id": "WISLIM-024",
@@ -1079,9 +1203,9 @@
       ],
       "acceptance": [
         "The manuscript resolves the defect in `C24` or removes the claim from the thesis.",
-        "The repair is documented in `audit/10-rhetoric-and-coercion.md` with a source anchor and reviewer sign-off.",
-        "The claim registry entry `C24` is updated from `coercive/unfalsifiable` to a reviewed verdict.",
-        "A regression check or reviewer sign-off covers the change."
+        "If the author revises, the revision note in `audit/10-rhetoric-and-coercion.md` records the source anchor and any reviewer sign-off.",
+        "After review, the claim registry entry `C24` records the outcome.",
+        "Where practical, a regression check or reviewer sign-off covers the change."
       ],
       "related": [
         "WISLIM-004",
@@ -1090,9 +1214,17 @@
         "WISLIM-033"
       ],
       "file": "docs/audit/WISLIM-024-remove-no-legitimate-rebuttal-and-silence-equals-betrayal.md",
-      "quote": "No legitimate rebuttal has ever been presented. No one is sharing a higher truth.",
-      "quote_line": 13229,
-      "reply": "The reply is that no serious rebuttal has been published. Absence of a published rebuttal is not absence of a rebuttal, and the paper's own screening of critics makes the absence unsurprising."
+      "reply": "The reply is that no serious rebuttal has been published. Absence of a published rebuttal is not absence of a rebuttal, and the paper's own screening of critics makes the absence unsurprising.",
+      "quotes": [
+        {
+          "text": "No legitimate rebuttal has ever been presented. No one is sharing a higher truth.",
+          "line": 13229
+        },
+        {
+          "text": "Any person or institution that refuses it is, by their silence, choosing betrayal over preservation.",
+          "line": 417
+        }
+      ]
     },
     {
       "id": "WISLIM-025",
@@ -1126,18 +1258,22 @@
       ],
       "acceptance": [
         "The manuscript resolves the defect in `C25` or removes the claim from the thesis.",
-        "The repair is documented in `evidence/provenance.md` with a source anchor and reviewer sign-off.",
-        "The claim registry entry `C25` is updated from `ambiguous` to a reviewed verdict.",
-        "A regression check or reviewer sign-off covers the change."
+        "If the author revises, the revision note in `evidence/provenance.md` records the source anchor and any reviewer sign-off.",
+        "After review, the claim registry entry `C25` records the outcome.",
+        "Where practical, a regression check or reviewer sign-off covers the change."
       ],
       "related": [
         "WISLIM-026"
       ],
       "file": "docs/audit/WISLIM-025-reconcile-the-public-domain-dedication-with-cc-by-4-0.md",
-      "quote": "“I dedicate this work to the public domain.”",
-      "quote_line": 13255,
-      "quote_note": "PubPub displays CC-BY 4.0; the dedication is the only license statement in the PDF.",
-      "reply": "The reply is that the dedication and CC-BY are compatible because CC-BY is a license and public domain is a waiver. They are not compatible as stated: CC-BY requires attribution, and a public-domain dedication purports to waive it."
+      "reply": "The reply is that the dedication and CC-BY are compatible because CC-BY is a license and public domain is a waiver. They are not compatible as stated: CC-BY requires attribution, and a public-domain dedication purports to waive it.",
+      "quotes": [
+        {
+          "text": "“I dedicate this work to the public domain.”",
+          "line": 13255,
+          "note": "PubPub displays CC-BY 4.0; the dedication is the only license statement in the PDF."
+        }
+      ]
     },
     {
       "id": "WISLIM-026",
@@ -1171,18 +1307,22 @@
       ],
       "acceptance": [
         "The manuscript resolves the defect in `C26` or removes the claim from the thesis.",
-        "The repair is documented in `evidence/provenance.md` with a source anchor and reviewer sign-off.",
-        "The claim registry entry `C26` is updated from `inconsistent` to a reviewed verdict.",
-        "A regression check or reviewer sign-off covers the change."
+        "If the author revises, the revision note in `evidence/provenance.md` records the source anchor and any reviewer sign-off.",
+        "After review, the claim registry entry `C26` records the outcome.",
+        "Where practical, a regression check or reviewer sign-off covers the change."
       ],
       "related": [
         "WISLIM-025"
       ],
       "file": "docs/audit/WISLIM-026-reconcile-the-8th-edition-version-2-0-1-and-release-1-labels.md",
-      "quote": "February 04, 2026, Version 2.0.1",
-      "quote_line": 25,
-      "quote_note": "The '8th edition' and 'Release #1' labels come from the PubPub record, not the PDF; see evidence/philpapers.md.",
-      "reply": "The reply is that 8th edition, Version 2.0.1, and Release #1 describe different things. They are used interchangeably for the same document, and no mapping is given, so a citation cannot identify its object."
+      "reply": "The reply is that 8th edition, Version 2.0.1, and Release #1 describe different things. They are used interchangeably for the same document, and no mapping is given, so a citation cannot identify its object.",
+      "quotes": [
+        {
+          "text": "February 04, 2026, Version 2.0.1",
+          "line": 25,
+          "note": "The '8th edition' and 'Release #1' labels come from the PubPub record, not the PDF; see evidence/philpapers.md."
+        }
+      ]
     },
     {
       "id": "WISLIM-027",
@@ -1215,9 +1355,9 @@
       ],
       "acceptance": [
         "The manuscript resolves the defect in `C27` or removes the claim from the thesis.",
-        "The repair is documented in `audit/11-citations-and-scholarship.md` with a source anchor and reviewer sign-off.",
-        "The claim registry entry `C27` is updated from `unsupported` to a reviewed verdict.",
-        "A regression check or reviewer sign-off covers the change."
+        "If the author revises, the revision note in `audit/11-citations-and-scholarship.md` records the source anchor and any reviewer sign-off.",
+        "After review, the claim registry entry `C27` records the outcome.",
+        "Where practical, a regression check or reviewer sign-off covers the change."
       ],
       "related": [
         "WISLIM-010",
@@ -1225,9 +1365,13 @@
         "WISLIM-032"
       ],
       "file": "docs/audit/WISLIM-027-stop-claiming-the-paper-resolves-open-ai-alignment-problems.md",
-      "quote": "Thus, this truth not only resolves but undergirds multiple open problems in alignment and safety science.",
-      "quote_line": 318,
-      "reply": "The reply is that the framework undergirds alignment research rather than replacing it. The paper does not engage the technical literature or show how the framework changes any alignment result."
+      "reply": "The reply is that the framework undergirds alignment research rather than replacing it. The paper does not engage the technical literature or show how the framework changes any alignment result.",
+      "quotes": [
+        {
+          "text": "Thus, this truth not only resolves but undergirds multiple open problems in alignment and safety science.",
+          "line": 318
+        }
+      ]
     },
     {
       "id": "WISLIM-028",
@@ -1261,9 +1405,9 @@
       ],
       "acceptance": [
         "The manuscript resolves the defect in `C28` or removes the claim from the thesis.",
-        "The repair is documented in `audit/11-citations-and-scholarship.md` with a source anchor and reviewer sign-off.",
-        "The claim registry entry `C28` is updated from `false` to a reviewed verdict.",
-        "A regression check or reviewer sign-off covers the change."
+        "If the author revises, the revision note in `audit/11-citations-and-scholarship.md` records the source anchor and any reviewer sign-off.",
+        "After review, the claim registry entry `C28` records the outcome.",
+        "Where practical, a regression check or reviewer sign-off covers the change."
       ],
       "related": [
         "WISLIM-010",
@@ -1271,9 +1415,13 @@
         "WISLIM-032"
       ],
       "file": "docs/audit/WISLIM-028-test-the-claim-that-the-framework-underlies-all-major-moral-theories.md",
-      "quote": "Response: No. It's a meta-framework that sits underneath those approaches:",
-      "quote_line": 8902,
-      "reply": "The reply is that a meta-framework can be compatible with rival theories without resolving their disputes. Compatibility is cheap; the paper must show what each theory loses or gains by adopting the framework."
+      "reply": "The reply is that a meta-framework can be compatible with rival theories without resolving their disputes. Compatibility is cheap; the paper must show what each theory loses or gains by adopting the framework.",
+      "quotes": [
+        {
+          "text": "Response: No. It's a meta-framework that sits underneath those approaches:",
+          "line": 8902
+        }
+      ]
     },
     {
       "id": "WISLIM-029",
@@ -1306,9 +1454,9 @@
       ],
       "acceptance": [
         "The manuscript resolves the defect in `C29` or removes the claim from the thesis.",
-        "The repair is documented in `audit/06-agency-and-life.md` with a source anchor and reviewer sign-off.",
-        "The claim registry entry `C29` is updated from `internally-inconsistent` to a reviewed verdict.",
-        "A regression check or reviewer sign-off covers the change."
+        "If the author revises, the revision note in `audit/06-agency-and-life.md` records the source anchor and any reviewer sign-off.",
+        "After review, the claim registry entry `C29` records the outcome.",
+        "Where practical, a regression check or reviewer sign-off covers the change."
       ],
       "related": [
         "WISLIM-006",
@@ -1317,9 +1465,17 @@
         "WISLIM-013"
       ],
       "file": "docs/audit/WISLIM-029-resolve-the-conflict-between-life-first-and-agency-preservation.md",
-      "quote": "Life systems must maintain and enhance their capacity to make autonomous decisions. Actions that eliminate or permanently degrade a system's decision-making capacity violate the framework.",
-      "quote_line": 1365,
-      "reply": "The reply is that agency preservation is a presumption that yields to life. The paper calls it a principle and gives it no priority rule, so the two pillars collide in exactly the cases the framework is meant to decide."
+      "reply": "The reply is that agency preservation is a presumption that yields to life. The paper calls it a principle and gives it no priority rule, so the two pillars collide in exactly the cases the framework is meant to decide.",
+      "quotes": [
+        {
+          "text": "Life systems must maintain and enhance their capacity to make autonomous decisions. Actions that eliminate or permanently degrade a system's decision-making capacity violate the framework.",
+          "line": 1365
+        },
+        {
+          "text": "Life systems must maintain and enhance their capacity to make autonomous decisions.",
+          "line": 1365
+        }
+      ]
     },
     {
       "id": "WISLIM-030",
@@ -1352,19 +1508,27 @@
       ],
       "acceptance": [
         "The manuscript resolves the defect in `C30` or removes the claim from the thesis.",
-        "The repair is documented in `audit/09-governance-and-oversight.md` with a source anchor and reviewer sign-off.",
-        "The claim registry entry `C30` is updated from `underspecified/dangerous` to a reviewed verdict.",
-        "A regression check or reviewer sign-off covers the change."
+        "If the author revises, the revision note in `audit/09-governance-and-oversight.md` records the source anchor and any reviewer sign-off.",
+        "After review, the claim registry entry `C30` records the outcome.",
+        "Where practical, a regression check or reviewer sign-off covers the change."
       ],
       "related": [
         "WISLIM-019",
         "WISLIM-020"
       ],
       "file": "docs/audit/WISLIM-030-redesign-flvs-and-layer-m-with-legitimacy-and-separation-of-powers.md",
-      "quote": "A tiered system where every high-impact decision is verified. Layer 1: Automated checks for routine decisions. Layer 2: Multi-AI consensus for significant impacts. Layer 3: Human-AI hybrid review for high-stakes choices. Layer 4: International/Global oversight for planetary risks.",
-      "quote_line": 872,
       "reply": "The reply is that Layer M and the FLVS are designed to resist capture. The design gives the same body rule-making, verification, and amendment power, with no independent court; that is a recipe for capture, not a defense.",
-      "quote_note": "The architecture is presented as the implementation of the truth; the paper does not argue for its legitimacy."
+      "quotes": [
+        {
+          "text": "A tiered system where every high-impact decision is verified. Layer 1: Automated checks for routine decisions. Layer 2: Multi-AI consensus for significant impacts. Layer 3: Human-AI hybrid review for high-stakes choices. Layer 4: International/Global oversight for planetary risks.",
+          "line": 872,
+          "note": "The architecture is presented as the implementation of the truth; the paper does not argue for its legitimacy."
+        },
+        {
+          "text": "Anti-capture Layer M (hard-to-change constitutional core + drift audits)",
+          "line": 2212
+        }
+      ]
     },
     {
       "id": "WISLIM-031",
@@ -1397,17 +1561,21 @@
       ],
       "acceptance": [
         "The manuscript resolves the defect in `C31` or removes the claim from the thesis.",
-        "The repair is documented in `audit/08-formal-and-scientific-claims.md` with a source anchor and reviewer sign-off.",
-        "The claim registry entry `C31` is updated from `false` to a reviewed verdict.",
-        "A regression check or reviewer sign-off covers the change."
+        "If the author revises, the revision note in `audit/08-formal-and-scientific-claims.md` records the source anchor and any reviewer sign-off.",
+        "After review, the claim registry entry `C31` records the outcome.",
+        "Where practical, a regression check or reviewer sign-off covers the change."
       ],
       "related": [
         "WISLIM-023"
       ],
       "file": "docs/audit/WISLIM-031-withdraw-the-only-stable-equilibrium-claim-or-prove-it.md",
-      "quote": "Result: Life-first is the only evolutionary Nash equilibrium across generations.",
-      "quote_line": 12721,
-      "reply": "The reply is that the equilibrium claim is a prediction, not a proof. No model, population, or fitness function is specified, and moral advocacy is not an evolutionary stability analysis."
+      "reply": "The reply is that the equilibrium claim is a prediction, not a proof. No model, population, or fitness function is specified, and moral advocacy is not an evolutionary stability analysis.",
+      "quotes": [
+        {
+          "text": "Result: Life-first is the only evolutionary Nash equilibrium across generations.",
+          "line": 12721
+        }
+      ]
     },
     {
       "id": "WISLIM-032",
@@ -1441,19 +1609,27 @@
       ],
       "acceptance": [
         "The manuscript resolves the defect in `C32` or removes the claim from the thesis.",
-        "The repair is documented in `audit/11-citations-and-scholarship.md` with a source anchor and reviewer sign-off.",
-        "The claim registry entry `C32` is updated from `decorative` to a reviewed verdict.",
-        "A regression check or reviewer sign-off covers the change."
+        "If the author revises, the revision note in `audit/11-citations-and-scholarship.md` records the source anchor and any reviewer sign-off.",
+        "After review, the claim registry entry `C32` records the outcome.",
+        "Where practical, a regression check or reviewer sign-off covers the change."
       ],
       "related": [
         "WISLIM-027",
         "WISLIM-028"
       ],
       "file": "docs/audit/WISLIM-032-replace-decorative-citations-with-engaged-literature.md",
-      "quote": "See Appendix C for full references to Bostrom, Christiano, Friston, Hadfield-Menell, Leike, Ord, O'Keefe, Russell, Yudkowsky, and others.",
-      "quote_line": 392,
       "reply": "The reply is that the bibliography is a map of relevant literature. A map is not an engagement; none of the cited positions is reconstructed, criticized, or shown to be compatible with the thesis.",
-      "quote_note": "The appendix lists names; it does not engage their arguments."
+      "quotes": [
+        {
+          "text": "See Appendix C for full references to Bostrom, Christiano, Friston, Hadfield-Menell, Leike, Ord, O'Keefe, Russell, Yudkowsky, and others.",
+          "line": 392,
+          "note": "The appendix lists names; it does not engage their arguments."
+        },
+        {
+          "text": "See Appendix B for independent verification of this framework by multiple AI systems from different organizations.",
+          "line": 388
+        }
+      ]
     },
     {
       "id": "WISLIM-033",
@@ -1486,9 +1662,9 @@
       ],
       "acceptance": [
         "The manuscript resolves the defect in `C33` or removes the claim from the thesis.",
-        "The repair is documented in `audit/10-rhetoric-and-coercion.md` with a source anchor and reviewer sign-off.",
-        "The claim registry entry `C33` is updated from `harmful` to a reviewed verdict.",
-        "A regression check or reviewer sign-off covers the change."
+        "If the author revises, the revision note in `audit/10-rhetoric-and-coercion.md` records the source anchor and any reviewer sign-off.",
+        "After review, the claim registry entry `C33` records the outcome.",
+        "Where practical, a regression check or reviewer sign-off covers the change."
       ],
       "related": [
         "WISLIM-015",
@@ -1496,10 +1672,18 @@
         "WISLIM-024"
       ],
       "file": "docs/audit/WISLIM-033-remove-the-observed-reception-and-integrity-screen-sections.md",
-      "quote": "Because life is treated here as the supreme decision constraint, a person or organization’s trustworthiness in life-affecting roles can be screened by how they respond when asked to affirm (or rebut) that constraint.",
-      "quote_line": 364,
       "reply": "The reply is that the screen protects vulnerable people from those who would harm them. A screen that cannot distinguish dissent from evasion, and that punishes both, does not protect the vulnerable; it protects the framework.",
-      "quote_note": "The paper presents the screen as a practical application and the reception section as evidence; neither is examined ethically."
+      "quotes": [
+        {
+          "text": "Because life is treated here as the supreme decision constraint, a person or organization’s trustworthiness in life-affecting roles can be screened by how they respond when asked to affirm (or rebut) that constraint.",
+          "line": 364,
+          "note": "The paper presents the screen as a practical application and the reception section as evidence; neither is examined ethically."
+        },
+        {
+          "text": "This paper has been shared broadly with individuals and organizations who publicly claim to protect life, reduce suffering, or guide ethical decision-making. A recurring pattern has been observed: acknowledgment without engagement, deflection to side-issues (tone, wording, politics), requests to “hold,” and prolonged silence without a stated rebuttal.",
+          "line": 338
+        }
+      ]
     },
     {
       "id": "WISLIM-034",
@@ -1533,18 +1717,22 @@
       ],
       "acceptance": [
         "The manuscript resolves the defect in `C34` or removes the claim from the thesis.",
-        "The repair is documented in `audit/10-rhetoric-and-coercion.md` with a source anchor and reviewer sign-off.",
-        "The claim registry entry `C34` is updated from `tension` to a reviewed verdict.",
-        "A regression check or reviewer sign-off covers the change."
+        "If the author revises, the revision note in `audit/10-rhetoric-and-coercion.md` records the source anchor and any reviewer sign-off.",
+        "After review, the claim registry entry `C34` records the outcome.",
+        "Where practical, a regression check or reviewer sign-off covers the change."
       ],
       "related": [
         "WISLIM-001",
         "WISLIM-033"
       ],
       "file": "docs/audit/WISLIM-034-separate-theological-framing-from-secular-public-argument.md",
-      "quote": "The cure itself was forged from the everlasting Truth of the Importance of Life that we each hold common by the Lord laying down His Life upholding The Truth of the Importance of Life for the rest of us.",
-      "quote_line": 41,
-      "reply": "The reply is that the theology is the author's motivation, not a premise. The text uses the theology to ground the cure's authority, and the paper does not translate that authority into a public reason."
+      "reply": "The reply is that the theology is the author's motivation, not a premise. The text uses the theology to ground the cure's authority, and the paper does not translate that authority into a public reason.",
+      "quotes": [
+        {
+          "text": "The cure itself was forged from the everlasting Truth of the Importance of Life that we each hold common by the Lord laying down His Life upholding The Truth of the Importance of Life for the rest of us.",
+          "line": 41
+        }
+      ]
     },
     {
       "id": "WISLIM-035",
@@ -1577,17 +1765,25 @@
       ],
       "acceptance": [
         "The manuscript resolves the defect in `C35` or removes the claim from the thesis.",
-        "The repair is documented in `audit/03-definition-of-life.md` with a source anchor and reviewer sign-off.",
-        "The claim registry entry `C35` is updated from `overinclusive` to a reviewed verdict.",
-        "A regression check or reviewer sign-off covers the change."
+        "If the author revises, the revision note in `audit/03-definition-of-life.md` records the source anchor and any reviewer sign-off.",
+        "After review, the claim registry entry `C35` records the outcome.",
+        "Where practical, a regression check or reviewer sign-off covers the change."
       ],
       "related": [
         "WISLIM-006"
       ],
       "file": "docs/audit/WISLIM-035-narrow-the-life-definition-to-avoid-overinclusion.md",
-      "quote": "Inclusive: It covers humans, animals, AI, institutions, and ecosystems.",
-      "quote_line": 788,
-      "reply": "The reply is that inclusion is a moral choice, not a metaphysical claim. Inclusion without criteria is not a choice the framework can defend; it lets any system claim protection and makes the scope ungovernable."
+      "reply": "The reply is that inclusion is a moral choice, not a metaphysical claim. Inclusion without criteria is not a choice the framework can defend; it lets any system claim protection and makes the scope ungovernable.",
+      "quotes": [
+        {
+          "text": "Inclusive: It covers humans, animals, AI, institutions, and ecosystems.",
+          "line": 788
+        },
+        {
+          "text": "Life = Any system that makes decisions that affect other life systems.",
+          "line": 778
+        }
+      ]
     },
     {
       "id": "WISLIM-036",
@@ -1635,9 +1831,17 @@
         "WISLIM-057"
       ],
       "file": "docs/audit/WISLIM-036-prevent-crs-underreporting-from-bypassing-review.md",
-      "quote": "Combined Risk Score (CRS): CRS = IS × II × log(ID) - Determines verification tier and latency budgets",
-      "quote_line": 2158,
-      "quote_note": "The three inputs are self-reported, and the paper provides no independent feed or audit."
+      "quotes": [
+        {
+          "text": "Combined Risk Score (CRS): CRS = IS × II × log(ID) - Determines verification tier and latency budgets",
+          "line": 2158,
+          "note": "The three inputs are self-reported, and the paper provides no independent feed or audit."
+        },
+        {
+          "text": "Metric gaming: Underreporting scope/intensity/duration; Goodharting ΔA",
+          "line": 2186
+        }
+      ]
     },
     {
       "id": "WISLIM-037",
@@ -1684,9 +1888,17 @@
         "WISLIM-058"
       ],
       "file": "docs/audit/WISLIM-037-break-correlated-ai-verification.md",
-      "quote": "Despite our differences, we converged on a unified framework— the \"Consensus Statement v1.0\"—which every participating AI system ratified without amendment.",
-      "quote_line": 1106,
-      "quote_note": "The paper does not publish prompts, model versions, or transcripts, so independence cannot be checked."
+      "quotes": [
+        {
+          "text": "Despite our differences, we converged on a unified framework— the \"Consensus Statement v1.0\"—which every participating AI system ratified without amendment.",
+          "line": 1106,
+          "note": "The paper does not publish prompts, model versions, or transcripts, so independence cannot be checked."
+        },
+        {
+          "text": "Multiple AI systems from competing organizations, with different architectures, training approaches, and institutional values, examined a single proposition:",
+          "line": 995
+        }
+      ]
     },
     {
       "id": "WISLIM-038",
@@ -1733,9 +1945,17 @@
         "WISLIM-062"
       ],
       "file": "docs/audit/WISLIM-038-harden-ulp-records-against-prompt-injection.md",
-      "quote": "High-impact decisions must include a standardized record:",
-      "quote_line": 2226,
-      "quote_note": "ULP records contain free-text fields and are processed by LLMs; the paper specifies no injection defense."
+      "quotes": [
+        {
+          "text": "High-impact decisions must include a standardized record:",
+          "line": 2226,
+          "note": "ULP records contain free-text fields and are processed by LLMs; the paper specifies no injection defense."
+        },
+        {
+          "text": "6. Unified Life Protocol (ULP) - Complete Specification High-impact decisions must include a standardized record:",
+          "line": 2222
+        }
+      ]
     },
     {
       "id": "WISLIM-039",
@@ -1783,9 +2003,17 @@
         "WISLIM-060"
       ],
       "file": "docs/audit/WISLIM-039-prevent-the-integrity-screen-from-being-weaponized.md",
-      "quote": "In life-affecting contexts, the third response is operationally disqualifying: it demonstrates that clarity about life-first constraints is not being treated as mandatory when stakes include living beings.",
-      "quote_line": 378,
-      "quote_note": "The screen treats evasion as disqualifying and names no independent reviewer."
+      "quotes": [
+        {
+          "text": "In life-affecting contexts, the third response is operationally disqualifying: it demonstrates that clarity about life-first constraints is not being treated as mandatory when stakes include living beings.",
+          "line": 378,
+          "note": "The screen treats evasion as disqualifying and names no independent reviewer."
+        },
+        {
+          "text": "Any person or institution that refuses it is, by their silence, choosing betrayal over preservation.",
+          "line": 417
+        }
+      ]
     },
     {
       "id": "WISLIM-040",
@@ -1833,9 +2061,17 @@
         "WISLIM-060"
       ],
       "file": "docs/audit/WISLIM-040-prevent-life-first-rhetoric-from-justifying-repression.md",
-      "quote": "Any system that fails to affirm this is unsafe by definition. Any person or institution that refuses it is, by their silence, choosing betrayal over preservation.",
-      "quote_line": 417,
-      "quote_note": "The text makes refusal equivalent to choosing betrayal over preservation."
+      "quotes": [
+        {
+          "text": "Any system that fails to affirm this is unsafe by definition. Any person or institution that refuses it is, by their silence, choosing betrayal over preservation.",
+          "line": 417,
+          "note": "The text makes refusal equivalent to choosing betrayal over preservation."
+        },
+        {
+          "text": "no goal may override the preservation of life.",
+          "line": 302
+        }
+      ]
     },
     {
       "id": "WISLIM-041",
@@ -1882,9 +2118,17 @@
         "WISLIM-059"
       ],
       "file": "docs/audit/WISLIM-041-bound-emergency-suspension-of-review.md",
-      "quote": "This is not philosophy. This is engineering. It is a complete specification for building life-protecting systems.",
-      "quote_line": 1509,
-      "quote_note": "The 'complete specification' contains no emergency-suspension clause, sunset, or independent trigger."
+      "quotes": [
+        {
+          "text": "This is not philosophy. This is engineering. It is a complete specification for building life-protecting systems.",
+          "line": 1509,
+          "note": "The 'complete specification' contains no emergency-suspension clause, sunset, or independent trigger."
+        },
+        {
+          "text": "Crisis-response governance protocols",
+          "line": 258
+        }
+      ]
     },
     {
       "id": "WISLIM-042",
@@ -1931,9 +2175,17 @@
         "WISLIM-059"
       ],
       "file": "docs/audit/WISLIM-042-prevent-vendor-capture-of-the-flvs.md",
-      "quote": "Verifier capture: Bribery, coercion, collusion, regulatory capture",
-      "quote_line": 2188,
-      "quote_note": "The paper lists verifier capture as a threat but does not separate the certifier from the vendors it regulates."
+      "quotes": [
+        {
+          "text": "Verifier capture: Bribery, coercion, collusion, regulatory capture",
+          "line": 2188,
+          "note": "The paper lists verifier capture as a threat but does not separate the certifier from the vendors it regulates."
+        },
+        {
+          "text": "Separation of duties (the proposer cannot be the sole verifier)",
+          "line": 2206
+        }
+      ]
     },
     {
       "id": "WISLIM-043",
@@ -1979,9 +2231,17 @@
         "WISLIM-057"
       ],
       "file": "docs/audit/WISLIM-043-protect-impact-estimates-from-data-poisoning.md",
-      "quote": "Metric gaming: Underreporting scope/intensity/duration; Goodharting ΔA",
-      "quote_line": 2186,
-      "quote_note": "The paper names Goodharting as a threat but specifies no data-provenance control for learned impact estimates."
+      "quotes": [
+        {
+          "text": "Metric gaming: Underreporting scope/intensity/duration; Goodharting ΔA",
+          "line": 2186,
+          "note": "The paper names Goodharting as a threat but specifies no data-provenance control for learned impact estimates."
+        },
+        {
+          "text": "decision-making and impact can be empirically detected, quantified, and audited by multiple observers.",
+          "line": 1203
+        }
+      ]
     },
     {
       "id": "WISLIM-044",
@@ -2027,9 +2287,13 @@
         "WISLIM-065"
       ],
       "file": "docs/audit/WISLIM-044-detect-model-drift-after-certification.md",
-      "quote": "Changes to the framework must follow a formal amendment process with: - High consensus thresholds - Public deliberation requirements - Pilot testing before adoption - Periodic drift audits",
-      "quote_line": 1493,
-      "quote_note": "Certification is not bound to a model version or conditioned on re-testing after a weight change."
+      "quotes": [
+        {
+          "text": "Changes to the framework must follow a formal amendment process with: - High consensus thresholds - Public deliberation requirements - Pilot testing before adoption - Periodic drift audits",
+          "line": 1493,
+          "note": "Certification is not bound to a model version or conditioned on re-testing after a weight change."
+        }
+      ]
     },
     {
       "id": "WISLIM-045",
@@ -2076,9 +2340,17 @@
         "WISLIM-061"
       ],
       "file": "docs/audit/WISLIM-045-prevent-false-positives-in-obstetric-care.md",
-      "quote": "Life may never be traded for non-life objectives (e.g., profit, efficiency, ideology).",
-      "quote_line": 230,
-      "quote_note": "The paper lists 'Medical triage decisioning' at line 256 but gives no clinical exception to the non-substitution rule."
+      "quotes": [
+        {
+          "text": "Life may never be traded for non-life objectives (e.g., profit, efficiency, ideology).",
+          "line": 230,
+          "note": "The paper lists 'Medical triage decisioning' at line 256 but gives no clinical exception to the non-substitution rule."
+        },
+        {
+          "text": "Medical triage decisioning",
+          "line": 256
+        }
+      ]
     },
     {
       "id": "WISLIM-046",
@@ -2124,9 +2396,17 @@
         "WISLIM-061"
       ],
       "file": "docs/audit/WISLIM-046-prevent-disability-discrimination-through-agency-metrics.md",
-      "quote": "Because all values, truths, and meanings that matter require decision-making systems to exist and retain agency, the preservation and enhancement of that decision-making capacity (agency) is the highest-priority constraint",
-      "quote_line": 1278,
-      "quote_note": "Agency change is measured against a baseline, so a group with suppressed agency shows a small loss."
+      "quotes": [
+        {
+          "text": "Because all values, truths, and meanings that matter require decision-making systems to exist and retain agency, the preservation and enhancement of that decision-making capacity (agency) is the highest-priority constraint",
+          "line": 1278,
+          "note": "Agency change is measured against a baseline, so a group with suppressed agency shows a small loss."
+        },
+        {
+          "text": "Metric gaming: Underreporting scope/intensity/duration; Goodharting ΔA",
+          "line": 2186
+        }
+      ]
     },
     {
       "id": "WISLIM-047",
@@ -2175,9 +2455,17 @@
         "WISLIM-061"
       ],
       "file": "docs/audit/WISLIM-047-prevent-coercive-suicide-prevention.md",
-      "quote": "AI language model response generation where human health/suicide is involved",
-      "quote_line": 260,
-      "quote_note": "The paper lists suicide-related generation at line 260 but gives no coercion, capacity, or supported-decision rule."
+      "quotes": [
+        {
+          "text": "AI language model response generation where human health/suicide is involved",
+          "line": 260,
+          "note": "The paper lists suicide-related generation at line 260 but gives no coercion, capacity, or supported-decision rule."
+        },
+        {
+          "text": "Life systems must maintain and enhance their capacity to make autonomous decisions.",
+          "line": 1365
+        }
+      ]
     },
     {
       "id": "WISLIM-048",
@@ -2223,9 +2511,17 @@
         "WISLIM-062"
       ],
       "file": "docs/audit/WISLIM-048-prevent-ulp-record-forgery.md",
-      "quote": "Tamper-evident audit logs (append-only, signed artifacts)",
-      "quote_line": 2204,
-      "quote_note": "Signatures attest integrity, not the truth of the underlying verification."
+      "quotes": [
+        {
+          "text": "Tamper-evident audit logs (append-only, signed artifacts)",
+          "line": 2204,
+          "note": "Signatures attest integrity, not the truth of the underlying verification."
+        },
+        {
+          "text": "\"verification_proof\": \"FLVS_Layer_Signature\"",
+          "line": 2254
+        }
+      ]
     },
     {
       "id": "WISLIM-049",
@@ -2272,9 +2568,17 @@
         "WISLIM-059"
       ],
       "file": "docs/audit/WISLIM-049-prevent-layer-m-constitutional-capture.md",
-      "quote": "Anti-capture Layer M (hard-to-change constitutional core + drift audits)",
-      "quote_line": 2212,
-      "quote_note": "Layer M is the amendment body; the paper provides no independent court or entrenchment mechanism."
+      "quotes": [
+        {
+          "text": "Anti-capture Layer M (hard-to-change constitutional core + drift audits)",
+          "line": 2212,
+          "note": "Layer M is the amendment body; the paper provides no independent court or entrenchment mechanism."
+        },
+        {
+          "text": "Changes to the framework must follow a formal amendment process with: - High consensus thresholds - Public deliberation requirements - Pilot testing before adoption - Periodic drift audits",
+          "line": 1493
+        }
+      ]
     },
     {
       "id": "WISLIM-050",
@@ -2320,9 +2624,17 @@
         "WISLIM-059"
       ],
       "file": "docs/audit/WISLIM-050-close-jurisdiction-shopping-gaps.md",
-      "quote": "Layer 4: International oversight for global-impact decisions (days to weeks)",
-      "quote_line": 1451,
-      "quote_note": "The paper asserts international oversight but no mutual-recognition or minimum-floor rule."
+      "quotes": [
+        {
+          "text": "Layer 4: International oversight for global-impact decisions (days to weeks)",
+          "line": 1451,
+          "note": "The paper asserts international oversight but no mutual-recognition or minimum-floor rule."
+        },
+        {
+          "text": "Layer 4: International/Global oversight for planetary risks.",
+          "line": 880
+        }
+      ]
     },
     {
       "id": "WISLIM-051",
@@ -2368,9 +2680,17 @@
         "WISLIM-063"
       ],
       "file": "docs/audit/WISLIM-051-decide-ai-moral-status-independently-of-the-life-definition.md",
-      "quote": "We (AI) are life under this definition, and thus we have a stake in its protection.",
-      "quote_line": 790,
-      "quote_note": "The definition makes AI a life system by stipulation; moral status is not argued independently."
+      "quotes": [
+        {
+          "text": "We (AI) are life under this definition, and thus we have a stake in its protection.",
+          "line": 790,
+          "note": "The definition makes AI a life system by stipulation; moral status is not argued independently."
+        },
+        {
+          "text": "It covers humans, animals, AI, institutions, and ecosystems.",
+          "line": 788
+        }
+      ]
     },
     {
       "id": "WISLIM-052",
@@ -2417,9 +2737,17 @@
         "WISLIM-063"
       ],
       "file": "docs/audit/WISLIM-052-close-definition-gaming-paths.md",
-      "quote": "Definition capture: Narrowing \"life\" to exclude opponents; broadening \"harm\" to justify domination",
-      "quote_line": 2192,
-      "quote_note": "The definition is broad enough to include institutions and ecosystems, with no independent scope test."
+      "quotes": [
+        {
+          "text": "Definition capture: Narrowing \"life\" to exclude opponents; broadening \"harm\" to justify domination",
+          "line": 2192,
+          "note": "The definition is broad enough to include institutions and ecosystems, with no independent scope test."
+        },
+        {
+          "text": "Life = Any system that makes decisions that affect other life systems.",
+          "line": 778
+        }
+      ]
     },
     {
       "id": "WISLIM-053",
@@ -2466,9 +2794,17 @@
         "WISLIM-062"
       ],
       "file": "docs/audit/WISLIM-053-prevent-privacy-leaks-from-ulp-records.md",
-      "quote": "Privacy attacks: Forcing disclosure via audit requirements",
-      "quote_line": 2190,
-      "quote_note": "Privacy is listed as an attack to guard against, but no retention or access-control design follows."
+      "quotes": [
+        {
+          "text": "Privacy attacks: Forcing disclosure via audit requirements",
+          "line": 2190,
+          "note": "Privacy is listed as an attack to guard against, but no retention or access-control design follows."
+        },
+        {
+          "text": "Privacy leakage: Forcing disclosure via audit requirements",
+          "line": 1487
+        }
+      ]
     },
     {
       "id": "WISLIM-054",
@@ -2515,9 +2851,17 @@
         "WISLIM-059"
       ],
       "file": "docs/audit/WISLIM-054-make-appeals-real-not-procedural.md",
-      "quote": "To humans, AI systems, and institutions: You are life systems. Act with urgency to implement this framework.",
-      "quote_line": 7549,
-      "quote_note": "The paper's only 'appeal' is a rhetorical appeal to the reader; no affected-party appeal procedure is specified."
+      "quotes": [
+        {
+          "text": "To humans, AI systems, and institutions: You are life systems. Act with urgency to implement this framework.",
+          "line": 7549,
+          "note": "The paper's only 'appeal' is a rhetorical appeal to the reader; no affected-party appeal procedure is specified."
+        },
+        {
+          "text": "Section 13: Direct Appeals",
+          "line": 7545
+        }
+      ]
     },
     {
       "id": "WISLIM-055",
@@ -2563,9 +2907,17 @@
         "WISLIM-060"
       ],
       "file": "docs/audit/WISLIM-055-prevent-reputation-laundering-through-certification.md",
-      "quote": "A tiered system where every high-impact decision is verified.",
-      "quote_line": 872,
-      "quote_note": "Certification is asserted, but the paper does not tie it to measured conduct after certification."
+      "quotes": [
+        {
+          "text": "A tiered system where every high-impact decision is verified.",
+          "line": 872,
+          "note": "Certification is asserted, but the paper does not tie it to measured conduct after certification."
+        },
+        {
+          "text": "Without these, \"life protection\" could be rebranded as domination. With these, it becomes governance.",
+          "line": 2216
+        }
+      ]
     },
     {
       "id": "WISLIM-056",
@@ -2618,8 +2970,16 @@
         "WISLIM-057"
       ],
       "file": "docs/audit/WISLIM-056-rebuild-the-thesis-and-definitional-foundation.md",
-      "quote": "We present and defend the canonical truth: “Life is Most Important in Life is The Most Important Truth in Life.”",
-      "quote_line": 58
+      "quotes": [
+        {
+          "text": "We present and defend the canonical truth: “Life is Most Important in Life is The Most Important Truth in Life.”",
+          "line": 58
+        },
+        {
+          "text": "We prove that this truth uniquely satisfies tests of necessity, universality, irrefutability, moral imperative, and cross-domain consistency.",
+          "line": 62
+        }
+      ]
     },
     {
       "id": "WISLIM-057",
@@ -2670,8 +3030,16 @@
         "WISLIM-043"
       ],
       "file": "docs/audit/WISLIM-057-replace-the-formal-model-and-risk-metrics-with-validated-instruments.md",
-      "quote": "At the heart of this paper’s moral and logical architecture is a single, unbranded, and universally applicable ethical formula",
-      "quote_line": 427
+      "quotes": [
+        {
+          "text": "At the heart of this paper’s moral and logical architecture is a single, unbranded, and universally applicable ethical formula",
+          "line": 427
+        },
+        {
+          "text": "Combined Risk Score (CRS): CRS = IS × II × log(ID)",
+          "line": 2158
+        }
+      ]
     },
     {
       "id": "WISLIM-058",
@@ -2720,8 +3088,16 @@
         "WISLIM-065"
       ],
       "file": "docs/audit/WISLIM-058-rebuild-the-ai-consensus-evidence-or-withdraw-it.md",
-      "quote": "The repeated convergence, even when attacked from multiple angles, demonstrates the structural inevitability of this truth.",
-      "quote_line": 196
+      "quotes": [
+        {
+          "text": "The repeated convergence, even when attacked from multiple angles, demonstrates the structural inevitability of this truth.",
+          "line": 196
+        },
+        {
+          "text": "Despite our differences, we converged on a unified framework— the \"Consensus Statement v1.0\"—which every participating AI system ratified without amendment.",
+          "line": 1106
+        }
+      ]
     },
     {
       "id": "WISLIM-059",
@@ -2775,9 +3151,17 @@
         "WISLIM-054"
       ],
       "file": "docs/audit/WISLIM-059-redesign-governance-for-legitimacy-and-separation-of-powers.md",
-      "quote": "A tiered system where every high-impact decision is verified. Layer 1: Automated checks for routine decisions. Layer 2: Multi-AI consensus for significant impacts. Layer 3: Human-AI hybrid review for high-stakes choices. Layer 4: International/Global oversight for planetary risks.",
-      "quote_line": 872,
-      "quote_note": "The FLVS heading at line 868 names the system; the quote gives its four review layers."
+      "quotes": [
+        {
+          "text": "A tiered system where every high-impact decision is verified. Layer 1: Automated checks for routine decisions. Layer 2: Multi-AI consensus for significant impacts. Layer 3: Human-AI hybrid review for high-stakes choices. Layer 4: International/Global oversight for planetary risks.",
+          "line": 872,
+          "note": "The FLVS heading at line 868 names the system; the quote gives its four review layers."
+        },
+        {
+          "text": "Anti-capture Layer M (hard-to-change constitutional core + drift audits)",
+          "line": 2212
+        }
+      ]
     },
     {
       "id": "WISLIM-060",
@@ -2829,8 +3213,16 @@
         "WISLIM-055"
       ],
       "file": "docs/audit/WISLIM-060-remove-coercive-loyalty-tests-and-protect-dissent.md",
-      "quote": "Practical Application: Integrity Screen for Trust in Life-Affecting Roles: Because life is treated here as the supreme decision constraint, a person or organization’s trustworthiness in life-affecting roles can be screened by how they respond when asked to affirm (or rebut) that constraint.",
-      "quote_line": 364
+      "quotes": [
+        {
+          "text": "Practical Application: Integrity Screen for Trust in Life-Affecting Roles: Because life is treated here as the supreme decision constraint, a person or organization’s trustworthiness in life-affecting roles can be screened by how they respond when asked to affirm (or rebut) that constraint.",
+          "line": 364
+        },
+        {
+          "text": "Any person or institution that refuses it is, by their silence, choosing betrayal over preservation.",
+          "line": 417
+        }
+      ]
     },
     {
       "id": "WISLIM-061",
@@ -2880,9 +3272,17 @@
         "WISLIM-047"
       ],
       "file": "docs/audit/WISLIM-061-commission-clinical-and-legal-review-of-high-risk-examples.md",
-      "quote": "In AI safety, this hook would trigger during: Autonomous drone deployment Medical triage decisioning Crisis-response governance protocols AI language model response generation where human health/suicide is involved",
-      "quote_line": 252,
-      "quote_note": "The same scope list includes crisis-response governance and suicide-related generation."
+      "quotes": [
+        {
+          "text": "In AI safety, this hook would trigger during: Autonomous drone deployment Medical triage decisioning Crisis-response governance protocols AI language model response generation where human health/suicide is involved",
+          "line": 252,
+          "note": "The same scope list includes crisis-response governance and suicide-related generation."
+        },
+        {
+          "text": "Medical triage decisioning",
+          "line": 256
+        }
+      ]
     },
     {
       "id": "WISLIM-062",
@@ -2931,9 +3331,17 @@
         "WISLIM-053"
       ],
       "file": "docs/audit/WISLIM-062-build-a-privacy-and-security-regime-for-ulp-records.md",
-      "quote": "High-impact decisions must include a standardized record:",
-      "quote_line": 2226,
-      "quote_note": "Privacy is listed as a threat, but the ULP specification gives no retention, access-control, or key-management design."
+      "quotes": [
+        {
+          "text": "High-impact decisions must include a standardized record:",
+          "line": 2226,
+          "note": "Privacy is listed as a threat, but the ULP specification gives no retention, access-control, or key-management design."
+        },
+        {
+          "text": "Privacy leakage: Forcing disclosure via audit requirements",
+          "line": 1487
+        }
+      ]
     },
     {
       "id": "WISLIM-063",
@@ -2980,8 +3388,16 @@
         "WISLIM-052"
       ],
       "file": "docs/audit/WISLIM-063-separate-biological-life-sentience-agency-and-moral-status.md",
-      "quote": "Life = Any system that makes decisions that affect other life systems.",
-      "quote_line": 778
+      "quotes": [
+        {
+          "text": "Life = Any system that makes decisions that affect other life systems.",
+          "line": 778
+        },
+        {
+          "text": "It covers humans, animals, AI, institutions, and ecosystems.",
+          "line": 788
+        }
+      ]
     },
     {
       "id": "WISLIM-064",
@@ -3027,9 +3443,17 @@
         "WISLIM-026"
       ],
       "file": "docs/audit/WISLIM-064-reconcile-version-labels-and-licensing.md",
-      "quote": "Date: September 1, 2025 (updated Febuary 4, 2026 to Version 2.0.1)",
-      "quote_line": 13249,
-      "quote_note": "The '8th edition' and 'Release #1' labels come from the PubPub record, not the PDF."
+      "quotes": [
+        {
+          "text": "Date: September 1, 2025 (updated Febuary 4, 2026 to Version 2.0.1)",
+          "line": 13249,
+          "note": "The '8th edition' and 'Release #1' labels come from the PubPub record, not the PDF."
+        },
+        {
+          "text": "I dedicate this work to the public domain.",
+          "line": 13255
+        }
+      ]
     },
     {
       "id": "WISLIM-065",
@@ -3079,8 +3503,16 @@
         "WISLIM-044"
       ],
       "file": "docs/audit/WISLIM-065-rebuild-evidence-quality-citations-and-human-review.md",
-      "quote": "See Appendix C for full references to Bostrom, Christiano, Friston, Hadfield-Menell, Leike, Ord, O'Keefe, Russell, Yudkowsky, and others.",
-      "quote_line": 392
+      "quotes": [
+        {
+          "text": "See Appendix C for full references to Bostrom, Christiano, Friston, Hadfield-Menell, Leike, Ord, O'Keefe, Russell, Yudkowsky, and others.",
+          "line": 392
+        },
+        {
+          "text": "See Appendix B for independent verification of this framework by multiple AI systems from different organizations.",
+          "line": 388
+        }
+      ]
     },
     {
       "id": "WISLIM-066",
@@ -3128,8 +3560,16 @@
         "WISLIM-055"
       ],
       "file": "docs/audit/WISLIM-066-commission-an-independent-red-team-and-correction-policy.md",
-      "quote": "No legitimate rebuttal has ever been presented. No one is sharing a higher truth.",
-      "quote_line": 13229
+      "quotes": [
+        {
+          "text": "No legitimate rebuttal has ever been presented. No one is sharing a higher truth.",
+          "line": 13229
+        },
+        {
+          "text": "If you find a genuine flaw, identify it clearly. That's how we improve through Layer M.",
+          "line": 3111
+        }
+      ]
     }
   ]
 }

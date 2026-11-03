@@ -7,7 +7,7 @@ severity: critical
 workstream: governance
 labels: [audit, workstream, severity:critical, workstream:governance]
 source_lines: "n/a (workstream)"
-quote_line: 872
+quote_lines: [872, 2212]
 audit_modules: [audit/09-governance-and-oversight.md, red-team/threat-model.md, red-team/capture-and-gaming.md]
 related: [WISLIM-012, WISLIM-019, WISLIM-020, WISLIM-030, WISLIM-041, WISLIM-042, WISLIM-049, WISLIM-050, WISLIM-054]
 github_issue: 59
@@ -20,13 +20,26 @@ github_issue: 59
 > **Audit modules:** audit/09-governance-and-oversight.md, red-team/threat-model.md, red-team/capture-and-gaming.md  
 > **Source lines:** n/a (workstream)
 
-## Quoted passage
+## Publication reference
+
+David Wishengrad, *Life is Most Important in Life is The Most Important Truth in Life: A Foundational Proof for Alignment, Identity, and the Cure of Needless Suffering*, Version 2.0.1 (4 February 2026), 289 pages. DOI [`10.21428/4831231e.8c4c6c8f`](https://doi.org/10.21428/4831231e.8c4c6c8f); PhilPapers [`WISLIM`](https://philpapers.org/rec/WISLIM).
+
+Source of record: `source/WISLIM-v2.0.1.pdf` (SHA-256 `7716807d081e497364a14475ef6f8a6b06e6cabaa6858749bb17e6a904e7dfcd`). Quotations use the newline-delimited text at `source/WISLIM-v2.0.1.txt` (13,255 lines), extracted with `pdftotext -layout`.
+
+> **Audit status:** critical first pass, not peer review. Severity and
+> remediation are provisional judgments, not safety certification.
+
+## Primary quotations
 
 > A tiered system where every high-impact decision is verified. Layer 1: Automated checks for routine decisions. Layer 2: Multi-AI consensus for significant impacts. Layer 3: Human-AI hybrid review for high-stakes choices. Layer 4: International/Global oversight for planetary risks.
 >
 > — `source/WISLIM-v2.0.1.txt:872`
 
-The FLVS heading at line 868 names the system; the quote gives its four review layers.
+**Audit note.** The FLVS heading at line 868 names the system; the quote gives its four review layers.
+
+> Anti-capture Layer M (hard-to-change constitutional core + drift audits)
+>
+> — `source/WISLIM-v2.0.1.txt:2212`
 
 ## Summary
 
@@ -43,7 +56,11 @@ FLVS, ULP, CRS, and Layer M concentrate rule-making, verification, adjudication,
 
 A global life-first authority would have enormous power. Without separation of powers and due process, it can become the harm it claims to prevent.
 
-## Required repair
+## Proposed remediation
+
+These are options for the author's consideration, not requirements. The
+audit does not settle the underlying normative questions, so this list is
+a starting point rather than a prescription.
 
 1. Separate rule-making, verification, adjudication, and enforcement.
 2. Specify appointments, removal, funding, and conflicts of interest.
@@ -51,7 +68,10 @@ A global life-first authority would have enormous power. Without separation of p
 4. Bound emergency powers with sunset and review.
 5. Pilot in low-stakes domains with independent evaluation.
 
-## Acceptance criteria
+## Suggested checks for reviewers
+
+If the author chooses to revise, these checks would help a reviewer test
+whether the revision addresses the issue. They are not deployment gates.
 
 - [ ] An institutional design with separation of powers is published.
 - [ ] Appointment, removal, and funding rules are public.

@@ -29,6 +29,8 @@ from build_issue_register import (
     ROOT,
     check_manifest,
     load_issues,
+    load_metadata,
+    render_publication,
     write_all,
 )
 
@@ -120,7 +122,12 @@ def record_url(issue: dict[str, Any], repo: str) -> str:
     return f"https://github.com/{repo}/blob/{BRANCH}/{issue['file']}"
 
 
-def render_body(issue: dict[str, Any], numbers: dict[str, int], repo: str) -> str:
+def render_body(
+    issue: dict[str, Any],
+    numbers: dict[str, int],
+    repo: str,
+    metadata: dict[str, Any],
+) -> str:
     related_lines: list[str] = []
     for other in issue["related"]:
         number = numbers.get(other)
@@ -144,16 +151,19 @@ def render_body(issue: dict[str, Any], numbers: dict[str, int], repo: str) -> st
         f"**Audit modules:** {modules}  ",
         f"**Source lines:** {issue['source_lines']}",
         "",
-        "## Quoted passage",
-        "",
-        f"> {issue['quote']}",
-        ">",
-        f"> — `source/WISLIM-v2.0.1.txt:{issue['quote_line']}`",
-        "",
     ]
-    note = str(issue.get("quote_note", "")).strip()
-    if note:
-        lines += [note, ""]
+    lines += render_publication(metadata)
+    lines += ["## Primary quotations", ""]
+    for quote in issue["quotes"]:
+        lines += [
+            f"> {quote['text']}",
+            ">",
+            f"> — `source/WISLIM-v2.0.1.txt:{quote['line']}`",
+            "",
+        ]
+        note = str(quote.get("note", "")).strip()
+        if note:
+            lines += [f"**Audit note.** {note}", ""]
     lines += [
         "## Summary",
         "",
@@ -167,13 +177,28 @@ def render_body(issue: dict[str, Any], numbers: dict[str, int], repo: str) -> st
     lines += ["", "## Why it matters", "", issue["why"].strip()]
     if issue.get("reply"):
         lines += ["", "## Steelman and reply", "", issue["reply"].strip()]
-    lines += ["", "## Required repair", ""]
+    lines += [
+        "",
+        "## Proposed remediation",
+        "",
+        "These are options for the author's consideration, not requirements. The",
+        "audit does not settle the underlying normative questions, so this list is",
+        "a starting point rather than a prescription.",
+        "",
+    ]
     for index, item in enumerate(issue["repair"], 1):
         text = item.strip()
         if text[:1].islower():
             text = text[:1].upper() + text[1:]
         lines.append(f"{index}. {text}")
-    lines += ["", "## Acceptance criteria", ""]
+    lines += [
+        "",
+        "## Suggested checks for reviewers",
+        "",
+        "If the author chooses to revise, these checks would help a reviewer test",
+        "whether the revision addresses the issue. They are not deployment gates.",
+        "",
+    ]
     for item in issue["acceptance"]:
         lines.append(f"- [ ] {item.strip()}")
     lines += ["", "## Related issues", "", *related_lines, "", "---", ""]
@@ -279,11 +304,12 @@ def create_issue(
 def sync(repo: str, issues: list[dict[str, Any]], dry_run: bool) -> int:
     data = load_store()
     registry: dict[str, dict[str, Any]] = data.setdefault("issues", {})
+    metadata = load_metadata()
 
     if dry_run:
         ensure_labels(repo, True, set())
         for issue in issues:
-            body = render_body(issue, {}, repo)
+            body = render_body(issue, {}, repo, metadata)
             print(f"would create {issue['id']}: {issue['title']} ({len(body)} chars)")
         print(f"would sync {len(issues)} issues")
         return 0
@@ -311,7 +337,7 @@ def sync(repo: str, issues: list[dict[str, Any]], dry_run: bool) -> int:
             }
             continue
         numbers = {key: entry["number"] for key, entry in registry.items()}
-        created = create_issue(issue, render_body(issue, numbers, repo), repo, dry_run)
+        created = create_issue(issue, render_body(issue, numbers, repo, metadata), repo, dry_run)
         if created:
             registry[issue_id] = created
             save_store(data)
@@ -330,7 +356,7 @@ def sync(repo: str, issues: list[dict[str, Any]], dry_run: bool) -> int:
     changed = 0
     for issue in issues:
         item = by_id[issue["id"]]
-        expected = render_body(issue, numbers, repo)
+        expected = render_body(issue, numbers, repo, metadata)
         if normalize(item["body"]) != normalize(expected):
             gh(
                 "issue",
@@ -378,6 +404,7 @@ def sync(repo: str, issues: list[dict[str, Any]], dry_run: bool) -> int:
 
 def check(repo: str, issues: list[dict[str, Any]]) -> int:
     errors: list[str] = []
+    metadata = load_metadata()
     registry = load_store().get("issues", {})
     known = {issue["id"] for issue in issues}
 
@@ -419,7 +446,7 @@ def check(repo: str, issues: list[dict[str, Any]]) -> int:
         expected_title = f"{issue_id}: {issue['title']}"
         if item["title"] != expected_title:
             errors.append(f"{issue_id}: title differs; run make issues")
-        if normalize(item["body"]) != normalize(render_body(issue, filed, repo)):
+        if normalize(item["body"]) != normalize(render_body(issue, filed, repo, metadata)):
             errors.append(f"{issue_id}: body is out of date; run make issues")
         missing_labels = sorted(set(issue["labels"]) - set(item["label_names"]))
         if missing_labels:

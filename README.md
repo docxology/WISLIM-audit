@@ -32,9 +32,10 @@ Foundational Proof for Alignment, Identity, and the Cure of Needless Suffering*
 ## What the audit found
 
 The ten findings below are the headline verdict. Every finding is decomposed
-into reproducible issues in `docs/audit/`: 66 records, each with a verbatim
-source quotation, evidence, a steelman reply for claim issues, a required
-repair, and acceptance criteria. Each record is mirrored to a GitHub issue.
+into reproducible issues in `docs/audit/`: 66 records, each with a full
+publication reference, one or more verbatim primary quotations, evidence, a
+steelman reply for claim issues, proposed remediation, and suggested checks for
+reviewers. Each record is mirrored to a GitHub issue.
 
 | # | Finding | Severity | Where |
 |---|---|---|---|

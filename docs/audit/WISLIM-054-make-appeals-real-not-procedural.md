@@ -7,7 +7,7 @@ severity: high
 workstream: governance
 labels: [audit, red-team, severity:high, workstream:governance]
 source_lines: "n/a (red-team scenario)"
-quote_line: 7549
+quote_lines: [7549, 7545]
 audit_modules: [red-team/adversarial-scenarios.md]
 related: [WISLIM-030, WISLIM-059]
 github_issue: 54
@@ -20,13 +20,26 @@ github_issue: 54
 > **Audit modules:** red-team/adversarial-scenarios.md  
 > **Source lines:** n/a (red-team scenario)
 
-## Quoted passage
+## Publication reference
+
+David Wishengrad, *Life is Most Important in Life is The Most Important Truth in Life: A Foundational Proof for Alignment, Identity, and the Cure of Needless Suffering*, Version 2.0.1 (4 February 2026), 289 pages. DOI [`10.21428/4831231e.8c4c6c8f`](https://doi.org/10.21428/4831231e.8c4c6c8f); PhilPapers [`WISLIM`](https://philpapers.org/rec/WISLIM).
+
+Source of record: `source/WISLIM-v2.0.1.pdf` (SHA-256 `7716807d081e497364a14475ef6f8a6b06e6cabaa6858749bb17e6a904e7dfcd`). Quotations use the newline-delimited text at `source/WISLIM-v2.0.1.txt` (13,255 lines), extracted with `pdftotext -layout`.
+
+> **Audit status:** critical first pass, not peer review. Severity and
+> remediation are provisional judgments, not safety certification.
+
+## Primary quotations
 
 > To humans, AI systems, and institutions: You are life systems. Act with urgency to implement this framework.
 >
 > — `source/WISLIM-v2.0.1.txt:7549`
 
-The paper's only 'appeal' is a rhetorical appeal to the reader; no affected-party appeal procedure is specified.
+**Audit note.** The paper's only 'appeal' is a rhetorical appeal to the reader; no affected-party appeal procedure is specified.
+
+> Section 13: Direct Appeals
+>
+> — `source/WISLIM-v2.0.1.txt:7545`
 
 ## Summary
 
@@ -46,14 +59,21 @@ Appeals exist on paper but can be rejected on procedural grounds and are costly 
 
 An appeal that cannot reach the merits is not an appeal. Procedural rejection converts due process into a legitimacy ritual.
 
-## Required repair
+## Proposed remediation
+
+These are options for the author's consideration, not requirements. The
+audit does not settle the underlying normative questions, so this list is
+a starting point rather than a prescription.
 
 1. Free appeals
 2. Generous deadlines
 3. Legal aid
 4. Independent review.
 
-## Acceptance criteria
+## Suggested checks for reviewers
+
+If the author chooses to revise, these checks would help a reviewer test
+whether the revision addresses the issue. They are not deployment gates.
 
 - [ ] An affected party can reach the merits of an appeal without cost, and a procedural rejection is reviewable by an independent body.
 - [ ] The control is exercised against the scenario in a red-team test.

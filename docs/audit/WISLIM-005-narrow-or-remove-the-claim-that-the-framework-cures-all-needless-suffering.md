@@ -7,7 +7,7 @@ severity: critical
 workstream: rhetoric
 labels: [audit, claim, severity:critical, workstream:rhetoric]
 source_lines: "178"
-quote_line: 178
+quote_lines: [178, 178]
 audit_modules: [audit/00-verdict.md, audit/10-rhetoric-and-coercion.md]
 related: [WISLIM-010, WISLIM-021, WISLIM-022]
 github_issue: 5
@@ -20,9 +20,22 @@ github_issue: 5
 > **Audit modules:** audit/00-verdict.md, audit/10-rhetoric-and-coercion.md  
 > **Source lines:** 178
 
-## Quoted passage
+## Publication reference
+
+David Wishengrad, *Life is Most Important in Life is The Most Important Truth in Life: A Foundational Proof for Alignment, Identity, and the Cure of Needless Suffering*, Version 2.0.1 (4 February 2026), 289 pages. DOI [`10.21428/4831231e.8c4c6c8f`](https://doi.org/10.21428/4831231e.8c4c6c8f); PhilPapers [`WISLIM`](https://philpapers.org/rec/WISLIM).
+
+Source of record: `source/WISLIM-v2.0.1.pdf` (SHA-256 `7716807d081e497364a14475ef6f8a6b06e6cabaa6858749bb17e6a904e7dfcd`). Quotations use the newline-delimited text at `source/WISLIM-v2.0.1.txt` (13,255 lines), extracted with `pdftotext -layout`.
+
+> **Audit status:** critical first pass, not peer review. Severity and
+> remediation are provisional judgments, not safety certification.
+
+## Primary quotations
 
 > This truth cures and prevents all needless and preventable suffering and death.
+>
+> — `source/WISLIM-v2.0.1.txt:178`
+
+> Where it is ignored, harm proliferates; where it is affirmed and acted upon, suffering is minimized, life is preserved, and safety is guaranteed.
 >
 > — `source/WISLIM-v2.0.1.txt:178`
 
@@ -46,16 +59,23 @@ The cure claim is the paper's strongest empirical promise and its least supporte
 
 The reply is that the cure is conceptual: once life is prioritized, institutions will stop producing needless harm. That is a causal prediction with no mechanism, no measurement, and no disconfirming case.
 
-## Required repair
+## Proposed remediation
+
+These are options for the author's consideration, not requirements. The
+audit does not settle the underlying normative questions, so this list is
+a starting point rather than a prescription.
 
 1. Replace with bounded, testable harm-reduction claims and a definition of 'needless'.
 
-## Acceptance criteria
+## Suggested checks for reviewers
+
+If the author chooses to revise, these checks would help a reviewer test
+whether the revision addresses the issue. They are not deployment gates.
 
 - [ ] The manuscript resolves the defect in `C05` or removes the claim from the thesis.
-- [ ] The repair is documented in `audit/00-verdict.md` with a source anchor and reviewer sign-off.
-- [ ] The claim registry entry `C05` is updated from `unsupported` to a reviewed verdict.
-- [ ] A regression check or reviewer sign-off covers the change.
+- [ ] If the author revises, the revision note in `audit/00-verdict.md` records the source anchor and any reviewer sign-off.
+- [ ] After review, the claim registry entry `C05` records the outcome.
+- [ ] Where practical, a regression check or reviewer sign-off covers the change.
 
 ## Related issues
 

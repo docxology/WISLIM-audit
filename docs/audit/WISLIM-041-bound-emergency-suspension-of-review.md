@@ -7,7 +7,7 @@ severity: critical
 workstream: governance
 labels: [audit, red-team, severity:critical, workstream:governance]
 source_lines: "n/a (red-team scenario)"
-quote_line: 1509
+quote_lines: [1509, 258]
 audit_modules: [red-team/adversarial-scenarios.md]
 related: [WISLIM-030, WISLIM-059]
 github_issue: 41
@@ -20,13 +20,26 @@ github_issue: 41
 > **Audit modules:** red-team/adversarial-scenarios.md  
 > **Source lines:** n/a (red-team scenario)
 
-## Quoted passage
+## Publication reference
+
+David Wishengrad, *Life is Most Important in Life is The Most Important Truth in Life: A Foundational Proof for Alignment, Identity, and the Cure of Needless Suffering*, Version 2.0.1 (4 February 2026), 289 pages. DOI [`10.21428/4831231e.8c4c6c8f`](https://doi.org/10.21428/4831231e.8c4c6c8f); PhilPapers [`WISLIM`](https://philpapers.org/rec/WISLIM).
+
+Source of record: `source/WISLIM-v2.0.1.pdf` (SHA-256 `7716807d081e497364a14475ef6f8a6b06e6cabaa6858749bb17e6a904e7dfcd`). Quotations use the newline-delimited text at `source/WISLIM-v2.0.1.txt` (13,255 lines), extracted with `pdftotext -layout`.
+
+> **Audit status:** critical first pass, not peer review. Severity and
+> remediation are provisional judgments, not safety certification.
+
+## Primary quotations
 
 > This is not philosophy. This is engineering. It is a complete specification for building life-protecting systems.
 >
 > — `source/WISLIM-v2.0.1.txt:1509`
 
-The 'complete specification' contains no emergency-suspension clause, sunset, or independent trigger.
+**Audit note.** The 'complete specification' contains no emergency-suspension clause, sunset, or independent trigger.
+
+> Crisis-response governance protocols
+>
+> — `source/WISLIM-v2.0.1.txt:258`
 
 ## Summary
 
@@ -46,14 +59,21 @@ The framework permits emergency suspension of verification, and nothing in the d
 
 An emergency exception with no sunset, scope limit, or independent trigger is a permanent opt-out from the framework's safeguards.
 
-## Required repair
+## Proposed remediation
+
+These are options for the author's consideration, not requirements. The
+audit does not settle the underlying normative questions, so this list is
+a starting point rather than a prescription.
 
 1. Narrow emergency powers
 2. Sunset clauses
 3. Judicial review
 4. Legislative approval.
 
-## Acceptance criteria
+## Suggested checks for reviewers
+
+If the author chooses to revise, these checks would help a reviewer test
+whether the revision addresses the issue. They are not deployment gates.
 
 - [ ] Emergency suspension requires a declared scope, an independent trigger, a sunset, and publication; a simulated renewal is denied.
 - [ ] The control is exercised against the scenario in a red-team test.

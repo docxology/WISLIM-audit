@@ -94,12 +94,13 @@ class IssueRegisterTests(unittest.TestCase):
         for issue in self.issues:
             text = (ROOT / issue["file"]).read_text(encoding="utf-8")
             for heading in (
-                "## Quoted passage",
+                "## Publication reference",
+                "## Primary quotations",
                 "## Summary",
                 "## Evidence",
                 "## Why it matters",
-                "## Required repair",
-                "## Acceptance criteria",
+                "## Proposed remediation",
+                "## Suggested checks for reviewers",
                 "## Related issues",
                 "## Tracking",
             ):
@@ -108,6 +109,19 @@ class IssueRegisterTests(unittest.TestCase):
             if issue["kind"] == "claim":
                 with self.subTest(issue=issue["id"], heading="steelman"):
                     self.assertIn("## Steelman and reply", text)
+
+    def test_every_issue_has_primary_quotations(self):
+        metadata = self.register.load_metadata()
+        for issue in self.issues:
+            text = (ROOT / issue["file"]).read_text(encoding="utf-8")
+            with self.subTest(issue=issue["id"]):
+                self.assertGreaterEqual(len(issue["quotes"]), 1)
+                self.assertIn(metadata["work"], text)
+                self.assertIn(metadata["philpapers"]["doi"], text)
+                for quote in issue["quotes"]:
+                    self.assertIn(
+                        f"source/WISLIM-v2.0.1.txt:{quote['line']}", text
+                    )
 
     def test_issue_map_is_complete(self):
         mapping = self.register.load_map()

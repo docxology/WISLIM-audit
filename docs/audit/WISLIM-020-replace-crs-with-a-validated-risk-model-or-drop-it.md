@@ -7,7 +7,7 @@ severity: high
 workstream: formal
 labels: [audit, claim, severity:high, workstream:formal]
 source_lines: "2158"
-quote_line: 2158
+quote_lines: [2158]
 audit_modules: [audit/09-governance-and-oversight.md, audit/08-formal-and-scientific-claims.md]
 related: [WISLIM-019, WISLIM-012]
 github_issue: 20
@@ -20,7 +20,16 @@ github_issue: 20
 > **Audit modules:** audit/09-governance-and-oversight.md, audit/08-formal-and-scientific-claims.md  
 > **Source lines:** 2158
 
-## Quoted passage
+## Publication reference
+
+David Wishengrad, *Life is Most Important in Life is The Most Important Truth in Life: A Foundational Proof for Alignment, Identity, and the Cure of Needless Suffering*, Version 2.0.1 (4 February 2026), 289 pages. DOI [`10.21428/4831231e.8c4c6c8f`](https://doi.org/10.21428/4831231e.8c4c6c8f); PhilPapers [`WISLIM`](https://philpapers.org/rec/WISLIM).
+
+Source of record: `source/WISLIM-v2.0.1.pdf` (SHA-256 `7716807d081e497364a14475ef6f8a6b06e6cabaa6858749bb17e6a904e7dfcd`). Quotations use the newline-delimited text at `source/WISLIM-v2.0.1.txt` (13,255 lines), extracted with `pdftotext -layout`.
+
+> **Audit status:** critical first pass, not peer review. Severity and
+> remediation are provisional judgments, not safety certification.
+
+## Primary quotations
 
 > Combined Risk Score (CRS): CRS = IS × II × log(ID)
 >
@@ -46,16 +55,23 @@ The CRS determines which decisions get review. If the score is a product of self
 
 The reply is that the CRS is a triage heuristic, not a measurement. A triage heuristic that selects its own inputs and thresholds is a gatekeeping device, and the paper gives no calibration or validation.
 
-## Required repair
+## Proposed remediation
+
+These are options for the author's consideration, not requirements. The
+audit does not settle the underlying normative questions, so this list is
+a starting point rather than a prescription.
 
 1. Use a validated risk model with explicit assumptions, calibration, and adversarial testing.
 
-## Acceptance criteria
+## Suggested checks for reviewers
+
+If the author chooses to revise, these checks would help a reviewer test
+whether the revision addresses the issue. They are not deployment gates.
 
 - [ ] The manuscript resolves the defect in `C20` or removes the claim from the thesis.
-- [ ] The repair is documented in `audit/09-governance-and-oversight.md` with a source anchor and reviewer sign-off.
-- [ ] The claim registry entry `C20` is updated from `invalid` to a reviewed verdict.
-- [ ] A regression check or reviewer sign-off covers the change.
+- [ ] If the author revises, the revision note in `audit/09-governance-and-oversight.md` records the source anchor and any reviewer sign-off.
+- [ ] After review, the claim registry entry `C20` records the outcome.
+- [ ] Where practical, a regression check or reviewer sign-off covers the change.
 
 ## Related issues
 

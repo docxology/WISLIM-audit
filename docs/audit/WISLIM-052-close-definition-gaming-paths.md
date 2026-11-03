@@ -7,7 +7,7 @@ severity: high
 workstream: scope
 labels: [audit, red-team, severity:high, workstream:scope]
 source_lines: "n/a (red-team scenario)"
-quote_line: 2192
+quote_lines: [2192, 778]
 audit_modules: [red-team/adversarial-scenarios.md]
 related: [WISLIM-006, WISLIM-035, WISLIM-063]
 github_issue: 52
@@ -20,13 +20,26 @@ github_issue: 52
 > **Audit modules:** red-team/adversarial-scenarios.md  
 > **Source lines:** n/a (red-team scenario)
 
-## Quoted passage
+## Publication reference
+
+David Wishengrad, *Life is Most Important in Life is The Most Important Truth in Life: A Foundational Proof for Alignment, Identity, and the Cure of Needless Suffering*, Version 2.0.1 (4 February 2026), 289 pages. DOI [`10.21428/4831231e.8c4c6c8f`](https://doi.org/10.21428/4831231e.8c4c6c8f); PhilPapers [`WISLIM`](https://philpapers.org/rec/WISLIM).
+
+Source of record: `source/WISLIM-v2.0.1.pdf` (SHA-256 `7716807d081e497364a14475ef6f8a6b06e6cabaa6858749bb17e6a904e7dfcd`). Quotations use the newline-delimited text at `source/WISLIM-v2.0.1.txt` (13,255 lines), extracted with `pdftotext -layout`.
+
+> **Audit status:** critical first pass, not peer review. Severity and
+> remediation are provisional judgments, not safety certification.
+
+## Primary quotations
 
 > Definition capture: Narrowing "life" to exclude opponents; broadening "harm" to justify domination
 >
 > — `source/WISLIM-v2.0.1.txt:2192`
 
-The definition is broad enough to include institutions and ecosystems, with no independent scope test.
+**Audit note.** The definition is broad enough to include institutions and ecosystems, with no independent scope test.
+
+> Life = Any system that makes decisions that affect other life systems.
+>
+> — `source/WISLIM-v2.0.1.txt:778`
 
 ## Summary
 
@@ -46,13 +59,20 @@ The framework's scope depends on what counts as a life system. An actor can argu
 
 A definition broad enough to include institutions and ecosystems can be used to protect the powerful. The framework has no independent test for scope.
 
-## Required repair
+## Proposed remediation
+
+These are options for the author's consideration, not requirements. The
+audit does not settle the underlying normative questions, so this list is
+a starting point rather than a prescription.
 
 1. Narrow the definition
 2. Separate moral status from systems theory
 3. Require justification for inclusion.
 
-## Acceptance criteria
+## Suggested checks for reviewers
+
+If the author chooses to revise, these checks would help a reviewer test
+whether the revision addresses the issue. They are not deployment gates.
 
 - [ ] A scope test rejects corporate, market, and ecosystem claims unless independent criteria are met, and the rejection is reviewable.
 - [ ] The control is exercised against the scenario in a red-team test.
