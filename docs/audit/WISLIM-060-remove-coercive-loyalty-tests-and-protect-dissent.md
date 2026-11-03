@@ -15,10 +15,17 @@ github_issue: 60
 
 # WISLIM-060: Remove coercive loyalty tests and protect dissent
 
-> **Severity:** critical · **Kind:** workstream · **Source:** `WS05`  
+> **Severity:** critical · **Kind:** workstream · **Status:** observation · **Source:** `WS05`  
 > **GitHub issue:** [#60](https://github.com/docxology/WISLIM-audit/issues/60)  
 > **Audit modules:** audit/10-rhetoric-and-coercion.md, red-team/abuse-cases.md  
 > **Source lines:** n/a (workstream)
+
+> **Status: audit observation, not a required fix.** This issue records a
+> point that may matter for the work's impact, clarity, or risk. It is not a
+> verdict that the work is invalid, and addressing it is optional. The author
+> may decline it with reasons. Severity estimates potential impact if the
+> concern applies; it does not mean the overall work fails or that a change is
+> mandatory.
 
 ## Publication reference
 

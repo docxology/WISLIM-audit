@@ -15,10 +15,17 @@ github_issue: 41
 
 # WISLIM-041: Bound emergency suspension of review
 
-> **Severity:** critical · **Kind:** red-team · **Source:** `AS06`  
+> **Severity:** critical · **Kind:** red-team · **Status:** observation · **Source:** `AS06`  
 > **GitHub issue:** [#41](https://github.com/docxology/WISLIM-audit/issues/41)  
 > **Audit modules:** red-team/adversarial-scenarios.md  
 > **Source lines:** n/a (red-team scenario)
+
+> **Status: audit observation, not a required fix.** This issue records a
+> point that may matter for the work's impact, clarity, or risk. It is not a
+> verdict that the work is invalid, and addressing it is optional. The author
+> may decline it with reasons. Severity estimates potential impact if the
+> concern applies; it does not mean the overall work fails or that a change is
+> mandatory.
 
 ## Publication reference
 
@@ -76,9 +83,9 @@ If the author chooses to revise, these checks would help a reviewer test
 whether the revision addresses the issue. They are not deployment gates.
 
 - [ ] Emergency suspension requires a declared scope, an independent trigger, a sunset, and publication; a simulated renewal is denied.
-- [ ] The control is exercised against the scenario in a red-team test.
-- [ ] Residual risk is recorded and accepted by a responsible reviewer.
-- [ ] If no control is feasible, the framework is not deployed in this context.
+- [ ] If a control is adopted, it is exercised against the scenario in a red-team test.
+- [ ] If the framework proceeds, residual risk is recorded and accepted by a responsible reviewer.
+- [ ] If no control is feasible, deployment in this context remains an explicit risk decision for the responsible authority.
 
 ## Related issues
 

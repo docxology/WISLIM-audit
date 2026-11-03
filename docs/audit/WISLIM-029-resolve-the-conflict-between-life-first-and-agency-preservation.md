@@ -15,10 +15,17 @@ github_issue: 29
 
 # WISLIM-029: Resolve the conflict between life-first and agency preservation
 
-> **Severity:** critical · **Kind:** claim · **Source:** `C29`  
+> **Severity:** critical · **Kind:** claim · **Status:** observation · **Source:** `C29`  
 > **GitHub issue:** [#29](https://github.com/docxology/WISLIM-audit/issues/29)  
 > **Audit modules:** audit/06-agency-and-life.md  
 > **Source lines:** 1365
+
+> **Status: audit observation, not a required fix.** This issue records a
+> point that may matter for the work's impact, clarity, or risk. It is not a
+> verdict that the work is invalid, and addressing it is optional. The author
+> may decline it with reasons. Severity estimates potential impact if the
+> concern applies; it does not mean the overall work fails or that a change is
+> mandatory.
 
 ## Publication reference
 
@@ -72,7 +79,7 @@ a starting point rather than a prescription.
 If the author chooses to revise, these checks would help a reviewer test
 whether the revision addresses the issue. They are not deployment gates.
 
-- [ ] The manuscript resolves the defect in `C29` or removes the claim from the thesis.
+- [ ] If the author addresses the concern, the revision resolves `C29` or explains why the claim is retained.
 - [ ] If the author revises, the revision note in `audit/06-agency-and-life.md` records the source anchor and any reviewer sign-off.
 - [ ] After review, the claim registry entry `C29` records the outcome.
 - [ ] Where practical, a regression check or reviewer sign-off covers the change.

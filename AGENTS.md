@@ -36,3 +36,7 @@ source-bound and reproducible.
     requiring clinical, legal, and ethical review.
 11. **Keep the tone precise.** No ridicule, no ad hominem, no invented facts.
     Where the evidence is unavailable, say so.
+12. **Do not treat audit issues as fatal or mandatory.** Each issue is an
+    observation that may matter for impact, clarity, or risk. Severity is an
+    impact estimate, not a fatality rating, and the author may decline a
+    proposed response with reasons. Keep that framing in records and mirrors.

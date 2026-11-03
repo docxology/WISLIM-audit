@@ -123,6 +123,18 @@ class IssueRegisterTests(unittest.TestCase):
                         f"source/WISLIM-v2.0.1.txt:{quote['line']}", text
                     )
 
+    def test_issues_are_optional_observations(self):
+        for issue in self.issues:
+            text = (ROOT / issue["file"]).read_text(encoding="utf-8")
+            with self.subTest(issue=issue["id"]):
+                self.assertIn("**Status:** observation", text)
+                self.assertIn("audit observation, not a required fix", text)
+                self.assertIn("does not mean the overall work fails", text)
+                self.assertNotIn("The manuscript resolves the defect", text)
+        index = (ROOT / "docs" / "audit" / "README.md").read_text(encoding="utf-8")
+        self.assertIn("not a fatality rating", index)
+        self.assertIn("read them as suggestions, not instructions", index)
+
     def test_issue_map_is_complete(self):
         mapping = self.register.load_map()
         self.assertEqual(len(mapping), 66)

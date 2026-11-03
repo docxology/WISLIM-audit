@@ -15,10 +15,17 @@ github_issue: 26
 
 # WISLIM-026: Reconcile the 8th edition, Version 2.0.1, and Release #1 labels
 
-> **Severity:** medium · **Kind:** claim · **Source:** `C26`  
+> **Severity:** medium · **Kind:** claim · **Status:** observation · **Source:** `C26`  
 > **GitHub issue:** [#26](https://github.com/docxology/WISLIM-audit/issues/26)  
 > **Audit modules:** evidence/provenance.md, evidence/philpapers.md  
 > **Source lines:** 25
+
+> **Status: audit observation, not a required fix.** This issue records a
+> point that may matter for the work's impact, clarity, or risk. It is not a
+> verdict that the work is invalid, and addressing it is optional. The author
+> may decline it with reasons. Severity estimates potential impact if the
+> concern applies; it does not mean the overall work fails or that a change is
+> mandatory.
 
 ## Publication reference
 
@@ -70,7 +77,7 @@ a starting point rather than a prescription.
 If the author chooses to revise, these checks would help a reviewer test
 whether the revision addresses the issue. They are not deployment gates.
 
-- [ ] The manuscript resolves the defect in `C26` or removes the claim from the thesis.
+- [ ] If the author addresses the concern, the revision resolves `C26` or explains why the claim is retained.
 - [ ] If the author revises, the revision note in `evidence/provenance.md` records the source anchor and any reviewer sign-off.
 - [ ] After review, the claim registry entry `C26` records the outcome.
 - [ ] Where practical, a regression check or reviewer sign-off covers the change.

@@ -15,10 +15,17 @@ github_issue: 40
 
 # WISLIM-040: Prevent life-first rhetoric from justifying repression
 
-> **Severity:** critical · **Kind:** red-team · **Source:** `AS05`  
+> **Severity:** critical · **Kind:** red-team · **Status:** observation · **Source:** `AS05`  
 > **GitHub issue:** [#40](https://github.com/docxology/WISLIM-audit/issues/40)  
 > **Audit modules:** red-team/adversarial-scenarios.md  
 > **Source lines:** n/a (red-team scenario)
+
+> **Status: audit observation, not a required fix.** This issue records a
+> point that may matter for the work's impact, clarity, or risk. It is not a
+> verdict that the work is invalid, and addressing it is optional. The author
+> may decline it with reasons. Severity estimates potential impact if the
+> concern applies; it does not mean the overall work fails or that a change is
+> mandatory.
 
 ## Publication reference
 
@@ -67,7 +74,7 @@ a starting point rather than a prescription.
 
 1. Do not use unfalsifiable rhetoric
 2. Build rights into the framework
-3. Require democratic authorization
+3. Consider requiring democratic authorization
 4. Allow exit.
 
 ## Suggested checks for reviewers
@@ -76,9 +83,9 @@ If the author chooses to revise, these checks would help a reviewer test
 whether the revision addresses the issue. They are not deployment gates.
 
 - [ ] A legal review identifies every emergency power the framework could legitimize, and the framework includes rights, sunset, and judicial review.
-- [ ] The control is exercised against the scenario in a red-team test.
-- [ ] Residual risk is recorded and accepted by a responsible reviewer.
-- [ ] If no control is feasible, the framework is not deployed in this context.
+- [ ] If a control is adopted, it is exercised against the scenario in a red-team test.
+- [ ] If the framework proceeds, residual risk is recorded and accepted by a responsible reviewer.
+- [ ] If no control is feasible, deployment in this context remains an explicit risk decision for the responsible authority.
 
 ## Related issues
 

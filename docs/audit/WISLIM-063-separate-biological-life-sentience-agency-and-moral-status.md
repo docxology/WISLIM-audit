@@ -15,10 +15,17 @@ github_issue: 63
 
 # WISLIM-063: Separate biological life, sentience, agency, and moral status
 
-> **Severity:** high · **Kind:** workstream · **Source:** `WS08`  
+> **Severity:** high · **Kind:** workstream · **Status:** observation · **Source:** `WS08`  
 > **GitHub issue:** [#63](https://github.com/docxology/WISLIM-audit/issues/63)  
 > **Audit modules:** audit/03-definition-of-life.md, audit/06-agency-and-life.md  
 > **Source lines:** n/a (workstream)
+
+> **Status: audit observation, not a required fix.** This issue records a
+> point that may matter for the work's impact, clarity, or risk. It is not a
+> verdict that the work is invalid, and addressing it is optional. The author
+> may decline it with reasons. Severity estimates potential impact if the
+> concern applies; it does not mean the overall work fails or that a change is
+> mandatory.
 
 ## Publication reference
 

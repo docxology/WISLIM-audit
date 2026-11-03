@@ -15,10 +15,17 @@ github_issue: 58
 
 # WISLIM-058: Rebuild the AI-consensus evidence or withdraw it
 
-> **Severity:** critical · **Kind:** workstream · **Source:** `WS03`  
+> **Severity:** critical · **Kind:** workstream · **Status:** observation · **Source:** `WS03`  
 > **GitHub issue:** [#58](https://github.com/docxology/WISLIM-audit/issues/58)  
 > **Audit modules:** audit/07-consensus-and-evidence.md, evidence/ai-letter-audit.md  
 > **Source lines:** n/a (workstream)
+
+> **Status: audit observation, not a required fix.** This issue records a
+> point that may matter for the work's impact, clarity, or risk. It is not a
+> verdict that the work is invalid, and addressing it is optional. The author
+> may decline it with reasons. Severity estimates potential impact if the
+> concern applies; it does not mean the overall work fails or that a change is
+> mandatory.
 
 ## Publication reference
 

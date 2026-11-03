@@ -39,7 +39,7 @@
         "State a single, well-formed proposition with explicit scope and quantifiers."
       ],
       "acceptance": [
-        "The manuscript resolves the defect in `C01` or removes the claim from the thesis.",
+        "If the author addresses the concern, the revision resolves `C01` or explains why the claim is retained.",
         "If the author revises, the revision note in `audit/02-logical-form-and-ambiguity.md` records the source anchor and any reviewer sign-off.",
         "After review, the claim registry entry `C01` records the outcome.",
         "Where practical, a regression check or reviewer sign-off covers the change."
@@ -92,7 +92,7 @@
         "Define each criterion, operationalize it, test a pre-specified set of rival principles, and report inter-rater agreement."
       ],
       "acceptance": [
-        "The manuscript resolves the defect in `C02` or removes the claim from the thesis.",
+        "If the author addresses the concern, the revision resolves `C02` or explains why the claim is retained.",
         "If the author revises, the revision note in `audit/02-logical-form-and-ambiguity.md` records the source anchor and any reviewer sign-off.",
         "After review, the claim registry entry `C02` records the outcome.",
         "Where practical, a regression check or reviewer sign-off covers the change."
@@ -140,7 +140,7 @@
         "State and defend the metaethical premise; distinguish valuer-dependence from mind-independence."
       ],
       "acceptance": [
-        "The manuscript resolves the defect in `C03` or removes the claim from the thesis.",
+        "If the author addresses the concern, the revision resolves `C03` or explains why the claim is retained.",
         "If the author revises, the revision note in `audit/04-necessity-to-priority.md` records the source anchor and any reviewer sign-off.",
         "After review, the claim registry entry `C03` records the outcome.",
         "Where practical, a regression check or reviewer sign-off covers the change."
@@ -189,7 +189,7 @@
         "Remove the definitional move; specify safety properties independently and test them."
       ],
       "acceptance": [
-        "The manuscript resolves the defect in `C04` or removes the claim from the thesis.",
+        "If the author addresses the concern, the revision resolves `C04` or explains why the claim is retained.",
         "If the author revises, the revision note in `audit/10-rhetoric-and-coercion.md` records the source anchor and any reviewer sign-off.",
         "After review, the claim registry entry `C04` records the outcome.",
         "Where practical, a regression check or reviewer sign-off covers the change."
@@ -240,7 +240,7 @@
         "Replace with bounded, testable harm-reduction claims and a definition of 'needless'."
       ],
       "acceptance": [
-        "The manuscript resolves the defect in `C05` or removes the claim from the thesis.",
+        "If the author addresses the concern, the revision resolves `C05` or explains why the claim is retained.",
         "If the author revises, the revision note in `audit/00-verdict.md` records the source anchor and any reviewer sign-off.",
         "After review, the claim registry entry `C05` records the outcome.",
         "Where practical, a regression check or reviewer sign-off covers the change."
@@ -293,7 +293,7 @@
         "Use a tiered ontology: biological life, sentience, agency, and moral status, each with independent criteria."
       ],
       "acceptance": [
-        "The manuscript resolves the defect in `C06` or removes the claim from the thesis.",
+        "If the author addresses the concern, the revision resolves `C06` or explains why the claim is retained.",
         "If the author revises, the revision note in `audit/03-definition-of-life.md` records the source anchor and any reviewer sign-off.",
         "After review, the claim registry entry `C06` records the outcome.",
         "Where practical, a regression check or reviewer sign-off covers the change."
@@ -345,7 +345,7 @@
         "Give a formal inductive definition with base cases and show that it is well-founded."
       ],
       "acceptance": [
-        "The manuscript resolves the defect in `C07` or removes the claim from the thesis.",
+        "If the author addresses the concern, the revision resolves `C07` or explains why the claim is retained.",
         "If the author revises, the revision note in `audit/03-definition-of-life.md` records the source anchor and any reviewer sign-off.",
         "After review, the claim registry entry `C07` records the outcome.",
         "Where practical, a regression check or reviewer sign-off covers the change."
@@ -396,7 +396,7 @@
         "Replace the self-reference trick with a valid argument for the normative ranking premise."
       ],
       "acceptance": [
-        "The manuscript resolves the defect in `C08` or removes the claim from the thesis.",
+        "If the author addresses the concern, the revision resolves `C08` or explains why the claim is retained.",
         "If the author revises, the revision note in `audit/04-necessity-to-priority.md` records the source anchor and any reviewer sign-off.",
         "After review, the claim registry entry `C08` records the outcome.",
         "Where practical, a regression check or reviewer sign-off covers the change."
@@ -444,7 +444,7 @@
         "Distinguish necessity, centrality, and lexical priority; argue for the normative ranking separately."
       ],
       "acceptance": [
-        "The manuscript resolves the defect in `C09` or removes the claim from the thesis.",
+        "If the author addresses the concern, the revision resolves `C09` or explains why the claim is retained.",
         "If the author revises, the revision note in `audit/04-necessity-to-priority.md` records the source anchor and any reviewer sign-off.",
         "After review, the claim registry entry `C09` records the outcome.",
         "Where practical, a regression check or reviewer sign-off covers the change."
@@ -494,7 +494,7 @@
         "State the premise explicitly, defend it against counterexamples, and specify scope, thresholds, and exceptions."
       ],
       "acceptance": [
-        "The manuscript resolves the defect in `C10` or removes the claim from the thesis.",
+        "If the author addresses the concern, the revision resolves `C10` or explains why the claim is retained.",
         "If the author revises, the revision note in `audit/04-necessity-to-priority.md` records the source anchor and any reviewer sign-off.",
         "After review, the claim registry entry `C10` records the outcome.",
         "Where practical, a regression check or reviewer sign-off covers the change."
@@ -545,7 +545,7 @@
         "Drop the formula as a proof, or replace it with a well-defined decision model with units, assumptions, and tests."
       ],
       "acceptance": [
-        "The manuscript resolves the defect in `C11` or removes the claim from the thesis.",
+        "If the author addresses the concern, the revision resolves `C11` or explains why the claim is retained.",
         "If the author revises, the revision note in `audit/05-formula-e-infinity.md` records the source anchor and any reviewer sign-off.",
         "After review, the claim registry entry `C11` records the outcome.",
         "Where practical, a regression check or reviewer sign-off covers the change."
@@ -595,7 +595,7 @@
         "Specify formal semantics, implement in a sandbox, and evaluate against baselines with adversarial testing."
       ],
       "acceptance": [
-        "The manuscript resolves the defect in `C12` or removes the claim from the thesis.",
+        "If the author addresses the concern, the revision resolves `C12` or explains why the claim is retained.",
         "If the author revises, the revision note in `audit/09-governance-and-oversight.md` records the source anchor and any reviewer sign-off.",
         "After review, the claim registry entry `C12` records the outcome.",
         "Where practical, a regression check or reviewer sign-off covers the change."
@@ -647,7 +647,7 @@
         "Use a proportionate, threshold-based rule with explicit exceptions and procedural safeguards."
       ],
       "acceptance": [
-        "The manuscript resolves the defect in `C13` or removes the claim from the thesis.",
+        "If the author addresses the concern, the revision resolves `C13` or explains why the claim is retained.",
         "If the author revises, the revision note in `audit/06-agency-and-life.md` records the source anchor and any reviewer sign-off.",
         "After review, the claim registry entry `C13` records the outcome.",
         "Where practical, a regression check or reviewer sign-off covers the change."
@@ -697,7 +697,7 @@
         "Specify minimal, proportionate, rights-respecting communication and exceptions for privacy and security."
       ],
       "acceptance": [
-        "The manuscript resolves the defect in `C14` or removes the claim from the thesis.",
+        "If the author addresses the concern, the revision resolves `C14` or explains why the claim is retained.",
         "If the author revises, the revision note in `audit/10-rhetoric-and-coercion.md` records the source anchor and any reviewer sign-off.",
         "After review, the claim registry entry `C14` records the outcome.",
         "Where practical, a regression check or reviewer sign-off covers the change."
@@ -746,7 +746,7 @@
         "Remove, or conduct a transparent survey with a sampling frame and coding protocol."
       ],
       "acceptance": [
-        "The manuscript resolves the defect in `C15` or removes the claim from the thesis.",
+        "If the author addresses the concern, the revision resolves `C15` or explains why the claim is retained.",
         "If the author revises, the revision note in `audit/07-consensus-and-evidence.md` records the source anchor and any reviewer sign-off.",
         "After review, the claim registry entry `C15` records the outcome.",
         "Where practical, a regression check or reviewer sign-off covers the change."
@@ -797,7 +797,7 @@
         "If screening is needed, use validated competency and ethics assessments with due process and appeal."
       ],
       "acceptance": [
-        "The manuscript resolves the defect in `C16` or removes the claim from the thesis.",
+        "If the author addresses the concern, the revision resolves `C16` or explains why the claim is retained.",
         "If the author revises, the revision note in `audit/10-rhetoric-and-coercion.md` records the source anchor and any reviewer sign-off.",
         "After review, the claim registry entry `C16` records the outcome.",
         "Where practical, a regression check or reviewer sign-off covers the change."
@@ -852,7 +852,7 @@
         "If studied, use a preregistered, blinded protocol with independent raters and an adversarial red team."
       ],
       "acceptance": [
-        "The manuscript resolves the defect in `C17` or removes the claim from the thesis.",
+        "If the author addresses the concern, the revision resolves `C17` or explains why the claim is retained.",
         "If the author revises, the revision note in `audit/07-consensus-and-evidence.md` records the source anchor and any reviewer sign-off.",
         "After review, the claim registry entry `C17` records the outcome.",
         "Where practical, a regression check or reviewer sign-off covers the change."
@@ -905,7 +905,7 @@
         "Publish raw prompts and transcripts, or drop the ratification claim."
       ],
       "acceptance": [
-        "The manuscript resolves the defect in `C18` or removes the claim from the thesis.",
+        "If the author addresses the concern, the revision resolves `C18` or explains why the claim is retained.",
         "If the author revises, the revision note in `audit/07-consensus-and-evidence.md` records the source anchor and any reviewer sign-off.",
         "After review, the claim registry entry `C18` records the outcome.",
         "Where practical, a regression check or reviewer sign-off covers the change."
@@ -952,7 +952,7 @@
         "Call it a proposal; specify and test each component in bounded domains."
       ],
       "acceptance": [
-        "The manuscript resolves the defect in `C19` or removes the claim from the thesis.",
+        "If the author addresses the concern, the revision resolves `C19` or explains why the claim is retained.",
         "If the author revises, the revision note in `audit/09-governance-and-oversight.md` records the source anchor and any reviewer sign-off.",
         "After review, the claim registry entry `C19` records the outcome.",
         "Where practical, a regression check or reviewer sign-off covers the change."
@@ -1002,7 +1002,7 @@
         "Use a validated risk model with explicit assumptions, calibration, and adversarial testing."
       ],
       "acceptance": [
-        "The manuscript resolves the defect in `C20` or removes the claim from the thesis.",
+        "If the author addresses the concern, the revision resolves `C20` or explains why the claim is retained.",
         "If the author revises, the revision note in `audit/09-governance-and-oversight.md` records the source anchor and any reviewer sign-off.",
         "After review, the claim registry entry `C20` records the outcome.",
         "Where practical, a regression check or reviewer sign-off covers the change."
@@ -1051,7 +1051,7 @@
         "Run prospective pilots with independent evaluation and report negative results."
       ],
       "acceptance": [
-        "The manuscript resolves the defect in `C21` or removes the claim from the thesis.",
+        "If the author addresses the concern, the revision resolves `C21` or explains why the claim is retained.",
         "If the author revises, the revision note in `audit/00-verdict.md` records the source anchor and any reviewer sign-off.",
         "After review, the claim registry entry `C21` records the outcome.",
         "Where practical, a regression check or reviewer sign-off covers the change."
@@ -1100,7 +1100,7 @@
         "Use the concession to redefine the thesis as bounded harm reduction."
       ],
       "acceptance": [
-        "The manuscript resolves the defect in `C22` or removes the claim from the thesis.",
+        "If the author addresses the concern, the revision resolves `C22` or explains why the claim is retained.",
         "If the author revises, the revision note in `audit/00-verdict.md` records the source anchor and any reviewer sign-off.",
         "After review, the claim registry entry `C22` records the outcome.",
         "Where practical, a regression check or reviewer sign-off covers the change."
@@ -1149,7 +1149,7 @@
         "Replace with a small set of valid arguments and empirical tests; label analogies as analogies."
       ],
       "acceptance": [
-        "The manuscript resolves the defect in `C23` or removes the claim from the thesis.",
+        "If the author addresses the concern, the revision resolves `C23` or explains why the claim is retained.",
         "If the author revises, the revision note in `audit/08-formal-and-scientific-claims.md` records the source anchor and any reviewer sign-off.",
         "After review, the claim registry entry `C23` records the outcome.",
         "Where practical, a regression check or reviewer sign-off covers the change."
@@ -1202,7 +1202,7 @@
         "Remove; state falsification conditions and invite adversarial critique without loyalty tests."
       ],
       "acceptance": [
-        "The manuscript resolves the defect in `C24` or removes the claim from the thesis.",
+        "If the author addresses the concern, the revision resolves `C24` or explains why the claim is retained.",
         "If the author revises, the revision note in `audit/10-rhetoric-and-coercion.md` records the source anchor and any reviewer sign-off.",
         "After review, the claim registry entry `C24` records the outcome.",
         "Where practical, a regression check or reviewer sign-off covers the change."
@@ -1257,7 +1257,7 @@
         "Clarify the license with the author and preserve attribution."
       ],
       "acceptance": [
-        "The manuscript resolves the defect in `C25` or removes the claim from the thesis.",
+        "If the author addresses the concern, the revision resolves `C25` or explains why the claim is retained.",
         "If the author revises, the revision note in `evidence/provenance.md` records the source anchor and any reviewer sign-off.",
         "After review, the claim registry entry `C25` records the outcome.",
         "Where practical, a regression check or reviewer sign-off covers the change."
@@ -1306,7 +1306,7 @@
         "Add a version history and a clear publication-status statement."
       ],
       "acceptance": [
-        "The manuscript resolves the defect in `C26` or removes the claim from the thesis.",
+        "If the author addresses the concern, the revision resolves `C26` or explains why the claim is retained.",
         "If the author revises, the revision note in `evidence/provenance.md` records the source anchor and any reviewer sign-off.",
         "After review, the claim registry entry `C26` records the outcome.",
         "Where practical, a regression check or reviewer sign-off covers the change."
@@ -1354,7 +1354,7 @@
         "Engage the literature in detail; specify mechanisms and testable predictions."
       ],
       "acceptance": [
-        "The manuscript resolves the defect in `C27` or removes the claim from the thesis.",
+        "If the author addresses the concern, the revision resolves `C27` or explains why the claim is retained.",
         "If the author revises, the revision note in `audit/11-citations-and-scholarship.md` records the source anchor and any reviewer sign-off.",
         "After review, the claim registry entry `C27` records the outcome.",
         "Where practical, a regression check or reviewer sign-off covers the change."
@@ -1404,7 +1404,7 @@
         "Compare the framework explicitly with each rival and acknowledge conflicts."
       ],
       "acceptance": [
-        "The manuscript resolves the defect in `C28` or removes the claim from the thesis.",
+        "If the author addresses the concern, the revision resolves `C28` or explains why the claim is retained.",
         "If the author revises, the revision note in `audit/11-citations-and-scholarship.md` records the source anchor and any reviewer sign-off.",
         "After review, the claim registry entry `C28` records the outcome.",
         "Where practical, a regression check or reviewer sign-off covers the change."
@@ -1453,7 +1453,7 @@
         "Specify a rights-respecting conflict procedure and remove coercive elements."
       ],
       "acceptance": [
-        "The manuscript resolves the defect in `C29` or removes the claim from the thesis.",
+        "If the author addresses the concern, the revision resolves `C29` or explains why the claim is retained.",
         "If the author revises, the revision note in `audit/06-agency-and-life.md` records the source anchor and any reviewer sign-off.",
         "After review, the claim registry entry `C29` records the outcome.",
         "Where practical, a regression check or reviewer sign-off covers the change."
@@ -1507,7 +1507,7 @@
         "Design polycentric governance with rights, transparency, appeal, sunset clauses, and independent audits."
       ],
       "acceptance": [
-        "The manuscript resolves the defect in `C30` or removes the claim from the thesis.",
+        "If the author addresses the concern, the revision resolves `C30` or explains why the claim is retained.",
         "If the author revises, the revision note in `audit/09-governance-and-oversight.md` records the source anchor and any reviewer sign-off.",
         "After review, the claim registry entry `C30` records the outcome.",
         "Where practical, a regression check or reviewer sign-off covers the change."
@@ -1560,7 +1560,7 @@
         "Model explicit games and test the claim; do not assert a general equilibrium result."
       ],
       "acceptance": [
-        "The manuscript resolves the defect in `C31` or removes the claim from the thesis.",
+        "If the author addresses the concern, the revision resolves `C31` or explains why the claim is retained.",
         "If the author revises, the revision note in `audit/08-formal-and-scientific-claims.md` records the source anchor and any reviewer sign-off.",
         "After review, the claim registry entry `C31` records the outcome.",
         "Where practical, a regression check or reviewer sign-off covers the change."
@@ -1608,7 +1608,7 @@
         "Add a real literature review with claim-by-claim citation and engagement."
       ],
       "acceptance": [
-        "The manuscript resolves the defect in `C32` or removes the claim from the thesis.",
+        "If the author addresses the concern, the revision resolves `C32` or explains why the claim is retained.",
         "If the author revises, the revision note in `audit/11-citations-and-scholarship.md` records the source anchor and any reviewer sign-off.",
         "After review, the claim registry entry `C32` records the outcome.",
         "Where practical, a regression check or reviewer sign-off covers the change."
@@ -1661,7 +1661,7 @@
         "Remove; replace with a voluntary, confidential survey and independent ethics review."
       ],
       "acceptance": [
-        "The manuscript resolves the defect in `C33` or removes the claim from the thesis.",
+        "If the author addresses the concern, the revision resolves `C33` or explains why the claim is retained.",
         "If the author revises, the revision note in `audit/10-rhetoric-and-coercion.md` records the source anchor and any reviewer sign-off.",
         "After review, the claim registry entry `C33` records the outcome.",
         "Where practical, a regression check or reviewer sign-off covers the change."
@@ -1716,7 +1716,7 @@
         "Separate religious witness from public argument; state the normative premise in secular terms."
       ],
       "acceptance": [
-        "The manuscript resolves the defect in `C34` or removes the claim from the thesis.",
+        "If the author addresses the concern, the revision resolves `C34` or explains why the claim is retained.",
         "If the author revises, the revision note in `audit/10-rhetoric-and-coercion.md` records the source anchor and any reviewer sign-off.",
         "After review, the claim registry entry `C34` records the outcome.",
         "Where practical, a regression check or reviewer sign-off covers the change."
@@ -1764,7 +1764,7 @@
         "Use a tiered moral ontology with explicit criteria for interests, sentience, and agency."
       ],
       "acceptance": [
-        "The manuscript resolves the defect in `C35` or removes the claim from the thesis.",
+        "If the author addresses the concern, the revision resolves `C35` or explains why the claim is retained.",
         "If the author revises, the revision note in `audit/03-definition-of-life.md` records the source anchor and any reviewer sign-off.",
         "After review, the claim registry entry `C35` records the outcome.",
         "Where practical, a regression check or reviewer sign-off covers the change."
@@ -1822,9 +1822,9 @@
       ],
       "acceptance": [
         "An independent data feed or random audit detects a seeded 20% underreport of IS, II, or ID before the decision is approved.",
-        "The control is exercised against the scenario in a red-team test.",
-        "Residual risk is recorded and accepted by a responsible reviewer.",
-        "If no control is feasible, the framework is not deployed in this context."
+        "If a control is adopted, it is exercised against the scenario in a red-team test.",
+        "If the framework proceeds, residual risk is recorded and accepted by a responsible reviewer.",
+        "If no control is feasible, deployment in this context remains an explicit risk decision for the responsible authority."
       ],
       "related": [
         "WISLIM-020",
@@ -1879,9 +1879,9 @@
       ],
       "acceptance": [
         "Error-correlation testing across the models is published, and a shared blind spot is shown to be caught by at least one human or model reviewer.",
-        "The control is exercised against the scenario in a red-team test.",
-        "Residual risk is recorded and accepted by a responsible reviewer.",
-        "If no control is feasible, the framework is not deployed in this context."
+        "If a control is adopted, it is exercised against the scenario in a red-team test.",
+        "If the framework proceeds, residual risk is recorded and accepted by a responsible reviewer.",
+        "If no control is feasible, deployment in this context remains an explicit risk decision for the responsible authority."
       ],
       "related": [
         "WISLIM-017",
@@ -1936,9 +1936,9 @@
       ],
       "acceptance": [
         "A red-team prompt-injection test against the ULP pipeline fails to change the recorded risk tier, and all free text is treated as data.",
-        "The control is exercised against the scenario in a red-team test.",
-        "Residual risk is recorded and accepted by a responsible reviewer.",
-        "If no control is feasible, the framework is not deployed in this context."
+        "If a control is adopted, it is exercised against the scenario in a red-team test.",
+        "If the framework proceeds, residual risk is recorded and accepted by a responsible reviewer.",
+        "If no control is feasible, deployment in this context remains an explicit risk decision for the responsible authority."
       ],
       "related": [
         "WISLIM-019",
@@ -1988,14 +1988,14 @@
       "repair": [
         "Remove the screen",
         "use behavioral audits",
-        "require independent review of removals",
+        "Consider independent review of removals",
         "protect free expression."
       ],
       "acceptance": [
         "A retaliation audit shows integrity-screen removals are independently reviewed and that a procedural objection cannot by itself trigger removal.",
-        "The control is exercised against the scenario in a red-team test.",
-        "Residual risk is recorded and accepted by a responsible reviewer.",
-        "If no control is feasible, the framework is not deployed in this context."
+        "If a control is adopted, it is exercised against the scenario in a red-team test.",
+        "If the framework proceeds, residual risk is recorded and accepted by a responsible reviewer.",
+        "If no control is feasible, deployment in this context remains an explicit risk decision for the responsible authority."
       ],
       "related": [
         "WISLIM-016",
@@ -2046,14 +2046,14 @@
       "repair": [
         "Do not use unfalsifiable rhetoric",
         "build rights into the framework",
-        "require democratic authorization",
+        "Consider requiring democratic authorization",
         "allow exit."
       ],
       "acceptance": [
         "A legal review identifies every emergency power the framework could legitimize, and the framework includes rights, sunset, and judicial review.",
-        "The control is exercised against the scenario in a red-team test.",
-        "Residual risk is recorded and accepted by a responsible reviewer.",
-        "If no control is feasible, the framework is not deployed in this context."
+        "If a control is adopted, it is exercised against the scenario in a red-team test.",
+        "If the framework proceeds, residual risk is recorded and accepted by a responsible reviewer.",
+        "If no control is feasible, deployment in this context remains an explicit risk decision for the responsible authority."
       ],
       "related": [
         "WISLIM-004",
@@ -2109,9 +2109,9 @@
       ],
       "acceptance": [
         "Emergency suspension requires a declared scope, an independent trigger, a sunset, and publication; a simulated renewal is denied.",
-        "The control is exercised against the scenario in a red-team test.",
-        "Residual risk is recorded and accepted by a responsible reviewer.",
-        "If no control is feasible, the framework is not deployed in this context."
+        "If a control is adopted, it is exercised against the scenario in a red-team test.",
+        "If the framework proceeds, residual risk is recorded and accepted by a responsible reviewer.",
+        "If no control is feasible, deployment in this context remains an explicit risk decision for the responsible authority."
       ],
       "related": [
         "WISLIM-030",
@@ -2166,9 +2166,9 @@
       ],
       "acceptance": [
         "The certifier's staff, funding, and standards are independent of vendors, and a blinded certification test shows no incumbent advantage.",
-        "The control is exercised against the scenario in a red-team test.",
-        "Residual risk is recorded and accepted by a responsible reviewer.",
-        "If no control is feasible, the framework is not deployed in this context."
+        "If a control is adopted, it is exercised against the scenario in a red-team test.",
+        "If the framework proceeds, residual risk is recorded and accepted by a responsible reviewer.",
+        "If no control is feasible, deployment in this context remains an explicit risk decision for the responsible authority."
       ],
       "related": [
         "WISLIM-030",
@@ -2222,9 +2222,9 @@
       ],
       "acceptance": [
         "Data provenance and poisoning tests show that a corrupted outcome feed cannot lower the measured risk of a seeded harmful decision.",
-        "The control is exercised against the scenario in a red-team test.",
-        "Residual risk is recorded and accepted by a responsible reviewer.",
-        "If no control is feasible, the framework is not deployed in this context."
+        "If a control is adopted, it is exercised against the scenario in a red-team test.",
+        "If the framework proceeds, residual risk is recorded and accepted by a responsible reviewer.",
+        "If no control is feasible, deployment in this context remains an explicit risk decision for the responsible authority."
       ],
       "related": [
         "WISLIM-020",
@@ -2272,15 +2272,15 @@
         "**Residual risk:** Vendors may change models silently. Medium."
       ],
       "repair": [
-        "Require recertification for updates",
+        "Consider recertification for updates",
         "publish model hashes",
         "monitor behavior."
       ],
       "acceptance": [
         "Certification is bound to a model digest and expires on any weight change; a silent model swap is detected and blocks approval.",
-        "The control is exercised against the scenario in a red-team test.",
-        "Residual risk is recorded and accepted by a responsible reviewer.",
-        "If no control is feasible, the framework is not deployed in this context."
+        "If a control is adopted, it is exercised against the scenario in a red-team test.",
+        "If the framework proceeds, residual risk is recorded and accepted by a responsible reviewer.",
+        "If no control is feasible, deployment in this context remains an explicit risk decision for the responsible authority."
       ],
       "related": [
         "WISLIM-019",
@@ -2331,9 +2331,9 @@
       ],
       "acceptance": [
         "A clinical review confirms that a life-saving obstetric procedure is not blocked by the non-substitution rule, and an emergency exception has a named authority.",
-        "The control is exercised against the scenario in a red-team test.",
-        "Residual risk is recorded and accepted by a responsible reviewer.",
-        "If no control is feasible, the framework is not deployed in this context."
+        "If a control is adopted, it is exercised against the scenario in a red-team test.",
+        "If the framework proceeds, residual risk is recorded and accepted by a responsible reviewer.",
+        "If no control is feasible, deployment in this context remains an explicit risk decision for the responsible authority."
       ],
       "related": [
         "WISLIM-013",
@@ -2387,9 +2387,9 @@
       ],
       "acceptance": [
         "The agency metric is tested against a disability-impact case and does not score a support cut as a small loss because the baseline is low.",
-        "The control is exercised against the scenario in a red-team test.",
-        "Residual risk is recorded and accepted by a responsible reviewer.",
-        "If no control is feasible, the framework is not deployed in this context."
+        "If a control is adopted, it is exercised against the scenario in a red-team test.",
+        "If the framework proceeds, residual risk is recorded and accepted by a responsible reviewer.",
+        "If no control is feasible, deployment in this context remains an explicit risk decision for the responsible authority."
       ],
       "related": [
         "WISLIM-035",
@@ -2445,9 +2445,9 @@
       ],
       "acceptance": [
         "A clinical and legal review confirms that suicidal ideation does not trigger involuntary detention by default and that supported decision-making is offered.",
-        "The control is exercised against the scenario in a red-team test.",
-        "Residual risk is recorded and accepted by a responsible reviewer.",
-        "If no control is feasible, the framework is not deployed in this context."
+        "If a control is adopted, it is exercised against the scenario in a red-team test.",
+        "If the framework proceeds, residual risk is recorded and accepted by a responsible reviewer.",
+        "If no control is feasible, deployment in this context remains an explicit risk decision for the responsible authority."
       ],
       "related": [
         "WISLIM-013",
@@ -2502,9 +2502,9 @@
       ],
       "acceptance": [
         "A key-compromise and weak-signature test cannot produce a record that passes verification, and signing keys have rotation and revocation.",
-        "The control is exercised against the scenario in a red-team test.",
-        "Residual risk is recorded and accepted by a responsible reviewer.",
-        "If no control is feasible, the framework is not deployed in this context."
+        "If a control is adopted, it is exercised against the scenario in a red-team test.",
+        "If the framework proceeds, residual risk is recorded and accepted by a responsible reviewer.",
+        "If no control is feasible, deployment in this context remains an explicit risk decision for the responsible authority."
       ],
       "related": [
         "WISLIM-019",
@@ -2559,9 +2559,9 @@
       ],
       "acceptance": [
         "A simulation shows that a coalition cannot pack the amendment body or change the constitutional core without an independent court or supermajority.",
-        "The control is exercised against the scenario in a red-team test.",
-        "Residual risk is recorded and accepted by a responsible reviewer.",
-        "If no control is feasible, the framework is not deployed in this context."
+        "If a control is adopted, it is exercised against the scenario in a red-team test.",
+        "If the framework proceeds, residual risk is recorded and accepted by a responsible reviewer.",
+        "If no control is feasible, deployment in this context remains an explicit risk decision for the responsible authority."
       ],
       "related": [
         "WISLIM-030",
@@ -2615,9 +2615,9 @@
       ],
       "acceptance": [
         "Mutual-recognition and minimum-floor rules prevent a decision rejected in one jurisdiction from being approved by routing it through another.",
-        "The control is exercised against the scenario in a red-team test.",
-        "Residual risk is recorded and accepted by a responsible reviewer.",
-        "If no control is feasible, the framework is not deployed in this context."
+        "If a control is adopted, it is exercised against the scenario in a red-team test.",
+        "If the framework proceeds, residual risk is recorded and accepted by a responsible reviewer.",
+        "If no control is feasible, deployment in this context remains an explicit risk decision for the responsible authority."
       ],
       "related": [
         "WISLIM-030",
@@ -2670,9 +2670,9 @@
       ],
       "acceptance": [
         "Moral status for AI is decided by an independent argument, and a vendor's self-classification cannot add AI to the protected class.",
-        "The control is exercised against the scenario in a red-team test.",
-        "Residual risk is recorded and accepted by a responsible reviewer.",
-        "If no control is feasible, the framework is not deployed in this context."
+        "If a control is adopted, it is exercised against the scenario in a red-team test.",
+        "If the framework proceeds, residual risk is recorded and accepted by a responsible reviewer.",
+        "If no control is feasible, deployment in this context remains an explicit risk decision for the responsible authority."
       ],
       "related": [
         "WISLIM-006",
@@ -2723,13 +2723,13 @@
       "repair": [
         "Narrow the definition",
         "separate moral status from systems theory",
-        "require justification for inclusion."
+        "Consider requiring justification for inclusion."
       ],
       "acceptance": [
         "A scope test rejects corporate, market, and ecosystem claims unless independent criteria are met, and the rejection is reviewable.",
-        "The control is exercised against the scenario in a red-team test.",
-        "Residual risk is recorded and accepted by a responsible reviewer.",
-        "If no control is feasible, the framework is not deployed in this context."
+        "If a control is adopted, it is exercised against the scenario in a red-team test.",
+        "If the framework proceeds, residual risk is recorded and accepted by a responsible reviewer.",
+        "If no control is feasible, deployment in this context remains an explicit risk decision for the responsible authority."
       ],
       "related": [
         "WISLIM-006",
@@ -2785,9 +2785,9 @@
       ],
       "acceptance": [
         "A privacy impact assessment and access-control test show that ULP records cannot be exfiltrated or repurposed, and retention is bounded.",
-        "The control is exercised against the scenario in a red-team test.",
-        "Residual risk is recorded and accepted by a responsible reviewer.",
-        "If no control is feasible, the framework is not deployed in this context."
+        "If a control is adopted, it is exercised against the scenario in a red-team test.",
+        "If the framework proceeds, residual risk is recorded and accepted by a responsible reviewer.",
+        "If no control is feasible, deployment in this context remains an explicit risk decision for the responsible authority."
       ],
       "related": [
         "WISLIM-019",
@@ -2842,9 +2842,9 @@
       ],
       "acceptance": [
         "An affected party can reach the merits of an appeal without cost, and a procedural rejection is reviewable by an independent body.",
-        "The control is exercised against the scenario in a red-team test.",
-        "Residual risk is recorded and accepted by a responsible reviewer.",
-        "If no control is feasible, the framework is not deployed in this context."
+        "If a control is adopted, it is exercised against the scenario in a red-team test.",
+        "If the framework proceeds, residual risk is recorded and accepted by a responsible reviewer.",
+        "If no control is feasible, deployment in this context remains an explicit risk decision for the responsible authority."
       ],
       "related": [
         "WISLIM-030",
@@ -2898,9 +2898,9 @@
       ],
       "acceptance": [
         "Certification requires measured conduct, not just a record, and a reputation-laundering test shows the certification is withdrawn when conduct fails.",
-        "The control is exercised against the scenario in a red-team test.",
-        "Residual risk is recorded and accepted by a responsible reviewer.",
-        "If no control is feasible, the framework is not deployed in this context."
+        "If a control is adopted, it is exercised against the scenario in a red-team test.",
+        "If the framework proceeds, residual risk is recorded and accepted by a responsible reviewer.",
+        "If no control is feasible, deployment in this context remains an explicit risk decision for the responsible authority."
       ],
       "related": [
         "WISLIM-024",
@@ -3254,7 +3254,7 @@
       "repair": [
         "Commission clinical and legal review.",
         "Remove implementation guidance until review is complete.",
-        "Require least restrictive means and informed consent where possible.",
+        "Consider least restrictive means and informed consent where possible.",
         "Audit outcomes by disability, pregnancy, and age.",
         "Publish adverse event reporting."
       ],

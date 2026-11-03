@@ -360,6 +360,22 @@ def check_issue_register(v: Validator, lines: list[str]) -> None:
             "## Quoted passage" not in text,
             f"{issue['id']}: record still uses the singular quotation heading",
         )
+        v.check(
+            "**Status:** observation" in text,
+            f"{issue['id']}: record does not mark the issue as an observation",
+        )
+        v.check(
+            "audit observation, not a required fix" in text,
+            f"{issue['id']}: record does not say the issue is optional",
+        )
+        v.check(
+            "does not mean the overall work fails" in text,
+            f"{issue['id']}: record does not disclaim fatality",
+        )
+        v.check(
+            "The manuscript resolves the defect" not in text,
+            f"{issue['id']}: record still frames the issue as a required defect repair",
+        )
         if issue["kind"] == "claim":
             v.check(
                 "## Steelman and reply" in text,
@@ -509,10 +525,40 @@ def check_content(v: Validator) -> None:
     v.check("docs/audit/" in readme, "README is missing the issue register")
     v.check("66 records" in readme, "README is missing the issue count")
     v.check("make verify" in readme, "README is missing the verification command")
+    v.check(
+        "audit observation, not a required fix" in readme,
+        "README does not say issues are optional observations",
+    )
     agents = (ROOT / "AGENTS.md").read_text(encoding="utf-8")
     v.check("source is immutable" in agents.lower(), "AGENTS is missing source immutability")
     v.check("WISLIM-001" in agents, "AGENTS is missing the stable issue ID rule")
     v.check("make register" in agents, "AGENTS is missing the register workflow")
+    v.check(
+        "not treat audit issues as fatal or mandatory" in agents.lower(),
+        "AGENTS is missing the non-fatal framing rule",
+    )
+    index = (ROOT / "docs" / "audit" / "README.md").read_text(encoding="utf-8")
+    v.check(
+        "not a fatality rating" in index,
+        "issue index does not explain that severity is not a fatality rating",
+    )
+    v.check(
+        "read them as suggestions, not instructions" in index,
+        "issue index does not frame issue titles as suggestions",
+    )
+    sync_source = (ROOT / "scripts" / "sync_issues.py").read_text(encoding="utf-8")
+    v.check(
+        "Blocks adoption" not in sync_source,
+        "GitHub labels still describe issues as blocking adoption",
+    )
+    v.check(
+        "repair before use" not in sync_source,
+        "GitHub labels still require repair before use",
+    )
+    v.check(
+        "not a required fix" in sync_source,
+        "GitHub severity labels do not state that a fix is optional",
+    )
     provenance = (ROOT / "evidence" / "provenance.md").read_text(encoding="utf-8")
     v.check("splitlines" in provenance, "provenance is missing the line-numbering caveat")
     v.check("13,544" in provenance, "provenance is missing the splitlines count")

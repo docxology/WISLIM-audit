@@ -15,10 +15,17 @@ github_issue: 57
 
 # WISLIM-057: Replace the formal model and risk metrics with validated instruments
 
-> **Severity:** high · **Kind:** workstream · **Source:** `WS02`  
+> **Severity:** high · **Kind:** workstream · **Status:** observation · **Source:** `WS02`  
 > **GitHub issue:** [#57](https://github.com/docxology/WISLIM-audit/issues/57)  
 > **Audit modules:** audit/05-formula-e-infinity.md, audit/08-formal-and-scientific-claims.md, audit/09-governance-and-oversight.md  
 > **Source lines:** n/a (workstream)
+
+> **Status: audit observation, not a required fix.** This issue records a
+> point that may matter for the work's impact, clarity, or risk. It is not a
+> verdict that the work is invalid, and addressing it is optional. The author
+> may decline it with reasons. Severity estimates potential impact if the
+> concern applies; it does not mean the overall work fails or that a change is
+> mandatory.
 
 ## Publication reference
 

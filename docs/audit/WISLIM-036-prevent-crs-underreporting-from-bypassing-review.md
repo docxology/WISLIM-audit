@@ -15,10 +15,17 @@ github_issue: 36
 
 # WISLIM-036: Prevent CRS underreporting from bypassing review
 
-> **Severity:** critical · **Kind:** red-team · **Source:** `AS01`  
+> **Severity:** critical · **Kind:** red-team · **Status:** observation · **Source:** `AS01`  
 > **GitHub issue:** [#36](https://github.com/docxology/WISLIM-audit/issues/36)  
 > **Audit modules:** red-team/adversarial-scenarios.md  
 > **Source lines:** n/a (red-team scenario)
+
+> **Status: audit observation, not a required fix.** This issue records a
+> point that may matter for the work's impact, clarity, or risk. It is not a
+> verdict that the work is invalid, and addressing it is optional. The author
+> may decline it with reasons. Severity estimates potential impact if the
+> concern applies; it does not mean the overall work fails or that a change is
+> mandatory.
 
 ## Publication reference
 
@@ -77,9 +84,9 @@ If the author chooses to revise, these checks would help a reviewer test
 whether the revision addresses the issue. They are not deployment gates.
 
 - [ ] An independent data feed or random audit detects a seeded 20% underreport of IS, II, or ID before the decision is approved.
-- [ ] The control is exercised against the scenario in a red-team test.
-- [ ] Residual risk is recorded and accepted by a responsible reviewer.
-- [ ] If no control is feasible, the framework is not deployed in this context.
+- [ ] If a control is adopted, it is exercised against the scenario in a red-team test.
+- [ ] If the framework proceeds, residual risk is recorded and accepted by a responsible reviewer.
+- [ ] If no control is feasible, deployment in this context remains an explicit risk decision for the responsible authority.
 
 ## Related issues
 

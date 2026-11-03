@@ -62,7 +62,10 @@ line citation. The validator checks that each normalized quotation is a
 substring of the source text within the cited line's window. This is deliberate:
 a finding that cannot be anchored to the paper is not part of the register.
 Remediation is written as options for the author, not as instructions or
-deployment gates.
+deployment gates. Each record carries a status note saying the issue is an
+audit observation, not a required fix; an author may decline a proposed
+response with reasons. Issue titles name a concern and a possible response, so
+they should be read as suggestions rather than commands.
 
 ## Evidence classes
 
@@ -77,9 +80,13 @@ deployment gates.
 
 ## Severity
 
+Severity is an impact estimate, not a fatality rating. It says how much a
+concern could matter if it applies; it does not say the work is invalid, nor
+does it make a response mandatory.
+
 | Severity | Meaning |
 |---|---|
-| Critical | Threatens the central thesis or creates a serious harm pathway. |
-| High | Materially weakens the argument or a major implementation claim. |
-| Medium | Important but localized; repairable without abandoning the project. |
-| Low | Clarity, style, or minor bibliographic issue. |
+| Critical | Could materially undermine a central claim or create a serious harm pathway if the framework were implemented as written. |
+| High | Could materially weaken the argument or a major implementation claim. |
+| Medium | Localized impact; worth considering but not central. |
+| Low | Clarity, style, or minor bibliographic note. |

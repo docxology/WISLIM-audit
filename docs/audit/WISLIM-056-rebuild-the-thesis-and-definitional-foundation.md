@@ -15,10 +15,17 @@ github_issue: 56
 
 # WISLIM-056: Rebuild the thesis and definitional foundation
 
-> **Severity:** critical · **Kind:** workstream · **Source:** `WS01`  
+> **Severity:** critical · **Kind:** workstream · **Status:** observation · **Source:** `WS01`  
 > **GitHub issue:** [#56](https://github.com/docxology/WISLIM-audit/issues/56)  
 > **Audit modules:** audit/02-logical-form-and-ambiguity.md, audit/03-definition-of-life.md, audit/04-necessity-to-priority.md  
 > **Source lines:** n/a (workstream)
+
+> **Status: audit observation, not a required fix.** This issue records a
+> point that may matter for the work's impact, clarity, or risk. It is not a
+> verdict that the work is invalid, and addressing it is optional. The author
+> may decline it with reasons. Severity estimates potential impact if the
+> concern applies; it does not mean the overall work fails or that a change is
+> mandatory.
 
 ## Publication reference
 

@@ -15,10 +15,17 @@ github_issue: 10
 
 # WISLIM-010: Defend the missing normative premise
 
-> **Severity:** critical · **Kind:** claim · **Source:** `C10`  
+> **Severity:** critical · **Kind:** claim · **Status:** observation · **Source:** `C10`  
 > **GitHub issue:** [#10](https://github.com/docxology/WISLIM-audit/issues/10)  
 > **Audit modules:** audit/04-necessity-to-priority.md, audit/12-steelman.md  
 > **Source lines:** 1282
+
+> **Status: audit observation, not a required fix.** This issue records a
+> point that may matter for the work's impact, clarity, or risk. It is not a
+> verdict that the work is invalid, and addressing it is optional. The author
+> may decline it with reasons. Severity estimates potential impact if the
+> concern applies; it does not mean the overall work fails or that a change is
+> mandatory.
 
 ## Publication reference
 
@@ -72,7 +79,7 @@ a starting point rather than a prescription.
 If the author chooses to revise, these checks would help a reviewer test
 whether the revision addresses the issue. They are not deployment gates.
 
-- [ ] The manuscript resolves the defect in `C10` or removes the claim from the thesis.
+- [ ] If the author addresses the concern, the revision resolves `C10` or explains why the claim is retained.
 - [ ] If the author revises, the revision note in `audit/04-necessity-to-priority.md` records the source anchor and any reviewer sign-off.
 - [ ] After review, the claim registry entry `C10` records the outcome.
 - [ ] Where practical, a regression check or reviewer sign-off covers the change.

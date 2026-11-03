@@ -15,10 +15,17 @@ github_issue: 11
 
 # WISLIM-011: Demote the E-infinity formula from proof to metaphor
 
-> **Severity:** high · **Kind:** claim · **Source:** `C11`  
+> **Severity:** high · **Kind:** claim · **Status:** observation · **Source:** `C11`  
 > **GitHub issue:** [#11](https://github.com/docxology/WISLIM-audit/issues/11)  
 > **Audit modules:** audit/05-formula-e-infinity.md  
 > **Source lines:** 431
+
+> **Status: audit observation, not a required fix.** This issue records a
+> point that may matter for the work's impact, clarity, or risk. It is not a
+> verdict that the work is invalid, and addressing it is optional. The author
+> may decline it with reasons. Severity estimates potential impact if the
+> concern applies; it does not mean the overall work fails or that a change is
+> mandatory.
 
 ## Publication reference
 
@@ -68,7 +75,7 @@ a starting point rather than a prescription.
 If the author chooses to revise, these checks would help a reviewer test
 whether the revision addresses the issue. They are not deployment gates.
 
-- [ ] The manuscript resolves the defect in `C11` or removes the claim from the thesis.
+- [ ] If the author addresses the concern, the revision resolves `C11` or explains why the claim is retained.
 - [ ] If the author revises, the revision note in `audit/05-formula-e-infinity.md` records the source anchor and any reviewer sign-off.
 - [ ] After review, the claim registry entry `C11` records the outcome.
 - [ ] Where practical, a regression check or reviewer sign-off covers the change.

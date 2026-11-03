@@ -15,10 +15,17 @@ github_issue: 52
 
 # WISLIM-052: Close definition-gaming paths
 
-> **Severity:** high · **Kind:** red-team · **Source:** `AS17`  
+> **Severity:** high · **Kind:** red-team · **Status:** observation · **Source:** `AS17`  
 > **GitHub issue:** [#52](https://github.com/docxology/WISLIM-audit/issues/52)  
 > **Audit modules:** red-team/adversarial-scenarios.md  
 > **Source lines:** n/a (red-team scenario)
+
+> **Status: audit observation, not a required fix.** This issue records a
+> point that may matter for the work's impact, clarity, or risk. It is not a
+> verdict that the work is invalid, and addressing it is optional. The author
+> may decline it with reasons. Severity estimates potential impact if the
+> concern applies; it does not mean the overall work fails or that a change is
+> mandatory.
 
 ## Publication reference
 
@@ -67,7 +74,7 @@ a starting point rather than a prescription.
 
 1. Narrow the definition
 2. Separate moral status from systems theory
-3. Require justification for inclusion.
+3. Consider requiring justification for inclusion.
 
 ## Suggested checks for reviewers
 
@@ -75,9 +82,9 @@ If the author chooses to revise, these checks would help a reviewer test
 whether the revision addresses the issue. They are not deployment gates.
 
 - [ ] A scope test rejects corporate, market, and ecosystem claims unless independent criteria are met, and the rejection is reviewable.
-- [ ] The control is exercised against the scenario in a red-team test.
-- [ ] Residual risk is recorded and accepted by a responsible reviewer.
-- [ ] If no control is feasible, the framework is not deployed in this context.
+- [ ] If a control is adopted, it is exercised against the scenario in a red-team test.
+- [ ] If the framework proceeds, residual risk is recorded and accepted by a responsible reviewer.
+- [ ] If no control is feasible, deployment in this context remains an explicit risk decision for the responsible authority.
 
 ## Related issues
 

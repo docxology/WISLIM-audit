@@ -15,10 +15,17 @@ github_issue: 65
 
 # WISLIM-065: Rebuild evidence quality, citations, and human review
 
-> **Severity:** high · **Kind:** workstream · **Source:** `WS10`  
+> **Severity:** high · **Kind:** workstream · **Status:** observation · **Source:** `WS10`  
 > **GitHub issue:** [#65](https://github.com/docxology/WISLIM-audit/issues/65)  
 > **Audit modules:** audit/11-citations-and-scholarship.md, evidence/citation-audit.md  
 > **Source lines:** n/a (workstream)
+
+> **Status: audit observation, not a required fix.** This issue records a
+> point that may matter for the work's impact, clarity, or risk. It is not a
+> verdict that the work is invalid, and addressing it is optional. The author
+> may decline it with reasons. Severity estimates potential impact if the
+> concern applies; it does not mean the overall work fails or that a change is
+> mandatory.
 
 ## Publication reference
 

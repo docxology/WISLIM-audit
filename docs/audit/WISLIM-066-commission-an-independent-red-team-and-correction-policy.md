@@ -15,10 +15,17 @@ github_issue: 66
 
 # WISLIM-066: Commission an independent red team and correction policy
 
-> **Severity:** high · **Kind:** workstream · **Source:** `WS11`  
+> **Severity:** high · **Kind:** workstream · **Status:** observation · **Source:** `WS11`  
 > **GitHub issue:** [#66](https://github.com/docxology/WISLIM-audit/issues/66)  
 > **Audit modules:** red-team/README.md, red-team/threat-model.md  
 > **Source lines:** n/a (workstream)
+
+> **Status: audit observation, not a required fix.** This issue records a
+> point that may matter for the work's impact, clarity, or risk. It is not a
+> verdict that the work is invalid, and addressing it is optional. The author
+> may decline it with reasons. Severity estimates potential impact if the
+> concern applies; it does not mean the overall work fails or that a change is
+> mandatory.
 
 ## Publication reference
 

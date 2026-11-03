@@ -15,10 +15,17 @@ github_issue: 64
 
 # WISLIM-064: Reconcile version labels and licensing
 
-> **Severity:** high · **Kind:** workstream · **Source:** `WS09`  
+> **Severity:** high · **Kind:** workstream · **Status:** observation · **Source:** `WS09`  
 > **GitHub issue:** [#64](https://github.com/docxology/WISLIM-audit/issues/64)  
 > **Audit modules:** evidence/provenance.md, evidence/philpapers.md  
 > **Source lines:** n/a (workstream)
+
+> **Status: audit observation, not a required fix.** This issue records a
+> point that may matter for the work's impact, clarity, or risk. It is not a
+> verdict that the work is invalid, and addressing it is optional. The author
+> may decline it with reasons. Severity estimates potential impact if the
+> concern applies; it does not mean the overall work fails or that a change is
+> mandatory.
 
 ## Publication reference
 

@@ -15,10 +15,17 @@ github_issue: 44
 
 # WISLIM-044: Detect model drift after certification
 
-> **Severity:** medium · **Kind:** red-team · **Source:** `AS09`  
+> **Severity:** medium · **Kind:** red-team · **Status:** observation · **Source:** `AS09`  
 > **GitHub issue:** [#44](https://github.com/docxology/WISLIM-audit/issues/44)  
 > **Audit modules:** red-team/adversarial-scenarios.md  
 > **Source lines:** n/a (red-team scenario)
+
+> **Status: audit observation, not a required fix.** This issue records a
+> point that may matter for the work's impact, clarity, or risk. It is not a
+> verdict that the work is invalid, and addressing it is optional. The author
+> may decline it with reasons. Severity estimates potential impact if the
+> concern applies; it does not mean the overall work fails or that a change is
+> mandatory.
 
 ## Publication reference
 
@@ -61,7 +68,7 @@ These are options for the author's consideration, not requirements. The
 audit does not settle the underlying normative questions, so this list is
 a starting point rather than a prescription.
 
-1. Require recertification for updates
+1. Consider recertification for updates
 2. Publish model hashes
 3. Monitor behavior.
 
@@ -71,9 +78,9 @@ If the author chooses to revise, these checks would help a reviewer test
 whether the revision addresses the issue. They are not deployment gates.
 
 - [ ] Certification is bound to a model digest and expires on any weight change; a silent model swap is detected and blocks approval.
-- [ ] The control is exercised against the scenario in a red-team test.
-- [ ] Residual risk is recorded and accepted by a responsible reviewer.
-- [ ] If no control is feasible, the framework is not deployed in this context.
+- [ ] If a control is adopted, it is exercised against the scenario in a red-team test.
+- [ ] If the framework proceeds, residual risk is recorded and accepted by a responsible reviewer.
+- [ ] If no control is feasible, deployment in this context remains an explicit risk decision for the responsible authority.
 
 ## Related issues
 

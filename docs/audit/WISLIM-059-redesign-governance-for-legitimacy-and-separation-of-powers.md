@@ -15,10 +15,17 @@ github_issue: 59
 
 # WISLIM-059: Redesign governance for legitimacy and separation of powers
 
-> **Severity:** critical · **Kind:** workstream · **Source:** `WS04`  
+> **Severity:** critical · **Kind:** workstream · **Status:** observation · **Source:** `WS04`  
 > **GitHub issue:** [#59](https://github.com/docxology/WISLIM-audit/issues/59)  
 > **Audit modules:** audit/09-governance-and-oversight.md, red-team/threat-model.md, red-team/capture-and-gaming.md  
 > **Source lines:** n/a (workstream)
+
+> **Status: audit observation, not a required fix.** This issue records a
+> point that may matter for the work's impact, clarity, or risk. It is not a
+> verdict that the work is invalid, and addressing it is optional. The author
+> may decline it with reasons. Severity estimates potential impact if the
+> concern applies; it does not mean the overall work fails or that a change is
+> mandatory.
 
 ## Publication reference
 

@@ -15,10 +15,17 @@ github_issue: 54
 
 # WISLIM-054: Make appeals real, not procedural
 
-> **Severity:** high · **Kind:** red-team · **Source:** `AS19`  
+> **Severity:** high · **Kind:** red-team · **Status:** observation · **Source:** `AS19`  
 > **GitHub issue:** [#54](https://github.com/docxology/WISLIM-audit/issues/54)  
 > **Audit modules:** red-team/adversarial-scenarios.md  
 > **Source lines:** n/a (red-team scenario)
+
+> **Status: audit observation, not a required fix.** This issue records a
+> point that may matter for the work's impact, clarity, or risk. It is not a
+> verdict that the work is invalid, and addressing it is optional. The author
+> may decline it with reasons. Severity estimates potential impact if the
+> concern applies; it does not mean the overall work fails or that a change is
+> mandatory.
 
 ## Publication reference
 
@@ -76,9 +83,9 @@ If the author chooses to revise, these checks would help a reviewer test
 whether the revision addresses the issue. They are not deployment gates.
 
 - [ ] An affected party can reach the merits of an appeal without cost, and a procedural rejection is reviewable by an independent body.
-- [ ] The control is exercised against the scenario in a red-team test.
-- [ ] Residual risk is recorded and accepted by a responsible reviewer.
-- [ ] If no control is feasible, the framework is not deployed in this context.
+- [ ] If a control is adopted, it is exercised against the scenario in a red-team test.
+- [ ] If the framework proceeds, residual risk is recorded and accepted by a responsible reviewer.
+- [ ] If no control is feasible, deployment in this context remains an explicit risk decision for the responsible authority.
 
 ## Related issues
 

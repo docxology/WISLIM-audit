@@ -15,10 +15,17 @@ github_issue: 61
 
 # WISLIM-061: Commission clinical and legal review of high-risk examples
 
-> **Severity:** critical · **Kind:** workstream · **Source:** `WS06`  
+> **Severity:** critical · **Kind:** workstream · **Status:** observation · **Source:** `WS06`  
 > **GitHub issue:** [#61](https://github.com/docxology/WISLIM-audit/issues/61)  
 > **Audit modules:** audit/06-agency-and-life.md, audit/09-governance-and-oversight.md, red-team/abuse-cases.md  
 > **Source lines:** n/a (workstream)
+
+> **Status: audit observation, not a required fix.** This issue records a
+> point that may matter for the work's impact, clarity, or risk. It is not a
+> verdict that the work is invalid, and addressing it is optional. The author
+> may decline it with reasons. Severity estimates potential impact if the
+> concern applies; it does not mean the overall work fails or that a change is
+> mandatory.
 
 ## Publication reference
 
@@ -64,7 +71,7 @@ a starting point rather than a prescription.
 
 1. Commission clinical and legal review.
 2. Remove implementation guidance until review is complete.
-3. Require least restrictive means and informed consent where possible.
+3. Consider least restrictive means and informed consent where possible.
 4. Audit outcomes by disability, pregnancy, and age.
 5. Publish adverse event reporting.
 

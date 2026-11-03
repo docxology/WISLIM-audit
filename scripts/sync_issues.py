@@ -27,6 +27,7 @@ from typing import Any
 
 from build_issue_register import (
     ROOT,
+    STATUS_LINES,
     check_manifest,
     load_issues,
     load_metadata,
@@ -40,14 +41,26 @@ TITLE_RE = re.compile(r"^(WISLIM-\d{3}): ")
 BRANCH = "main"
 
 LABELS: dict[str, tuple[str, str]] = {
-    "audit": ("5319e7", "Critical audit of WISLIM v2.0.1"),
-    "claim": ("1d76db", "Issue against a registered claim (C01-C35)"),
+    "audit": ("5319e7", "Source-bound audit of WISLIM v2.0.1"),
+    "claim": ("1d76db", "Observation about a registered claim (C01-C35)"),
     "red-team": ("b60205", "Adversarial scenario or abuse case"),
-    "workstream": ("0e8a16", "Multi-issue repair workstream"),
-    "severity:critical": ("b60205", "Blocks adoption; may cause severe harm"),
-    "severity:high": ("d93f0b", "Material defect; repair before use"),
-    "severity:medium": ("fbca04", "Should be repaired; lower immediate risk"),
-    "severity:low": ("c2e0c6", "Editorial or clarity repair"),
+    "workstream": ("0e8a16", "Grouping of related observations"),
+    "severity:critical": (
+        "b60205",
+        "Impact: could undermine a central claim or cause serious harm; not a required fix",
+    ),
+    "severity:high": (
+        "d93f0b",
+        "Impact: could materially weaken a major claim; not a required fix",
+    ),
+    "severity:medium": (
+        "fbca04",
+        "Impact: localized relevance or risk; not a required fix",
+    ),
+    "severity:low": (
+        "c2e0c6",
+        "Impact: clarity, style, or minor bibliographic note; not a required fix",
+    ),
     "workstream:argument": ("1d76db", "Thesis, definitions, and normative argument"),
     "workstream:formal": ("006b75", "Formal model and risk metrics"),
     "workstream:evidence": ("0052cc", "Evidence, citations, and human review"),
@@ -145,13 +158,14 @@ def render_body(
         f"# {issue['id']}: {issue['title']}",
         "",
         f"**Severity:** {issue['severity']} · **Kind:** {issue['kind']} · "
-        f"**Source:** `{issue['source_id']}`  ",
+        f"**Status:** observation · **Source:** `{issue['source_id']}`  ",
         f"**Workstream:** `{issue['workstream']}`  ",
         f"**Register record:** [`{issue['file']}`]({record_url(issue, repo)})  ",
         f"**Audit modules:** {modules}  ",
         f"**Source lines:** {issue['source_lines']}",
         "",
     ]
+    lines += STATUS_LINES
     lines += render_publication(metadata)
     lines += ["## Primary quotations", ""]
     for quote in issue["quotes"]:
@@ -251,10 +265,8 @@ def index_remote(remote: list[dict[str, Any]]) -> dict[str, dict[str, Any]]:
     return indexed
 
 
-def ensure_labels(repo: str, dry_run: bool, existing: set[str]) -> None:
+def ensure_labels(repo: str, dry_run: bool) -> None:
     for name in sorted(LABELS):
-        if name in existing:
-            continue
         color, description = LABELS[name]
         if dry_run:
             print(f"would ensure label {name}")
@@ -307,7 +319,7 @@ def sync(repo: str, issues: list[dict[str, Any]], dry_run: bool) -> int:
     metadata = load_metadata()
 
     if dry_run:
-        ensure_labels(repo, True, set())
+        ensure_labels(repo, True)
         for issue in issues:
             body = render_body(issue, {}, repo, metadata)
             print(f"would create {issue['id']}: {issue['title']} ({len(body)} chars)")
@@ -317,12 +329,9 @@ def sync(repo: str, issues: list[dict[str, Any]], dry_run: bool) -> int:
     remote = remote_issues(repo)
     by_id = index_remote(remote)
 
-    # Labels already visible on the issues need no REST label calls, which
-    # have a separate and much smaller rate budget than issue reads/edits.
-    existing_labels = {
-        name for item in remote for name in item.get("label_names", [])
-    }
-    ensure_labels(repo, False, existing_labels)
+    # Refresh label colors and descriptions even when issues already carry the
+    # label, so the GitHub vocabulary matches the register's optional framing.
+    ensure_labels(repo, False)
 
     # 1. Create or adopt every issue, in stable ID order.
     for issue in issues:

@@ -15,10 +15,17 @@ github_issue: 62
 
 # WISLIM-062: Build a privacy and security regime for ULP records
 
-> **Severity:** high · **Kind:** workstream · **Source:** `WS07`  
+> **Severity:** high · **Kind:** workstream · **Status:** observation · **Source:** `WS07`  
 > **GitHub issue:** [#62](https://github.com/docxology/WISLIM-audit/issues/62)  
 > **Audit modules:** audit/09-governance-and-oversight.md, red-team/threat-model.md  
 > **Source lines:** n/a (workstream)
+
+> **Status: audit observation, not a required fix.** This issue records a
+> point that may matter for the work's impact, clarity, or risk. It is not a
+> verdict that the work is invalid, and addressing it is optional. The author
+> may decline it with reasons. Severity estimates potential impact if the
+> concern applies; it does not mean the overall work fails or that a change is
+> mandatory.
 
 ## Publication reference
 
