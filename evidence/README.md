@@ -15,7 +15,7 @@ This directory records the provenance and external evidence for the audit.
 - Hash and line-count checks are reproducible with standard tools.
 - The audit distinguishes what the record shows from what it does not show.
 - Missing evidence is recorded as missing, not inferred.
-- The source paper is not redistributed outside the private repository.
+- The source paper is preserved with full attribution and is not relicensed.
 
 ## Retrieval dates
 

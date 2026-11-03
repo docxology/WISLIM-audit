@@ -93,16 +93,27 @@ REQUIRED_FILES = [
     "tools/build_stress_catalog.py",
     "tools/validate.py",
     "scripts/build_issue_register.py",
+    "scripts/build_review_register.py",
     "scripts/sync_issues.py",
     "tests/test_repository.py",
     "Makefile",
     ".github/workflows/verify.yml",
     "docs/audit/README.md",
+    "docs/reviews.md",
+    "docs/reviews/oph-lfdi-57/README.md",
     "docs/method.md",
     "docs/glossary.md",
     "docs/reproducibility.md",
     "docs/claims.md",
     "docs/stress-tests.md",
+    "reviews/oph-lfdi-57/README.md",
+    "reviews/oph-lfdi-57/intrinsic-audit.md",
+    "reviews/oph-lfdi-57/extrinsic-audit.md",
+    "reviews/oph-lfdi-57/response-email.md",
+    "reviews/oph-lfdi-57/source/LFDI_Alignment_Audit-57.pdf",
+    "reviews/oph-lfdi-57/source/LFDI_Alignment_Audit-57.txt",
+    "reviews/oph-lfdi-57/source/metadata.json",
+    "reviews/oph-lfdi-57/model/review.json",
     "evidence/README.md",
     "evidence/provenance.md",
     "evidence/philpapers.md",
@@ -133,6 +144,9 @@ REQUIRED_FILES += [f"audit/{i:02d}-{name}.md" for i, name in enumerate([
 ])]
 
 SOURCE_CITATION_RE = re.compile(r"source/WISLIM-v2\.0\.1\.txt:(\d+)")
+REVIEW_CITATION_RE = re.compile(
+    r"(?:reviews/oph-lfdi-57/source/)?LFDI_Alignment_Audit-57\.txt:(\d+)"
+)
 SHORTHAND_CITATION_RE = re.compile(r"`:(\d{1,5})`")
 MARKDOWN_LINK_RE = re.compile(r"\[[^\]]*\]\(([^)]+)\)")
 FENCE_RE = re.compile(r"```.*?```", re.DOTALL)
@@ -467,6 +481,71 @@ def check_issue_register(v: Validator, lines: list[str]) -> None:
         )
 
 
+def load_review_module():
+    path = ROOT / "scripts" / "build_review_register.py"
+    spec = importlib.util.spec_from_file_location("build_review_register", path)
+    if spec is None or spec.loader is None:
+        raise RuntimeError(f"cannot load {path}")
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    return module
+
+
+def check_review_register(v: Validator) -> None:
+    review_mod = load_review_module()
+    data = review_mod.load_model()
+    for error in review_mod.check_all(data):
+        v.check(False, f"review register: {error}")
+
+    topics = data.get("topics", [])
+    v.equal(len(topics), 12, "review topic count")
+    v.equal(
+        [t.get("id") for t in topics],
+        [f"OPH-REV-{index:03d}" for index in range(1, 13)],
+        "review topic IDs",
+    )
+    v.equal(
+        sum(1 for t in topics if t.get("oph_status") == "addressed"),
+        3,
+        "OPH addressed topic count",
+    )
+    v.equal(
+        sum(1 for t in topics if t.get("oph_status") == "refuted"),
+        4,
+        "OPH refuted topic count",
+    )
+    v.equal(
+        sum(1 for t in topics if t.get("oph_status") == "not-addressed"),
+        5,
+        "OPH not-addressed topic count",
+    )
+    for topic in topics:
+        for path in (review_mod.topic_path(topic), review_mod.docs_topic_path(topic)):
+            v.check(path.is_file(), f"{topic['id']}: missing {path.relative_to(ROOT)}")
+            if not path.is_file():
+                continue
+            text = path.read_text(encoding="utf-8")
+            for heading in (
+                "## Review claim",
+                "## Intrinsic assessment",
+                "## Extrinsic assessment",
+                "## OPH evidence",
+                "## WISLIM evidence",
+                "## Summary",
+                "## Suggested response",
+                "## Related topics",
+                "## Tracking",
+            ):
+                v.check(
+                    heading in text,
+                    f"{topic['id']}: {path.relative_to(ROOT)} missing {heading}",
+                )
+            v.check(
+                "status: observation" in text,
+                f"{topic['id']}: {path.relative_to(ROOT)} missing status: observation",
+            )
+
+
 def iter_markdown() -> list[Path]:
     return sorted(
         path
@@ -476,6 +555,7 @@ def iter_markdown() -> list[Path]:
 
 
 def check_citations(v: Validator, line_count: int) -> None:
+    review_line_count = 6
     for path in iter_markdown():
         text = path.read_text(encoding="utf-8")
         for match in SOURCE_CITATION_RE.finditer(text):
@@ -484,6 +564,13 @@ def check_citations(v: Validator, line_count: int) -> None:
             v.check(
                 1 <= line <= line_count,
                 f"{rel}: source citation line {line} is out of bounds (1..{line_count})",
+            )
+        for match in REVIEW_CITATION_RE.finditer(text):
+            line = int(match.group(1))
+            rel = path.relative_to(ROOT)
+            v.check(
+                1 <= line <= review_line_count,
+                f"{rel}: review citation line {line} is out of bounds (1..{review_line_count})",
             )
         for match in SHORTHAND_CITATION_RE.finditer(text):
             line = int(match.group(1))
@@ -579,6 +666,25 @@ def check_content(v: Validator) -> None:
         "make issues" in reproducibility,
         "reproducibility is missing the GitHub mirror workflow",
     )
+    v.check(
+        "make review" in reproducibility,
+        "reproducibility is missing the review register workflow",
+    )
+    extrinsic = (
+        ROOT / "reviews" / "oph-lfdi-57" / "extrinsic-audit.md"
+    ).read_text(encoding="utf-8")
+    docs_reviews = (ROOT / "docs" / "reviews.md").read_text(encoding="utf-8")
+    for index in range(1, 13):
+        tid = f"OPH-REV-{index:03d}"
+        v.check(tid in extrinsic, f"extrinsic-audit.md is missing {tid}")
+        v.check(tid in docs_reviews, f"docs/reviews.md is missing {tid}")
+    email = (
+        ROOT / "reviews" / "oph-lfdi-57" / "response-email.md"
+    ).read_text(encoding="utf-8")
+    v.check(
+        "https://github.com/docxology/WISLIM-audit" in email,
+        "response-email.md is missing the plaintext repository URL",
+    )
 
 
 def main(argv: list[str] | None = None) -> int:
@@ -598,6 +704,7 @@ def main(argv: list[str] | None = None) -> int:
         check_stress(v)
         check_citations(v, len(lines))
     check_issue_register(v, lines)
+    check_review_register(v)
     check_required(v)
     check_links(v)
     check_content(v)
@@ -618,6 +725,7 @@ def main(argv: list[str] | None = None) -> int:
         print(f"  claims: {len(CLAIM_IDS)}")
         print(f"  stress tests: {len(STRESS_IDS)}")
         print("  audit issues: 66")
+        print("  review topics: 12")
         print(f"  markdown files: {len(iter_markdown())}")
         if v.warnings:
             print("Warnings:")

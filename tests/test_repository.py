@@ -15,6 +15,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 VALIDATOR_PATH = ROOT / "tools" / "validate.py"
 REGISTER_PATH = ROOT / "scripts" / "build_issue_register.py"
+REVIEW_REGISTER_PATH = ROOT / "scripts" / "build_review_register.py"
 
 
 def load_module(name, path):
@@ -160,6 +161,69 @@ class IssueRegisterTests(unittest.TestCase):
             with self.subTest(issue=issue["id"]):
                 self.assertNotIn("The scenario tests whether", issue["summary"])
                 self.assertGreater(len(issue["summary"]), 120)
+
+
+class ReviewRegisterTests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        cls.review = load_module("wislim_review_register", REVIEW_REGISTER_PATH)
+        cls.data = cls.review.load_model()
+        cls.topics = cls.data["topics"]
+
+    def test_review_ids_are_stable(self):
+        self.assertEqual(
+            [topic["id"] for topic in self.topics],
+            [f"OPH-REV-{index:03d}" for index in range(1, 13)],
+        )
+
+    def test_review_source_is_immutable(self):
+        metadata = self.review.load_metadata()
+        self.assertEqual(
+            self.review.sha256(self.review.REVIEW_PDF), metadata["pdf_sha256"]
+        )
+        self.assertEqual(
+            self.review.sha256(self.review.REVIEW_TEXT), metadata["text_sha256"]
+        )
+
+    def test_review_register_has_no_errors(self):
+        self.assertEqual(self.review.check_all(self.data), [])
+
+    def test_review_dispositions_are_complete(self):
+        addressed = [t for t in self.topics if t["oph_status"] == "addressed"]
+        refuted = [t for t in self.topics if t["oph_status"] == "refuted"]
+        not_addressed = [
+            t for t in self.topics if t["oph_status"] == "not-addressed"
+        ]
+        self.assertEqual(len(addressed), 3)
+        self.assertEqual(len(refuted), 4)
+        self.assertEqual(len(not_addressed), 5)
+
+    def test_every_topic_has_records_in_reviews_and_docs(self):
+        for topic in self.topics:
+            for path in (
+                self.review.topic_path(topic),
+                self.review.docs_topic_path(topic),
+            ):
+                with self.subTest(topic=topic["id"], path=str(path)):
+                    self.assertTrue(path.is_file(), f"missing {path}")
+                    text = path.read_text(encoding="utf-8")
+                    self.assertIn("status: observation", text)
+                    self.assertIn("## Intrinsic assessment", text)
+                    self.assertIn("## Extrinsic assessment", text)
+
+    def test_audits_and_response_email_exist_and_cite_topics(self):
+        extrinsic = (
+            ROOT / "reviews" / "oph-lfdi-57" / "extrinsic-audit.md"
+        ).read_text(encoding="utf-8")
+        docs_reviews = (ROOT / "docs" / "reviews.md").read_text(encoding="utf-8")
+        for topic in self.topics:
+            with self.subTest(topic=topic["id"]):
+                self.assertIn(topic["id"], extrinsic)
+                self.assertIn(topic["id"], docs_reviews)
+        email = (
+            ROOT / "reviews" / "oph-lfdi-57" / "response-email.md"
+        ).read_text(encoding="utf-8")
+        self.assertIn("https://github.com/docxology/WISLIM-audit", email)
 
 
 if __name__ == "__main__":

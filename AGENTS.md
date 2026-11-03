@@ -9,8 +9,10 @@ source-bound and reproducible.
    section name or a line in `source/WISLIM-v2.0.1.txt` (for example,
    `source/WISLIM-v2.0.1.txt:778`). Do not launder an inference as a quote.
 3. **Preserve claim and issue IDs.** `C01`–`C35` in `model/claims.json`,
-   `ST001`–`ST210` in `model/stress-tests.json`, and `WISLIM-001`–`WISLIM-066`
-   in `model/issues.json` are stable. Add new IDs; never renumber or reuse one.
+   `ST001`–`ST210` in `model/stress-tests.json`, `WISLIM-001`–`WISLIM-066` in
+   `model/issues.json`, and `OPH-REV-001`–`OPH-REV-012` in
+   `reviews/oph-lfdi-57/model/review.json` are stable. Add new IDs; never
+   renumber or reuse one.
 4. **Separate quotation from verdict.** Quoted source text may contain
    overclaiming language. The audit's own prose must not repeat it as fact.
    Every issue record carries one or more verbatim `quotes[]` entries, each with
@@ -18,13 +20,16 @@ source-bound and reproducible.
    validator checks it.
 5. **Distinguish the author's intent from the argument's validity.** Criticize
    arguments, evidence, and institutions, not the author's character or motives.
-6. **Keep the issue register and GitHub mirror in sync.** Edit `docs/audit/*.md`
-   only through `model/issues.json` and `make register`. Then run `make issues`
-   to refresh the 66 GitHub issues. Do not edit issue bodies on GitHub: the
-   canonical record is the repository file, and comments are for discussion.
-7. **Do not publish the source paper.** This repository is private. The source
-   license is ambiguous (CC-BY 4.0 on PubPub; a public-domain dedication in the
-   PDF). Do not relicense or redistribute the PDF without clarification.
+6. **Keep the issue and review registers in sync.** Edit `docs/audit/*.md` only
+   through `model/issues.json` and `make register`. Edit
+   `reviews/oph-lfdi-57/topics/*.md`, `docs/reviews/oph-lfdi-57/topics/*.md`,
+   and `docs/reviews.md` only through `reviews/oph-lfdi-57/model/review.json`
+   and `make review`. Then run `make issues` to refresh the 66 GitHub issues. Do
+   not edit issue bodies on GitHub: the canonical record is the repository file,
+   and comments are for discussion.
+7. **Do not relicense the source paper.** The source license is ambiguous
+   (CC-BY 4.0 on PubPub; a public-domain dedication in the PDF). Keep the source
+   PDF and received review under their own terms without relicensing them.
 8. **Validate before committing.** Run `make verify`. It runs the validator,
    the register check, and the test suite. Use `python3 -m pytest -q` only if
    pytest is installed; it is optional and not required by the repository.

@@ -78,19 +78,34 @@ strong metaphysical and governance claims.
 | `evidence/` | PhilPapers record, provenance, citation audit, and AI-letter audit. |
 | `model/issues.json` | Canonical 66-issue register (35 claims, 20 red-team, 11 workstreams). |
 | `docs/audit/` | One Markdown record per issue plus the generated register index. |
-| `scripts/` | Register builder and GitHub issue mirror tooling. |
+| `reviews/oph-lfdi-57/` | Author-sent LFDI review of Observer Patch Holography (`LFDI_Alignment_Audit-57.pdf`), OCR text, canonical 12-topic model (`OPH-REV-001`–`012`), intrinsic and extrinsic audits, response email draft, and generated topic records. |
+| `docs/reviews.md` | Overview and disposition index for external reviews (`docs/reviews/oph-lfdi-57/`). |
+| `scripts/` | Issue register builder, review register builder, and GitHub issue mirror tooling. |
 | `tools/` | Standard-library validation and indexing tools. |
-| `tests/` | Standard-library checks over the repository's own claims, quotes, and links. |
-| `docs/` | Method, glossary, claim index, stress-test index, and reproducibility notes. |
+| `tests/` | Standard-library checks over the repository's own claims, quotes, reviews, and links. |
+| `docs/` | Method, glossary, claim index, stress-test index, external review tracker, and reproducibility notes. |
 
 The intended reading order is `audit/00-verdict.md` → `audit/01-scope-and-method.md`
 → the numbered audit modules → `red-team/README.md` → `audit/14-repair-roadmap.md`
-→ `docs/audit/README.md`.
+→ `docs/audit/README.md` → `docs/reviews.md`.
+
+## External OPH/LFDI review (`OPH-LFDI-57`)
+
+The repository also tracks the one-page review *OFFICIAL ALIGNMENT AUDIT: LFDI
+DETERMINATION* (`reviews/oph-lfdi-57/source/LFDI_Alignment_Audit-57.pdf`), sent
+regarding Bernhard Mueller et al., *Observers Who Read Their Universe into
+Existence: Finite Consensus, an Executable Observer, and Standard Physics*
+([PhilPapers `MUEFOC`](https://philpapers.org/rec/MUEFOC); public repository
+[`docxology/observer-patch-holography`](https://github.com/docxology/observer-patch-holography)).
+
+- **Canonical topic model:** `reviews/oph-lfdi-57/model/review.json` (`OPH-REV-001`–`OPH-REV-012`).
+- **Modular topic records:** `docs/reviews/oph-lfdi-57/topics/` and `reviews/oph-lfdi-57/topics/` (3 addressed by OPH, 4 refuted by OPH, 5 not addressed / external LFDI stipulations).
+- **Audits and response:** [`reviews/oph-lfdi-57/intrinsic-audit.md`](reviews/oph-lfdi-57/intrinsic-audit.md), [`reviews/oph-lfdi-57/extrinsic-audit.md`](reviews/oph-lfdi-57/extrinsic-audit.md), and [`reviews/oph-lfdi-57/response-email.md`](reviews/oph-lfdi-57/response-email.md).
 
 ## Reproduce
 
 ```sh
-make verify                    # validator, register check, and unittest suite
+make verify                    # validator, issue/review register checks, and unittest suite
 make issues-check              # verify the GitHub mirror (requires gh auth)
 ```
 
@@ -99,6 +114,7 @@ The equivalent explicit commands are:
 ```sh
 python3 tools/validate.py
 python3 scripts/build_issue_register.py --check
+python3 scripts/build_review_register.py --check
 python3 -m unittest discover -s tests -v
 python3 scripts/sync_issues.py --check
 ```

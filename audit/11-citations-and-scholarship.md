@@ -156,8 +156,8 @@ PubPub states CC-BY 4.0. The PDF closes with:
 
 These are not the same. CC-BY 4.0 requires attribution; a public-domain
 dedication does not. The paper does not reconcile them. Until the author
-clarifies, the audit treats the license as unresolved and keeps the source in a
-private repository. See `evidence/provenance.md`.
+clarifies, the audit treats the license as unresolved, preserves full
+attribution, and does not relicense the source. See `evidence/provenance.md`.
 
 ## The missing engagement with critics
 

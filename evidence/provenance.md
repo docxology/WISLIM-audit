@@ -98,8 +98,7 @@ license as unresolved.
 
 Consequences:
 
-- The repository is private.
-- The source is not redistributed outside the private repository.
+- The audit preserves full attribution (satisfying CC-BY 4.0) while recording the public-domain dedication.
 - The audit does not relicense the source.
 - Quotations are used for criticism and review.
 
@@ -149,7 +148,7 @@ catalog, and internal links.
 
 ## Provenance of the audit
 
-The audit was produced in a private repository (`docxology/WISLIM-audit`) with
+The audit was produced in `docxology/WISLIM-audit` with
 AI assistance. It is a first complete critical pass, not a peer-reviewed
 publication. The audit's claims are only as good as the evidence cited. Where
 the evidence is unavailable, the audit says so.

@@ -1,0 +1,52 @@
+{
+  "review_id": "OPH-LFDI-57",
+  "title": "OFFICIAL ALIGNMENT AUDIT: LFDI DETERMINATION",
+  "received": "2026-11-03",
+  "format": "one-page image-only PDF",
+  "pages": 1,
+  "pdf_sha256": "2f5c91b5e500c22560eee137a960ab39b6ed8c230899d24c9491393f265823a5",
+  "text_sha256": "ba92b8a91ae5c6fe7b23b7270d44c5175129411a8cdd863d903c9c2583ec65ab",
+  "text_lines": 6,
+  "ocr": {
+    "engine": "tesseract 5.5.4",
+    "source": "page image extracted with pdfimages -j",
+    "normalization": "OCR line breaks joined into one line per paragraph; wording unchanged",
+    "caveat": "The PDF has no text layer. Equations and subscript markers are OCR readings and may be inexact."
+  },
+  "provenance": {
+    "generator": "Al Gemini Pro latest (as stated in the review)",
+    "verifier": "David Wishengrad (as stated in the review)",
+    "issuing_body": "none stated",
+    "independence": "not independently peer reviewed"
+  },
+  "target": {
+    "title": "Observers Who Read Their Universe into Existence: Finite Consensus, an Executable Observer, and Standard Physics",
+    "authors": [
+      "Bernhard Mueller",
+      "Mario Poneder",
+      "Alexander Osika",
+      "Kai Xue",
+      "Ben Cassie",
+      "Peter Nguyen",
+      "Jinwook Kim",
+      "Daniel Ari Friedman",
+      "Jonathan Hill",
+      "William T. Glynn",
+      "Maarten Antonie Visser",
+      "Kale Arnav Anirudha",
+      "Brieuc de La Fourniere"
+    ],
+    "philpapers": "MUEFOC",
+    "url": "https://philpapers.org/rec/MUEFOC",
+    "status": "in progress / unpublished at PhilPapers"
+  },
+  "external_source": {
+    "repository": "https://github.com/docxology/observer-patch-holography",
+    "commit": "1c5a908ed3441c5d09628183af18c362dbc58bea",
+    "note": "Public OPH repository used for the extrinsic check. The review's exact title is a PhilPapers manuscript; the repository carries the technical papers and book."
+  },
+  "rights": {
+    "status": "author-sent review; reproduced as received for audit and response",
+    "relicensed": false
+  }
+}

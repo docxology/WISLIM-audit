@@ -112,6 +112,33 @@ The issue bodies are derived from the records, not independently edited. To
 change an issue, edit `model/issues.json`, run `make register`, then
 `make issues`. GitHub comments are not mirrored back into the repository.
 
+## OPH/LFDI review register
+
+The external review `reviews/oph-lfdi-57/source/LFDI_Alignment_Audit-57.pdf` is
+an image-only one-page PDF. Its normalized OCR text is stored at
+`reviews/oph-lfdi-57/source/LFDI_Alignment_Audit-57.txt` and its provenance at
+`reviews/oph-lfdi-57/source/metadata.json`.
+
+Verify the review hashes:
+
+```sh
+shasum -a 256 reviews/oph-lfdi-57/source/LFDI_Alignment_Audit-57.pdf reviews/oph-lfdi-57/source/LFDI_Alignment_Audit-57.txt
+```
+
+Expected:
+
+```
+2f5c91b5e500c22560eee137a960ab39b6ed8c230899d24c9491393f265823a5  reviews/oph-lfdi-57/source/LFDI_Alignment_Audit-57.pdf
+ba92b8a91ae5c6fe7b23b7270d44c5175129411a8cdd863d903c9c2583ec65ab  reviews/oph-lfdi-57/source/LFDI_Alignment_Audit-57.txt
+```
+
+Regenerate and verify the 12-topic review register (`OPH-REV-001`–`OPH-REV-012`):
+
+```sh
+make review                    # regenerate reviews/oph-lfdi-57/ and docs/reviews/
+make review-check              # verify generated review records without writing
+```
+
 ## Rebuild the stress-test catalog
 
 ```sh
