@@ -19,22 +19,22 @@ OPH evidence is pinned to `https://github.com/FloatingPragma/observer-patch-holo
 
 | ID | Issue | Claim | Kind | Line |
 |---|---|---|---|---|
-| [OPH-REP-001](OPH-REP-001-entirely-separate-from-living-agency-is-not-in-the-quoted-fragments.md) | — | 'Entirely separate from living agency' is not in the quoted fragments | `attribution` | 6 |
-| [OPH-REP-002](OPH-REP-002-oph-is-not-daniel-ari-friedman-s-theory.md) | — | OPH is not Daniel Ari Friedman's theory | `attribution` | 5 |
-| [OPH-REP-003](OPH-REP-003-the-quoted-word-incorrect-is-not-in-the-response.md) | — | The quoted word 'incorrect' is not in the response | `attribution` | 8 |
-| [OPH-REP-004](OPH-REP-004-choose-not-to-grant-changes-the-subject-of-the-sentence.md) | — | 'Choose not to grant' changes the subject of the sentence | `attribution` | 8 |
-| [OPH-REP-005](OPH-REP-005-not-a-philosophical-framework-and-not-optional-are-in-tension-with-the.md) | — | 'Not a philosophical framework' and 'not optional' are in tension with the message carrying them | `logic` | 13 |
-| [OPH-REP-006](OPH-REP-006-an-inescapable-operational-prerequisite-needs-a-named-document.md) | — | An 'inescapable operational prerequisite' needs a named document | `provenance` | 31 |
-| [OPH-REP-007](OPH-REP-007-publishing-a-paper-is-not-a-claim-to-represent-life-s-truthful-interests.md) | — | Publishing a paper is not a claim to represent 'life's truthful interests' | `attribution` | 39 |
-| [OPH-REP-008](OPH-REP-008-disqualifies-themselves-from-all-life-leading-roles-who-decides.md) | — | 'Disqualifies themselves from all life leading roles': who decides? | `framing` | 40 |
-| [OPH-REP-009](OPH-REP-009-nothing-running-it-answers-a-retired-sentence-and-oph-puts-the-running.md) | — | 'Nothing running it' answers a retired sentence, and OPH puts the running inside | `context` | 17 |
-| [OPH-REP-010](OPH-REP-010-wislim-s-own-definitions-remove-the-ground-for-l-0.md) | — | WISLIM's own definitions remove the ground for L₁ = 0 | `logic` | 20 |
-| [OPH-REP-011](OPH-REP-011-physics-cannot-be-taken-alone-answers-a-different-question.md) | — | 'Physics cannot be taken alone' answers a different question | `context` | 23 |
-| [OPH-REP-012](OPH-REP-012-the-airtight-trap-classes-every-reply-except-assent-as-failure.md) | — | The Airtight Trap classes every reply except assent as failure | `framing` | 26 |
-| [OPH-REP-013](OPH-REP-013-requests-for-version-prompt-and-checklist-are-not-deflection-and-they.md) | — | Requests for version, prompt, and checklist are not deflection, and they remain open | `provenance` | 30 |
-| [OPH-REP-014](OPH-REP-014-any-refutation-requires-a-living-agent-to-speak-validates-nothing-in.md) | — | 'Any refutation requires a living agent to speak' validates nothing in particular | `logic` | 37 |
-| [OPH-REP-015](OPH-REP-015-disregarded-the-need-for-life-to-have-an-observer-restates-the-disputed.md) | — | 'Disregarded the need for life to have an observer' restates the disputed point | `logic` | 35 |
-| [OPH-REP-016](OPH-REP-016-ego-the-onus-and-step-down-replace-argument-with-motive-and-office.md) | — | 'Ego', 'the onus', and 'step down' replace argument with motive and office | `demand` | 38 |
+| [OPH-REP-001](OPH-REP-001-entirely-separate-from-living-agency-is-not-in-the-quoted-fragments.md) | [#67](https://github.com/docxology/WISLIM-audit/issues/67) | 'Entirely separate from living agency' is not in the quoted fragments | `attribution` | 6 |
+| [OPH-REP-002](OPH-REP-002-oph-is-not-daniel-ari-friedman-s-theory.md) | [#68](https://github.com/docxology/WISLIM-audit/issues/68) | OPH is not Daniel Ari Friedman's theory | `attribution` | 5 |
+| [OPH-REP-003](OPH-REP-003-the-quoted-word-incorrect-is-not-in-the-response.md) | [#69](https://github.com/docxology/WISLIM-audit/issues/69) | The quoted word 'incorrect' is not in the response | `attribution` | 8 |
+| [OPH-REP-004](OPH-REP-004-choose-not-to-grant-changes-the-subject-of-the-sentence.md) | [#70](https://github.com/docxology/WISLIM-audit/issues/70) | 'Choose not to grant' changes the subject of the sentence | `attribution` | 8 |
+| [OPH-REP-005](OPH-REP-005-not-a-philosophical-framework-and-not-optional-are-in-tension-with-the.md) | [#71](https://github.com/docxology/WISLIM-audit/issues/71) | 'Not a philosophical framework' and 'not optional' are in tension with the message carrying them | `logic` | 13 |
+| [OPH-REP-006](OPH-REP-006-an-inescapable-operational-prerequisite-needs-a-named-document.md) | [#72](https://github.com/docxology/WISLIM-audit/issues/72) | An 'inescapable operational prerequisite' needs a named document | `provenance` | 31 |
+| [OPH-REP-007](OPH-REP-007-publishing-a-paper-is-not-a-claim-to-represent-life-s-truthful-interests.md) | [#73](https://github.com/docxology/WISLIM-audit/issues/73) | Publishing a paper is not a claim to represent 'life's truthful interests' | `attribution` | 39 |
+| [OPH-REP-008](OPH-REP-008-disqualifies-themselves-from-all-life-leading-roles-who-decides.md) | [#74](https://github.com/docxology/WISLIM-audit/issues/74) | 'Disqualifies themselves from all life leading roles': who decides? | `framing` | 40 |
+| [OPH-REP-009](OPH-REP-009-nothing-running-it-answers-a-retired-sentence-and-oph-puts-the-running.md) | [#75](https://github.com/docxology/WISLIM-audit/issues/75) | 'Nothing running it' answers a retired sentence, and OPH puts the running inside | `context` | 17 |
+| [OPH-REP-010](OPH-REP-010-wislim-s-own-definitions-remove-the-ground-for-l-0.md) | [#76](https://github.com/docxology/WISLIM-audit/issues/76) | WISLIM's own definitions remove the ground for L₁ = 0 | `logic` | 20 |
+| [OPH-REP-011](OPH-REP-011-physics-cannot-be-taken-alone-answers-a-different-question.md) | [#77](https://github.com/docxology/WISLIM-audit/issues/77) | 'Physics cannot be taken alone' answers a different question | `context` | 23 |
+| [OPH-REP-012](OPH-REP-012-the-airtight-trap-classes-every-reply-except-assent-as-failure.md) | [#78](https://github.com/docxology/WISLIM-audit/issues/78) | The Airtight Trap classes every reply except assent as failure | `framing` | 26 |
+| [OPH-REP-013](OPH-REP-013-requests-for-version-prompt-and-checklist-are-not-deflection-and-they.md) | [#79](https://github.com/docxology/WISLIM-audit/issues/79) | Requests for version, prompt, and checklist are not deflection, and they remain open | `provenance` | 30 |
+| [OPH-REP-014](OPH-REP-014-any-refutation-requires-a-living-agent-to-speak-validates-nothing-in.md) | [#80](https://github.com/docxology/WISLIM-audit/issues/80) | 'Any refutation requires a living agent to speak' validates nothing in particular | `logic` | 37 |
+| [OPH-REP-015](OPH-REP-015-disregarded-the-need-for-life-to-have-an-observer-restates-the-disputed.md) | [#81](https://github.com/docxology/WISLIM-audit/issues/81) | 'Disregarded the need for life to have an observer' restates the disputed point | `logic` | 35 |
+| [OPH-REP-016](OPH-REP-016-ego-the-onus-and-step-down-replace-argument-with-motive-and-office.md) | [#82](https://github.com/docxology/WISLIM-audit/issues/82) | 'Ego', 'the onus', and 'step down' replace argument with motive and office | `demand` | 38 |
 
 ## Where the reply moves the exchange forward
 

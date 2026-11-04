@@ -5,7 +5,7 @@ kind: reply-topic
 status: observation
 claim_kind: demand
 reply_lines: [38, 41, 36]
-github_issue: 
+github_issue: 82
 related: [OPH-REP-002, OPH-REP-008, OPH-REP-014]
 ---
 

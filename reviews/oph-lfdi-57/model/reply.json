@@ -1178,7 +1178,8 @@
         "reviews/oph-lfdi-57/source/metadata.json",
         "reviews/oph-lfdi-57/intrinsic-audit.md",
         "reviews/oph-lfdi-57/verification.md"
-      ]
+      ],
+      "fixed_in": "701b463"
     },
     {
       "id": "OPH-AUD-002",
@@ -1191,7 +1192,8 @@
         "reviews/oph-lfdi-57/extrinsic-audit.md",
         "reviews/oph-lfdi-57/intrinsic-audit.md",
         "reviews/oph-lfdi-57/source/metadata.json"
-      ]
+      ],
+      "fixed_in": "701b463"
     },
     {
       "id": "OPH-AUD-003",
@@ -1203,7 +1205,8 @@
         "reviews/oph-lfdi-57/model/review.json",
         "reviews/oph-lfdi-57/extrinsic-audit.md",
         "AGENTS.md"
-      ]
+      ],
+      "fixed_in": "701b463"
     },
     {
       "id": "OPH-AUD-004",
@@ -1216,7 +1219,8 @@
         "reviews/oph-lfdi-57/model/review.json",
         "tools/validate.py",
         "docs/method.md"
-      ]
+      ],
+      "fixed_in": "701b463"
     },
     {
       "id": "OPH-AUD-005",
@@ -1228,7 +1232,8 @@
         "reviews/oph-lfdi-57/intrinsic-audit.md",
         "reviews/oph-lfdi-57/model/review.json",
         "reviews/oph-lfdi-57/verification.md"
-      ]
+      ],
+      "fixed_in": "701b463"
     },
     {
       "id": "OPH-AUD-006",
@@ -1240,7 +1245,8 @@
         "reviews/oph-lfdi-57/intrinsic-audit.md",
         "reviews/oph-lfdi-57/extrinsic-audit.md",
         "tools/validate.py"
-      ]
+      ],
+      "fixed_in": "701b463"
     },
     {
       "id": "OPH-AUD-007",
@@ -1252,7 +1258,8 @@
         "reviews/oph-lfdi-57/correspondence/README.md",
         "reviews/oph-lfdi-57/correspondence/02-friedman-response-as-sent.txt",
         "reviews/oph-lfdi-57/response-email.md"
-      ]
+      ],
+      "fixed_in": "701b463"
     },
     {
       "id": "OPH-AUD-008",
@@ -1266,7 +1273,8 @@
         "reviews/oph-lfdi-57/reply/README.md",
         "scripts/build_reply_register.py",
         "scripts/sync_reply_issues.py"
-      ]
+      ],
+      "fixed_in": "701b463"
     },
     {
       "id": "OPH-AUD-009",
@@ -1280,7 +1288,8 @@
         ".github/workflows/verify.yml",
         "tools/validate.py",
         "reviews/oph-lfdi-57/verification.md"
-      ]
+      ],
+      "fixed_in": "701b463"
     },
     {
       "id": "OPH-AUD-010",
@@ -1292,7 +1301,8 @@
         "reviews/oph-lfdi-57/correspondence/README.md",
         "tools/validate.py",
         "AGENTS.md"
-      ]
+      ],
+      "fixed_in": "701b463"
     },
     {
       "id": "OPH-AUD-011",
@@ -1306,7 +1316,8 @@
         "model/issues.json",
         "reviews/oph-lfdi-57/intrinsic-audit.md",
         "reviews/oph-lfdi-57/model/review.json"
-      ]
+      ],
+      "fixed_in": "701b463"
     }
   ]
 }

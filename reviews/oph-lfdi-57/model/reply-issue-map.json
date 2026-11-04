@@ -1,0 +1,169 @@
+{
+  "schema_version": 1,
+  "repository": "docxology/WISLIM-audit",
+  "note": "GitHub issue-number mapping for the reply register and corrections.",
+  "issues": {
+    "OPH-AUD-001": {
+      "number": 83,
+      "url": "https://github.com/docxology/WISLIM-audit/issues/83",
+      "title": "OPH-AUD-001: OCR errors were read as the review's text",
+      "state": "CLOSED"
+    },
+    "OPH-AUD-002": {
+      "number": 84,
+      "url": "https://github.com/docxology/WISLIM-audit/issues/84",
+      "title": "OPH-AUD-002: OPH evidence was pinned to a stale fork, not upstream",
+      "state": "CLOSED"
+    },
+    "OPH-AUD-003": {
+      "number": 85,
+      "url": "https://github.com/docxology/WISLIM-audit/issues/85",
+      "title": "OPH-AUD-003: 'Explicitly separates physics from ethics' overstated OPH",
+      "state": "CLOSED"
+    },
+    "OPH-AUD-004": {
+      "number": 86,
+      "url": "https://github.com/docxology/WISLIM-audit/issues/86",
+      "title": "OPH-AUD-004: The status label 'refuted' overclaimed",
+      "state": "CLOSED"
+    },
+    "OPH-AUD-005": {
+      "number": 87,
+      "url": "https://github.com/docxology/WISLIM-audit/issues/87",
+      "title": "OPH-AUD-005: Symbols and tiers WISLIM glosses were called undefined",
+      "state": "CLOSED"
+    },
+    "OPH-AUD-006": {
+      "number": 88,
+      "url": "https://github.com/docxology/WISLIM-audit/issues/88",
+      "title": "OPH-AUD-006: Paraphrase and altered words stood inside quotation marks",
+      "state": "CLOSED"
+    },
+    "OPH-AUD-007": {
+      "number": 89,
+      "url": "https://github.com/docxology/WISLIM-audit/issues/89",
+      "title": "OPH-AUD-007: The tracker still said no response had been sent",
+      "state": "CLOSED"
+    },
+    "OPH-AUD-008": {
+      "number": 90,
+      "url": "https://github.com/docxology/WISLIM-audit/issues/90",
+      "title": "OPH-AUD-008: The reply of 2026-11-03 was not tracked",
+      "state": "CLOSED"
+    },
+    "OPH-AUD-009": {
+      "number": 91,
+      "url": "https://github.com/docxology/WISLIM-audit/issues/91",
+      "title": "OPH-AUD-009: The OPH quotation check was a one-off, not a repeatable test",
+      "state": "CLOSED"
+    },
+    "OPH-AUD-010": {
+      "number": 92,
+      "url": "https://github.com/docxology/WISLIM-audit/issues/92",
+      "title": "OPH-AUD-010: Correspondence records needed a privacy rule",
+      "state": "CLOSED"
+    },
+    "OPH-AUD-011": {
+      "number": 93,
+      "url": "https://github.com/docxology/WISLIM-audit/issues/93",
+      "title": "OPH-AUD-011: The audit missed the formal and engineering versions of WISLIM's formula",
+      "state": "CLOSED"
+    },
+    "OPH-REP-001": {
+      "number": 67,
+      "url": "https://github.com/docxology/WISLIM-audit/issues/67",
+      "title": "OPH-REP-001: 'Entirely separate from living agency' is not in the quoted fragments",
+      "state": "OPEN"
+    },
+    "OPH-REP-002": {
+      "number": 68,
+      "url": "https://github.com/docxology/WISLIM-audit/issues/68",
+      "title": "OPH-REP-002: OPH is not Daniel Ari Friedman's theory",
+      "state": "OPEN"
+    },
+    "OPH-REP-003": {
+      "number": 69,
+      "url": "https://github.com/docxology/WISLIM-audit/issues/69",
+      "title": "OPH-REP-003: The quoted word 'incorrect' is not in the response",
+      "state": "OPEN"
+    },
+    "OPH-REP-004": {
+      "number": 70,
+      "url": "https://github.com/docxology/WISLIM-audit/issues/70",
+      "title": "OPH-REP-004: 'Choose not to grant' changes the subject of the sentence",
+      "state": "OPEN"
+    },
+    "OPH-REP-005": {
+      "number": 71,
+      "url": "https://github.com/docxology/WISLIM-audit/issues/71",
+      "title": "OPH-REP-005: 'Not a philosophical framework' and 'not optional' are in tension with the message carrying them",
+      "state": "OPEN"
+    },
+    "OPH-REP-006": {
+      "number": 72,
+      "url": "https://github.com/docxology/WISLIM-audit/issues/72",
+      "title": "OPH-REP-006: An 'inescapable operational prerequisite' needs a named document",
+      "state": "OPEN"
+    },
+    "OPH-REP-007": {
+      "number": 73,
+      "url": "https://github.com/docxology/WISLIM-audit/issues/73",
+      "title": "OPH-REP-007: Publishing a paper is not a claim to represent 'life's truthful interests'",
+      "state": "OPEN"
+    },
+    "OPH-REP-008": {
+      "number": 74,
+      "url": "https://github.com/docxology/WISLIM-audit/issues/74",
+      "title": "OPH-REP-008: 'Disqualifies themselves from all life leading roles': who decides?",
+      "state": "OPEN"
+    },
+    "OPH-REP-009": {
+      "number": 75,
+      "url": "https://github.com/docxology/WISLIM-audit/issues/75",
+      "title": "OPH-REP-009: 'Nothing running it' answers a retired sentence, and OPH puts the running inside",
+      "state": "OPEN"
+    },
+    "OPH-REP-010": {
+      "number": 76,
+      "url": "https://github.com/docxology/WISLIM-audit/issues/76",
+      "title": "OPH-REP-010: WISLIM's own definitions remove the ground for L₁ = 0",
+      "state": "OPEN"
+    },
+    "OPH-REP-011": {
+      "number": 77,
+      "url": "https://github.com/docxology/WISLIM-audit/issues/77",
+      "title": "OPH-REP-011: 'Physics cannot be taken alone' answers a different question",
+      "state": "OPEN"
+    },
+    "OPH-REP-012": {
+      "number": 78,
+      "url": "https://github.com/docxology/WISLIM-audit/issues/78",
+      "title": "OPH-REP-012: The Airtight Trap classes every reply except assent as failure",
+      "state": "OPEN"
+    },
+    "OPH-REP-013": {
+      "number": 79,
+      "url": "https://github.com/docxology/WISLIM-audit/issues/79",
+      "title": "OPH-REP-013: Requests for version, prompt, and checklist are not deflection, and they remain open",
+      "state": "OPEN"
+    },
+    "OPH-REP-014": {
+      "number": 80,
+      "url": "https://github.com/docxology/WISLIM-audit/issues/80",
+      "title": "OPH-REP-014: 'Any refutation requires a living agent to speak' validates nothing in particular",
+      "state": "OPEN"
+    },
+    "OPH-REP-015": {
+      "number": 81,
+      "url": "https://github.com/docxology/WISLIM-audit/issues/81",
+      "title": "OPH-REP-015: 'Disregarded the need for life to have an observer' restates the disputed point",
+      "state": "OPEN"
+    },
+    "OPH-REP-016": {
+      "number": 82,
+      "url": "https://github.com/docxology/WISLIM-audit/issues/82",
+      "title": "OPH-REP-016: 'Ego', 'the onus', and 'step down' replace argument with motive and office",
+      "state": "OPEN"
+    }
+  }
+}

@@ -6,17 +6,17 @@ carried them. The IDs are stable. The email stays as sent; see
 
 | ID | Issue | Correction | In the sent email |
 |---|---|---|---|
-| [OPH-AUD-001](#oph-aud-001-ocr-errors-were-read-as-the-review-s-text) | — | OCR errors were read as the review's text | yes |
-| [OPH-AUD-002](#oph-aud-002-oph-evidence-was-pinned-to-a-stale-fork-not-upstream) | — | OPH evidence was pinned to a stale fork, not upstream | yes |
-| [OPH-AUD-003](#oph-aud-003-explicitly-separates-physics-from-ethics-overstated-oph) | — | 'Explicitly separates physics from ethics' overstated OPH | yes |
-| [OPH-AUD-004](#oph-aud-004-the-status-label-refuted-overclaimed) | — | The status label 'refuted' overclaimed | no |
-| [OPH-AUD-005](#oph-aud-005-symbols-and-tiers-wislim-glosses-were-called-undefined) | — | Symbols and tiers WISLIM glosses were called undefined | no |
-| [OPH-AUD-006](#oph-aud-006-paraphrase-and-altered-words-stood-inside-quotation-marks) | — | Paraphrase and altered words stood inside quotation marks | no |
-| [OPH-AUD-007](#oph-aud-007-the-tracker-still-said-no-response-had-been-sent) | — | The tracker still said no response had been sent | no |
-| [OPH-AUD-008](#oph-aud-008-the-reply-of-2026-11-03-was-not-tracked) | — | The reply of 2026-11-03 was not tracked | no |
-| [OPH-AUD-009](#oph-aud-009-the-oph-quotation-check-was-a-one-off-not-a-repeatable-test) | — | The OPH quotation check was a one-off, not a repeatable test | no |
-| [OPH-AUD-010](#oph-aud-010-correspondence-records-needed-a-privacy-rule) | — | Correspondence records needed a privacy rule | no |
-| [OPH-AUD-011](#oph-aud-011-the-audit-missed-the-formal-and-engineering-versions-of-wislim-s-formula) | — | The audit missed the formal and engineering versions of WISLIM's formula | no |
+| [OPH-AUD-001](#oph-aud-001-ocr-errors-were-read-as-the-review-s-text) | [#83](https://github.com/docxology/WISLIM-audit/issues/83) | OCR errors were read as the review's text | yes |
+| [OPH-AUD-002](#oph-aud-002-oph-evidence-was-pinned-to-a-stale-fork-not-upstream) | [#84](https://github.com/docxology/WISLIM-audit/issues/84) | OPH evidence was pinned to a stale fork, not upstream | yes |
+| [OPH-AUD-003](#oph-aud-003-explicitly-separates-physics-from-ethics-overstated-oph) | [#85](https://github.com/docxology/WISLIM-audit/issues/85) | 'Explicitly separates physics from ethics' overstated OPH | yes |
+| [OPH-AUD-004](#oph-aud-004-the-status-label-refuted-overclaimed) | [#86](https://github.com/docxology/WISLIM-audit/issues/86) | The status label 'refuted' overclaimed | no |
+| [OPH-AUD-005](#oph-aud-005-symbols-and-tiers-wislim-glosses-were-called-undefined) | [#87](https://github.com/docxology/WISLIM-audit/issues/87) | Symbols and tiers WISLIM glosses were called undefined | no |
+| [OPH-AUD-006](#oph-aud-006-paraphrase-and-altered-words-stood-inside-quotation-marks) | [#88](https://github.com/docxology/WISLIM-audit/issues/88) | Paraphrase and altered words stood inside quotation marks | no |
+| [OPH-AUD-007](#oph-aud-007-the-tracker-still-said-no-response-had-been-sent) | [#89](https://github.com/docxology/WISLIM-audit/issues/89) | The tracker still said no response had been sent | no |
+| [OPH-AUD-008](#oph-aud-008-the-reply-of-2026-11-03-was-not-tracked) | [#90](https://github.com/docxology/WISLIM-audit/issues/90) | The reply of 2026-11-03 was not tracked | no |
+| [OPH-AUD-009](#oph-aud-009-the-oph-quotation-check-was-a-one-off-not-a-repeatable-test) | [#91](https://github.com/docxology/WISLIM-audit/issues/91) | The OPH quotation check was a one-off, not a repeatable test | no |
+| [OPH-AUD-010](#oph-aud-010-correspondence-records-needed-a-privacy-rule) | [#92](https://github.com/docxology/WISLIM-audit/issues/92) | Correspondence records needed a privacy rule | no |
+| [OPH-AUD-011](#oph-aud-011-the-audit-missed-the-formal-and-engineering-versions-of-wislim-s-formula) | [#93](https://github.com/docxology/WISLIM-audit/issues/93) | The audit missed the formal and engineering versions of WISLIM's formula | no |
 
 ## OPH-AUD-001: OCR errors were read as the review's text
 
@@ -28,6 +28,8 @@ carried them. The IDs are stable. The email stays as sent; see
 
 **Files.** `reviews/oph-lfdi-57/source/LFDI_Alignment_Audit-57.verified.txt`, `reviews/oph-lfdi-57/source/metadata.json`, `reviews/oph-lfdi-57/intrinsic-audit.md`, `reviews/oph-lfdi-57/verification.md`
 
+**Fixed in.** `701b463`
+
 ## OPH-AUD-002: OPH evidence was pinned to a stale fork, not upstream
 
 **Affects the email sent 2026-11-03:** Yes.
@@ -37,6 +39,8 @@ carried them. The IDs are stable. The email stays as sent; see
 **What changed.** Re-pinned all evidence to `FloatingPragma/observer-patch-holography` at `fcc2dd1` (paper release r2060) and re-read every passage. OPH-REV-001 and the intrinsic grade now credit the review's accurate citation and quotations: its title is the flagship's title. OPH-REV-006 moved from contradicted to addressed, because OPH's fixed point does contain its observers; the counts are now 4 addressed, 3 contradicted, 5 not addressed.
 
 **Files.** `reviews/oph-lfdi-57/model/review.json`, `reviews/oph-lfdi-57/extrinsic-audit.md`, `reviews/oph-lfdi-57/intrinsic-audit.md`, `reviews/oph-lfdi-57/source/metadata.json`
+
+**Fixed in.** `701b463`
 
 ## OPH-AUD-003: 'Explicitly separates physics from ethics' overstated OPH
 
@@ -48,6 +52,8 @@ carried them. The IDs are stable. The email stays as sent; see
 
 **Files.** `reviews/oph-lfdi-57/model/review.json`, `reviews/oph-lfdi-57/extrinsic-audit.md`, `AGENTS.md`
 
+**Fixed in.** `701b463`
+
 ## OPH-AUD-004: The status label 'refuted' overclaimed
 
 **Affects the email sent 2026-11-03:** No.
@@ -57,6 +63,8 @@ carried them. The IDs are stable. The email stays as sent; see
 **What changed.** Renamed the status to `contradicted` in the model, the builder, the validator, the indexes, and the audits, and its definition now says a contradiction is not by itself a refutation.
 
 **Files.** `scripts/build_review_register.py`, `reviews/oph-lfdi-57/model/review.json`, `tools/validate.py`, `docs/method.md`
+
+**Fixed in.** `701b463`
 
 ## OPH-AUD-005: Symbols and tiers WISLIM glosses were called undefined
 
@@ -68,6 +76,8 @@ carried them. The IDs are stable. The email stays as sent; see
 
 **Files.** `reviews/oph-lfdi-57/intrinsic-audit.md`, `reviews/oph-lfdi-57/model/review.json`, `reviews/oph-lfdi-57/verification.md`
 
+**Fixed in.** `701b463`
+
 ## OPH-AUD-006: Paraphrase and altered words stood inside quotation marks
 
 **Affects the email sent 2026-11-03:** No.
@@ -77,6 +87,8 @@ carried them. The IDs are stable. The email stays as sent; see
 **What changed.** Corrected each case. The validator now requires every double-quoted string of four or more words in the two audits and the receipt to occur verbatim in the sources, the correspondence, or the recorded evidence.
 
 **Files.** `reviews/oph-lfdi-57/intrinsic-audit.md`, `reviews/oph-lfdi-57/extrinsic-audit.md`, `tools/validate.py`
+
+**Fixed in.** `701b463`
 
 ## OPH-AUD-007: The tracker still said no response had been sent
 
@@ -88,6 +100,8 @@ carried them. The IDs are stable. The email stays as sent; see
 
 **Files.** `reviews/oph-lfdi-57/correspondence/README.md`, `reviews/oph-lfdi-57/correspondence/02-friedman-response-as-sent.txt`, `reviews/oph-lfdi-57/response-email.md`
 
+**Fixed in.** `701b463`
+
 ## OPH-AUD-008: The reply of 2026-11-03 was not tracked
 
 **Affects the email sent 2026-11-03:** No.
@@ -97,6 +111,8 @@ carried them. The IDs are stable. The email stays as sent; see
 **What changed.** Added the reply text, a canonical model, and one record and one GitHub issue per claim (`OPH-REP-001`–`OPH-REP-016`). The validator checks each quotation against its source. The index also records where the reply moves the exchange forward.
 
 **Files.** `reviews/oph-lfdi-57/correspondence/03-wishengrad-reply.txt`, `reviews/oph-lfdi-57/model/reply.json`, `reviews/oph-lfdi-57/reply/README.md`, `scripts/build_reply_register.py`, `scripts/sync_reply_issues.py`
+
+**Fixed in.** `701b463`
 
 ## OPH-AUD-009: The OPH quotation check was a one-off, not a repeatable test
 
@@ -108,6 +124,8 @@ carried them. The IDs are stable. The email stays as sent; see
 
 **Files.** `scripts/verify_oph_quotes.py`, `Makefile`, `.github/workflows/verify.yml`, `tools/validate.py`, `reviews/oph-lfdi-57/verification.md`
 
+**Fixed in.** `701b463`
+
 ## OPH-AUD-010: Correspondence records needed a privacy rule
 
 **Affects the email sent 2026-11-03:** No.
@@ -118,6 +136,8 @@ carried them. The IDs are stable. The email stays as sent; see
 
 **Files.** `reviews/oph-lfdi-57/correspondence/README.md`, `tools/validate.py`, `AGENTS.md`
 
+**Fixed in.** `701b463`
+
 ## OPH-AUD-011: The audit missed the formal and engineering versions of WISLIM's formula
 
 **Affects the email sent 2026-11-03:** No.
@@ -127,5 +147,7 @@ carried them. The IDs are stable. The email stays as sent; see
 **What changed.** `audit/05-formula-e-infinity.md`, claim C11, and WISLIM-011 now say what is accurate: verbal glosses that differ across the versions, with no units or estimator. OPH-REV-007, F4 of the intrinsic audit, and OPH-REP-010 apply the formal definition to the review's step, where it is the strongest point against that step.
 
 **Files.** `audit/05-formula-e-infinity.md`, `model/claims.json`, `model/issues.json`, `reviews/oph-lfdi-57/intrinsic-audit.md`, `reviews/oph-lfdi-57/model/review.json`
+
+**Fixed in.** `701b463`
 
 `reviews/oph-lfdi-57/model/reply.json` is canonical; regenerate this file with `make reply`.

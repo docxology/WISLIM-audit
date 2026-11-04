@@ -5,7 +5,7 @@ kind: reply-topic
 status: observation
 claim_kind: attribution
 reply_lines: [8]
-github_issue: 
+github_issue: 69
 related: [OPH-REP-004, OPH-REP-013]
 ---
 

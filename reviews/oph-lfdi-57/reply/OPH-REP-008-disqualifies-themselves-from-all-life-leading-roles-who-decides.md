@@ -5,7 +5,7 @@ kind: reply-topic
 status: observation
 claim_kind: framing
 reply_lines: [40]
-github_issue: 
+github_issue: 74
 related: [OPH-REP-007, OPH-REP-012, OPH-REP-016]
 ---
 

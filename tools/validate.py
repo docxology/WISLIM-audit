@@ -583,6 +583,11 @@ def check_reply_register(v: Validator) -> None:
     mapping = reply_mod.load_issue_map()
     numbers = [entry.get("number") for entry in mapping.values()]
     v.check(len(set(numbers)) == len(numbers), "reply issue map numbers must be unique")
+    v.equal(
+        set(mapping),
+        {topic["id"] for topic in data["topics"]} | {item["id"] for item in data["corrections"]},
+        "reply issue map entries",
+    )
     for topic in data["topics"]:
         path = reply_mod.topic_path(topic)
         v.check(path.is_file(), f"{topic['id']}: record is missing")

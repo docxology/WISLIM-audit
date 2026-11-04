@@ -314,10 +314,8 @@ class ReplyRegisterTests(unittest.TestCase):
         self.assertIsNone(self.reply.PHONE_RE.search(doi))
         self.assertEqual(self.reply.check_privacy(self.reply.privacy_paths(self.data)), [])
 
-    def test_issue_map_covers_the_register_when_present(self):
+    def test_issue_map_covers_the_register(self):
         mapping = self.reply.load_issue_map()
-        if not mapping:
-            self.skipTest("issue map is written by make reply-issues")
         known = {topic["id"] for topic in self.topics} | {
             item["id"] for item in self.data["corrections"]
         }
