@@ -1350,7 +1350,8 @@
         "AGENTS.md",
         "docs/method.md",
         "docs/reproducibility.md"
-      ]
+      ],
+      "fixed_in": "1dfcda5"
     },
     {
       "id": "OPH-AUD-013",
@@ -1364,7 +1365,8 @@
         "reviews/oph-lfdi-57/model/reply.json",
         "reviews/oph-lfdi-57/correspondence/metadata.json",
         "reviews/oph-lfdi-57/response-email.md"
-      ]
+      ],
+      "fixed_in": "1dfcda5"
     }
   ]
 }

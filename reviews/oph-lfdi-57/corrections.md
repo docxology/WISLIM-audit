@@ -162,6 +162,8 @@ carried them. The IDs are stable. The email stays as sent; see
 
 **Files.** `reviews/oph-lfdi-57/model/review.json`, `reviews/oph-lfdi-57/model/reply.json`, `reviews/oph-lfdi-57/source/metadata.json`, `reviews/oph-lfdi-57/extrinsic-audit.md`, `reviews/oph-lfdi-57/intrinsic-audit.md`, `reviews/oph-lfdi-57/verification.md`, `scripts/verify_oph_quotes.py`, `Makefile`, `.github/workflows/verify.yml`, `README.md`, `AGENTS.md`, `docs/method.md`, `docs/reproducibility.md`
 
+**Fixed in.** `1dfcda5`
+
 ## OPH-AUD-013: A receipt and several records overstated or assumed details
 
 **Affects the email sent 2026-11-03:** No.
@@ -171,5 +173,7 @@ carried them. The IDs are stable. The email stays as sent; see
 **What changed.** The receipt's command now skips binary files with `-I`, and the receipt says what the plain command returns and why. OPH-REV-003 names the journal title. OPH-REP-004 says 'text files'. OPH-REP-007's search covers every text file and allows for line wraps, and its result is unchanged. OPH-REP-009 separates a run of the model from the running of the world, and says what remains in dispute. OPH-REP-004 ties the quotation to the setting. The three records now say 'the sender'.
 
 **Files.** `reviews/oph-lfdi-57/verification.md`, `reviews/oph-lfdi-57/model/review.json`, `reviews/oph-lfdi-57/model/reply.json`, `reviews/oph-lfdi-57/correspondence/metadata.json`, `reviews/oph-lfdi-57/response-email.md`
+
+**Fixed in.** `1dfcda5`
 
 `reviews/oph-lfdi-57/model/reply.json` is canonical; regenerate this file with `make reply`.
