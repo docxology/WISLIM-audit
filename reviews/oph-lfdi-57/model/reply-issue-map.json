@@ -73,13 +73,13 @@
       "number": 94,
       "url": "https://github.com/docxology/WISLIM-audit/issues/94",
       "title": "OPH-AUD-012: The pin fell behind upstream's release r2061",
-      "state": "OPEN"
+      "state": "CLOSED"
     },
     "OPH-AUD-013": {
       "number": 95,
       "url": "https://github.com/docxology/WISLIM-audit/issues/95",
       "title": "OPH-AUD-013: A receipt and several records overstated or assumed details",
-      "state": "OPEN"
+      "state": "CLOSED"
     },
     "OPH-REP-001": {
       "number": 67,
