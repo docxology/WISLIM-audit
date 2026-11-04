@@ -1,0 +1,59 @@
+{
+  "thread": "Audit of your work",
+  "summary": "The thread in which the review arrived and the tracked response and reply followed, under the subject 'Audit of your work'. The first response said any reply would be recorded in this tracker. All times are from the mail headers.",
+  "privacy": "This repository is public. These records leave out telephone numbers, email addresses, recipient lists, and mail-service identifiers. Where the signature carried contact details, the text says so in brackets. Each message after the first was copied to the same group of recipients, and the list is not reproduced here. The validator rejects any email address or telephone number in these records.",
+  "messages": [
+    {
+      "n": 1,
+      "sent": "2026-11-03 16:08",
+      "from": "David Wishengrad",
+      "content": "Cover note ('The goal here is to blow your mind into Crystal clear clarity.') and the review as a one-page PDF.",
+      "record": {
+        "label": "source/LFDI_Alignment_Audit-57.pdf",
+        "href": "../source/LFDI_Alignment_Audit-57.pdf"
+      }
+    },
+    {
+      "n": 2,
+      "sent": "2026-11-03 20:18",
+      "from": "Daniel Ari Friedman",
+      "content": "The tracked response.",
+      "record": {
+        "label": "02-friedman-response-as-sent.txt",
+        "href": "02-friedman-response-as-sent.txt"
+      }
+    },
+    {
+      "n": 3,
+      "sent": "2026-11-03 21:22",
+      "from": "David Wishengrad",
+      "content": "Notes, a drafted letter, and his remarks.",
+      "record": {
+        "label": "03-wishengrad-reply.txt",
+        "href": "03-wishengrad-reply.txt"
+      }
+    },
+    {
+      "n": 4,
+      "sent": "2026-11-03 22:34",
+      "from": "David Wishengrad",
+      "content": "'Sorry for the typos...' Repeats message 3 and marks two corrections in its opening line, with the sign-off 'PEACE Perfect Equality Among Celestial Entities'. The record of message 3 carries the corrected wording.",
+      "record": {
+        "label": "03-wishengrad-reply.txt",
+        "href": "03-wishengrad-reply.txt"
+      }
+    }
+  ],
+  "files": {
+    "02-friedman-response-as-sent.txt": {
+      "sha256": "4ecd46d665dca237d7d31924c2c171a35200c1faa8fc9e2a62b807e964f1b8a9",
+      "lines": 24,
+      "normalization": "One paragraph per line; wording unchanged; quoted history omitted."
+    },
+    "03-wishengrad-reply.txt": {
+      "sha256": "12a0951a1615e558bee870f0026bea6332dfc5c68b97832a5b287381213944ba",
+      "lines": 47,
+      "normalization": "One paragraph per line; wording and punctuation unchanged, with the corrections of message 4; two signature lines replaced by bracketed notes; quoted history omitted."
+    }
+  }
+}

@@ -543,8 +543,8 @@
       "audit_modules": [
         "audit/05-formula-e-infinity.md"
       ],
-      "summary": "The E-infinity formula models ethical value and proves life's necessity. Verdict: `invalid-as-proof`. The theorem 'if L = 0 then E∞ = 0' is trivial arithmetic. L, U, and D are undefined, dimensionless, and unmeasured. D approaching zero produces a pole, not an ideal. The formula cannot compare actions or adjudicate trade-offs.",
-      "why": "The formula is displayed as the mathematical core of the ethics. If it is an undefined ratio with a pole at D = 0, it cannot bear the proof's weight.",
+      "summary": "The E-infinity formula models ethical value and proves life's necessity. Verdict: `invalid-as-proof`. The theorem 'if L = 0 then E∞ = 0' is trivial arithmetic. L, U, and D have verbal glosses that differ across the paper's versions, no units, and no estimator. D approaching zero produces a pole, not an ideal. The formula cannot compare actions or adjudicate trade-offs.",
+      "why": "The formula is displayed as the mathematical core of the ethics. If it is a ratio without units, with a pole at D = 0, it cannot bear the proof's weight.",
       "evidence": [
         "**Claim:** The E-infinity formula models ethical value and proves life's necessity.",
         "**Anchor:** \"E∞ = (L₁ × U) / D\"",

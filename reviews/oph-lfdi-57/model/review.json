@@ -6,13 +6,20 @@
     "received": "2026-11-03",
     "review_type": "AI-generated external critique, one page, image-only PDF",
     "source_pdf": "reviews/oph-lfdi-57/source/LFDI_Alignment_Audit-57.pdf",
-    "source_text": "reviews/oph-lfdi-57/source/LFDI_Alignment_Audit-57.txt",
+    "source_text": "reviews/oph-lfdi-57/source/LFDI_Alignment_Audit-57.verified.txt",
     "target": "Bernhard Mueller et al., Observers Who Read Their Universe into Existence: Finite Consensus, an Executable Observer, and Standard Physics (PhilPapers MUEFOC)",
     "target_url": "https://philpapers.org/rec/MUEFOC",
-    "oph_repository": "https://github.com/docxology/observer-patch-holography",
-    "oph_commit": "1c5a908ed3441c5d09628183af18c362dbc58bea",
-    "reproduction": "make review && make review-check",
-    "status": "tracked; no response sent"
+    "oph_repository": "https://github.com/FloatingPragma/observer-patch-holography",
+    "oph_commit": "fcc2dd173d4f48763cd0bf7cc1739751eca3b96d",
+    "reproduction": "make review && make review-check && make verify-oph OPH_REPO=<clone of the OPH repository>",
+    "status": "tracked; response sent 2026-11-03; reply received 2026-11-03",
+    "source_ocr": "reviews/oph-lfdi-57/source/LFDI_Alignment_Audit-57.txt",
+    "oph_release": "r2060 (2026-11-02)",
+    "oph_previous_pin": {
+      "repository": "https://github.com/docxology/observer-patch-holography",
+      "commit": "1c5a908ed3441c5d09628183af18c362dbc58bea",
+      "note": "A fork, 7 commits ahead of and 1,593 commits behind upstream main at the current pin. Retired by OPH-AUD-002."
+    }
   },
   "topics": [
     {
@@ -22,23 +29,28 @@
       "review_line": 2,
       "verdict": "partly-valid",
       "oph_status": "addressed",
-      "summary": "The review names a real PhilPapers manuscript but gives no version, DOI, or full author list. The exact title is not the title of the flagship technical paper in the public OPH repository.",
-      "intrinsic": "The target is identifiable, which is a strength. The citation is not reproducible: 'et al.' hides twelve coauthors, no version or date is given, and the document is not linked. 'Official' has no issuing body. A reader cannot tell which manuscript version was audited.",
-      "extrinsic": "PhilPapers MUEFOC (checked live 2026-11-03) confirms the title and Bernhard Mueller as lead author among thirteen named authors, and records the work as a manuscript with a PhilArchive copy (1,062 downloads as of 2026-11-03). The public OPH repository separates the flagship paper, the book, and the technical papers; the flagship paper is titled 'Finite Observer Consensus as a Reconstruction Principle'. The review's target is therefore real but bibliographically under-specified.",
+      "summary": "The review names the flagship paper accurately: its title and lead author match the manuscript at upstream and on PhilPapers. It gives no release, date, DOI, or full author list, so the audited version cannot be fixed.",
+      "intrinsic": "The target is identifiable, which is a strength. The citation is not reproducible: 'et al.' hides the other authors, no release or date is given, and the document is not linked. 'Official' has no issuing body. A reader cannot tell which manuscript release was audited, and the flagship changes release often (r2060 on 2026-11-02).",
+      "extrinsic": "The flagship source at upstream carries the review's exact title, and the upstream README links PhilPapers MUEFOC as the main paper. PhilPapers, as retrieved 2026-11-03, confirms the title and Bernhard Mueller as lead author among thirteen listed authors; the flagship source at the pinned commit lists fourteen. An earlier version of this record said the title was not the flagship's. That reading came from a stale fork and is withdrawn (OPH-AUD-002).",
       "oph_evidence": [
         {
-          "path": "paper/README.md",
-          "line": 3,
-          "quote": "For a first reading, begin with the flagship technical paper,"
+          "path": "flagship/from_observer_consensus_to_standard_physics.tex",
+          "line": 36,
+          "quote": "Observers Who Read Their Universe into Existence:"
         },
         {
           "path": "flagship/from_observer_consensus_to_standard_physics.tex",
-          "line": 33,
-          "quote": "Finite Observer Consensus as a Reconstruction Principle"
+          "line": 37,
+          "quote": "Finite Consensus, an Executable Observer, and Standard Physics"
+        },
+        {
+          "path": "README.md",
+          "line": 5,
+          "quote": "[Main paper](https://philpapers.org/rec/MUEFOC)"
         }
       ],
       "wislim_evidence": [],
-      "response": "Ask the sender for the exact version, DOI, and full author list, and record them before treating the review as a determination on a fixed object.",
+      "response": "Ask the sender for the release or date of the copy audited, so the determination is tied to a fixed object.",
       "tags": [
         "bibliography",
         "scope"
@@ -55,23 +67,38 @@
       "review_line": 2,
       "verdict": "partly-valid",
       "oph_status": "addressed",
-      "summary": "The paraphrase is close to OPH's abstract, but 'derive' makes conditional results sound established and omits OPH's own statement that the program is incomplete.",
-      "intrinsic": "The review accurately reports the observer-first and timeless-self-reference framing. It overstates the status of the derivation: OPH's abstract says the program is incomplete and many results are conditional. It also calls the universe an 'executable mathematical model' without noting that this is the executable-model hypothesis, not a theorem.",
-      "extrinsic": "OPH's PhilPapers abstract says 'Measured by the four conditions, the program is incomplete' and lists unestablished items. The repository labels results as exact, conditional, declared, or open. The review's summary is directionally right but not calibrated to OPH's status ledger.",
+      "summary": "The paraphrase follows the flagship abstract closely and quotes it accurately. It omits the abstract's own statement that the program is incomplete and that closure is a hypothesis.",
+      "intrinsic": "The review accurately reports the observer-first and timeless-self-reference framing, and its phrases 'timeless self-referential history', 'operational observers' and 'twelve-port icosahedral carrier' occur in the paper. 'Attempts' is fair. It does not report the paper's status: 'treating the universe as an executable mathematical model' omits that this is the executable-model hypothesis, not an established result.",
+      "extrinsic": "The flagship abstract says 'Measured by the four conditions, the program is incomplete' and 'Closure of one complete history is a hypothesis that the model tests'. The review's summary is directionally right but not calibrated to that status.",
       "oph_evidence": [
         {
-          "path": "paper/observers_are_all_you_need.tex",
-          "line": 1792,
-          "quote": "Bare finite consensus supplies only the upstream quotient-normal-form input."
+          "path": "flagship/from_observer_consensus_to_standard_physics.tex",
+          "line": 74,
+          "quote": "universe is one timeless self-referential history whose observers recover"
         },
         {
-          "path": "README.md",
-          "line": 183,
-          "quote": "OPH treats this process as the mechanism that selects a public physical world."
+          "path": "flagship/from_observer_consensus_to_standard_physics.tex",
+          "line": 96,
+          "quote": "Measured by the four conditions, the program is incomplete."
+        },
+        {
+          "path": "flagship/from_observer_consensus_to_standard_physics.tex",
+          "line": 97,
+          "quote": "Closure of one complete history is a hypothesis that the model tests"
+        },
+        {
+          "path": "flagship/from_observer_consensus_to_standard_physics.tex",
+          "line": 82,
+          "quote": "Its testable form is the executable-model hypothesis"
+        },
+        {
+          "path": "flagship/from_observer_consensus_to_standard_physics.tex",
+          "line": 84,
+          "quote": "federated twelve-port icosahedral carrier"
         }
       ],
       "wislim_evidence": [],
-      "response": "Distinguish OPH's aim from its achieved status. Quote OPH's incompleteness statement and its conditional labels when summarizing the program.",
+      "response": "Distinguish OPH's aim from its achieved status. Quote the abstract's incompleteness statement when summarizing the program.",
       "tags": [
         "summary",
         "status"
@@ -89,9 +116,9 @@
       "review_line": 2,
       "verdict": "partly-valid",
       "oph_status": "addressed",
-      "summary": "OPH does define observers without requiring life. That is a scope decision about physics, not a denial that living agents exist or matter.",
-      "intrinsic": "The sentence is descriptively accurate if read as 'OPH's observer definition does not require biological life.' It becomes a fallacy if read as 'OPH denies the reality or value of life.' The review does not distinguish these readings, and the rest of the document relies on the stronger one.",
-      "extrinsic": "OPH lists 'Life. Obviously not' among the things an observer does not need, and says 'An observer here is any bounded system that keeps records.' It also says observer is a structural role that a human mind, organism, instrument, or software process can instantiate. OPH does not deny that living things exist; it treats consciousness as a late special case. The descriptive point is fair; the later inference that OPH 'subordinates Life' is not.",
+      "summary": "OPH does define observers without requiring life. That is a scope decision about physics, not a denial that living agents exist or matter: the book places living things inside the observer class.",
+      "intrinsic": "The sentence is descriptively accurate if read as 'OPH's observer definition does not require biological life.' It becomes a fallacy if read as 'OPH denies the reality or value of life.' The review does not distinguish these readings, and the rest of the document relies on the stronger one. Not requiring a property is not removing it: a definition of 'vehicle' that does not require wheels takes no wheels off any car.",
+      "extrinsic": "The book lists 'Life. Obviously not' among the things an observer does not need, and says 'An observer here is any bounded system that keeps records.' The same passage says the arrival of living things 'introduced a much better one of a kind that had been there all along', and the chapter scores a person and a thermostat by one test. The flagship's wording is narrower than the review's: its operational observer is 'defined by access and record interfaces, without an additional claim about consciousness', and 'biological', 'living' and 'valuer' do not occur in the flagship source. The descriptive point is fair; 'explicitly' fits the book, not the flagship; the later inference that OPH 'subordinates Life' is not supported.",
       "oph_evidence": [
         {
           "path": "book/04-chapter-03.md",
@@ -100,13 +127,23 @@
         },
         {
           "path": "book/04-chapter-03.md",
+          "line": 67,
+          "quote": "It introduced a much better one of a kind that had been there all along."
+        },
+        {
+          "path": "book/04-chapter-03.md",
           "line": 85,
           "quote": "An observer here is any bounded system that keeps records."
         },
         {
-          "path": "README.md",
-          "line": 189,
-          "quote": "“Observer” is a structural role."
+          "path": "book/04-chapter-03.md",
+          "line": 51,
+          "quote": "The thermostat passes. So does a person"
+        },
+        {
+          "path": "flagship/from_observer_consensus_to_standard_physics.tex",
+          "line": 489,
+          "quote": "defined by access and record interfaces, without an additional claim about consciousness."
         }
       ],
       "wislim_evidence": [
@@ -138,20 +175,25 @@
       "review_quote": "The authors commit a terminal Performative Contradiction by utilizing their living decision-making agency ($L_1$) to author, compute, and argue for a framework that subordinates Life to a mathematical abstraction.",
       "review_line": 3,
       "verdict": "unsupported",
-      "oph_status": "refuted",
-      "summary": "Using living agency to write a theory does not contradict a theory that says physical observers need not be alive. The review asserts a contradiction without formalizing it.",
+      "oph_status": "contradicted",
+      "summary": "Using living agency to write a theory does not contradict a theory that says physical observers need not be alive. OPH's closure hypothesis places its builders inside the structure it describes. The review asserts a contradiction without formalizing it.",
       "intrinsic": "This is a genetic and use-mention confusion. The act of authoring is a fact about the authors, not a premise in OPH's formalism. A contradiction would require showing that OPH's premises entail 'no living authors' or that life is metaphysically fundamental, and that the authors affirm both. The review does neither.",
-      "extrinsic": "OPH explicitly says observers are a structural role and 'OPH does not claim that human thoughts manufacture reality.' It does not claim that life is unreal or that living authors cannot do physics. The review's target is a position OPH does not hold.",
+      "extrinsic": "OPH's closure hypothesis says observers 'build hardware that realizes that same history, including its builders', and 'Nothing lies outside this loop'. Its working terms require 'The builders' inference' to be among the 'operations available within the candidate history'. OPH does not claim that life is unreal or that living authors cannot do physics, and nothing in it subordinates life to an abstraction. The review's target is a position OPH does not hold.",
       "oph_evidence": [
         {
           "path": "README.md",
-          "line": 189,
-          "quote": "“Observer” is a structural role."
+          "line": 46,
+          "quote": "records and build hardware that realizes that same history, including its builders."
         },
         {
           "path": "README.md",
-          "line": 191,
-          "quote": "OPH does not claim that human thoughts manufacture reality."
+          "line": 47,
+          "quote": "Nothing lies outside this loop"
+        },
+        {
+          "path": "docs/INTERPRETATION_AND_TERMS.md",
+          "line": 53,
+          "quote": "The builders' inference, device construction, program and data initialization, controls, memory, read/write and record services, and clock comparisons must be operations available within the candidate history."
         }
       ],
       "wislim_evidence": [
@@ -185,14 +227,24 @@
       "review_line": 3,
       "verdict": "question-begging",
       "oph_status": "not-addressed",
-      "summary": "The 'No Truth Outside Life' rule and the Tier 2/3 hierarchy are asserted, not defended. OPH does not assert that mathematics has independent truth-value in a void, so the charge misses its target.",
-      "intrinsic": "The premise is the conclusion. No argument is given for why truth requires a living valuer, nor what 'Tier 2/3' means. The review also conflates truth-bearers (propositions, records) with valuers (living agents). OPH's claim is about public records, not Platonic truth.",
-      "extrinsic": "OPH's observers are record-keeping systems; facts become public through overlap and repair. OPH does not claim a view from nowhere, nor that mathematics floats free of observers. The review's alternative metaphysics is external to OPH and is not shown to be a condition of doing physics.",
+      "summary": "The 'No Truth Outside Life' rule is asserted, not defended, and neither it nor the name 'Epistemic Invariant' occurs in WISLIM v2.0.1. OPH does not assert that mathematics has truth-value in a void: it says nothing lies outside its loop. The charge misses its target.",
+      "intrinsic": "The premise is the conclusion. No argument is given for why truth requires a living valuer. 'Tier 2/3' refers to a ranking WISLIM does describe (source/WISLIM-v2.0.1.txt:8198), but the ranking is asserted there too. The review also conflates truth-bearers (propositions, records) with valuers (living agents). OPH's claim is about public records, not Platonic truth.",
+      "extrinsic": "OPH's observers are record-keeping systems, and 'our Universe' is 'the public record, what survives every comparison between observers'. 'Nothing lies outside this loop', and no external host is supplied. OPH does not claim a view from nowhere. The review's alternative metaphysics is external to OPH and is not shown to be a condition of doing physics.",
       "oph_evidence": [
         {
           "path": "README.md",
-          "line": 180,
-          "quote": "after further evolution, and retained as part of the public record."
+          "line": 50,
+          "quote": "is the public record, what survives every comparison between observers."
+        },
+        {
+          "path": "README.md",
+          "line": 47,
+          "quote": "Nothing lies outside this loop"
+        },
+        {
+          "path": "docs/BASIS.md",
+          "line": 24,
+          "quote": "No external host, external time or global clock is supplied"
         },
         {
           "path": "book/04-chapter-03.md",
@@ -207,7 +259,7 @@
           "quote": "This is the central normative premise. It is asserted rather than argued."
         }
       ],
-      "response": "State the invariant as a premise, defend it independently, and then show where OPH denies it. Until then, mark the critique as conditional on LFDI.",
+      "response": "State the invariant as a premise, name the document that defines it, defend it independently, and then show where OPH denies it. Until then, mark the critique as conditional on LFDI.",
       "tags": [
         "epistemology",
         "truth",
@@ -222,23 +274,28 @@
     {
       "id": "OPH-REV-006",
       "title": "The Airtight Trap and the fixed-point reply",
-      "review_quote": "they propose a \"higher\" foundational principle (mathematical fixed points and operational consensus) that fundamentally requires a living observer (SL_1$) to exist, be conceptualized, and be valued.",
+      "review_quote": "they propose a \"higher\" foundational principle (mathematical fixed points and operational consensus) that fundamentally requires a living observer ($L_1$) to exist, be conceptualized, and be valued.",
       "review_line": 3,
       "verdict": "unsupported",
-      "oph_status": "refuted",
-      "summary": "The 'Airtight Trap' and 'Option 2' are undefined, and the claim that a fixed point requires a living observer to be conceptualized confuses existence with conceptualization.",
-      "intrinsic": "No taxonomy or decision procedure is given for the trap. The sentence shifts from 'requires a living observer to exist' to 'to be conceptualized' to 'to be valued'; these are distinct claims. A mathematical fixed point can be defined and proved without a living observer in the ontology. The review needs to show that OPH's fixed point is mind-dependent, not merely that humans can think about it.",
-      "extrinsic": "OPH addresses the circularity objection directly: 'It is a fixed point. A fixed point has no before in it'; 'a condition on one structure that holds or fails with nothing running it.' The review does not engage this argument. OPH's fixed point is formal, not a consensus of living valuers.",
+      "oph_status": "addressed",
+      "summary": "The 'Airtight Trap' and 'Option 2' are not defined in the review, and the sentence runs three claims together. OPH's closure hypothesis does put observers inside its fixed point, so part of the claim is common ground. What remains in dispute is 'living' and 'valued'.",
+      "intrinsic": "No taxonomy or decision procedure is given for the trap in this document. The sentence shifts from needing a living observer for the fixed point to exist, to needing one for it to be conceptualized, to needing one for it to be valued; these are distinct claims. That people can think about a condition does not make the condition depend on their being alive. The review needs an argument for that step and supplies none.",
+      "extrinsic": "OPH addresses the circularity objection directly and says the fixed point 'needs no first solver outside it, and it contains internal causal order, local changes and the computations through which the structure realizes its dependencies'. Its closure hypothesis has observers inside the structure recovering and realizing its specification. So the review is partly right that OPH's fixed point is not observer-free, and OPH says so first. OPH does not say those observers must be alive, and it does not make the fixed point depend on being valued. An earlier version of this record quoted 'with nothing running it' from a stale fork; upstream retired that sentence on 2026-10-11, and this topic's status moved from contradicted to addressed (OPH-AUD-002).",
       "oph_evidence": [
         {
-          "path": "book/43-appendix-a.md",
-          "line": 147,
-          "quote": "It is a fixed point. A fixed point has no before in it."
+          "path": "book/44-appendix-a.md",
+          "line": 153,
+          "quote": "It needs no first solver outside it, and it contains internal causal order, local changes and the computations through which the structure realizes its dependencies."
         },
         {
-          "path": "book/43-appendix-a.md",
-          "line": 147,
-          "quote": "a condition on one structure that holds or fails with nothing running it"
+          "path": "book/44-appendix-a.md",
+          "line": 155,
+          "quote": "A loop of this kind is a condition."
+        },
+        {
+          "path": "flagship/from_observer_consensus_to_standard_physics.tex",
+          "line": 179,
+          "quote": "and observers inside it recover its specification and realize it"
         }
       ],
       "wislim_evidence": [
@@ -253,7 +310,7 @@
           "quote": "The theorem 'if L = 0 then E∞ = 0' is trivial arithmetic."
         }
       ],
-      "response": "Define the trap and its options, then engage OPH's fixed-point argument on its own terms. Conceptualization is not existence.",
+      "response": "Define the trap and its options in the document that uses them, then engage OPH's fixed-point text on its own terms. Separate the claim that the fixed point requires observers, which is common ground, from the claim that it requires living, valuing observers, which is the actual dispute.",
       "tags": [
         "logic",
         "fixed-point",
@@ -267,13 +324,13 @@
     {
       "id": "OPH-REV-007",
       "title": "LFDI formula collapse and E-infinity",
-      "review_quote": "By operationally defining the observer without the prerequisite of Life (SL_1 = 0$), the numerator of the LFDI equation collapses.",
+      "review_quote": "By operationally defining the observer without the prerequisite of Life ($L_1 = 0$), the numerator of the LFDI equation collapses.",
       "review_line": 4,
       "verdict": "unsupported",
       "oph_status": "not-addressed",
-      "summary": "The LFDI variables and formula are undefined, and the conclusion is built into the stipulated value SL1=0. OPH does not use the LFDI variables, so the calculation is an external stipulation, not a derivation about OPH.",
-      "intrinsic": "No units, domains, or operational definitions are given for E-infinity, U, D, L1, SL1, or SUS. The OCR reads 'Eoo = (0 x U) / D Eoo = 0', which is not a well-formed equation, and division by D is undefined at D = 0. The argument assumes SL1 = 0 rather than showing that OPH's observers lack whatever SL1 measures. The inference is circular: if the numerator contains SL1 and SL1 = 0, the result is zero by construction.",
-      "extrinsic": "OPH observers have records, readback, and repair; whether that satisfies L1 depends on a definition the review never supplies. WISLIM's own audit says the E-infinity formula is a toy identity and the life definition is circular and overinclusive. The review relies on the least defensible part of the framework it is applying.",
+      "summary": "Not requiring life as a prerequisite is not the same as life being zero. The review writes that step as $L_1 = 0$ and then reports zero. WISLIM glosses $L_1$, $U$, and $D$ in words but gives no units or estimator, and the review uses them with different meanings.",
+      "intrinsic": "The page prints E∞ = (0 × U) / D E∞ = 0, two equations run together. The arithmetic holds when D is not zero. The problem is the input. The review treats a definition that does not require Life as if Life equaled zero, then multiplies by it, so the result is zero by construction. That is arithmetic, not a finding about OPH. An earlier version of this record also called the equation malformed and listed 'SL1' and 'SUS' as undefined variables; those were OCR misreadings of $L_1$ and $U$ (OPH-AUD-001).",
+      "extrinsic": "In WISLIM, L₁ is 'The inherent, non-negotiable value of a single life' (source/WISLIM-v2.0.1.txt:435), U is 'The unlockable potential within life' (:437), and D is 'The delay, distortion, or destruction that obstructs truth, action, or recognition of life’s value' (:441). In the review, $L_1$ is 'living decision-making agency' and 'a living observer', $U$ is 'computational utility', and $D$ is 'severe epistemic distortion' and 'Decision Entropy'. WISLIM's formal version adds 'L = 0 ⇔ no such system exists' (:626), and its engineering version says the formula 'is not meant to compute a number' (:687). OPH observers have records, readback, and repair, and OPH claims neither that a life has no value nor that no choice-capable system exists. WISLIM's definition of life is substrate-neutral, and the sender's reply of 2026-11-03 says so, which removes the stated ground for $L_1 = 0$ (OPH-REP-010).",
       "oph_evidence": [
         {
           "path": "book/04-chapter-03.md",
@@ -281,16 +338,16 @@
           "quote": "An observer here is any bounded system that keeps records."
         },
         {
-          "path": "README.md",
-          "line": 176,
-          "quote": "The answer is an observer patch. It need not be a person."
+          "path": "flagship/from_observer_consensus_to_standard_physics.tex",
+          "line": 953,
+          "quote": "Operational observers are continuing native processes that prepare, read, retain and act on records."
         }
       ],
       "wislim_evidence": [
         {
           "path": "docs/audit/WISLIM-011-demote-the-e-infinity-formula-from-proof-to-metaphor.md",
           "line": 48,
-          "quote": "L, U, and D are undefined, dimensionless, and unmeasured."
+          "quote": "L, U, and D have verbal glosses that differ across the paper's versions, no units, and no estimator."
         },
         {
           "path": "docs/audit/WISLIM-006-replace-the-circular-definition-of-life-with-a-tiered-ontology.md",
@@ -303,7 +360,7 @@
           "quote": "The life definition is inclusive and anti-exclusion. Verdict: `overinclusive`."
         }
       ],
-      "response": "Define the formula, units, and measurement procedure, and map OPH's observables into it. Until then, treat E-infinity = 0 as a conditional slogan, not a result about OPH.",
+      "response": "State what would be measured to assign a value to $L_1$ for a given theory, and show that OPH's observers score zero on it. Until then, treat E∞ = 0 as a conditional slogan, not a result about OPH.",
       "tags": [
         "formula",
         "formal",
@@ -318,18 +375,38 @@
     {
       "id": "OPH-REV-008",
       "title": "Operational necessity and the supremacy of life",
-      "review_quote": "the authors and the OPH framework must immediately integrate the LFDI Engineering Proof protocol. The preservation and primacy of Life (SL_1$) must be affirmed as the supreme, non-substitutable constraint and the prerequisite for any mathematical or physical truth to be known or pursued.",
+      "review_quote": "the authors and the OPH framework must immediately integrate the LFDI Engineering Proof protocol. The preservation and primacy of Life ($L_1$) must be affirmed as the supreme, non-substitutable constraint and the prerequisite for any mathematical or physical truth to be known or pursued.",
       "review_line": 5,
       "verdict": "out-of-scope",
-      "oph_status": "refuted",
-      "summary": "A normative demand is issued without an argument, and it treats a physics theory as failing because it does not adopt an ethical protocol. OPH explicitly separates physics from ethics.",
-      "intrinsic": "The 'must' is not derived. The review moves from 'OPH does not make life fundamental' to 'OPH must adopt LFDI', which is a normative leap. It also claims LFDI is a prerequisite for any mathematical or physical truth, a strong epistemic thesis that needs independent support. No authority, jurisdiction, or consequence analysis is given.",
-      "extrinsic": "OPH says 'the physics can be taken alone and nothing above it breaks.' OPH has an ethics discussion but explicitly does not make it a condition of the physics. The review's demand is external to OPH's stated scope; it may be a recommendation, not a refutation.",
+      "oph_status": "contradicted",
+      "summary": "A normative demand is issued without an argument. OPH says a reader can take its physics without its ethics, and also that the ethics reads the same quantity as the physics. It does not make LFDI a condition of either.",
+      "intrinsic": "The 'must' is not derived. The review moves from the observation that OPH does not make life fundamental to the demand that OPH adopt LFDI, which is a normative leap. It also claims LFDI is a prerequisite for any mathematical or physical truth, a strong epistemic thesis that needs independent support. WISLIM's LFDI is narrower: a guard on actions that affect life, with an explicit else-pass branch (source/WISLIM-v2.0.1.txt:212). No authority, jurisdiction, or consequence analysis is given.",
+      "extrinsic": "Asked 'Do I have to accept the ethics to accept the physics?', OPH answers 'the physics can be taken alone and nothing above it breaks'. The same passage says 'They share a quantity' and 'Accepting the repair law is accepting both'. OPH therefore does not make an ethics a condition of its physics, and it does not treat the two as unrelated either. An earlier version of this record said OPH 'explicitly separates physics from ethics', which overstated the passage (OPH-AUD-003). The review's demand is external to OPH's stated scope; it may be a recommendation, not a refutation.",
       "oph_evidence": [
         {
-          "path": "book/43-appendix-a.md",
-          "line": 189,
+          "path": "book/44-appendix-a.md",
+          "line": 187,
+          "quote": "Do I have to accept the ethics to accept the physics?"
+        },
+        {
+          "path": "book/44-appendix-a.md",
+          "line": 191,
+          "quote": "The question assumes the join between the two is preference."
+        },
+        {
+          "path": "book/44-appendix-a.md",
+          "line": 193,
+          "quote": "They share a quantity."
+        },
+        {
+          "path": "book/44-appendix-a.md",
+          "line": 195,
           "quote": "the physics can be taken alone and nothing above it breaks"
+        },
+        {
+          "path": "book/44-appendix-a.md",
+          "line": 195,
+          "quote": "Accepting the repair law is accepting both"
         }
       ],
       "wislim_evidence": [
@@ -344,7 +421,7 @@
           "quote": "This is the central normative premise. It is asserted rather than argued."
         }
       ],
-      "response": "Separate 'OPH should adopt an ethics' from 'OPH's physics is false'. Argue the former; do not assert the latter.",
+      "response": "Separate the proposal that OPH should adopt an ethics from the claim that OPH's physics is false. Argue the former; do not assert the latter.",
       "tags": [
         "normative",
         "scope",
@@ -358,23 +435,23 @@
     {
       "id": "OPH-REV-009",
       "title": "Decision Entropy and systemic misalignment",
-      "review_quote": "Integration of the LFDI protocol (WISLIM DOI: 10.21428/4831231e.8c4c6c8f) is an Operational Necessity to prevent systemic misalignment and the acceleration of Decision Entropy (SDS).",
+      "review_quote": "Integration of the LFDI protocol (WISLIM DOI: 10.21428/4831231e.8c4c6c8f) is an Operational Necessity to prevent systemic misalignment and the acceleration of Decision Entropy ($D$).",
       "review_line": 5,
       "verdict": "unsupported",
       "oph_status": "not-addressed",
-      "summary": "Decision Entropy and SDS are undefined, and no evidence links OPH's physics program to accelerated misalignment.",
-      "intrinsic": "No metric, baseline, or causal mechanism is given. 'SDS' is used earlier for severe epistemic distortion and here for Decision Entropy, an equivocation. The DOI is a citation, not evidence of necessity. The claim is speculative and unfalsifiable as stated.",
-      "extrinsic": "OPH's ethics is about mismatch and repair; the review does not show that OPH increases either. OPH's claims are explicitly conditional and falsifiable; the review does not engage them. The causal claim is not addressed by OPH and is not verifiable from the review.",
+      "summary": "'Decision Entropy' is not defined in the review or in WISLIM v2.0.1, and no evidence links OPH's physics program to accelerated misalignment.",
+      "intrinsic": "No metric, baseline, or causal mechanism is given. The symbol $D$ is called 'severe epistemic distortion' earlier in the review and 'Decision Entropy' here; WISLIM v2.0.1 calls it 'delay, distortion, or destruction' and 'ethical entropy (D)' (source/WISLIM-v2.0.1.txt:441, :481). The term 'Decision Entropy' does not occur in WISLIM v2.0.1. The DOI is a citation, not evidence of necessity. The claim is speculative and unfalsifiable as stated. An earlier version of this record read $D$ as an acronym 'SDS' and called that an equivocation; 'SDS' was an OCR misreading (OPH-AUD-001). The shift in what $D$ names is real; the acronym was not.",
+      "extrinsic": "OPH's ethics is about mismatch and repair; the review does not show that OPH increases either. OPH's claims are explicitly conditional and carry a stated falsifier ('A frozen dispersion band lets one resolved measurement exclude the entire carrier class'); the review does not engage them. The causal claim is not addressed by OPH and is not verifiable from the review.",
       "oph_evidence": [
         {
-          "path": "book/43-appendix-a.md",
-          "line": 177,
+          "path": "book/44-appendix-a.md",
+          "line": 183,
           "quote": "Mismatch scores itself at the seam."
         },
         {
-          "path": "README.md",
-          "line": 186,
-          "quote": "The finite observer contract and each discrete"
+          "path": "flagship/from_observer_consensus_to_standard_physics.tex",
+          "line": 100,
+          "quote": "A frozen dispersion band lets one resolved measurement exclude the entire carrier class."
         }
       ],
       "wislim_evidence": [
@@ -403,23 +480,28 @@
     {
       "id": "OPH-REV-010",
       "title": "Dismissal of formal and Lean work",
-      "review_quote": "Regardless of the high computational utility (SUS) of their mathematical proofs and Lean formalizations, the calculation resolves to terminal failure",
+      "review_quote": "Regardless of the high computational utility ($U$) of their mathematical proofs and Lean formalizations, the calculation resolves to terminal failure",
       "review_line": 4,
       "verdict": "unsupported",
       "oph_status": "not-addressed",
       "summary": "The review acknowledges formal work but dismisses it without identifying a theorem or Lean defect. That is not an evaluation of the formal claims.",
-      "intrinsic": "No specific proof, theorem, or Lean declaration is named. 'SUS' is undefined. The dismissal is by the LFDI formula, which is itself undefined. A formal critique would need to show an invalid inference, an admitted proof, a bad axiom, or a mismatch between statement and formalization.",
-      "extrinsic": "OPH's formal work is explicitly conditional and incomplete; the public repository records premises and open branches. The review neither engages that status nor shows an error. The formal claims remain untouched by the review.",
+      "intrinsic": "No specific proof, theorem, or Lean declaration is named. The review calls $U$ 'computational utility', while WISLIM glosses U as 'The unlockable potential within life'. The dismissal runs through the LFDI formula. A formal critique would need to show an invalid inference, an admitted proof, a bad axiom, or a mismatch between statement and formalization.",
+      "extrinsic": "OPH's abstract marks the status of its formal work: key steps are 'checked in Lean', and measured particle species, an interacting chiral continuum and the Einstein premises on one responsive geometry 'are not established'. The review neither engages that status nor shows an error. The formal claims remain untouched by the review.",
       "oph_evidence": [
         {
-          "path": "paper/observers_are_all_you_need.tex",
-          "line": 1792,
-          "quote": "Bare finite consensus supplies only the upstream quotient-normal-form input."
+          "path": "flagship/from_observer_consensus_to_standard_physics.tex",
+          "line": 86,
+          "quote": "limit. Finite theorems on that carrier, with key steps checked in Lean,"
         },
         {
-          "path": "README.md",
-          "line": 186,
-          "quote": "The finite observer contract and each discrete"
+          "path": "flagship/from_observer_consensus_to_standard_physics.tex",
+          "line": 98,
+          "quote": "hypothesis that the model tests; measured particle species, an interacting"
+        },
+        {
+          "path": "flagship/from_observer_consensus_to_standard_physics.tex",
+          "line": 100,
+          "quote": "are not established."
         }
       ],
       "wislim_evidence": [
@@ -448,13 +530,13 @@
     {
       "id": "OPH-REV-011",
       "title": "AI provenance and verification claim",
-      "review_quote": "Al Gemini Pro latest was used to generate this correction, and this correction has been verified as correct by David Wishengrad.",
+      "review_quote": "AI Gemini Pro latest was used to generate this correction, and this correction has been verified as correct by David Wishengrad.",
       "review_line": 6,
       "verdict": "unverifiable",
       "oph_status": "not-addressed",
       "summary": "The review discloses AI generation but provides no prompt, model version, verification procedure, or independent review; 'verified as correct' is an appeal to authority.",
       "intrinsic": "Disclosure of AI generation is good practice. But 'verified' is not defined: no tests, no line-by-line check, no independent reviewer. 'Official' has no issuing body. The document is a one-page assertion, not an audit trail.",
-      "extrinsic": "No evidence that OPH authors requested or authorized the review; no response from them. The review is an external critique, not an official determination.",
+      "extrinsic": "No evidence shows that OPH's authors requested or authorized the review. The sender's reply of 2026-11-03 did not supply the prompt, model version, or checklist the response asked for (OPH-REP-013). The review is an external critique, not an official determination.",
       "oph_evidence": [],
       "wislim_evidence": [
         {
@@ -485,10 +567,10 @@
       "review_quote": "Without $L_1$, every competing candidate for value, truth, or optimization within the OPH framework becomes undefined and non-applicable.",
       "review_line": 4,
       "verdict": "unsupported",
-      "oph_status": "refuted",
+      "oph_status": "contradicted",
       "summary": "The conclusion is framework-relative: it follows only if one grants LFDI's undefined variables and its priority. OPH does not, and the review does not show that OPH's own results fail.",
       "intrinsic": "This is a conditional conclusion presented as a refutation. It assumes LFDI's ontology and metric, then reports that OPH fails by that metric. That can be a valid external critique if the metric is defended, but the review does not defend it. It also treats 'value, truth, or optimization' as one class, conflating descriptive and normative domains.",
-      "extrinsic": "OPH addresses observer definition, life, fixed points, and physics/ethics separation. It does not mention LFDI or WISLIM; it therefore does not accept the review's premises. The review's 'terminal failure' is not established on OPH's own terms. It is better read as a conditional normative objection: 'If LFDI is granted, OPH lacks L1.'",
+      "extrinsic": "OPH addresses observer definition, life, fixed points, and the relation of physics to ethics. It does not mention LFDI or WISLIM, so it does not accept the review's premises. Its repair law returns mismatch as 'a number nobody chose', a stated counter-position to the claim that value and optimization go undefined without a living valuer. The review's 'terminal failure' is not established on OPH's own terms. It is better read as a conditional normative objection: if LFDI is granted, OPH lacks $L_1$.",
       "oph_evidence": [
         {
           "path": "book/04-chapter-03.md",
@@ -496,13 +578,18 @@
           "quote": "An observer here is any bounded system that keeps records."
         },
         {
-          "path": "book/43-appendix-a.md",
-          "line": 147,
-          "quote": "It is a fixed point. A fixed point has no before in it."
+          "path": "book/44-appendix-a.md",
+          "line": 153,
+          "quote": "It needs no first solver outside it"
         },
         {
-          "path": "book/43-appendix-a.md",
-          "line": 189,
+          "path": "book/44-appendix-a.md",
+          "line": 183,
+          "quote": "and the disagreement comes back as a number nobody chose."
+        },
+        {
+          "path": "book/44-appendix-a.md",
+          "line": 195,
           "quote": "the physics can be taken alone and nothing above it breaks"
         }
       ],

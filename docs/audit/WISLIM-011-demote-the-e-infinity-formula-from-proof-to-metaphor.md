@@ -45,7 +45,7 @@ Source of record: `source/WISLIM-v2.0.1.pdf` (SHA-256 `7716807d081e497364a14475e
 
 ## Summary
 
-The E-infinity formula models ethical value and proves life's necessity. Verdict: `invalid-as-proof`. The theorem 'if L = 0 then E∞ = 0' is trivial arithmetic. L, U, and D are undefined, dimensionless, and unmeasured. D approaching zero produces a pole, not an ideal. The formula cannot compare actions or adjudicate trade-offs.
+The E-infinity formula models ethical value and proves life's necessity. Verdict: `invalid-as-proof`. The theorem 'if L = 0 then E∞ = 0' is trivial arithmetic. L, U, and D have verbal glosses that differ across the paper's versions, no units, and no estimator. D approaching zero produces a pole, not an ideal. The formula cannot compare actions or adjudicate trade-offs.
 
 ## Evidence
 
@@ -57,7 +57,7 @@ The E-infinity formula models ethical value and proves life's necessity. Verdict
 
 ## Why it matters
 
-The formula is displayed as the mathematical core of the ethics. If it is an undefined ratio with a pole at D = 0, it cannot bear the proof's weight.
+The formula is displayed as the mathematical core of the ethics. If it is a ratio without units, with a pole at D = 0, it cannot bear the proof's weight.
 
 ## Steelman and reply
 

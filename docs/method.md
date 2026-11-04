@@ -59,21 +59,29 @@ record in `docs/audit/`. There are three kinds:
 External critiques received in connection with the audited framework are
 decomposed using the same source-bound rules:
 
-- **Source preservation and OCR provenance** (`reviews/oph-lfdi-57/source/`):
-  the received PDF and normalized OCR text are checksummed in
-  `reviews/oph-lfdi-57/source/metadata.json`.
+- **Source preservation and transcription** (`reviews/oph-lfdi-57/source/`):
+  the received PDF, its raw OCR text, and a transcription compared with the page
+  image are checksummed in `reviews/oph-lfdi-57/source/metadata.json`. Citations use
+  the transcription; the OCR text is kept as a record.
 - **Topic decomposition** (`OPH-REV-001`–`OPH-REV-012` in
   `reviews/oph-lfdi-57/model/review.json`): each distinct claim is anchored to a
-  verbatim quote and line number in `LFDI_Alignment_Audit-57.txt`, graded
+  verbatim quote and line number in `LFDI_Alignment_Audit-57.verified.txt`, graded
   intrinsically (`valid`, `partly-valid`, `unsupported`, `question-begging`,
   `out-of-scope`, `unverifiable`), and graded extrinsically against OPH
-  (`addressed`, `refuted`, `not-addressed`, `unverifiable`) and against the
+  (`addressed`, `contradicted`, `not-addressed`, `unverifiable`) and against the
   WISLIM audit (`WISLIM-001`–`WISLIM-066`).
 - **Modular outputs**: `scripts/build_review_register.py` (`make review`)
   renders each topic to `reviews/oph-lfdi-57/topics/` and
   `docs/reviews/oph-lfdi-57/topics/`, plus the summary indexes in
   `reviews/oph-lfdi-57/README.md`, `docs/reviews/oph-lfdi-57/README.md`, and
   `docs/reviews.md`.
+- **Upstream evidence**: OPH quotations cite the upstream repository at a pinned
+  commit. `make verify-oph` checks the words; each passage is also read in context,
+  because a substring check cannot catch a quotation that loses its neighbors.
+- **Replies and corrections**: a reply gets its own stable IDs and records
+  (`OPH-REP-001`–`OPH-REP-016`), with one GitHub issue per claim. Errors found in this
+  tracker get stable IDs too (`OPH-AUD-001`–`OPH-AUD-011`), and the record says whether
+  an email already sent carried them.
 
 Every issue opens with a publication reference built from
 `source/metadata.json`: title, author, version, date, page count, DOI,

@@ -59,7 +59,19 @@ also undefined. The theorem assumes `D > 0` but does not justify that
 assumption. The paper cannot have a well-defined limit and an undefined point at
 the same time.
 
-## The variables are undefined
+## The variables have glosses, not measurements
+
+The paper defines the symbols in words, and the words change across its versions.
+At `:435`, `L₁` is "The inherent, non-negotiable value of a single life." The formal
+Version 2 makes `L` the "existence of at least one choice-capable life-bearing
+system", with "L = 0 ⇔ no such system exists" (`:624`–`:626`). None of these has
+units or an estimator.
+
+The engineering Version 3 says so itself: "The formula E∞ = (L × U) / D is not meant
+to compute a number. It is meant to enforce a hard rule." (`:687`–`:689`). That is a
+fair account of how the formula could be used. It also means the formula cannot
+carry a proof about quantities, and that a "calculation" from it reports nothing
+beyond the rule.
 
 `L₁`, `U`, and `D` are not measured, defined operationally, or assigned units.
 The paper calls `L₁` "inherent, non-negotiable value," which is a normative
@@ -67,7 +79,7 @@ claim, not a quantity. `U` is a bundle of "creativity, healing, love, knowledge,
 and energy" — incommensurable goods. `D` is "delay, distortion, or destruction"
 — again, incommensurable categories.
 
-A formula with undefined variables cannot compare two actions. Suppose action A
+A formula with no common scale cannot compare two actions. Suppose action A
 saves one life and unlocks modest potential; action B saves ten lives but
 suppresses some potential. The formula gives no way to compare them because
 `L₁`, `U`, and `D` are not on a common scale. The formula is a metaphor dressed
@@ -125,7 +137,7 @@ criticized, and revised. `E∞` cannot.
 ## Verdict
 
 The `E∞` formula is not a proof. The theorem is trivial arithmetic. The
-variables are undefined and incommensurable. The pole at `D = 0` is a
+variables are unmeasured and incommensurable. The pole at `D = 0` is a
 mathematical defect, not an ideal. The formula cannot adjudicate trade-offs and
 does not support the paper's normative conclusion.
 

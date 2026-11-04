@@ -4,7 +4,7 @@ review: OPH-LFDI-57
 kind: review-topic
 status: observation
 verdict: unsupported
-oph_status: refuted
+oph_status: addressed
 review_line: 3
 tags: [logic, fixed-point, self-reference]
 related: [OPH-REV-005, OPH-REV-007]
@@ -13,8 +13,8 @@ related: [OPH-REV-005, OPH-REV-007]
 # OPH-REV-006: The Airtight Trap and the fixed-point reply
 
 > **Review claim:** the review does not supply enough argument or evidence  
-> **OPH response:** OPH's stated position contradicts the review's claim  
-> **Review source:** `reviews/oph-lfdi-57/source/LFDI_Alignment_Audit-57.txt:3`
+> **OPH response:** OPH discusses the topic and the review's point is at least partly acknowledged  
+> **Review source:** `reviews/oph-lfdi-57/source/LFDI_Alignment_Audit-57.verified.txt:3`
 
 > **Status: audit observation, not a required fix.** This is a tracked
 > review note, not a verdict that OPH is invalid or that anyone must
@@ -22,24 +22,26 @@ related: [OPH-REV-005, OPH-REV-007]
 
 ## Review claim
 
-> they propose a "higher" foundational principle (mathematical fixed points and operational consensus) that fundamentally requires a living observer (SL_1$) to exist, be conceptualized, and be valued.
+> they propose a "higher" foundational principle (mathematical fixed points and operational consensus) that fundamentally requires a living observer ($L_1$) to exist, be conceptualized, and be valued.
 >
-> — `reviews/oph-lfdi-57/source/LFDI_Alignment_Audit-57.txt:3`
+> — `reviews/oph-lfdi-57/source/LFDI_Alignment_Audit-57.verified.txt:3`
 
 ## Intrinsic assessment
 
-No taxonomy or decision procedure is given for the trap. The sentence shifts from 'requires a living observer to exist' to 'to be conceptualized' to 'to be valued'; these are distinct claims. A mathematical fixed point can be defined and proved without a living observer in the ontology. The review needs to show that OPH's fixed point is mind-dependent, not merely that humans can think about it.
+No taxonomy or decision procedure is given for the trap in this document. The sentence shifts from needing a living observer for the fixed point to exist, to needing one for it to be conceptualized, to needing one for it to be valued; these are distinct claims. That people can think about a condition does not make the condition depend on their being alive. The review needs an argument for that step and supplies none.
 
 ## Extrinsic assessment
 
-OPH addresses the circularity objection directly: 'It is a fixed point. A fixed point has no before in it'; 'a condition on one structure that holds or fails with nothing running it.' The review does not engage this argument. OPH's fixed point is formal, not a consensus of living valuers.
+OPH addresses the circularity objection directly and says the fixed point 'needs no first solver outside it, and it contains internal causal order, local changes and the computations through which the structure realizes its dependencies'. Its closure hypothesis has observers inside the structure recovering and realizing its specification. So the review is partly right that OPH's fixed point is not observer-free, and OPH says so first. OPH does not say those observers must be alive, and it does not make the fixed point depend on being valued. An earlier version of this record quoted 'with nothing running it' from a stale fork; upstream retired that sentence on 2026-10-11, and this topic's status moved from contradicted to addressed (OPH-AUD-002).
 
 ## OPH evidence
 
-- [`book/43-appendix-a.md:147`](https://github.com/docxology/observer-patch-holography/blob/1c5a908ed3441c5d09628183af18c362dbc58bea/book/43-appendix-a.md#L147)
-  > It is a fixed point. A fixed point has no before in it.
-- [`book/43-appendix-a.md:147`](https://github.com/docxology/observer-patch-holography/blob/1c5a908ed3441c5d09628183af18c362dbc58bea/book/43-appendix-a.md#L147)
-  > a condition on one structure that holds or fails with nothing running it
+- [`book/44-appendix-a.md:153`](https://github.com/FloatingPragma/observer-patch-holography/blob/fcc2dd173d4f48763cd0bf7cc1739751eca3b96d/book/44-appendix-a.md#L153)
+  > It needs no first solver outside it, and it contains internal causal order, local changes and the computations through which the structure realizes its dependencies.
+- [`book/44-appendix-a.md:155`](https://github.com/FloatingPragma/observer-patch-holography/blob/fcc2dd173d4f48763cd0bf7cc1739751eca3b96d/book/44-appendix-a.md#L155)
+  > A loop of this kind is a condition.
+- [`flagship/from_observer_consensus_to_standard_physics.tex:179`](https://github.com/FloatingPragma/observer-patch-holography/blob/fcc2dd173d4f48763cd0bf7cc1739751eca3b96d/flagship/from_observer_consensus_to_standard_physics.tex#L179)
+  > and observers inside it recover its specification and realize it
 
 ## WISLIM evidence
 
@@ -50,11 +52,11 @@ OPH addresses the circularity objection directly: 'It is a fixed point. A fixed 
 
 ## Summary
 
-The 'Airtight Trap' and 'Option 2' are undefined, and the claim that a fixed point requires a living observer to be conceptualized confuses existence with conceptualization.
+The 'Airtight Trap' and 'Option 2' are not defined in the review, and the sentence runs three claims together. OPH's closure hypothesis does put observers inside its fixed point, so part of the claim is common ground. What remains in dispute is 'living' and 'valued'.
 
 ## Suggested response
 
-Define the trap and its options, then engage OPH's fixed-point argument on its own terms. Conceptualization is not existence.
+Define the trap and its options in the document that uses them, then engage OPH's fixed-point text on its own terms. Separate the claim that the fixed point requires observers, which is common ground, from the claim that it requires living, valuing observers, which is the actual dispute.
 
 ## Related topics
 

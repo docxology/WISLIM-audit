@@ -19,7 +19,7 @@ a prediction. Each failure mode has an ID for reference in the red-team package.
 
 | ID | Failure | Description | Consequence | Severity |
 |---|---|---|---|---|
-| F08 | Toy formalism | `E∞ = (L₁ × U) / D` has undefined variables and a pole at `D = 0`. | The formula cannot rank actions or prove the thesis. | High |
+| F08 | Toy formalism | `E∞ = (L₁ × U) / D` has unmeasured variables and a pole at `D = 0`. | The formula cannot rank actions or prove the thesis. | High |
 | F09 | Trivial theorem | "If L = 0, then E∞ = 0" is arithmetic, not ethics. | The theorem does not establish moral priority. | High |
 | F10 | Metric gaming | CRS is self-reported and easy to manipulate. | Decisions can be routed to lower scrutiny. | High |
 | F11 | Unit dependence | `log(ID)` depends on the unit of duration. | The same harm gets different scores depending on measurement. | Medium |

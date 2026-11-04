@@ -78,7 +78,7 @@ strong metaphysical and governance claims.
 | `evidence/` | PhilPapers record, provenance, citation audit, and AI-letter audit. |
 | `model/issues.json` | Canonical 66-issue register (35 claims, 20 red-team, 11 workstreams). |
 | `docs/audit/` | One Markdown record per issue plus the generated register index. |
-| `reviews/oph-lfdi-57/` | Author-sent LFDI review of Observer Patch Holography (`LFDI_Alignment_Audit-57.pdf`), OCR text, canonical 12-topic model (`OPH-REV-001`–`012`), intrinsic and extrinsic audits, response email draft, and generated topic records. |
+| `reviews/oph-lfdi-57/` | Author-sent LFDI review of Observer Patch Holography (`LFDI_Alignment_Audit-57.pdf`), verified transcription and raw OCR, canonical 12-topic model (`OPH-REV-001`–`012`), intrinsic and extrinsic audits, the response as sent, the correspondence ledger, the reply register (`OPH-REP-001`–`016`), corrections to this tracker (`OPH-AUD-001`–`011`), and generated records. |
 | `docs/reviews.md` | Overview and disposition index for external reviews (`docs/reviews/oph-lfdi-57/`). |
 | `scripts/` | Issue register builder, review register builder, and GitHub issue mirror tooling. |
 | `tools/` | Standard-library validation and indexing tools. |
@@ -96,16 +96,19 @@ DETERMINATION* (`reviews/oph-lfdi-57/source/LFDI_Alignment_Audit-57.pdf`), sent
 regarding Bernhard Mueller et al., *Observers Who Read Their Universe into
 Existence: Finite Consensus, an Executable Observer, and Standard Physics*
 ([PhilPapers `MUEFOC`](https://philpapers.org/rec/MUEFOC); public repository
-[`docxology/observer-patch-holography`](https://github.com/docxology/observer-patch-holography)).
+[`FloatingPragma/observer-patch-holography`](https://github.com/FloatingPragma/observer-patch-holography)).
 
 - **Canonical topic model:** `reviews/oph-lfdi-57/model/review.json` (`OPH-REV-001`–`OPH-REV-012`).
-- **Modular topic records:** `docs/reviews/oph-lfdi-57/topics/` and `reviews/oph-lfdi-57/topics/` (3 addressed by OPH, 4 refuted by OPH, 5 not addressed / external LFDI stipulations).
+- **Modular topic records:** `docs/reviews/oph-lfdi-57/topics/` and `reviews/oph-lfdi-57/topics/` (4 addressed by OPH, 3 contradicted by OPH's text, 5 not addressed / external LFDI stipulations).
 - **Audits and response:** [`reviews/oph-lfdi-57/intrinsic-audit.md`](reviews/oph-lfdi-57/intrinsic-audit.md), [`reviews/oph-lfdi-57/extrinsic-audit.md`](reviews/oph-lfdi-57/extrinsic-audit.md), and [`reviews/oph-lfdi-57/response-email.md`](reviews/oph-lfdi-57/response-email.md).
+- **The reply of 2026-11-03:** [`reviews/oph-lfdi-57/reply/README.md`](reviews/oph-lfdi-57/reply/README.md), one record and one GitHub issue per claim, with the [correspondence ledger](reviews/oph-lfdi-57/correspondence/README.md).
+- **Corrections to this tracker:** [`reviews/oph-lfdi-57/corrections.md`](reviews/oph-lfdi-57/corrections.md), including three that affect the email as sent.
 
 ## Reproduce
 
 ```sh
 make verify                    # validator, issue/review register checks, and unittest suite
+make verify-oph OPH_REPO=<clone>  # every OPH quotation at the pinned upstream commit
 make issues-check              # verify the GitHub mirror (requires gh auth)
 ```
 
@@ -115,6 +118,7 @@ The equivalent explicit commands are:
 python3 tools/validate.py
 python3 scripts/build_issue_register.py --check
 python3 scripts/build_review_register.py --check
+python3 scripts/build_reply_register.py --check
 python3 -m unittest discover -s tests -v
 python3 scripts/sync_issues.py --check
 ```

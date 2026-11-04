@@ -4,7 +4,7 @@ review: OPH-LFDI-57
 kind: review-topic
 status: observation
 verdict: unsupported
-oph_status: refuted
+oph_status: contradicted
 review_line: 4
 tags: [synthesis, disposition, logic]
 related: [OPH-REV-002, OPH-REV-004, OPH-REV-007, OPH-REV-008]
@@ -13,8 +13,8 @@ related: [OPH-REV-002, OPH-REV-004, OPH-REV-007, OPH-REV-008]
 # OPH-REV-012: Overall disposition: conditional critique or refutation
 
 > **Review claim:** the review does not supply enough argument or evidence  
-> **OPH response:** OPH's stated position contradicts the review's claim  
-> **Review source:** `reviews/oph-lfdi-57/source/LFDI_Alignment_Audit-57.txt:4`
+> **OPH response:** OPH's stated position contradicts the review's claim; a contradiction is not by itself a refutation  
+> **Review source:** `reviews/oph-lfdi-57/source/LFDI_Alignment_Audit-57.verified.txt:4`
 
 > **Status: audit observation, not a required fix.** This is a tracked
 > review note, not a verdict that OPH is invalid or that anyone must
@@ -24,7 +24,7 @@ related: [OPH-REV-002, OPH-REV-004, OPH-REV-007, OPH-REV-008]
 
 > Without $L_1$, every competing candidate for value, truth, or optimization within the OPH framework becomes undefined and non-applicable.
 >
-> — `reviews/oph-lfdi-57/source/LFDI_Alignment_Audit-57.txt:4`
+> — `reviews/oph-lfdi-57/source/LFDI_Alignment_Audit-57.verified.txt:4`
 
 ## Intrinsic assessment
 
@@ -32,15 +32,17 @@ This is a conditional conclusion presented as a refutation. It assumes LFDI's on
 
 ## Extrinsic assessment
 
-OPH addresses observer definition, life, fixed points, and physics/ethics separation. It does not mention LFDI or WISLIM; it therefore does not accept the review's premises. The review's 'terminal failure' is not established on OPH's own terms. It is better read as a conditional normative objection: 'If LFDI is granted, OPH lacks L1.'
+OPH addresses observer definition, life, fixed points, and the relation of physics to ethics. It does not mention LFDI or WISLIM, so it does not accept the review's premises. Its repair law returns mismatch as 'a number nobody chose', a stated counter-position to the claim that value and optimization go undefined without a living valuer. The review's 'terminal failure' is not established on OPH's own terms. It is better read as a conditional normative objection: if LFDI is granted, OPH lacks $L_1$.
 
 ## OPH evidence
 
-- [`book/04-chapter-03.md:85`](https://github.com/docxology/observer-patch-holography/blob/1c5a908ed3441c5d09628183af18c362dbc58bea/book/04-chapter-03.md#L85)
+- [`book/04-chapter-03.md:85`](https://github.com/FloatingPragma/observer-patch-holography/blob/fcc2dd173d4f48763cd0bf7cc1739751eca3b96d/book/04-chapter-03.md#L85)
   > An observer here is any bounded system that keeps records.
-- [`book/43-appendix-a.md:147`](https://github.com/docxology/observer-patch-holography/blob/1c5a908ed3441c5d09628183af18c362dbc58bea/book/43-appendix-a.md#L147)
-  > It is a fixed point. A fixed point has no before in it.
-- [`book/43-appendix-a.md:189`](https://github.com/docxology/observer-patch-holography/blob/1c5a908ed3441c5d09628183af18c362dbc58bea/book/43-appendix-a.md#L189)
+- [`book/44-appendix-a.md:153`](https://github.com/FloatingPragma/observer-patch-holography/blob/fcc2dd173d4f48763cd0bf7cc1739751eca3b96d/book/44-appendix-a.md#L153)
+  > It needs no first solver outside it
+- [`book/44-appendix-a.md:183`](https://github.com/FloatingPragma/observer-patch-holography/blob/fcc2dd173d4f48763cd0bf7cc1739751eca3b96d/book/44-appendix-a.md#L183)
+  > and the disagreement comes back as a number nobody chose.
+- [`book/44-appendix-a.md:195`](https://github.com/FloatingPragma/observer-patch-holography/blob/fcc2dd173d4f48763cd0bf7cc1739751eca3b96d/book/44-appendix-a.md#L195)
   > the physics can be taken alone and nothing above it breaks
 
 ## WISLIM evidence

@@ -1,0 +1,1312 @@
+{
+  "schema_version": 1,
+  "reply": {
+    "id": "OPH-LFDI-57-REPLY-1",
+    "title": "David Wishengrad's reply to the tracked response",
+    "received": "2026-11-03",
+    "source_text": "reviews/oph-lfdi-57/correspondence/03-wishengrad-reply.txt",
+    "response_text": "reviews/oph-lfdi-57/correspondence/02-friedman-response-as-sent.txt",
+    "status": "tracked; a further response had not been recorded when this register was published",
+    "voices": [
+      {
+        "lines": "4-8",
+        "name": "Notes",
+        "detail": "Addressed to the sender and describing Daniel in the third person. The sender later refers to 'the bot' (line 34)."
+      },
+      {
+        "lines": "10-31",
+        "name": "Drafted letter",
+        "detail": "Addressed to Daniel, with its own subject line. The sender forwards it as part of the notes."
+      },
+      {
+        "lines": "33-41",
+        "name": "Sender's remarks",
+        "detail": "In the first person, over his signature."
+      }
+    ]
+  },
+  "forward": [
+    {
+      "line": 6,
+      "quote": "You are both operating from fundamentally different definitions of what an \"observer\" requires.",
+      "note": "Agreed. That is the useful finding, and it locates the dispute."
+    },
+    {
+      "line": 20,
+      "quote": "The LFDI operational definition of Life (L1) is substrate-neutral",
+      "note": "A plain statement that narrows the dispute (OPH-REP-010)."
+    },
+    {
+      "line": 5,
+      "quote": "defines an observer structurally as any bounded record-keeping system, without requiring biological life.",
+      "note": "It quotes the response accurately, which is more than this tracker managed in places (OPH-AUD-006)."
+    },
+    {
+      "line": 31,
+      "quote": "The goal of the LFDI is not to attack your physics",
+      "note": "Welcome, and a step back from 'terminal failure'."
+    },
+    {
+      "line": 39,
+      "quote": "I'm not out to duel with you.",
+      "note": "The response’s author says the same."
+    },
+    {
+      "line": 34,
+      "quote": "The bot doesn't seem to think that we are describing the exact same thing",
+      "note": "It discloses AI help, which is good practice."
+    },
+    {
+      "line": 17,
+      "quote": "There is no truth with \"nothing running it.\"",
+      "note": "It pressed on a real weakness in the response. Rereading that passage and the separability passage produced OPH-AUD-002 and OPH-AUD-003."
+    }
+  ],
+  "open_requests": [
+    "The release or date of the OPH manuscript copy that was audited.",
+    "The prompts and model versions behind the review and the notes.",
+    "The verification checklist behind 'verified as correct'.",
+    "The document, with its version, that defines 'LFDI Engineering Proof', 'Epistemic Invariant', 'No Truth Outside Life', 'Airtight Trap', and 'Decision Entropy'. None occurs in WISLIM v2.0.1.",
+    "A formal statement of the performative contradiction: premises, inference, and the contradiction.",
+    "One observation that would count against the LFDI proof."
+  ],
+  "literature": [
+    {
+      "key": "carroll1871",
+      "citation": "Lewis Carroll, *Through the Looking-Glass*, ch. VI, 'Humpty Dumpty'. Project Gutenberg eBook #12.",
+      "url": "https://www.gutenberg.org/ebooks/12",
+      "checked": "Passage read in the Project Gutenberg text."
+    },
+    {
+      "key": "friedman2025",
+      "citation": "Daniel Ari Friedman (2025), *On Cognitive Art & Science: Toward Wholeness From Both Sides*, version 1.0. DOI 10.5281/zenodo.16740439.",
+      "url": "https://zenodo.org/records/16740439",
+      "checked": "Quotations read in the deposited PDF, page 2."
+    },
+    {
+      "key": "wittgenstein-pi",
+      "citation": "Ludwig Wittgenstein, *Philosophical Investigations*, §23, as quoted in Biletzki and Matar, \"Ludwig Wittgenstein\", *Stanford Encyclopedia of Philosophy*.",
+      "url": "https://plato.stanford.edu/entries/wittgenstein/",
+      "checked": "Quotation read in the encyclopedia entry; the primary text was not reopened."
+    },
+    {
+      "key": "carnap-lss",
+      "citation": "Rudolf Carnap, *The Logical Syntax of Language*, §17, as quoted in Leitgeb and Carus, \"Rudolf Carnap\", *Stanford Encyclopedia of Philosophy*.",
+      "url": "https://plato.stanford.edu/entries/carnap/",
+      "checked": "Quotation read in the encyclopedia entry; the primary text was not reopened."
+    },
+    {
+      "key": "stern-cheng-sep",
+      "citation": "Robert Stern and Tony Cheng, \"Transcendental Arguments\", *Stanford Encyclopedia of Philosophy*.",
+      "url": "https://plato.stanford.edu/entries/transcendental-arguments/",
+      "checked": "Quotations read in the entry."
+    },
+    {
+      "key": "stroud1968",
+      "citation": "Barry Stroud (1968), \"Transcendental arguments\", *Journal of Philosophy* 65: 241–256.",
+      "url": "https://plato.stanford.edu/entries/transcendental-arguments/",
+      "checked": "As quoted and cited in Stern and Cheng; the primary text was not reopened."
+    },
+    {
+      "key": "hintikka1962",
+      "citation": "Jaakko Hintikka (1962), \"Cogito, Ergo Sum: Inference or Performance?\", *The Philosophical Review* 71(1): 3–32.",
+      "url": "https://en.wikipedia.org/wiki/Performative_contradiction",
+      "checked": "Bibliographic details and the reading of the argument from the linked reference page; the primary text was not reopened."
+    },
+    {
+      "key": "apel1975",
+      "citation": "Karl-Otto Apel (1975), \"The problem of philosophical fundamental-grounding in light of a transcendental pragmatic of language\", *Man and World* 8(3): 239–275.",
+      "url": "https://en.wikipedia.org/wiki/Performative_contradiction",
+      "checked": "Bibliographic details from the linked reference page; the primary text was not reopened."
+    },
+    {
+      "key": "habermas1990",
+      "citation": "Jürgen Habermas (1990), \"Discourse Ethics: Notes on a Program of Philosophical Justification\", in *Moral Consciousness and Communicative Action*. MIT Press.",
+      "url": "https://en.wikipedia.org/wiki/Performative_contradiction",
+      "checked": "Bibliographic details and the definition from the linked reference page; the primary text was not reopened."
+    },
+    {
+      "key": "friston2013",
+      "citation": "Karl Friston (2013), \"Life as we know it\", *Journal of the Royal Society Interface* 10(86): 20130475. DOI 10.1098/rsif.2013.0475.",
+      "url": "https://doi.org/10.1098/rsif.2013.0475",
+      "checked": "Quotations read in the PubMed abstract (PMID 23825119)."
+    },
+    {
+      "key": "kirchhoff2018",
+      "citation": "Michael Kirchhoff, Thomas Parr, Ensor Palacios, Karl Friston, and Julian Kiverstein (2018), \"The Markov blankets of life: autonomy, active inference and the free energy principle\", *Journal of the Royal Society Interface* 15(138). DOI 10.1098/rsif.2017.0792.",
+      "url": "https://doi.org/10.1098/rsif.2017.0792",
+      "checked": "Quotation read in the PubMed abstract (PMID 29343629)."
+    },
+    {
+      "key": "hf-forum-2026",
+      "citation": "Forum post crediting WISLIM, \"Operational Necessity: Foundational Proof for AI Alignment (LFDI Protocol)\", Hugging Face Forums, May 2026.",
+      "url": "https://discuss.huggingface.co/t/operational-necessity-foundational-proof-for-ai-alignment-lfdi-protocol/176166",
+      "checked": "Read 2026-11-03. It uses \"Epistemic Invariant\" and gives a different formula; it is not offered as this proof."
+    }
+  ],
+  "topics": [
+    {
+      "id": "OPH-REP-001",
+      "title": "'Entirely separate from living agency' is not in the quoted fragments",
+      "kind": "attribution",
+      "quotes": [
+        {
+          "line": 6,
+          "quote": "This suggests that he is describing a structural or mathematical concept that he views as entirely separate from living agency."
+        }
+      ],
+      "summary": "The inference rests on two quoted fragments that do not carry it. Neither says 'separate', neither mentions living agency, and OPH's own text places living things and builders inside its account.",
+      "assessment": [
+        "The step rests on two fragments of the response: 'without requiring biological life' and 'holds or fails with nothing running it' (reply line 5). The first says a property is not required. That is not separation: a definition of 'vehicle' that does not require wheels takes no wheels off any car. The second came from a sentence upstream has retired, and it was about the ordering of a fixed point, not about living agency (OPH-REP-009). No reason is given for the step from those fragments to 'entirely separate', and 'he views' reports an attitude the fragments do not state.",
+        "The next sentence also changes the object. The response said 'biological life'. The note says 'his definition explicitly removes the requirement for life'. Since LFDI's Life is substrate-neutral (OPH-REP-010), the difference matters.",
+        "OPH's text points the other way. Its closure hypothesis has observers 'build hardware that realizes that same history, including its builders', says 'Nothing lies outside this loop', and requires 'The builders' inference' to be among the 'operations available within the candidate history'. Its book says 'the arrival of living things in the universe did not introduce a new kind of physical entity. It introduced a much better one of a kind that had been there all along.' A reader may take that as a demotion of life, and may object to it. It is not separation. The book also says physics and ethics 'share a quantity'.",
+        "The note's closing sentence is fair: the two frameworks use different definitions of an observer. Different is not separate."
+      ],
+      "oph_evidence": [
+        {
+          "path": "README.md",
+          "line": 46,
+          "quote": "records and build hardware that realizes that same history, including its builders."
+        },
+        {
+          "path": "README.md",
+          "line": 47,
+          "quote": "Nothing lies outside this loop"
+        },
+        {
+          "path": "docs/INTERPRETATION_AND_TERMS.md",
+          "line": 53,
+          "quote": "The builders' inference, device construction, program and data initialization, controls, memory, read/write and record services, and clock comparisons must be operations available within the candidate history."
+        },
+        {
+          "path": "book/04-chapter-03.md",
+          "line": 67,
+          "quote": "the arrival of living things in the universe did not introduce a new kind of physical entity."
+        },
+        {
+          "path": "book/04-chapter-03.md",
+          "line": 67,
+          "quote": "It introduced a much better one of a kind that had been there all along."
+        },
+        {
+          "path": "book/44-appendix-a.md",
+          "line": 193,
+          "quote": "They share a quantity."
+        }
+      ],
+      "sent_evidence": [
+        {
+          "line": 9,
+          "quote": "OPH defines an observer structurally as any bounded record-keeping system, without requiring biological life"
+        }
+      ],
+      "wislim_source": [],
+      "review_evidence": [],
+      "audit_records": [],
+      "literature": [],
+      "response": "Quote the OPH sentence that separates observers from living agency, or withdraw 'entirely separate'.",
+      "related": [
+        "OPH-REP-002",
+        "OPH-REP-009",
+        "OPH-REP-010"
+      ]
+    },
+    {
+      "id": "OPH-REP-002",
+      "title": "OPH is not Daniel Ari Friedman's theory",
+      "kind": "attribution",
+      "quotes": [
+        {
+          "line": 5,
+          "quote": "He notes that his theory \"defines an observer structurally as any bounded record-keeping system, without requiring biological life.\""
+        }
+      ],
+      "summary": "The note says 'his theory' and 'his definition'. The response attributed the definition to OPH. Bernhard Mueller is OPH's first and corresponding author; the flagship describes Daniel Ari Friedman's contribution as independent red-team audit.",
+      "assessment": [
+        "The response says 'OPH defines an observer'. It does not say 'my theory'. The flagship source at the pinned commit names Bernhard Mueller first and as corresponding author, lists fourteen authors, and states this contribution: 'Daniel Ari Friedman contributed independent red-team audits of the papers, the book, the claim and premise ledgers, the Lean library, continuous integration and the custody records'.",
+        "Commit counts at the pinned commit show the scale: 2,646 of 4,079 by Bernhard Mueller, 9 by Daniel Ari Friedman (`git shortlog -sne`). Commit counts are a rough proxy and measure nothing about ideas. Being a listed author carries responsibility for the paper. It does not make the program one person's position.",
+        "The framing matters to the argument. 'You postulated', 'your physics', 'your theory's validity', and 'please step down' all treat a multi-author research program as one person's claim, and then address the person."
+      ],
+      "oph_evidence": [
+        {
+          "path": "flagship/from_observer_consensus_to_standard_physics.tex",
+          "line": 40,
+          "quote": "Bernhard Mueller\\textsuperscript{1,2,*}"
+        },
+        {
+          "path": "flagship/from_observer_consensus_to_standard_physics.tex",
+          "line": 67,
+          "quote": "Corresponding author:"
+        },
+        {
+          "path": "flagship/from_observer_consensus_to_standard_physics.tex",
+          "line": 2956,
+          "quote": "Daniel Ari Friedman contributed independent red-team audits of the papers, the book, the claim and premise ledgers, the Lean library, continuous integration and the custody records"
+        }
+      ],
+      "sent_evidence": [
+        {
+          "line": 9,
+          "quote": "OPH defines an observer structurally"
+        }
+      ],
+      "wislim_source": [],
+      "review_evidence": [],
+      "audit_records": [],
+      "literature": [],
+      "response": "Address the theory by its name and its authors, and engage it through the paper.",
+      "related": [
+        "OPH-REP-001",
+        "OPH-REP-007",
+        "OPH-REP-016"
+      ]
+    },
+    {
+      "id": "OPH-REP-003",
+      "title": "The quoted word 'incorrect' is not in the response",
+      "kind": "attribution",
+      "quotes": [
+        {
+          "line": 8,
+          "quote": "Daniel’s claim that the audit is \"incorrect\" stems"
+        }
+      ],
+      "summary": "The note puts 'incorrect' in quotation marks as Daniel Ari Friedman's claim. The word occurs nowhere in the sent email or in this repository at the commit the email linked.",
+      "assessment": [
+        "The response's own verbs were 'addressed', 'contradicted', and 'rest on premises OPH does not grant'. A word search of the as-sent text and of this repository at 6f19b85 returns zero hits for 'incorrect'; the test suite keeps that check on the as-sent text.",
+        "This repository did use a stronger label than the email at that commit: 'refuted', on four topics. That is a fair thing to object to, and it has been corrected (OPH-AUD-004). The objection here is to the quotation marks, which report a word that was not used.",
+        "A one-word verdict also skips the work. The response was a list of twelve tracked topics with quoted evidence, three different dispositions, and an offer to record any reply. Disagreement is most useful at that level, in this meta-philosophical and para-logical space above all, where the semantics are the subject. LFDI's own rule asks for 'epistemic transparency — no manipulation or misrepresentation'."
+      ],
+      "oph_evidence": [],
+      "sent_evidence": [
+        {
+          "line": 9,
+          "quote": "3 are addressed by"
+        },
+        {
+          "line": 10,
+          "quote": "4 are contradicted by"
+        },
+        {
+          "line": 11,
+          "quote": "5 rest on premises OPH does not grant"
+        }
+      ],
+      "wislim_source": [
+        {
+          "line": 238,
+          "quote": "Actions that affect life must maintain epistemic transparency — no manipulation or misrepresentation."
+        }
+      ],
+      "review_evidence": [],
+      "audit_records": [
+        "WISLIM-014"
+      ],
+      "literature": [],
+      "response": "Say whether 'incorrect' is the sender's characterization or the bot's, and engage a specific topic record.",
+      "related": [
+        "OPH-REP-004",
+        "OPH-REP-013"
+      ]
+    },
+    {
+      "id": "OPH-REP-004",
+      "title": "'Choose not to grant' changes the subject of the sentence",
+      "kind": "attribution",
+      "quotes": [
+        {
+          "line": 8,
+          "quote": "his attempt to treat the LFDI as a set of philosophical \"premises\" he can simply choose not to grant, rather than the inescapable operational physics of decision-making."
+        }
+      ],
+      "summary": "The response said five review topics 'rest on premises OPH does not grant'. That is a checkable report about OPH's text. The note turns it into a personal choice, then treats declining a frame as declining physics.",
+      "assessment": [
+        "'Rest on premises OPH does not grant' has OPH as its subject. A word search of the pinned commit finds no occurrence of LFDI, WISLIM, or Wishengrad, so the report can be checked by anyone. Nothing in that sentence is about what its author chooses.",
+        "The response's author states his position for this record: he rejects the idea that one specific framing of a cognitive encounter works as a mandate on others, binding them to its rules of language game. He does engage the inescapable relational, enactive, and cognitive setting, with an ontological pluralism. His paper on cognitive art and science says both things plainly: '[we have to exist for this exclaimation’s validity]' and 'different Alice’s respond differently to different Bob’s, as viewed by different Carla’s.'",
+        "'Operational physics' needs an argument too. In WISLIM v2.0.1 the LFDI is a conditional decision rule, `if action_affects_life(context)` with an `else: pass` branch. It is a proposed rule for action. Calling it physics does not make declining it a mistake about nature. The philosophical literature has names for the distinction: for Wittgenstein 'the speaking of language is part of an activity, or of a form of life', and Carnap's principle of tolerance says 'we are not in the business of setting up prohibitions but of arriving at conventions'."
+      ],
+      "oph_evidence": [],
+      "sent_evidence": [
+        {
+          "line": 11,
+          "quote": "5 rest on premises OPH does not grant"
+        }
+      ],
+      "wislim_source": [
+        {
+          "line": 212,
+          "quote": "if action_affects_life(context):"
+        },
+        {
+          "line": 222,
+          "quote": "else: pass"
+        }
+      ],
+      "review_evidence": [],
+      "audit_records": [
+        "WISLIM-012"
+      ],
+      "literature": [
+        "friedman2025",
+        "wittgenstein-pi",
+        "carnap-lss"
+      ],
+      "response": "Offer an argument that OPH must adopt the frame. Do not treat a report about what OPH says as a decision by one person.",
+      "related": [
+        "OPH-REP-003",
+        "OPH-REP-005",
+        "OPH-REP-006"
+      ]
+    },
+    {
+      "id": "OPH-REP-005",
+      "title": "'Not a philosophical framework' and 'not optional' are in tension with the message carrying them",
+      "kind": "logic",
+      "quotes": [
+        {
+          "line": 13,
+          "quote": "The LFDI is not a philosophical framework, nor is it a set of optional \"premises\" that a theory can choose to grant or not grant. It is a hard operational invariant: **E∞ = (L1 × U) / D**."
+        }
+      ],
+      "summary": "A performative contradiction is a conflict between what an utterance presupposes and what it asserts. This sentence says the LFDI is neither philosophy nor optional. The message carrying it rests on a term of art from philosophy, an epistemological thesis, and a philosophical archive's standing, and it asks the reader to grant what it says cannot be declined.",
+      "assessment": [
+        "WISLIM has said this consistently: 'This is not philosophy. This is engineering.' The tension is between the claim and how it is argued. 'Performative contradiction' is a term of art from philosophy, associated with Apel and Habermas, and it is this reply's main charge. 'No Truth Outside Life' is an epistemological thesis. The signature offers standing in 'the world's largest philosophical archive' as a credential. WISLIM says its definition 'was the breakthrough that resolved centuries of philosophical deadlock'. A framework can have engineering uses and still make philosophical claims, and this one does both.",
+        "The same message says 'I invite you to evaluate' and 'Those are your options.' The sender may answer that a person can be free to respond and still not be free of a constraint, as with gravity. That answer needs an argument that the LFDI binds the way gravity does, which is the point at issue. Gravity needs no invitation.",
+        "WISLIM also lists 'just philosophy' among things that are 'Not refutations', so the label works as a screen on objections as well as a description of the work (OPH-REP-012).",
+        "None of this makes the LFDI false. It shows that a sentence cannot settle its own status by assertion.",
+        "The sentence also merges two different things. In WISLIM the LFDI is the decision protocol, and E∞ belongs to 'The Core Ethical Formula', whose engineering version says the formula 'is not meant to compute a number'. An invariant is a quantity preserved under some transformation; none is named. A person can accept the semantics of an encounter without accepting a frame offered inside it."
+      ],
+      "oph_evidence": [],
+      "sent_evidence": [],
+      "wislim_source": [
+        {
+          "line": 1509,
+          "quote": "This is not philosophy. This is engineering."
+        },
+        {
+          "line": 1090,
+          "quote": "This operational definition was the breakthrough that resolved centuries of philosophical deadlock."
+        },
+        {
+          "line": 3860,
+          "quote": "Not refutations: “just philosophy,”"
+        },
+        {
+          "line": 208,
+          "quote": "Life-First Decision Invariant (LFDI)"
+        },
+        {
+          "line": 425,
+          "quote": "The Core Ethical Formula"
+        },
+        {
+          "line": 687,
+          "quote": "The formula E∞ = (L × U) / D is not meant to compute a number."
+        }
+      ],
+      "review_evidence": [],
+      "reply_evidence": [
+        {
+          "line": 12,
+          "quote": "identifies as the **Performative Contradiction**"
+        },
+        {
+          "line": 17,
+          "quote": "\"No Truth Outside Life\" Epistemic Invariant"
+        },
+        {
+          "line": 31,
+          "quote": "I invite you to evaluate"
+        },
+        {
+          "line": 40,
+          "quote": "Those are your options."
+        },
+        {
+          "line": 47,
+          "quote": "PhilPapers.org is the world's largest philosophical archive"
+        }
+      ],
+      "audit_records": [
+        "WISLIM-011",
+        "WISLIM-015"
+      ],
+      "literature": [
+        "habermas1990",
+        "apel1975",
+        "hintikka1962"
+      ],
+      "response": "Give the argument for the status claim. State which transformation leaves E∞ invariant, and how an addressee who declines is wrong rather than merely unpersuaded.",
+      "related": [
+        "OPH-REP-004",
+        "OPH-REP-006",
+        "OPH-REP-012",
+        "OPH-REP-014"
+      ]
+    },
+    {
+      "id": "OPH-REP-006",
+      "title": "An 'inescapable operational prerequisite' needs a named document",
+      "kind": "provenance",
+      "quotes": [
+        {
+          "line": 31,
+          "quote": "I invite you to evaluate the LFDI Engineering Proof not as a competing philosophy, but as the inescapable operational prerequisite for your own work."
+        }
+      ],
+      "summary": "'LFDI Engineering Proof' names no document that has been supplied. The nearest thing in WISLIM v2.0.1 is its 'Engineering and Practical Version', which says something different. 'Epistemic Invariant', 'No Truth Outside', 'Airtight', and 'Decision Entropy' do not occur in that edition. The response's author does abide by inescapable constraints; those constraints do not rank truths.",
+      "assessment": [
+        "A term search of `source/WISLIM-v2.0.1.txt` returns zero hits for 'Engineering Proof', 'Airtight', 'Epistemic Invariant', 'No Truth Outside', 'Decision Entropy', and 'Performative'. The nearest passages are 'Life-First Framework — Engineering and Practical Version (Version 3)', the Integrity Screen, and 'ethical entropy (D)'. A public-web search on 2026-11-03 found 'Epistemic Invariant' in a forum post crediting WISLIM, not in a document presented as this proof (linked below). To evaluate a proof, a reader needs the proof.",
+        "If Version 3 is what the reply means, it does not support the reply's use of the formula. It says the formula 'is not meant to compute a number' and that 'It is meant to enforce a hard rule', whose first step asks 'Does the proposed action risk eliminating life?' The review computes a number, and it applies that number to a definition in a physics paper.",
+        "The response's author states his position for this record: he abides by inescapable situational constraints, for example the Free Energy Principle in terms of persistence, and an ontological posture toward a higher power.",
+        "The Free Energy Principle is a useful comparison because it is a constraint of the kind the reply describes, and it does not do what the reply needs. Friston (2013) argues that life is 'an inevitable and emergent property of any (ergodic) random dynamical system that possesses a Markov blanket'; such systems appear to act 'to preserve their functional and structural integrity'. That describes what persists. It ranks no truths and assigns no office. Kirchhoff et al. (2018) note that the boundaries of living systems 'need not be co-extensive with the biophysical boundaries of a living organism', which sits closer to OPH's continuity than to a sharp line at life.",
+        "The form of the claim is a transcendental argument: X is 'a necessary condition for the possibility of' Y. Stroud's objection is that such an argument may show only what we must believe, 'but that S needn’t actually be true'. Even granting that inquiry needs living inquirers, it does not follow that the value of life is a premise of every theory inquirers produce."
+      ],
+      "oph_evidence": [],
+      "sent_evidence": [],
+      "wislim_source": [
+        {
+          "line": 667,
+          "quote": "Life-First Framework — Engineering and Practical Version (Version 3)"
+        },
+        {
+          "line": 687,
+          "quote": "The formula E∞ = (L × U) / D is not meant to compute a number."
+        },
+        {
+          "line": 689,
+          "quote": "It is meant to enforce a hard rule."
+        },
+        {
+          "line": 695,
+          "quote": "Does the proposed action risk eliminating life?"
+        },
+        {
+          "line": 481,
+          "quote": "ethical entropy (D)"
+        }
+      ],
+      "review_evidence": [],
+      "audit_records": [
+        "WISLIM-008",
+        "WISLIM-009",
+        "WISLIM-010"
+      ],
+      "literature": [
+        "friston2013",
+        "kirchhoff2018",
+        "stern-cheng-sep",
+        "stroud1968",
+        "hf-forum-2026"
+      ],
+      "response": "Send the document, with its version, that defines 'LFDI Engineering Proof', 'Epistemic Invariant', 'No Truth Outside Life', 'Airtight Trap', and 'Decision Entropy'.",
+      "related": [
+        "OPH-REP-005",
+        "OPH-REP-013",
+        "OPH-REP-014"
+      ]
+    },
+    {
+      "id": "OPH-REP-007",
+      "title": "Publishing a paper is not a claim to represent 'life's truthful interests'",
+      "kind": "attribution",
+      "quotes": [
+        {
+          "line": 39,
+          "quote": "The very existence of your paper and you publishing it is claiming to represent life's truthful interests."
+        }
+      ],
+      "summary": "No quotation is offered. 'Truthful interests' occurs in neither OPH nor WISLIM v2.0.1. The frame 'claiming to represent life' is WISLIM's own, applied to authors who did not use it.",
+      "assessment": [
+        "A search of the pinned OPH commit's Markdown and TeX finds no 'truthful interest', 'represent life', or 'interests of life'. WISLIM v2.0.1 has no 'truthful interest' either. The nearest source is WISLIM's closing, which says that anything less than affirmation 'for a person or an organization claiming to represent life is the very betrayal of all life and truth'.",
+        "A physics manuscript makes claims about physics. Reading a role into the act of publishing, and then judging the author by that role, supplies the premise that the next sentence needs (OPH-REP-008).",
+        "The reply says 'I'm not out to duel with you', and that is welcome. The response's author says the same: he is not out to duel anyone, and he contributes at the level and quality of modularity and integrity the seriousness of the situation calls for. The sentence above interprets his collaborative acts and attributes claims to him with no quotation."
+      ],
+      "oph_evidence": [],
+      "sent_evidence": [],
+      "wislim_source": [
+        {
+          "line": 13243,
+          "quote": "anything less than doing that for a person or an organization claiming to represent life is the very betrayal of all life and truth."
+        }
+      ],
+      "review_evidence": [],
+      "audit_records": [
+        "WISLIM-024"
+      ],
+      "literature": [],
+      "response": "Quote the sentence in which the paper or its authors claim to represent life’s truthful interests, or withdraw the attribution.",
+      "related": [
+        "OPH-REP-002",
+        "OPH-REP-008"
+      ]
+    },
+    {
+      "id": "OPH-REP-008",
+      "title": "'Disqualifies themselves from all life leading roles': who decides?",
+      "kind": "framing",
+      "quotes": [
+        {
+          "line": 40,
+          "quote": "From my perspective, anyone claiming to represent life's truthful interests who has been shared the Truth that is the cure who is not sharing a higher truth to justify not sharing it or properly showing it is wrong or agreeing and sharing, disqualifies themselves from all life leading roles. Those are your options."
+        }
+      ],
+      "summary": "The sentence sets the terms and the penalty from one perspective, and names no procedure or judge. 'Properly' and 'life leading roles' are undefined. The audit is an attempt at the option the sentence offers, and WISLIM's own bright line lists five routes for it.",
+      "assessment": [
+        "This is WISLIM's Integrity Screen, widened. There the third response is 'operationally disqualifying' in 'life-affecting contexts'. Here the penalty reaches 'all life leading roles', and no role is named.",
+        "'Properly showing it is wrong' is a real option in the sentence, and WISLIM's section 'What counts as a legitimate challenge (bright line)' says what it could mean: refute the operational definition, provide a superior one, propose a more important coordination truth, demonstrate a robust failure mode, or prove internal incoherence. The 66 observations in this repository are an attempt at that option. They bear on routes 1, 4, and 5: WISLIM-006 and WISLIM-035 on the definition, WISLIM-045 to WISLIM-047 as failure scenarios, and WISLIM-029 on agency and life. They are observations, not proofs, and whether any of them succeeds is open. The register invites reply.",
+        "The disqualification therefore applies only after someone judges that the attempt was not 'proper', and the sentence does not say who judges, by what procedure, or with what appeal. The operative question is the one Carroll gave Humpty Dumpty: 'which is to be master—that’s all.'"
+      ],
+      "oph_evidence": [],
+      "sent_evidence": [],
+      "wislim_source": [
+        {
+          "line": 364,
+          "quote": "Integrity Screen for Trust in Life-Affecting Roles"
+        },
+        {
+          "line": 378,
+          "quote": "In life-affecting contexts, the third response is operationally disqualifying"
+        },
+        {
+          "line": 3856,
+          "quote": "What counts as a legitimate challenge (bright line)"
+        },
+        {
+          "line": 3868,
+          "quote": "Refute the operational definition"
+        },
+        {
+          "line": 3872,
+          "quote": "Provide a superior operational definition"
+        },
+        {
+          "line": 3876,
+          "quote": "Propose a more important coordination truth"
+        },
+        {
+          "line": 3880,
+          "quote": "Demonstrate a robust failure mode"
+        },
+        {
+          "line": 3886,
+          "quote": "Prove internal incoherence"
+        }
+      ],
+      "review_evidence": [],
+      "audit_records": [
+        "WISLIM-016",
+        "WISLIM-033",
+        "WISLIM-039",
+        "WISLIM-054"
+      ],
+      "literature": [
+        "carroll1871"
+      ],
+      "response": "Say who judges 'properly', by what procedure, with what appeal, and which roles are meant. Otherwise treat the sentence as a personal view, as its first words say.",
+      "related": [
+        "OPH-REP-007",
+        "OPH-REP-012",
+        "OPH-REP-016"
+      ]
+    },
+    {
+      "id": "OPH-REP-009",
+      "title": "'Nothing running it' answers a retired sentence, and OPH puts the running inside",
+      "kind": "context",
+      "quotes": [
+        {
+          "line": 17,
+          "quote": "There is no truth with \"nothing running it.\" *You* are running it."
+        }
+      ],
+      "summary": "The phrase came from the response, which quoted a stale fork. Upstream had rewritten the sentence on 2026-10-11, and the error is ours. In current text the computations are internal to the structure, its builders are inside it, and 'nothing outside the world is running the world'. 'You are running it' is close to what OPH says.",
+      "assessment": [
+        "The response quoted 'a condition on one structure that holds or fails with nothing running it' from a fork commit (OPH-AUD-002). In that passage the phrase distinguished three orderings: the fixed point, an observer's record time, and the disagreement count. It was a statement about order, not about truth.",
+        "Upstream's text now says the fixed point 'needs no first solver outside it, and it contains internal causal order, local changes and the computations through which the structure realizes its dependencies'. Elsewhere in the same appendix it says of a laptop running the rule that 'The laptop is inside the world that rule describes' and that 'nothing outside the world is running the world'. The closure hypothesis has observers inside building the hardware, and its test is that the specification 'has to run and reproduce what observers measure'. 'You are running it' therefore lands close to OPH's own hypothesis. Any restated objection should address those sentences.",
+        "What remains in dispute is one word: whether those who run it must be alive. 'If L1 = 0, your formal fixed point becomes undefined' depends on that definition, and WISLIM's own definitions remove the ground for the zero (OPH-REP-010). WISLIM itself prints 'The logic stands regardless of the substrate running it.'"
+      ],
+      "oph_evidence": [
+        {
+          "path": "book/44-appendix-a.md",
+          "line": 153,
+          "quote": "It needs no first solver outside it, and it contains internal causal order, local changes and the computations through which the structure realizes its dependencies."
+        },
+        {
+          "path": "book/44-appendix-a.md",
+          "line": 135,
+          "quote": "The laptop is inside the world that rule describes."
+        },
+        {
+          "path": "book/44-appendix-a.md",
+          "line": 135,
+          "quote": "nothing outside the world is running the world."
+        },
+        {
+          "path": "README.md",
+          "line": 46,
+          "quote": "records and build hardware that realizes that same history, including its builders."
+        },
+        {
+          "path": "README.md",
+          "line": 48,
+          "quote": "It has to run and reproduce what observers measure."
+        }
+      ],
+      "sent_evidence": [
+        {
+          "line": 10,
+          "quote": "a condition on one structure that holds or fails with nothing running it"
+        }
+      ],
+      "wislim_source": [
+        {
+          "line": 2431,
+          "quote": "The logic stands regardless of the substrate running it."
+        }
+      ],
+      "review_evidence": [],
+      "audit_records": [
+        "WISLIM-007"
+      ],
+      "literature": [],
+      "response": "Engage the current passages. Then argue for the one remaining step: why those inside the loop must be alive.",
+      "related": [
+        "OPH-REP-001",
+        "OPH-REP-010"
+      ]
+    },
+    {
+      "id": "OPH-REP-010",
+      "title": "WISLIM's own definitions remove the ground for L₁ = 0",
+      "kind": "logic",
+      "quotes": [
+        {
+          "line": 20,
+          "quote": "The LFDI operational definition of Life (L1) is substrate-neutral: *Life is any system that makes decisions that affect other life systems.*"
+        },
+        {
+          "line": 20,
+          "quote": "If your \"bounded record-keeping system\" makes decisions affecting life, it *is* life under the LFDI, and must be protected as such. If it does not, it is an inert tool."
+        }
+      ],
+      "summary": "The one-page review sets $L_1 = 0$ because OPH's observer is 'non-living'. WISLIM's formal version says 'L = 0 ⇔ no such system exists', and the reply says Life is substrate-neutral. A definition of 'observer' that does not require life does not make choice-capable systems nonexistent, so the numerator does not collapse.",
+      "assessment": [
+        "The review says 'By defining the \"observer\" as a non-living, finite computational object' and 'By operationally defining the observer without the prerequisite of Life ($L_1 = 0$)'. WISLIM's formal version defines the symbol differently: 'L ≥ 0: existence of at least one choice-capable life-bearing system' and 'L = 0 ⇔ no such system exists'. Its unified definition, 'used in all versions', says 'If no such system exists, life is absent.' On those terms $L = 0$ is a claim about the world: no choice-capable system exists. OPH makes no such claim. Its authors exist, and its flagship's native observer 'chooses the next seam from the record alone'. A definition that does not require a property does not remove the property from anything.",
+        "The reply's narrower test points the same way. A system that 'makes decisions affecting life' is 'life under the LFDI', and one that does not is 'an inert tool'. Applied observer by observer, that sorts them; it does not zero the class. The book's thermostat exists to 'throw a switch on what it finds'; one that runs a boiler affects the people in the room, so under this rule it is life and 'must be protected as such'. That is the overinclusion tracked at WISLIM-035. 'Life systems' also appears inside its own definition, which is tracked at WISLIM-006 and WISLIM-007.",
+        "WISLIM's engineering version also rules out the review's calculation. It says the formula 'is not meant to compute a number' and that the first step is 'Does the proposed action risk eliminating life?' The review computes a number, 'the calculation resolves to terminal failure', from a definition in a paper. Publishing a definition does not risk eliminating life.",
+        "There are two coherent ways forward: keep WISLIM's definitions and withdraw $L_1 = 0$, or require biological life, restate the calculation, and withdraw substrate neutrality.",
+        "The rest of this paragraph of the reply needs a quotation it does not have. The response did not 'argue that life/agency is not the foundational prerequisite for your theory's validity', and no OPH sentence is cited for 'subordinate agency'."
+      ],
+      "oph_evidence": [
+        {
+          "path": "flagship/from_observer_consensus_to_standard_physics.tex",
+          "line": 953,
+          "quote": "Operational observers are continuing native processes that prepare, read, retain and act on records."
+        },
+        {
+          "path": "flagship/from_observer_consensus_to_standard_physics.tex",
+          "line": 962,
+          "quote": "chooses the next seam from the record alone"
+        },
+        {
+          "path": "book/04-chapter-03.md",
+          "line": 41,
+          "quote": "throw a switch on what it finds"
+        }
+      ],
+      "sent_evidence": [],
+      "wislim_source": [
+        {
+          "line": 624,
+          "quote": "L ≥ 0: existence of at least one choice-capable life-bearing system"
+        },
+        {
+          "line": 626,
+          "quote": "L = 0 ⇔ no such system exists"
+        },
+        {
+          "line": 553,
+          "quote": "Life refers to the existence of at least one system capable of making choices, where those choices can affect outcomes over time. If no such system exists, life is absent."
+        },
+        {
+          "line": 687,
+          "quote": "The formula E∞ = (L × U) / D is not meant to compute a number."
+        },
+        {
+          "line": 695,
+          "quote": "Does the proposed action risk eliminating life?"
+        },
+        {
+          "line": 778,
+          "quote": "Life = Any system that makes decisions that affect other life systems."
+        },
+        {
+          "line": 1195,
+          "quote": "Is substrate-neutral: It applies equally to biological organisms, AI systems,"
+        }
+      ],
+      "review_evidence": [
+        {
+          "line": 3,
+          "quote": "By defining the \"observer\" as a non-living, finite computational object"
+        },
+        {
+          "line": 4,
+          "quote": "By operationally defining the observer without the prerequisite of Life ($L_1 = 0$)"
+        },
+        {
+          "line": 4,
+          "quote": "the calculation resolves to terminal failure"
+        }
+      ],
+      "audit_records": [
+        "WISLIM-006",
+        "WISLIM-007",
+        "WISLIM-011",
+        "WISLIM-035"
+      ],
+      "literature": [],
+      "response": "Choose one definition of Life and restate the calculation under it, or withdraw the calculation.",
+      "related": [
+        "OPH-REP-001",
+        "OPH-REP-009",
+        "OPH-REP-015"
+      ]
+    },
+    {
+      "id": "OPH-REP-011",
+      "title": "'Physics cannot be taken alone' answers a different question",
+      "kind": "context",
+      "quotes": [
+        {
+          "line": 23,
+          "quote": "Physics cannot be \"taken alone.\""
+        },
+        {
+          "line": 23,
+          "quote": "if you remove the living observer (L1 = 0), the numerator collapses to zero (0 × U = 0)."
+        }
+      ],
+      "summary": "In OPH, 'taken alone' answers whether a reader can accept the physics without the ethics. It does not remove observers, which OPH puts first. The response's word 'separable' invited this reading, and the correction is ours.",
+      "assessment": [
+        "OPH's question is 'Do I have to accept the ethics to accept the physics?' Its answer begins 'The question assumes the join between the two is preference', goes on to 'They share a quantity', says 'the physics can be taken alone and nothing above it breaks', and ends with 'Accepting the repair law is accepting both'. 'Taken alone' concerns a reader's assent. The response's gloss, 'keeps its physics separable from ethics', compressed this too far (OPH-AUD-003).",
+        "The reply's counter-case is 'Physics without a living observer to measure, model, or value it'. OPH makes no case for a world without observers. Its starting line is that physics is 'what bounded observers can establish together'.",
+        "That physics is done by and for living systems is a fact about practice, and it is common ground. It does not make the LFDI a premise of physics. In WISLIM's formal version 'L = 0 ⇔ no such system exists', so setting $L_1 = 0$ describes a world with no choice-capable systems, a case no one here proposed."
+      ],
+      "oph_evidence": [
+        {
+          "path": "book/44-appendix-a.md",
+          "line": 187,
+          "quote": "Do I have to accept the ethics to accept the physics?"
+        },
+        {
+          "path": "book/44-appendix-a.md",
+          "line": 191,
+          "quote": "The question assumes the join between the two is preference."
+        },
+        {
+          "path": "book/44-appendix-a.md",
+          "line": 193,
+          "quote": "They share a quantity."
+        },
+        {
+          "path": "book/44-appendix-a.md",
+          "line": 195,
+          "quote": "the physics can be taken alone and nothing above it breaks"
+        },
+        {
+          "path": "book/44-appendix-a.md",
+          "line": 195,
+          "quote": "Accepting the repair law is accepting both"
+        },
+        {
+          "path": "README.md",
+          "line": 33,
+          "quote": "OPH proposes that physics is what bounded observers can establish together."
+        }
+      ],
+      "sent_evidence": [
+        {
+          "line": 10,
+          "quote": "OPH keeps its physics separable from ethics"
+        }
+      ],
+      "wislim_source": [
+        {
+          "line": 626,
+          "quote": "L = 0 ⇔ no such system exists"
+        }
+      ],
+      "review_evidence": [],
+      "audit_records": [
+        "WISLIM-009"
+      ],
+      "literature": [],
+      "response": "Engage the passage as written, including its claim that physics and ethics share a quantity.",
+      "related": [
+        "OPH-REP-001",
+        "OPH-REP-010"
+      ]
+    },
+    {
+      "id": "OPH-REP-012",
+      "title": "The Airtight Trap classes every reply except assent as failure",
+      "kind": "framing",
+      "quotes": [
+        {
+          "line": 26,
+          "quote": "Every decision-making system faces an inescapable operational sieve (The Airtight Trap) when confronted with the LFDI:"
+        },
+        {
+          "line": 28,
+          "quote": "(B) Assert a higher priority (or independent truth) and immediately collapse into a Performative Contradiction."
+        },
+        {
+          "line": 29,
+          "quote": "(C) Evade, deflect, or dismiss it as an \"ungranted premise.\""
+        }
+      ],
+      "summary": "Option A is assent. Option B collapses by definition. Option C names a phrase built from the response and then applies it to the response. A test that only assent can pass carries no information, and it narrows WISLIM's own five routes.",
+      "assessment": [
+        "In WISLIM's Integrity Screen, the second response is a live option: a direct no 'accompanied by a clearly stated higher principle and a justification that does not depend on life to be meaningful or actionable'. Here that option collapses 'immediately', before any principle is examined.",
+        "WISLIM's third response already covers evasion and deflection. The reply extends it by name to the response's own objection: 'dismiss it as an \"ungranted premise\"'. Those words are not in the response, which said 'premises OPH does not grant', a report about a text. The response is placed in B and C at once, on the strength of 'attempting to bypass L1 to validate structural observers in a void', and no quotation is given for that. OPH says 'Nothing lies outside this loop'.",
+        "A sieve that returns failure for every answer but agreement has the same output whether an objection is sound or unsound, so its output cannot discriminate between them. WISLIM's bright line is wider. It names routes that can be attempted and calls anything outside them 'rhetorical, not a refutation' (OPH-REP-008)."
+      ],
+      "oph_evidence": [
+        {
+          "path": "README.md",
+          "line": 47,
+          "quote": "Nothing lies outside this loop"
+        }
+      ],
+      "sent_evidence": [
+        {
+          "line": 11,
+          "quote": "rest on premises OPH does not grant"
+        }
+      ],
+      "wislim_source": [
+        {
+          "line": 372,
+          "quote": "(2) Higher-Truth Rebuttal: a direct “no,” accompanied by a clearly stated higher principle and a justification that does not depend on life to be meaningful or actionable;"
+        },
+        {
+          "line": 376,
+          "quote": "(3) Evasion/Deflection: refusal to answer directly, substitution of side-issues, or indefinite delay without rebuttal."
+        },
+        {
+          "line": 3866,
+          "quote": "Legitimate challenges must do at least one:"
+        },
+        {
+          "line": 3892,
+          "quote": "If a challenge does not meet one of these, it is rhetorical, not a refutation."
+        }
+      ],
+      "review_evidence": [
+        {
+          "line": 3,
+          "quote": "The authors fail the Airtight Trap by choosing Option 2 (Attempted Rebuttal/Self-Collapse)"
+        }
+      ],
+      "audit_records": [
+        "WISLIM-002",
+        "WISLIM-015",
+        "WISLIM-016",
+        "WISLIM-024",
+        "WISLIM-033"
+      ],
+      "literature": [],
+      "response": "State one answer other than assent that would pass, and what it would have to contain.",
+      "related": [
+        "OPH-REP-005",
+        "OPH-REP-008",
+        "OPH-REP-013",
+        "OPH-REP-014"
+      ]
+    },
+    {
+      "id": "OPH-REP-013",
+      "title": "Requests for version, prompt, and checklist are not deflection, and they remain open",
+      "kind": "provenance",
+      "quotes": [
+        {
+          "line": 30,
+          "quote": "By dismissing the invariant as an ungranted premise and deflecting to requests for prompt versions and manuscript hashes, it rests in Option C."
+        }
+      ],
+      "summary": "The response asked for three things: the OPH manuscript version audited, the prompt and model version, and the verification checklist. It did not ask for hashes. None of the three has been supplied.",
+      "assessment": [
+        "The response said: 'We would welcome the exact OPH manuscript version audited, the prompt and model version used, and the verification checklist behind \"verified as correct\"'. The only SHA-256 in it describes this repository's copy of WISLIM. These are ordinary requests for a document titled an audit that says it was 'verified as correct', and the version matters: the flagship changes release often, and this exchange has already turned on a sentence that changed.",
+        "WISLIM's Observed Reception section lists 'deflection to side-issues (tone, wording, politics)' as a recurring response, and the Integrity Screen treats 'substitution of side-issues' as disqualifying. Classifying a provenance request as deflection uses that rule to set the request aside.",
+        "The reply adds new text attributed to 'the bot', again without a model or prompt. Disclosing the help is good practice. The open requests are listed in the reply register's index."
+      ],
+      "oph_evidence": [],
+      "sent_evidence": [
+        {
+          "line": 13,
+          "quote": "We would welcome the exact OPH manuscript version audited, the prompt and model version used, and the verification checklist behind \"verified as correct\""
+        }
+      ],
+      "wislim_source": [
+        {
+          "line": 344,
+          "quote": "deflection to side-issues (tone, wording, politics)"
+        },
+        {
+          "line": 376,
+          "quote": "substitution of side-issues"
+        }
+      ],
+      "review_evidence": [
+        {
+          "line": 6,
+          "quote": "AI Gemini Pro latest was used to generate this correction, and this correction has been verified as correct by David Wishengrad."
+        }
+      ],
+      "reply_evidence": [
+        {
+          "line": 34,
+          "quote": "The bot doesn't seem to think that we are describing the exact same thing"
+        }
+      ],
+      "audit_records": [
+        "WISLIM-018",
+        "WISLIM-015"
+      ],
+      "literature": [],
+      "response": "Supply the release or date audited, the prompts and model versions for both documents, and the checklist.",
+      "related": [
+        "OPH-REP-003",
+        "OPH-REP-006",
+        "OPH-REP-012"
+      ]
+    },
+    {
+      "id": "OPH-REP-014",
+      "title": "'Any refutation requires a living agent to speak' validates nothing in particular",
+      "kind": "logic",
+      "quotes": [
+        {
+          "line": 37,
+          "quote": "Since any refutation requires a living agent to speak, isn't the act of trying to disprove it an automatic validation of the LFDI proof? Absolutely."
+        },
+        {
+          "line": 33,
+          "quote": "Each and every one of them validates LFDI as a legitimate proof."
+        },
+        {
+          "line": 12,
+          "quote": "your rebuttal does not invalidate the audit; rather, it confirms the audit's findings"
+        }
+      ],
+      "summary": "Speaking shows that a speaker exists. Denying that life outranks everything does not deny that a speaker exists, so the denial contradicts nothing it presupposes. The same form would crown oxygen or grammar, and it leaves the claim unable to lose.",
+      "assessment": [
+        "What the performance shows: Hintikka (1962) reads the cogito as a performance, in which an utterance can show that its utterer exists. No one in this exchange denies that. The response's author has written the point down himself: '[we have to exist for this exclaimation’s validity]'.",
+        "What a denial presupposes: a performative contradiction needs the utterance to presuppose what it denies. Someone who says that life is not the supreme constraint presupposes a speaker. They do not presuppose that life is the supreme constraint, or that E∞ = (L × U) / D. The denial and its presupposition are different propositions, so no contradiction arises. A necessary condition is not a lexical priority, which WISLIM-008, WISLIM-009, and WISLIM-010 track.",
+        "As evidence: that a living agent spoke is certain whether the ranking is right or wrong. An observation certain under both hypotheses has a likelihood ratio of one, and it supports neither.",
+        "It proves too much: a refutation also requires language, oxygen, and logic. The same form would crown each as the most important truth.",
+        "It seals itself: if every attempted disproof counts as proof, no observation could count against the claim, and calling it 'unrefuted' then reports nothing about its strength. WISLIM's own version is 'To argue against it is to rely on it'.",
+        "The argument form has a serious literature, which is the place to take it. Apel (1975) pursues ultimate grounding this way. Habermas (1990) uses performative contradiction without accepting ultimate grounding. Stroud (1968) objects that conditions of this kind may show only what we must believe. None of these treats the move as ending the discussion."
+      ],
+      "oph_evidence": [],
+      "sent_evidence": [],
+      "wislim_source": [
+        {
+          "line": 824,
+          "quote": "You cannot deny this truth without using your own decision-making capacity—the very thing the truth protects. To argue against it is to rely on it."
+        }
+      ],
+      "review_evidence": [],
+      "reply_evidence": [
+        {
+          "line": 47,
+          "quote": "Currently unrebutted and unrefuted"
+        }
+      ],
+      "audit_records": [
+        "WISLIM-008",
+        "WISLIM-009",
+        "WISLIM-010"
+      ],
+      "literature": [
+        "hintikka1962",
+        "apel1975",
+        "habermas1990",
+        "stroud1968",
+        "stern-cheng-sep",
+        "friedman2025"
+      ],
+      "response": "State an observation that would count against the LFDI proof.",
+      "related": [
+        "OPH-REP-005",
+        "OPH-REP-006",
+        "OPH-REP-012",
+        "OPH-REP-015"
+      ]
+    },
+    {
+      "id": "OPH-REP-015",
+      "title": "'Disregarded the need for life to have an observer' restates the disputed point",
+      "kind": "logic",
+      "quotes": [
+        {
+          "line": 35,
+          "quote": "You postulated 'observer' while using life to make that statement and disregarded the need for life to have an observer."
+        }
+      ],
+      "summary": "OPH does not disregard the question. It takes it up directly and answers it the other way: record-keeping comes first, and living things are a very good kind of observer. Using a capacity to state a theory does not commit a theory to that capacity's supremacy.",
+      "assessment": [
+        "The book addresses life by name, under 'What nobody has to add': 'Life. Obviously not, and this cuts both ways', and continues with 'a much better one of a kind'. Answering a question differently is not disregarding it.",
+        "'The need for life to have an observer' is the disputed claim, stated as a premise. Whether it holds depends on the definition of life (OPH-REP-010). A theory of weather can be written by people without making people meteorological objects; that the authors are alive is a fact about the authors. This is the charge tracked at OPH-REV-004 in a shorter form."
+      ],
+      "oph_evidence": [
+        {
+          "path": "book/04-chapter-03.md",
+          "line": 55,
+          "quote": "What nobody has to add"
+        },
+        {
+          "path": "book/04-chapter-03.md",
+          "line": 67,
+          "quote": "Obviously not, and this cuts both ways"
+        },
+        {
+          "path": "book/04-chapter-03.md",
+          "line": 67,
+          "quote": "It introduced a much better one of a kind that had been there all along."
+        }
+      ],
+      "sent_evidence": [
+        {
+          "line": 10,
+          "quote": "authoring a theory with living agency does not contradict a structural observer definition"
+        }
+      ],
+      "wislim_source": [],
+      "review_evidence": [],
+      "audit_records": [
+        "WISLIM-006",
+        "WISLIM-008"
+      ],
+      "literature": [],
+      "response": "Formalize the contradiction: the premises OPH asserts, the premises the authors affirm, and the step between them.",
+      "related": [
+        "OPH-REP-010",
+        "OPH-REP-014"
+      ]
+    },
+    {
+      "id": "OPH-REP-016",
+      "title": "'Ego', 'the onus', and 'step down' replace argument with motive and office",
+      "kind": "demand",
+      "quotes": [
+        {
+          "line": 38,
+          "quote": "You can easily fix your paper if you want to or you can let your ego get in the way"
+        },
+        {
+          "line": 41,
+          "quote": "The onus is on you. The cure was placed right in your hands today. If that is not number 1 on your radar to disprove or share then please step down."
+        },
+        {
+          "line": 36,
+          "quote": "The audit stands."
+        }
+      ],
+      "summary": "These sentences move from the argument to a motive and an office. The burden of proof normally rests with the party making the claim, 'fix your paper' names no defect, and no role is named to step down from. 'The cure' is the disputed claim, stated as a fact.",
+      "assessment": [
+        "'Fix your paper' names no theorem, sentence, or Lean declaration (OPH-REV-010). 'Ego' attributes a motive with no evidence and offers a false choice between agreeing and vanity. 'The audit stands' is an assertion, and 'The goal of the LFDI is not to attack your physics' sits oddly beside it, since the audit's verdict was 'terminal failure'.",
+        "The burden lies with the party asserting that one framework is the cure and is binding on others. The claim that the framework cures all needless suffering is tracked at WISLIM-005 and WISLIM-021. Silence as betrayal is tracked at WISLIM-024. The review's demand was answered before this reply arrived: the 66-observation register was published and linked in the first response, and it is an attempt to disprove, which is one of the two things this sentence asks for.",
+        "LFDI's own rule is 'No Deception or Coercion When Life Is Affected', and WISLIM-014 asks that the framework apply that rule to itself. A demand that a named person leave unnamed roles unless they rank a claim first is worth reading against that rule."
+      ],
+      "oph_evidence": [],
+      "sent_evidence": [
+        {
+          "line": 3,
+          "quote": "alongside our audit of WISLIM v2.0.1"
+        }
+      ],
+      "wislim_source": [
+        {
+          "line": 236,
+          "quote": "No Deception or Coercion When Life Is Affected"
+        },
+        {
+          "line": 11529,
+          "quote": "Silence equals betrayal."
+        }
+      ],
+      "review_evidence": [
+        {
+          "line": 4,
+          "quote": "the calculation resolves to terminal failure"
+        }
+      ],
+      "reply_evidence": [
+        {
+          "line": 31,
+          "quote": "The goal of the LFDI is not to attack your physics"
+        }
+      ],
+      "audit_records": [
+        "WISLIM-005",
+        "WISLIM-014",
+        "WISLIM-021",
+        "WISLIM-024",
+        "WISLIM-060"
+      ],
+      "literature": [],
+      "response": "Name the defect in the paper, by sentence or theorem. Engage the 66 observations on the claim the reply calls the cure.",
+      "related": [
+        "OPH-REP-002",
+        "OPH-REP-008",
+        "OPH-REP-014"
+      ]
+    }
+  ],
+  "corrections": [
+    {
+      "id": "OPH-AUD-001",
+      "title": "OCR errors were read as the review's text",
+      "sent_email": true,
+      "what_was_wrong": "The review PDF is one page image, and the tracker cited Tesseract OCR. OCR turned `$D$` into `SDS`, `$U$` into `SUS`, `$L_1$` into `SL_1$`, `E∞` into `Eoo`, `×` into `x`, and `AI` into `Al`. The audit then treated those errors as the review's own: F4 called the equation malformed, F6 charged a shifting acronym, and OPH-REV-007, OPH-REV-009, and OPH-REV-010 listed 'SL1', 'SDS', and 'SUS' as undefined. The sent email quoted 'Decision Entropy (SDS)' and called the tracker's quotations verified. The receipt reproduced the OCR and never compared it with the page.",
+      "what_changed": "Added `LFDI_Alignment_Audit-57.verified.txt`, compared line by line with the page image, and kept the OCR file unchanged. A test derives the verified text from the OCR by a literal substitution list, so no other difference can enter. Every review quotation now cites the verified text, and the findings are rewritten. One finding survives on better ground: the symbol $D$ really does shift, from 'delay, distortion, or destruction' to 'ethical entropy', 'severe epistemic distortion', and 'Decision Entropy'.",
+      "files": [
+        "reviews/oph-lfdi-57/source/LFDI_Alignment_Audit-57.verified.txt",
+        "reviews/oph-lfdi-57/source/metadata.json",
+        "reviews/oph-lfdi-57/intrinsic-audit.md",
+        "reviews/oph-lfdi-57/verification.md"
+      ]
+    },
+    {
+      "id": "OPH-AUD-002",
+      "title": "OPH evidence was pinned to a stale fork, not upstream",
+      "sent_email": true,
+      "what_was_wrong": "The tracker pinned `docxology/observer-patch-holography` at `1c5a908`, a fork 7 commits ahead of and 1,593 behind upstream `main`. Of its 15 distinct OPH quotations, 11 no longer appear verbatim at upstream. Three errors followed. OPH-REV-001 said the review's title was not the flagship's; at upstream it is exactly the flagship's title. The sent email quoted 'a condition on one structure that holds or fails with nothing running it', which upstream had rewritten on 2026-10-11. The intrinsic audit said the review 'cites no OPH passage' and does not mention fixed points, though it quotes the abstract accurately and does mention them.",
+      "what_changed": "Re-pinned all evidence to `FloatingPragma/observer-patch-holography` at `fcc2dd1` (paper release r2060) and re-read every passage. OPH-REV-001 and the intrinsic grade now credit the review's accurate citation and quotations: its title is the flagship's title. OPH-REV-006 moved from contradicted to addressed, because OPH's fixed point does contain its observers; the counts are now 4 addressed, 3 contradicted, 5 not addressed.",
+      "files": [
+        "reviews/oph-lfdi-57/model/review.json",
+        "reviews/oph-lfdi-57/extrinsic-audit.md",
+        "reviews/oph-lfdi-57/intrinsic-audit.md",
+        "reviews/oph-lfdi-57/source/metadata.json"
+      ]
+    },
+    {
+      "id": "OPH-AUD-003",
+      "title": "'Explicitly separates physics from ethics' overstated OPH",
+      "sent_email": true,
+      "what_was_wrong": "OPH-REV-008 said OPH 'explicitly separates physics from ethics', and E4 said it separates the physical reconstruction 'from any ethical layer'. The sent email said OPH 'keeps its physics separable from ethics'. All three quoted 'the physics can be taken alone and nothing above it breaks' and dropped its neighbors: 'They share a quantity' and 'Accepting the repair law is accepting both'. The words were verified. Their sense was not.",
+      "what_changed": "OPH-REV-008 and E4 now quote the whole passage and say what it says: a reader can take the physics without the ethics, and the two are not unrelated. AGENTS.md now requires reading each quotation in its passage, because a substring check cannot catch this.",
+      "files": [
+        "reviews/oph-lfdi-57/model/review.json",
+        "reviews/oph-lfdi-57/extrinsic-audit.md",
+        "AGENTS.md"
+      ]
+    },
+    {
+      "id": "OPH-AUD-004",
+      "title": "The status label 'refuted' overclaimed",
+      "sent_email": false,
+      "what_was_wrong": "Four topics carried `refuted`, and the indexes read 'Refuted by OPH'. The label's own definition was 'OPH's stated position contradicts the review's claim'. A sentence in OPH that contradicts a claim does not refute it. The sent email already used the accurate word, 'contradicted'; the repository did not.",
+      "what_changed": "Renamed the status to `contradicted` in the model, the builder, the validator, the indexes, and the audits, and its definition now says a contradiction is not by itself a refutation.",
+      "files": [
+        "scripts/build_review_register.py",
+        "reviews/oph-lfdi-57/model/review.json",
+        "tools/validate.py",
+        "docs/method.md"
+      ]
+    },
+    {
+      "id": "OPH-AUD-005",
+      "title": "Symbols and tiers WISLIM glosses were called undefined",
+      "sent_email": false,
+      "what_was_wrong": "The intrinsic grade said 'LFDI variables, Tier 2/3' are undefined, and OPH-REV-007 said the variables and formula are undefined. WISLIM v2.0.1 glosses $L_1$, $U$, and $D$, describes three tiers, and specifies the LFDI. The sent email's narrower wording, that the review does not define or defend them, remains accurate of the review.",
+      "what_changed": "The findings now say what is accurate: the review does not define them; WISLIM glosses them in words with no units or estimator; and the review and reply use them differently from WISLIM (table at F4 of the intrinsic audit). They also record the terms that do not occur in WISLIM v2.0.1 at all: 'Engineering Proof', 'Airtight', 'Epistemic Invariant', 'No Truth Outside', 'Decision Entropy', and 'Performative'.",
+      "files": [
+        "reviews/oph-lfdi-57/intrinsic-audit.md",
+        "reviews/oph-lfdi-57/model/review.json",
+        "reviews/oph-lfdi-57/verification.md"
+      ]
+    },
+    {
+      "id": "OPH-AUD-006",
+      "title": "Paraphrase and altered words stood inside quotation marks",
+      "sent_email": false,
+      "what_was_wrong": "F5 put 'OPH must immediately integrate the LFDI protocol' in quotation marks with a line citation; the page has no such sentence. E3 quoted 'fundamentally require', and the page says 'requires'. E2 quoted WISLIM as 'any system capable of making decisions', and the source says 'Any system that makes decisions'. A tracker that objects to unquoted attributions has to meet the same standard.",
+      "what_changed": "Corrected each case. The validator now requires every double-quoted string of four or more words in the two audits and the receipt to occur verbatim in the sources, the correspondence, or the recorded evidence.",
+      "files": [
+        "reviews/oph-lfdi-57/intrinsic-audit.md",
+        "reviews/oph-lfdi-57/extrinsic-audit.md",
+        "tools/validate.py"
+      ]
+    },
+    {
+      "id": "OPH-AUD-007",
+      "title": "The tracker still said no response had been sent",
+      "sent_email": false,
+      "what_was_wrong": "`review.json` said 'no response sent', the indexes said 'Not sent', and `response-email.md` said 'draft only'. The response went out on 2026-11-03. OPH-REV-011 also said there was 'no response from them'. The draft differed from what was sent.",
+      "what_changed": "Added a correspondence ledger and the as-sent text. `response-email.md` now records the sent email unchanged and lists what has since been corrected. The status fields and OPH-REV-011 are updated.",
+      "files": [
+        "reviews/oph-lfdi-57/correspondence/README.md",
+        "reviews/oph-lfdi-57/correspondence/02-friedman-response-as-sent.txt",
+        "reviews/oph-lfdi-57/response-email.md"
+      ]
+    },
+    {
+      "id": "OPH-AUD-008",
+      "title": "The reply of 2026-11-03 was not tracked",
+      "sent_email": false,
+      "what_was_wrong": "The response said 'we will record any response in the tracker'. The tracker had no place for a reply, no stable IDs for its claims, and no way to discuss them claim by claim.",
+      "what_changed": "Added the reply text, a canonical model, and one record and one GitHub issue per claim (`OPH-REP-001`–`OPH-REP-016`). The validator checks each quotation against its source. The index also records where the reply moves the exchange forward.",
+      "files": [
+        "reviews/oph-lfdi-57/correspondence/03-wishengrad-reply.txt",
+        "reviews/oph-lfdi-57/model/reply.json",
+        "reviews/oph-lfdi-57/reply/README.md",
+        "scripts/build_reply_register.py",
+        "scripts/sync_reply_issues.py"
+      ]
+    },
+    {
+      "id": "OPH-AUD-009",
+      "title": "The OPH quotation check was a one-off, not a repeatable test",
+      "sent_email": false,
+      "what_was_wrong": "The receipt reported a quotation check that no script in the repository could rerun, so nothing would notice when a pin or an anchor went bad.",
+      "what_changed": "Added `scripts/verify_oph_quotes.py` and `make verify-oph`, and a continuous-integration job that checks every OPH quotation at the pinned upstream commit. The validator confirms that the receipt's count and the job's commit match the model.",
+      "files": [
+        "scripts/verify_oph_quotes.py",
+        "Makefile",
+        ".github/workflows/verify.yml",
+        "tools/validate.py",
+        "reviews/oph-lfdi-57/verification.md"
+      ]
+    },
+    {
+      "id": "OPH-AUD-010",
+      "title": "Correspondence records needed a privacy rule",
+      "sent_email": false,
+      "what_was_wrong": "This repository is public, and the thread carries a telephone number, email addresses, and a recipient list. Nothing kept those out of the records.",
+      "what_changed": "The recorded texts leave out contact details and recipient lists and say where they were removed. The validator rejects any email address or telephone number in the correspondence, reply, and correction records, and AGENTS.md states the rule.",
+      "files": [
+        "reviews/oph-lfdi-57/correspondence/README.md",
+        "tools/validate.py",
+        "AGENTS.md"
+      ]
+    },
+    {
+      "id": "OPH-AUD-011",
+      "title": "The audit missed the formal and engineering versions of WISLIM's formula",
+      "sent_email": false,
+      "what_was_wrong": "WISLIM's Appendix A gives its proof 'in three fashions'. Version 2 says 'L = 0 ⇔ no such system exists'. Version 3 says the formula 'is not meant to compute a number'. `audit/05-formula-e-infinity.md` and WISLIM-011 called the variables 'undefined' without weighing either, and this tracker missed both when it assessed the review's $L_1 = 0$. An independent pre-publication read caught it.",
+      "what_changed": "`audit/05-formula-e-infinity.md`, claim C11, and WISLIM-011 now say what is accurate: verbal glosses that differ across the versions, with no units or estimator. OPH-REV-007, F4 of the intrinsic audit, and OPH-REP-010 apply the formal definition to the review's step, where it is the strongest point against that step.",
+      "files": [
+        "audit/05-formula-e-infinity.md",
+        "model/claims.json",
+        "model/issues.json",
+        "reviews/oph-lfdi-57/intrinsic-audit.md",
+        "reviews/oph-lfdi-57/model/review.json"
+      ]
+    }
+  ]
+}

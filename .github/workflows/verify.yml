@@ -18,3 +18,22 @@ jobs:
           python-version: "3.12"
       - name: Verify source, claims, register, and tests
         run: make verify
+
+  oph-quotes:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          repository: FloatingPragma/observer-patch-holography
+          ref: fcc2dd173d4f48763cd0bf7cc1739751eca3b96d
+          path: .oph
+          fetch-depth: 1
+          filter: blob:none
+          sparse-checkout: |
+            README.md
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Verify OPH quotations at the pinned commit
+        run: make verify-oph OPH_REPO=.oph

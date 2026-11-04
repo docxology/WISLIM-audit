@@ -14,7 +14,7 @@ related: [OPH-REV-002, OPH-REV-012]
 
 > **Review claim:** partly supported; part is overstated or under-specified  
 > **OPH response:** OPH discusses the topic and the review's point is at least partly acknowledged  
-> **Review source:** `reviews/oph-lfdi-57/source/LFDI_Alignment_Audit-57.txt:2`
+> **Review source:** `reviews/oph-lfdi-57/source/LFDI_Alignment_Audit-57.verified.txt:2`
 
 > **Status: audit observation, not a required fix.** This is a tracked
 > review note, not a verdict that OPH is invalid or that anyone must
@@ -24,22 +24,24 @@ related: [OPH-REV-002, OPH-REV-012]
 
 > "Observers Who Read Their Universe into Existence: Finite Consensus, an Executable Observer, and Standard Physics" by Bernhard Mueller et al.
 >
-> — `reviews/oph-lfdi-57/source/LFDI_Alignment_Audit-57.txt:2`
+> — `reviews/oph-lfdi-57/source/LFDI_Alignment_Audit-57.verified.txt:2`
 
 ## Intrinsic assessment
 
-The target is identifiable, which is a strength. The citation is not reproducible: 'et al.' hides twelve coauthors, no version or date is given, and the document is not linked. 'Official' has no issuing body. A reader cannot tell which manuscript version was audited.
+The target is identifiable, which is a strength. The citation is not reproducible: 'et al.' hides the other authors, no release or date is given, and the document is not linked. 'Official' has no issuing body. A reader cannot tell which manuscript release was audited, and the flagship changes release often (r2060 on 2026-11-02).
 
 ## Extrinsic assessment
 
-PhilPapers MUEFOC (checked live 2026-11-03) confirms the title and Bernhard Mueller as lead author among thirteen named authors, and records the work as a manuscript with a PhilArchive copy (1,062 downloads as of 2026-11-03). The public OPH repository separates the flagship paper, the book, and the technical papers; the flagship paper is titled 'Finite Observer Consensus as a Reconstruction Principle'. The review's target is therefore real but bibliographically under-specified.
+The flagship source at upstream carries the review's exact title, and the upstream README links PhilPapers MUEFOC as the main paper. PhilPapers, as retrieved 2026-11-03, confirms the title and Bernhard Mueller as lead author among thirteen listed authors; the flagship source at the pinned commit lists fourteen. An earlier version of this record said the title was not the flagship's. That reading came from a stale fork and is withdrawn (OPH-AUD-002).
 
 ## OPH evidence
 
-- [`paper/README.md:3`](https://github.com/docxology/observer-patch-holography/blob/1c5a908ed3441c5d09628183af18c362dbc58bea/paper/README.md#L3)
-  > For a first reading, begin with the flagship technical paper,
-- [`flagship/from_observer_consensus_to_standard_physics.tex:33`](https://github.com/docxology/observer-patch-holography/blob/1c5a908ed3441c5d09628183af18c362dbc58bea/flagship/from_observer_consensus_to_standard_physics.tex#L33)
-  > Finite Observer Consensus as a Reconstruction Principle
+- [`flagship/from_observer_consensus_to_standard_physics.tex:36`](https://github.com/FloatingPragma/observer-patch-holography/blob/fcc2dd173d4f48763cd0bf7cc1739751eca3b96d/flagship/from_observer_consensus_to_standard_physics.tex#L36)
+  > Observers Who Read Their Universe into Existence:
+- [`flagship/from_observer_consensus_to_standard_physics.tex:37`](https://github.com/FloatingPragma/observer-patch-holography/blob/fcc2dd173d4f48763cd0bf7cc1739751eca3b96d/flagship/from_observer_consensus_to_standard_physics.tex#L37)
+  > Finite Consensus, an Executable Observer, and Standard Physics
+- [`README.md:5`](https://github.com/FloatingPragma/observer-patch-holography/blob/fcc2dd173d4f48763cd0bf7cc1739751eca3b96d/README.md#L5)
+  > [Main paper](https://philpapers.org/rec/MUEFOC)
 
 ## WISLIM evidence
 
@@ -47,11 +49,11 @@ PhilPapers MUEFOC (checked live 2026-11-03) confirms the title and Bernhard Muel
 
 ## Summary
 
-The review names a real PhilPapers manuscript but gives no version, DOI, or full author list. The exact title is not the title of the flagship technical paper in the public OPH repository.
+The review names the flagship paper accurately: its title and lead author match the manuscript at upstream and on PhilPapers. It gives no release, date, DOI, or full author list, so the audited version cannot be fixed.
 
 ## Suggested response
 
-Ask the sender for the exact version, DOI, and full author list, and record them before treating the review as a determination on a fixed object.
+Ask the sender for the release or date of the copy audited, so the determination is tied to a fixed object.
 
 ## Related topics
 

@@ -95,6 +95,9 @@ REQUIRED_FILES = [
     "scripts/build_issue_register.py",
     "scripts/build_review_register.py",
     "scripts/sync_issues.py",
+    "scripts/verify_oph_quotes.py",
+    "scripts/build_reply_register.py",
+    "scripts/sync_reply_issues.py",
     "tests/test_repository.py",
     "Makefile",
     ".github/workflows/verify.yml",
@@ -112,9 +115,17 @@ REQUIRED_FILES = [
     "reviews/oph-lfdi-57/response-email.md",
     "reviews/oph-lfdi-57/source/LFDI_Alignment_Audit-57.pdf",
     "reviews/oph-lfdi-57/source/LFDI_Alignment_Audit-57.txt",
+    "reviews/oph-lfdi-57/source/LFDI_Alignment_Audit-57.verified.txt",
     "reviews/oph-lfdi-57/source/metadata.json",
     "reviews/oph-lfdi-57/model/review.json",
+    "reviews/oph-lfdi-57/model/reply.json",
     "reviews/oph-lfdi-57/verification.md",
+    "reviews/oph-lfdi-57/corrections.md",
+    "reviews/oph-lfdi-57/reply/README.md",
+    "reviews/oph-lfdi-57/correspondence/README.md",
+    "reviews/oph-lfdi-57/correspondence/metadata.json",
+    "reviews/oph-lfdi-57/correspondence/02-friedman-response-as-sent.txt",
+    "reviews/oph-lfdi-57/correspondence/03-wishengrad-reply.txt",
     "evidence/README.md",
     "evidence/provenance.md",
     "evidence/philpapers.md",
@@ -146,7 +157,7 @@ REQUIRED_FILES += [f"audit/{i:02d}-{name}.md" for i, name in enumerate([
 
 SOURCE_CITATION_RE = re.compile(r"source/WISLIM-v2\.0\.1\.txt:(\d+)")
 REVIEW_CITATION_RE = re.compile(
-    r"(?:reviews/oph-lfdi-57/source/)?LFDI_Alignment_Audit-57\.txt:(\d+)"
+    r"(?:reviews/oph-lfdi-57/source/)?LFDI_Alignment_Audit-57(?:\.verified)?\.txt:(\d+)"
 )
 SHORTHAND_CITATION_RE = re.compile(r"`:(\d{1,5})`")
 MARKDOWN_LINK_RE = re.compile(r"\[[^\]]*\]\(([^)]+)\)")
@@ -507,13 +518,13 @@ def check_review_register(v: Validator) -> None:
     )
     v.equal(
         sum(1 for t in topics if t.get("oph_status") == "addressed"),
-        3,
+        4,
         "OPH addressed topic count",
     )
     v.equal(
-        sum(1 for t in topics if t.get("oph_status") == "refuted"),
-        4,
-        "OPH refuted topic count",
+        sum(1 for t in topics if t.get("oph_status") == "contradicted"),
+        3,
+        "OPH contradicted topic count",
     )
     v.equal(
         sum(1 for t in topics if t.get("oph_status") == "not-addressed"),
@@ -547,11 +558,74 @@ def check_review_register(v: Validator) -> None:
             )
 
 
+def load_reply_module():
+    path = ROOT / "scripts" / "build_reply_register.py"
+    spec = importlib.util.spec_from_file_location("build_reply_register", path)
+    if spec is None or spec.loader is None:
+        raise RuntimeError(f"cannot load {path}")
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    return module
+
+
+def check_reply_register(v: Validator) -> None:
+    reply_mod = load_reply_module()
+    data = reply_mod.load_model()
+    for error in reply_mod.check_all(data):
+        v.check(False, f"reply register: {error}")
+    v.equal(len(data["topics"]), 16, "reply topic count")
+    v.equal(len(data["corrections"]), 11, "correction count")
+    sent = reply_mod.SENT_TEXT.read_text(encoding="utf-8")
+    v.check(
+        re.search(r"\bincorrect\b", sent, re.IGNORECASE) is None,
+        "the as-sent response contains the word OPH-REP-003 says it does not",
+    )
+    mapping = reply_mod.load_issue_map()
+    numbers = [entry.get("number") for entry in mapping.values()]
+    v.check(len(set(numbers)) == len(numbers), "reply issue map numbers must be unique")
+    for topic in data["topics"]:
+        path = reply_mod.topic_path(topic)
+        v.check(path.is_file(), f"{topic['id']}: record is missing")
+        if not path.is_file():
+            continue
+        text = path.read_text(encoding="utf-8")
+        for needle in ("status: observation", "audit observation, not a required fix", "## The reply says"):
+            v.check(needle in text, f"{topic['id']}: record is missing {needle!r}")
+
+
+QUOTED_RE = re.compile(r'"([^"]+)"')
+
+
+def check_audit_quotations(v: Validator, wislim_text: str) -> None:
+    """Every double-quoted string of four or more words must be verbatim somewhere."""
+    review_dir = ROOT / "reviews" / "oph-lfdi-57"
+    corpus_parts = [
+        wislim_text,
+        (review_dir / "source" / "LFDI_Alignment_Audit-57.verified.txt").read_text(encoding="utf-8"),
+        (review_dir / "correspondence" / "02-friedman-response-as-sent.txt").read_text(encoding="utf-8"),
+        (review_dir / "correspondence" / "03-wishengrad-reply.txt").read_text(encoding="utf-8"),
+    ]
+    for model in ("review.json", "reply.json"):
+        for topic in load_json(review_dir / "model" / model)["topics"]:
+            corpus_parts += [item["quote"] for item in topic["oph_evidence"]]
+    corpus = normalize_passage(" ".join(corpus_parts))
+    for name in ("intrinsic-audit.md", "extrinsic-audit.md", "verification.md"):
+        text = normalize((review_dir / name).read_text(encoding="utf-8"))
+        text = FENCE_RE.sub("", text).replace(">", " ")
+        for match in QUOTED_RE.finditer(text):
+            quote = normalize_passage(match.group(1)).rstrip(",.;")
+            if len(quote.split()) < 4:
+                continue
+            v.check(quote in corpus, f"{name}: quotation is not verbatim in any source: {quote!r}")
+
+
 def iter_markdown() -> list[Path]:
     return sorted(
         path
         for path in ROOT.rglob("*.md")
-        if ".git" not in path.parts and "node_modules" not in path.parts
+        if ".git" not in path.parts
+        and "node_modules" not in path.parts
+        and ".oph" not in path.parts
     )
 
 
@@ -680,22 +754,34 @@ def check_content(v: Validator) -> None:
         v.check(tid in extrinsic, f"extrinsic-audit.md is missing {tid}")
         v.check(tid in docs_reviews, f"docs/reviews.md is missing {tid}")
     email = (
-        ROOT / "reviews" / "oph-lfdi-57" / "response-email.md"
+        ROOT / "reviews" / "oph-lfdi-57" / "correspondence" / "02-friedman-response-as-sent.txt"
     ).read_text(encoding="utf-8")
     v.check(
         "https://github.com/docxology/WISLIM-audit" in email,
-        "response-email.md is missing the plaintext repository URL",
+        "the as-sent response is missing the plaintext repository URL",
     )
     verification = (
         ROOT / "reviews" / "oph-lfdi-57" / "verification.md"
     ).read_text(encoding="utf-8")
+    review = load_json(ROOT / "reviews" / "oph-lfdi-57" / "model" / "review.json")
     v.check(
-        "1c5a908ed3441c5d09628183af18c362dbc58bea" in verification,
+        review["review"]["oph_commit"] in verification,
         "verification receipt is missing the pinned OPH commit",
     )
+    quote_count = sum(
+        len(topic["oph_evidence"])
+        for model in ("review.json", "reply.json")
+        if (ROOT / "reviews" / "oph-lfdi-57" / "model" / model).is_file()
+        for topic in load_json(ROOT / "reviews" / "oph-lfdi-57" / "model" / model)["topics"]
+    )
     v.check(
-        "23/23" in verification,
-        "verification receipt is missing the OPH quote check result",
+        f"{quote_count}/{quote_count}" in verification,
+        f"verification receipt does not record {quote_count}/{quote_count} OPH quotations",
+    )
+    workflow = (ROOT / ".github" / "workflows" / "verify.yml").read_text(encoding="utf-8")
+    v.check(
+        review["review"]["oph_commit"] in workflow,
+        "the OPH quotation job does not check out the pinned commit",
     )
     v.check(
         "2026-11-03" in verification,
@@ -721,6 +807,8 @@ def main(argv: list[str] | None = None) -> int:
         check_citations(v, len(lines))
     check_issue_register(v, lines)
     check_review_register(v)
+    check_reply_register(v)
+    check_audit_quotations(v, text)
     check_required(v)
     check_links(v)
     check_content(v)
@@ -742,6 +830,8 @@ def main(argv: list[str] | None = None) -> int:
         print(f"  stress tests: {len(STRESS_IDS)}")
         print("  audit issues: 66")
         print("  review topics: 12")
+        print("  reply topics: 16")
+        print("  corrections: 11")
         print(f"  markdown files: {len(iter_markdown())}")
         if v.warnings:
             print("Warnings:")

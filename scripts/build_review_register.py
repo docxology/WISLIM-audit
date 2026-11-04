@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """Build the tracked review register for the OPH/LFDI review.
 
-The review is a one-page image PDF. Its OCR text is the citation base. Each
+The review is a one-page image PDF. A transcription checked against the page
+image is the citation base; the raw OCR text is kept beside it as a record. Each
 distinct claim becomes one topic record under ``reviews/oph-lfdi-57/topics/``
 and one row in the generated review index.
 
@@ -34,7 +35,8 @@ DOCS_TOPICS = DOCS_REVIEW_DIR / "topics"
 DOCS_INDEX = DOCS_REVIEW_DIR / "README.md"
 SOURCE = REVIEW_DIR / "source"
 METADATA = SOURCE / "metadata.json"
-REVIEW_TEXT = SOURCE / "LFDI_Alignment_Audit-57.txt"
+REVIEW_OCR = SOURCE / "LFDI_Alignment_Audit-57.txt"
+REVIEW_TEXT = SOURCE / "LFDI_Alignment_Audit-57.verified.txt"
 REVIEW_PDF = SOURCE / "LFDI_Alignment_Audit-57.pdf"
 WISLIM_URL = "https://github.com/docxology/WISLIM-audit/blob/main"
 TOPIC_COUNT = 12
@@ -49,7 +51,7 @@ VERDICTS = {
 }
 OPH_STATUSES = {
     "addressed": "OPH discusses the topic and the review's point is at least partly acknowledged",
-    "refuted": "OPH's stated position contradicts the review's claim",
+    "contradicted": "OPH's stated position contradicts the review's claim; a contradiction is not by itself a refutation",
     "not-addressed": "OPH does not discuss the review's specific claim",
     "unverifiable": "the OPH response cannot be determined from the available sources",
 }
@@ -130,8 +132,16 @@ def check_model(data: dict[str, Any]) -> list[str]:
     metadata = load_metadata()
     if metadata.get("pdf_sha256") != sha256(REVIEW_PDF):
         errors.append("review PDF hash does not match metadata")
-    if metadata.get("text_sha256") != sha256(REVIEW_TEXT):
-        errors.append("review text hash does not match metadata")
+    if metadata.get("text_sha256") != sha256(REVIEW_OCR):
+        errors.append("review OCR text hash does not match metadata")
+    verified = metadata.get("verified_transcription", {})
+    if verified.get("sha256") != sha256(REVIEW_TEXT):
+        errors.append("verified transcription hash does not match metadata")
+    derived = REVIEW_OCR.read_text(encoding="utf-8")
+    for old, new in verified.get("substitutions", []):
+        derived = derived.replace(old, new)
+    if derived != REVIEW_TEXT.read_text(encoding="utf-8"):
+        errors.append("verified transcription differs from the OCR text beyond the listed substitutions")
     lines = load_lines()
     seen_titles: set[str] = set()
     known_ids = set(expected_ids)
@@ -204,11 +214,7 @@ def check_model(data: dict[str, Any]) -> list[str]:
 
 
 def external_evidence_url(review: dict[str, Any], item: dict[str, Any]) -> str:
-    commit = review["oph_commit"]
-    return (
-        f"https://github.com/docxology/observer-patch-holography/blob/"
-        f"{commit}/{item['path']}#L{item['line']}"
-    )
+    return f"{review['oph_repository']}/blob/{review['oph_commit']}/{item['path']}#L{item['line']}"
 
 
 def render_topic(topic: dict[str, Any], review: dict[str, Any]) -> str:
@@ -232,7 +238,7 @@ def render_topic(topic: dict[str, Any], review: dict[str, Any]) -> str:
         f"> **Review claim:** {VERDICTS[topic['verdict']]}  ",
         f"> **OPH response:** {OPH_STATUSES[topic['oph_status']]}  ",
         f"> **Review source:** `reviews/oph-lfdi-57/source/"
-        f"LFDI_Alignment_Audit-57.txt:{topic['review_line']}`",
+        f"LFDI_Alignment_Audit-57.verified.txt:{topic['review_line']}`",
         "",
         "> **Status: audit observation, not a required fix.** This is a tracked",
         "> review note, not a verdict that OPH is invalid or that anyone must",
@@ -242,7 +248,7 @@ def render_topic(topic: dict[str, Any], review: dict[str, Any]) -> str:
         "",
         f"> {topic['review_quote']}",
         ">",
-        f"> — `reviews/oph-lfdi-57/source/LFDI_Alignment_Audit-57.txt:{topic['review_line']}`",
+        f"> — `reviews/oph-lfdi-57/source/LFDI_Alignment_Audit-57.verified.txt:{topic['review_line']}`",
         "",
         "## Intrinsic assessment",
         "",
@@ -309,16 +315,17 @@ def render_index(data: dict[str, Any], audit_prefix: str = "") -> str:
         "# OPH/LFDI review tracker",
         "",
         f"This directory tracks the review **{review['title']}** received",
-        f"{review['received']}. The review is a one-page image-only PDF. Its OCR",
-        "text is the citation base; the PDF has no text layer, so equations and",
-        "subscript markers may be inexact.",
+        f"{review['received']}. The review is a one-page image-only PDF. The citation",
+        "base is a transcription checked against the page image. The raw OCR text is",
+        "kept beside it as a record and misreads the page's symbols; do not cite it.",
         "",
         f"- **Target:** {review['target']}",
         f"- **Target record:** {review['target_url']}",
         f"- **OPH repository:** {review['oph_repository']}",
-        f"- **OPH commit:** `{review['oph_commit']}`",
+        f"- **OPH commit:** `{review['oph_commit']}` (paper release {review['oph_release']})",
         f"- **Source PDF:** `{review['source_pdf']}`",
-        f"- **Source text:** `{review['source_text']}`",
+        f"- **Verified transcription:** `{review['source_text']}`",
+        f"- **Raw OCR text:** `{review['source_ocr']}`",
         f"- **Topics:** {len(topics)}",
         "",
         "## How to read this tracker",
@@ -344,14 +351,18 @@ def render_index(data: dict[str, Any], audit_prefix: str = "") -> str:
         "  and provenance internal to the review.",
         f"- [Extrinsic audit]({audit_prefix}extrinsic-audit.md): the review against OPH's",
         "  statements and against the WISLIM audit.",
-        f"- [Response email draft]({audit_prefix}response-email.md): short reply with a plaintext",
-        "  public URL. Not sent.",
+        f"- [Response email]({audit_prefix}response-email.md): the response as sent on 2026-11-03,",
+        "  with notes on what has since been corrected.",
+        f"- [Correspondence ledger]({audit_prefix}correspondence/README.md): the thread and its recorded texts.",
+        f"- [Reply register]({audit_prefix}reply/README.md): one record per claim in the reply of 2026-11-03.",
+        f"- [Corrections]({audit_prefix}corrections.md): errors found in this tracker, and what changed.",
         "",
         "## Tracked files",
         "",
         "- `reviews/oph-lfdi-57/model/review.json` is canonical; edit it, then run `make review`.",
         "- `topics/*.md` and this index are generated; do not edit them by hand.",
-        "- `reviews/oph-lfdi-57/source/` holds the received PDF, its normalized OCR text, and metadata.",
+        "- `reviews/oph-lfdi-57/source/` holds the received PDF, its raw OCR text, the verified",
+        "  transcription, and metadata.",
         "",
         "## Rights",
         "",
@@ -367,7 +378,7 @@ def render_docs_reviews(data: dict[str, Any]) -> str:
     review = data["review"]
     topics = data["topics"]
     addressed = [t for t in topics if t["oph_status"] == "addressed"]
-    refuted = [t for t in topics if t["oph_status"] == "refuted"]
+    contradicted = [t for t in topics if t["oph_status"] == "contradicted"]
     not_addressed = [t for t in topics if t["oph_status"] == "not-addressed"]
     lines = [
         "# External reviews and responses",
@@ -382,16 +393,20 @@ def render_docs_reviews(data: dict[str, Any]) -> str:
         f"- **Received:** {review['received']}",
         f"- **Format:** {review['review_type']}",
         f"- **Target:** {review['target']} ({review['target_url']})",
-        f"- **External verification corpus:** `{review['oph_repository']}` at commit `{review['oph_commit']}`",
+        f"- **External verification corpus:** `{review['oph_repository']}` at commit `{review['oph_commit']}` (paper release {review['oph_release']})",
         f"- **Source PDF:** [`{review['source_pdf']}`](../{review['source_pdf']})",
-        f"- **Source OCR text:** [`{review['source_text']}`](../{review['source_text']})",
+        f"- **Verified transcription:** [`{review['source_text']}`](../{review['source_text']})",
+        f"- **Raw OCR text:** [`{review['source_ocr']}`](../{review['source_ocr']})",
         "- **Canonical model:** [`reviews/oph-lfdi-57/model/review.json`](../reviews/oph-lfdi-57/model/review.json)",
         "- **Intrinsic audit:** [`reviews/oph-lfdi-57/intrinsic-audit.md`](../reviews/oph-lfdi-57/intrinsic-audit.md)",
         "- **Extrinsic audit:** [`reviews/oph-lfdi-57/extrinsic-audit.md`](../reviews/oph-lfdi-57/extrinsic-audit.md)",
-        "- **Response email draft:** [`reviews/oph-lfdi-57/response-email.md`](../reviews/oph-lfdi-57/response-email.md)",
+        "- **Response email as sent:** [`reviews/oph-lfdi-57/response-email.md`](../reviews/oph-lfdi-57/response-email.md)",
+        "- **Correspondence ledger:** [`reviews/oph-lfdi-57/correspondence/README.md`](../reviews/oph-lfdi-57/correspondence/README.md)",
+        "- **Reply register:** [`reviews/oph-lfdi-57/reply/README.md`](../reviews/oph-lfdi-57/reply/README.md) (`OPH-REP-001`–`OPH-REP-016`)",
+        "- **Corrections to this tracker:** [`reviews/oph-lfdi-57/corrections.md`](../reviews/oph-lfdi-57/corrections.md) (`OPH-AUD-001`–`OPH-AUD-011`)",
         f"- **Tracked topics:** {len(topics)} (`OPH-REV-001`–`OPH-REV-012`)",
         f"  - **Addressed by OPH:** {len(addressed)}",
-        f"  - **Refuted by OPH:** {len(refuted)}",
+        f"  - **Contradicted by OPH's text:** {len(contradicted)}",
         f"  - **Not addressed (external LFDI stipulations / provenance):** {len(not_addressed)}",
         "",
         "### Topic register (`OPH-REV-001`–`OPH-REV-012`)",
@@ -419,10 +434,10 @@ def render_docs_reviews(data: dict[str, Any]) -> str:
         )
     lines += [
         "",
-        "### Topics refuted by OPH",
+        "### Topics contradicted by OPH's text",
         "",
     ]
-    for topic in refuted:
+    for topic in contradicted:
         fname = topic_path(topic).name
         lines.append(
             f"- **[`{topic['id']}`](reviews/oph-lfdi-57/topics/{fname}) — {topic['title']}** "

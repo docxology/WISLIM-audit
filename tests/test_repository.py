@@ -16,6 +16,7 @@ ROOT = Path(__file__).resolve().parents[1]
 VALIDATOR_PATH = ROOT / "tools" / "validate.py"
 REGISTER_PATH = ROOT / "scripts" / "build_issue_register.py"
 REVIEW_REGISTER_PATH = ROOT / "scripts" / "build_review_register.py"
+REPLY_REGISTER_PATH = ROOT / "scripts" / "build_reply_register.py"
 
 
 def load_module(name, path):
@@ -182,20 +183,51 @@ class ReviewRegisterTests(unittest.TestCase):
             self.review.sha256(self.review.REVIEW_PDF), metadata["pdf_sha256"]
         )
         self.assertEqual(
-            self.review.sha256(self.review.REVIEW_TEXT), metadata["text_sha256"]
+            self.review.sha256(self.review.REVIEW_OCR), metadata["text_sha256"]
         )
+
+    def test_verified_transcription_derives_from_the_ocr_text(self):
+        metadata = self.review.load_metadata()["verified_transcription"]
+        derived = self.review.REVIEW_OCR.read_text(encoding="utf-8")
+        for old, new in metadata["substitutions"]:
+            self.assertIn(old, derived)
+            derived = derived.replace(old, new)
+        self.assertEqual(derived, self.review.REVIEW_TEXT.read_text(encoding="utf-8"))
+        self.assertEqual(
+            self.review.sha256(self.review.REVIEW_TEXT), metadata["sha256"]
+        )
+
+    def test_review_quotes_do_not_carry_ocr_artifacts(self):
+        artifacts = [old for old, _ in self.review.load_metadata()["verified_transcription"]["substitutions"]]
+        for topic in self.topics:
+            with self.subTest(topic=topic["id"]):
+                for artifact in artifacts:
+                    self.assertNotIn(artifact, topic["review_quote"])
+
+    def test_oph_evidence_cites_the_pinned_repository(self):
+        review = self.data["review"]
+        self.assertEqual(
+            review["oph_repository"],
+            "https://github.com/FloatingPragma/observer-patch-holography",
+        )
+        self.assertEqual(len(review["oph_commit"]), 40)
+        for topic in self.topics:
+            for item in topic["oph_evidence"]:
+                url = self.review.external_evidence_url(review, item)
+                self.assertTrue(url.startswith(review["oph_repository"] + "/blob/"))
+                self.assertIn(review["oph_commit"], url)
 
     def test_review_register_has_no_errors(self):
         self.assertEqual(self.review.check_all(self.data), [])
 
     def test_review_dispositions_are_complete(self):
         addressed = [t for t in self.topics if t["oph_status"] == "addressed"]
-        refuted = [t for t in self.topics if t["oph_status"] == "refuted"]
+        contradicted = [t for t in self.topics if t["oph_status"] == "contradicted"]
         not_addressed = [
             t for t in self.topics if t["oph_status"] == "not-addressed"
         ]
-        self.assertEqual(len(addressed), 3)
-        self.assertEqual(len(refuted), 4)
+        self.assertEqual(len(addressed), 4)
+        self.assertEqual(len(contradicted), 3)
         self.assertEqual(len(not_addressed), 5)
 
     def test_every_topic_has_records_in_reviews_and_docs(self):
@@ -221,7 +253,7 @@ class ReviewRegisterTests(unittest.TestCase):
                 self.assertIn(topic["id"], extrinsic)
                 self.assertIn(topic["id"], docs_reviews)
         email = (
-            ROOT / "reviews" / "oph-lfdi-57" / "response-email.md"
+            ROOT / "reviews" / "oph-lfdi-57" / "correspondence" / "02-friedman-response-as-sent.txt"
         ).read_text(encoding="utf-8")
         self.assertIn("https://github.com/docxology/WISLIM-audit", email)
 
@@ -229,10 +261,71 @@ class ReviewRegisterTests(unittest.TestCase):
         text = (
             ROOT / "reviews" / "oph-lfdi-57" / "verification.md"
         ).read_text(encoding="utf-8")
-        self.assertIn("1c5a908ed3441c5d09628183af18c362dbc58bea", text)
-        self.assertIn("23/23", text)
+        self.assertIn(self.data["review"]["oph_commit"], text)
         self.assertIn("2026-11-03", text)
-        self.assertIn("positive-infinity", text)
+        self.assertIn("git grep -c -w -i", text)
+
+
+class ReplyRegisterTests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        cls.reply = load_module("wislim_reply_register", REPLY_REGISTER_PATH)
+        cls.data = cls.reply.load_model()
+        cls.topics = cls.data["topics"]
+
+    def test_ids_are_stable(self):
+        self.assertEqual(
+            [topic["id"] for topic in self.topics],
+            [f"OPH-REP-{index:03d}" for index in range(1, 17)],
+        )
+        self.assertEqual(
+            [item["id"] for item in self.data["corrections"]],
+            [f"OPH-AUD-{index:03d}" for index in range(1, 12)],
+        )
+
+    def test_register_has_no_errors(self):
+        self.assertEqual(self.reply.check_all(self.data), [])
+
+    def test_quotations_are_verbatim_in_the_reply(self):
+        lines = self.reply.REPLY_TEXT.read_text(encoding="utf-8").splitlines()
+        for topic in self.topics:
+            for item in topic["quotes"]:
+                with self.subTest(topic=topic["id"], line=item["line"]):
+                    self.assertIn(item["quote"], lines[item["line"] - 1])
+
+    def test_the_word_incorrect_is_not_in_the_response_as_sent(self):
+        text = self.reply.SENT_TEXT.read_text(encoding="utf-8").lower()
+        self.assertNotIn("incorrect", text)
+
+    def test_records_carry_the_observation_status(self):
+        for topic in self.topics:
+            text = self.reply.topic_path(topic).read_text(encoding="utf-8")
+            with self.subTest(topic=topic["id"]):
+                self.assertIn("status: observation", text)
+                self.assertIn("audit observation, not a required fix", text)
+
+    def test_privacy_guard_rejects_the_general_class(self):
+        for sample in ("write to someone@example.org", "call 555-010-0199 today", "call (555) 010-0199"):
+            with self.subTest(sample=sample):
+                found = self.reply.EMAIL_RE.search(sample) or self.reply.PHONE_RE.search(sample)
+                self.assertIsNotNone(found)
+        doi = "DOI: 10.21428/4831231e.8c4c6c8f"
+        self.assertIsNone(self.reply.EMAIL_RE.search(doi))
+        self.assertIsNone(self.reply.PHONE_RE.search(doi))
+        self.assertEqual(self.reply.check_privacy(self.reply.privacy_paths(self.data)), [])
+
+    def test_issue_map_covers_the_register_when_present(self):
+        mapping = self.reply.load_issue_map()
+        if not mapping:
+            self.skipTest("issue map is written by make reply-issues")
+        known = {topic["id"] for topic in self.topics} | {
+            item["id"] for item in self.data["corrections"]
+        }
+        self.assertEqual(set(mapping), known)
+        for topic in self.topics:
+            number = mapping[topic["id"]]["number"]
+            text = self.reply.topic_path(topic).read_text(encoding="utf-8")
+            self.assertIn(f"github_issue: {number}", text)
 
 
 if __name__ == "__main__":

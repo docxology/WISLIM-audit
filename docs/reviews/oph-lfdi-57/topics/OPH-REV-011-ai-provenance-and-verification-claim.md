@@ -14,7 +14,7 @@ related: [OPH-REV-001, OPH-REV-012]
 
 > **Review claim:** the claim cannot be checked from the available materials  
 > **OPH response:** OPH does not discuss the review's specific claim  
-> **Review source:** `reviews/oph-lfdi-57/source/LFDI_Alignment_Audit-57.txt:6`
+> **Review source:** `reviews/oph-lfdi-57/source/LFDI_Alignment_Audit-57.verified.txt:6`
 
 > **Status: audit observation, not a required fix.** This is a tracked
 > review note, not a verdict that OPH is invalid or that anyone must
@@ -22,9 +22,9 @@ related: [OPH-REV-001, OPH-REV-012]
 
 ## Review claim
 
-> Al Gemini Pro latest was used to generate this correction, and this correction has been verified as correct by David Wishengrad.
+> AI Gemini Pro latest was used to generate this correction, and this correction has been verified as correct by David Wishengrad.
 >
-> — `reviews/oph-lfdi-57/source/LFDI_Alignment_Audit-57.txt:6`
+> — `reviews/oph-lfdi-57/source/LFDI_Alignment_Audit-57.verified.txt:6`
 
 ## Intrinsic assessment
 
@@ -32,7 +32,7 @@ Disclosure of AI generation is good practice. But 'verified' is not defined: no 
 
 ## Extrinsic assessment
 
-No evidence that OPH authors requested or authorized the review; no response from them. The review is an external critique, not an official determination.
+No evidence shows that OPH's authors requested or authorized the review. The sender's reply of 2026-11-03 did not supply the prompt, model version, or checklist the response asked for (OPH-REP-013). The review is an external critique, not an official determination.
 
 ## OPH evidence
 

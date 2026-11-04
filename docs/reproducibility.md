@@ -115,7 +115,7 @@ change an issue, edit `model/issues.json`, run `make register`, then
 ## OPH/LFDI review register
 
 The external review `reviews/oph-lfdi-57/source/LFDI_Alignment_Audit-57.pdf` is
-an image-only one-page PDF. Its normalized OCR text is stored at
+an image-only one-page PDF. Its raw OCR text is stored at
 `reviews/oph-lfdi-57/source/LFDI_Alignment_Audit-57.txt` and its provenance at
 `reviews/oph-lfdi-57/source/metadata.json`.
 
@@ -132,11 +132,39 @@ Expected:
 ba92b8a91ae5c6fe7b23b7270d44c5175129411a8cdd863d903c9c2583ec65ab  reviews/oph-lfdi-57/source/LFDI_Alignment_Audit-57.txt
 ```
 
+The OCR text misreads the page's symbols and is kept as a record. The citation base
+is `reviews/oph-lfdi-57/source/LFDI_Alignment_Audit-57.verified.txt`, a transcription
+compared with the page image. The validator derives it from the OCR text by the
+literal substitution list in `metadata.json`, so nothing else can differ:
+
+```
+92416993bad7fd4c0dd981b675f8f125d793079ce9c1cdfb9bb1645354a9f300  reviews/oph-lfdi-57/source/LFDI_Alignment_Audit-57.verified.txt
+```
+
 Regenerate and verify the 12-topic review register (`OPH-REV-001`–`OPH-REV-012`):
 
 ```sh
 make review                    # regenerate reviews/oph-lfdi-57/ and docs/reviews/
 make review-check              # verify generated review records without writing
+```
+
+The reply of 2026-11-03 has its own canonical model and generated records:
+
+```sh
+make reply                     # regenerate the reply register, corrections, and ledger
+make reply-check               # verify them without writing
+make reply-issues              # create missing GitHub issues and refresh bodies (needs gh)
+make reply-issues-check        # read-only comparison with GitHub (needs gh)
+```
+
+`make reply-check` also rejects any email address or telephone number in the
+correspondence, reply, and correction records.
+
+Check every OPH quotation at the pinned upstream commit. This needs `git` and a clone
+that contains the commit; continuous integration runs it on every push:
+
+```sh
+make verify-oph OPH_REPO=/path/to/observer-patch-holography
 ```
 
 ## Rebuild the stress-test catalog

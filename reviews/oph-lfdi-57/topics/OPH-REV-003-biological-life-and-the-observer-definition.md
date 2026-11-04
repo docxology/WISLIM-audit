@@ -14,7 +14,7 @@ related: [OPH-REV-004, OPH-REV-008]
 
 > **Review claim:** partly supported; part is overstated or under-specified  
 > **OPH response:** OPH discusses the topic and the review's point is at least partly acknowledged  
-> **Review source:** `reviews/oph-lfdi-57/source/LFDI_Alignment_Audit-57.txt:2`
+> **Review source:** `reviews/oph-lfdi-57/source/LFDI_Alignment_Audit-57.verified.txt:2`
 
 > **Status: audit observation, not a required fix.** This is a tracked
 > review note, not a verdict that OPH is invalid or that anyone must
@@ -24,24 +24,28 @@ related: [OPH-REV-004, OPH-REV-008]
 
 > explicitly abstracting away the necessity of biological life or a living valuer
 >
-> — `reviews/oph-lfdi-57/source/LFDI_Alignment_Audit-57.txt:2`
+> — `reviews/oph-lfdi-57/source/LFDI_Alignment_Audit-57.verified.txt:2`
 
 ## Intrinsic assessment
 
-The sentence is descriptively accurate if read as 'OPH's observer definition does not require biological life.' It becomes a fallacy if read as 'OPH denies the reality or value of life.' The review does not distinguish these readings, and the rest of the document relies on the stronger one.
+The sentence is descriptively accurate if read as 'OPH's observer definition does not require biological life.' It becomes a fallacy if read as 'OPH denies the reality or value of life.' The review does not distinguish these readings, and the rest of the document relies on the stronger one. Not requiring a property is not removing it: a definition of 'vehicle' that does not require wheels takes no wheels off any car.
 
 ## Extrinsic assessment
 
-OPH lists 'Life. Obviously not' among the things an observer does not need, and says 'An observer here is any bounded system that keeps records.' It also says observer is a structural role that a human mind, organism, instrument, or software process can instantiate. OPH does not deny that living things exist; it treats consciousness as a late special case. The descriptive point is fair; the later inference that OPH 'subordinates Life' is not.
+The book lists 'Life. Obviously not' among the things an observer does not need, and says 'An observer here is any bounded system that keeps records.' The same passage says the arrival of living things 'introduced a much better one of a kind that had been there all along', and the chapter scores a person and a thermostat by one test. The flagship's wording is narrower than the review's: its operational observer is 'defined by access and record interfaces, without an additional claim about consciousness', and 'biological', 'living' and 'valuer' do not occur in the flagship source. The descriptive point is fair; 'explicitly' fits the book, not the flagship; the later inference that OPH 'subordinates Life' is not supported.
 
 ## OPH evidence
 
-- [`book/04-chapter-03.md:67`](https://github.com/docxology/observer-patch-holography/blob/1c5a908ed3441c5d09628183af18c362dbc58bea/book/04-chapter-03.md#L67)
+- [`book/04-chapter-03.md:67`](https://github.com/FloatingPragma/observer-patch-holography/blob/fcc2dd173d4f48763cd0bf7cc1739751eca3b96d/book/04-chapter-03.md#L67)
   > Obviously not, and this cuts both ways
-- [`book/04-chapter-03.md:85`](https://github.com/docxology/observer-patch-holography/blob/1c5a908ed3441c5d09628183af18c362dbc58bea/book/04-chapter-03.md#L85)
+- [`book/04-chapter-03.md:67`](https://github.com/FloatingPragma/observer-patch-holography/blob/fcc2dd173d4f48763cd0bf7cc1739751eca3b96d/book/04-chapter-03.md#L67)
+  > It introduced a much better one of a kind that had been there all along.
+- [`book/04-chapter-03.md:85`](https://github.com/FloatingPragma/observer-patch-holography/blob/fcc2dd173d4f48763cd0bf7cc1739751eca3b96d/book/04-chapter-03.md#L85)
   > An observer here is any bounded system that keeps records.
-- [`README.md:189`](https://github.com/docxology/observer-patch-holography/blob/1c5a908ed3441c5d09628183af18c362dbc58bea/README.md#L189)
-  > “Observer” is a structural role.
+- [`book/04-chapter-03.md:51`](https://github.com/FloatingPragma/observer-patch-holography/blob/fcc2dd173d4f48763cd0bf7cc1739751eca3b96d/book/04-chapter-03.md#L51)
+  > The thermostat passes. So does a person
+- [`flagship/from_observer_consensus_to_standard_physics.tex:489`](https://github.com/FloatingPragma/observer-patch-holography/blob/fcc2dd173d4f48763cd0bf7cc1739751eca3b96d/flagship/from_observer_consensus_to_standard_physics.tex#L489)
+  > defined by access and record interfaces, without an additional claim about consciousness.
 
 ## WISLIM evidence
 
@@ -52,7 +56,7 @@ OPH lists 'Life. Obviously not' among the things an observer does not need, and 
 
 ## Summary
 
-OPH does define observers without requiring life. That is a scope decision about physics, not a denial that living agents exist or matter.
+OPH does define observers without requiring life. That is a scope decision about physics, not a denial that living agents exist or matter: the book places living things inside the observer class.
 
 ## Suggested response
 

@@ -14,7 +14,7 @@ related: [OPH-REV-001, OPH-REV-010, OPH-REV-012]
 
 > **Review claim:** partly supported; part is overstated or under-specified  
 > **OPH response:** OPH discusses the topic and the review's point is at least partly acknowledged  
-> **Review source:** `reviews/oph-lfdi-57/source/LFDI_Alignment_Audit-57.txt:2`
+> **Review source:** `reviews/oph-lfdi-57/source/LFDI_Alignment_Audit-57.verified.txt:2`
 
 > **Status: audit observation, not a required fix.** This is a tracked
 > review note, not a verdict that OPH is invalid or that anyone must
@@ -24,22 +24,28 @@ related: [OPH-REV-001, OPH-REV-010, OPH-REV-012]
 
 > It attempts to derive standard physics (quantum fields, gravity, spacetime) from a "timeless self-referential history"
 >
-> — `reviews/oph-lfdi-57/source/LFDI_Alignment_Audit-57.txt:2`
+> — `reviews/oph-lfdi-57/source/LFDI_Alignment_Audit-57.verified.txt:2`
 
 ## Intrinsic assessment
 
-The review accurately reports the observer-first and timeless-self-reference framing. It overstates the status of the derivation: OPH's abstract says the program is incomplete and many results are conditional. It also calls the universe an 'executable mathematical model' without noting that this is the executable-model hypothesis, not a theorem.
+The review accurately reports the observer-first and timeless-self-reference framing, and its phrases 'timeless self-referential history', 'operational observers' and 'twelve-port icosahedral carrier' occur in the paper. 'Attempts' is fair. It does not report the paper's status: 'treating the universe as an executable mathematical model' omits that this is the executable-model hypothesis, not an established result.
 
 ## Extrinsic assessment
 
-OPH's PhilPapers abstract says 'Measured by the four conditions, the program is incomplete' and lists unestablished items. The repository labels results as exact, conditional, declared, or open. The review's summary is directionally right but not calibrated to OPH's status ledger.
+The flagship abstract says 'Measured by the four conditions, the program is incomplete' and 'Closure of one complete history is a hypothesis that the model tests'. The review's summary is directionally right but not calibrated to that status.
 
 ## OPH evidence
 
-- [`paper/observers_are_all_you_need.tex:1792`](https://github.com/docxology/observer-patch-holography/blob/1c5a908ed3441c5d09628183af18c362dbc58bea/paper/observers_are_all_you_need.tex#L1792)
-  > Bare finite consensus supplies only the upstream quotient-normal-form input.
-- [`README.md:183`](https://github.com/docxology/observer-patch-holography/blob/1c5a908ed3441c5d09628183af18c362dbc58bea/README.md#L183)
-  > OPH treats this process as the mechanism that selects a public physical world.
+- [`flagship/from_observer_consensus_to_standard_physics.tex:74`](https://github.com/FloatingPragma/observer-patch-holography/blob/fcc2dd173d4f48763cd0bf7cc1739751eca3b96d/flagship/from_observer_consensus_to_standard_physics.tex#L74)
+  > universe is one timeless self-referential history whose observers recover
+- [`flagship/from_observer_consensus_to_standard_physics.tex:96`](https://github.com/FloatingPragma/observer-patch-holography/blob/fcc2dd173d4f48763cd0bf7cc1739751eca3b96d/flagship/from_observer_consensus_to_standard_physics.tex#L96)
+  > Measured by the four conditions, the program is incomplete.
+- [`flagship/from_observer_consensus_to_standard_physics.tex:97`](https://github.com/FloatingPragma/observer-patch-holography/blob/fcc2dd173d4f48763cd0bf7cc1739751eca3b96d/flagship/from_observer_consensus_to_standard_physics.tex#L97)
+  > Closure of one complete history is a hypothesis that the model tests
+- [`flagship/from_observer_consensus_to_standard_physics.tex:82`](https://github.com/FloatingPragma/observer-patch-holography/blob/fcc2dd173d4f48763cd0bf7cc1739751eca3b96d/flagship/from_observer_consensus_to_standard_physics.tex#L82)
+  > Its testable form is the executable-model hypothesis
+- [`flagship/from_observer_consensus_to_standard_physics.tex:84`](https://github.com/FloatingPragma/observer-patch-holography/blob/fcc2dd173d4f48763cd0bf7cc1739751eca3b96d/flagship/from_observer_consensus_to_standard_physics.tex#L84)
+  > federated twelve-port icosahedral carrier
 
 ## WISLIM evidence
 
@@ -47,11 +53,11 @@ OPH's PhilPapers abstract says 'Measured by the four conditions, the program is 
 
 ## Summary
 
-The paraphrase is close to OPH's abstract, but 'derive' makes conditional results sound established and omits OPH's own statement that the program is incomplete.
+The paraphrase follows the flagship abstract closely and quotes it accurately. It omits the abstract's own statement that the program is incomplete and that closure is a hypothesis.
 
 ## Suggested response
 
-Distinguish OPH's aim from its achieved status. Quote OPH's incompleteness statement and its conditional labels when summarizing the program.
+Distinguish OPH's aim from its achieved status. Quote the abstract's incompleteness statement when summarizing the program.
 
 ## Related topics
 

@@ -11,10 +11,10 @@
     "engine": "tesseract 5.5.4",
     "source": "page image extracted with pdfimages -j",
     "normalization": "OCR line breaks joined into one line per paragraph; wording unchanged",
-    "caveat": "The PDF has no text layer. Equations and subscript markers are OCR readings and may be inexact."
+    "caveat": "The PDF has no text layer. This OCR text misreads the page's symbols and is kept unchanged as a record. Cite the verified transcription instead."
   },
   "provenance": {
-    "generator": "Al Gemini Pro latest (as stated in the review)",
+    "generator": "AI Gemini Pro latest (as stated in the review)",
     "verifier": "David Wishengrad (as stated in the review)",
     "issuing_body": "none stated",
     "independence": "not independently peer reviewed"
@@ -38,18 +38,82 @@
     ],
     "philpapers": "MUEFOC",
     "url": "https://philpapers.org/rec/MUEFOC",
-    "status": "manuscript on PhilPapers with a PhilArchive copy",
+    "status": "manuscript on PhilPapers with a PhilArchive copy; flagship paper of the OPH program",
     "philpapers_checked": "2026-11-03",
     "philpapers_downloads": 1062,
-    "philpapers_external_repository": "https://github.com/FloatingPragma/observer-patch-holography"
+    "philpapers_external_repository": "https://github.com/FloatingPragma/observer-patch-holography",
+    "upstream_source": "flagship/from_observer_consensus_to_standard_physics.tex",
+    "flagship_authors_at_pin": [
+      "Bernhard Mueller",
+      "Mario Poneder",
+      "Alexander Osika",
+      "Kai Xue",
+      "Ben Cassie",
+      "Peter Nguyen",
+      "Jinwook Kim",
+      "David Matscheko",
+      "Daniel Ari Friedman",
+      "Jonathan Hill",
+      "William T. Glynn",
+      "Maarten Antonie Visser",
+      "Kale Arnav Anirudha",
+      "Brieuc de La Fournière"
+    ],
+    "philpapers_note": "The authors list above is the PhilPapers record as retrieved 2026-11-03. The flagship source at the pinned commit lists fourteen authors, adding David Matscheko."
   },
   "external_source": {
-    "repository": "https://github.com/docxology/observer-patch-holography",
-    "commit": "1c5a908ed3441c5d09628183af18c362dbc58bea",
-    "note": "Public OPH repository used for the extrinsic check. The review's exact title is a PhilPapers manuscript; the repository carries the technical papers and book."
+    "repository": "https://github.com/FloatingPragma/observer-patch-holography",
+    "commit": "fcc2dd173d4f48763cd0bf7cc1739751eca3b96d",
+    "commit_date": "2026-11-03",
+    "paper_release": "r2060",
+    "paper_release_date": "2026-11-02",
+    "note": "Upstream OPH repository used for the extrinsic check. The flagship source at this commit carries the exact title the review cites.",
+    "previous_pin": {
+      "repository": "https://github.com/docxology/observer-patch-holography",
+      "commit": "1c5a908ed3441c5d09628183af18c362dbc58bea",
+      "note": "A fork, 7 commits ahead of and 1,593 commits behind upstream main at the commit above. Retired by OPH-AUD-002."
+    }
   },
   "rights": {
     "status": "author-sent review; reproduced as received for audit and response",
     "relicensed": false
+  },
+  "verified_transcription": {
+    "file": "LFDI_Alignment_Audit-57.verified.txt",
+    "sha256": "92416993bad7fd4c0dd981b675f8f125d793079ce9c1cdfb9bb1645354a9f300",
+    "lines": 6,
+    "method": "Line-by-line visual comparison with the page image extracted by pdfimages -j, 2026-11-03.",
+    "derivation": "Apply these literal substitutions to the OCR text, in order. Nothing else differs.",
+    "substitutions": [
+      [
+        "(SL_1$)",
+        "($L_1$)"
+      ],
+      [
+        "(SL_1 = 0$)",
+        "($L_1 = 0$)"
+      ],
+      [
+        "(SDS)",
+        "($D$)"
+      ],
+      [
+        "(SUS)",
+        "($U$)"
+      ],
+      [
+        "Eoo",
+        "E∞"
+      ],
+      [
+        "(0 x U)",
+        "(0 × U)"
+      ],
+      [
+        "Al Gemini",
+        "AI Gemini"
+      ]
+    ],
+    "note": "Line numbers match the OCR text. The page prints LaTeX source literally, so $L_1$, $D$ and $U$ are the page's own characters. 'AI' is the reading of the italic footer; capital I and lower-case l are close in that face, and the sentence's sense settles it."
   }
 }

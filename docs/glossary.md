@@ -71,3 +71,28 @@ argument.
 - **Polycentric governance:** multiple, overlapping, and contestable centers of
   authority rather than a single global regulator.
 - **Sunset clause:** a rule that expires unless deliberately renewed.
+
+## Terms in the OPH/LFDI exchange
+
+- **Performative contradiction:** a conflict between what an utterance presupposes and
+  what it asserts. An invitation that says it cannot be declined is one small example.
+  Speaking does presuppose a speaker. It does not presuppose any ranking of values.
+- **Transcendental argument:** an argument that X is a necessary condition for the
+  possibility of Y, so given Y, X follows. Stroud's objection is that such arguments may
+  show only what we must believe, not how things are.
+- **Contradicted and refuted:** in the review register, `contradicted` means OPH's stated
+  position conflicts with the review's claim. A conflict between two texts refutes
+  neither of them.
+- **$L_1$, $U$, $D$:** symbols in WISLIM's formula. WISLIM glosses them in words, and the
+  review and the reply use them differently; see F4 of
+  [`reviews/oph-lfdi-57/intrinsic-audit.md`](../reviews/oph-lfdi-57/intrinsic-audit.md).
+- **LFDI and E∞:** in WISLIM v2.0.1 these are different things. The Life-First Decision
+  Invariant is a decision protocol (`source/WISLIM-v2.0.1.txt:208`). E∞ is the Core
+  Ethical Formula of Appendix A (`source/WISLIM-v2.0.1.txt:431`), given "in three
+  fashions": plain English, a formal version where "L = 0 ⇔ no such system exists"
+  (`source/WISLIM-v2.0.1.txt:626`), and an engineering version where the formula "is not
+  meant to compute a number" (`source/WISLIM-v2.0.1.txt:687`).
+- **Integrity Screen and Airtight Trap:** the Integrity Screen is WISLIM's three-response
+  test (`source/WISLIM-v2.0.1.txt:364`). "Airtight Trap" does not occur in WISLIM v2.0.1;
+  the reply gives a narrower three-option version (`OPH-REP-012`).
+

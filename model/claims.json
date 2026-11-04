@@ -166,7 +166,7 @@
       "role": "support",
       "verdict": "invalid-as-proof",
       "severity": "high",
-      "summary": "The theorem 'if L = 0 then E∞ = 0' is trivial arithmetic. L, U, and D are undefined, dimensionless, and unmeasured. D approaching zero produces a pole, not an ideal. The formula cannot compare actions or adjudicate trade-offs.",
+      "summary": "The theorem 'if L = 0 then E∞ = 0' is trivial arithmetic. L, U, and D have verbal glosses that differ across the paper's versions, no units, and no estimator. D approaching zero produces a pole, not an ideal. The formula cannot compare actions or adjudicate trade-offs.",
       "dependencies": [
         "C03"
       ],
