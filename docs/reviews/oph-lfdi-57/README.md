@@ -6,9 +6,11 @@ base is a transcription checked against the page image. The raw OCR text is
 kept beside it as a record and misreads the page's symbols; do not cite it.
 
 - **Target:** Bernhard Mueller et al., Observers Who Read Their Universe into Existence: Finite Consensus, an Executable Observer, and Standard Physics (PhilPapers MUEFOC)
+- **Target note:** That title is the one the review cites and the flagship's title at release r2060. Release r2061 (2026-11-04) keeps the main title and changes the subtitle to Finite Consensus and the Reconstruction of Standard Physics.
 - **Target record:** https://philpapers.org/rec/MUEFOC
 - **OPH repository:** https://github.com/FloatingPragma/observer-patch-holography
-- **OPH commit:** `fcc2dd173d4f48763cd0bf7cc1739751eca3b96d` (paper release r2060 (2026-11-02))
+- **OPH commit:** `f50e4da10533b8f5d3bf92a711c07bf6d563fe74` (paper release r2061 (2026-11-04), upstream `main` on 2026-11-04)
+- **Release when the review was sent:** `fcc2dd173d4f48763cd0bf7cc1739751eca3b96d` (paper release r2060 (2026-11-02))
 - **Source PDF:** `reviews/oph-lfdi-57/source/LFDI_Alignment_Audit-57.pdf`
 - **Verified transcription:** `reviews/oph-lfdi-57/source/LFDI_Alignment_Audit-57.verified.txt`
 - **Raw OCR text:** `reviews/oph-lfdi-57/source/LFDI_Alignment_Audit-57.txt`

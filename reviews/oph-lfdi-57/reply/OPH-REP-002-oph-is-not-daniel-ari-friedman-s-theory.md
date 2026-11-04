@@ -29,7 +29,7 @@ The note says 'his theory' and 'his definition'. The response attributed the def
 
 The response says 'OPH defines an observer'. It does not say 'my theory'. The flagship source at the pinned commit names Bernhard Mueller first and as corresponding author, lists fourteen authors, and states this contribution: 'Daniel Ari Friedman contributed independent red-team audits of the papers, the book, the claim and premise ledgers, the Lean library, continuous integration and the custody records'.
 
-Commit counts at the pinned commit show the scale: 2,646 of 4,079 by Bernhard Mueller, 9 by Daniel Ari Friedman (`git shortlog -sne`). Commit counts are a rough proxy and measure nothing about ideas. Being a listed author carries responsibility for the paper. It does not make the program one person's position.
+Commit counts at the pinned commit show the scale: 2,693 of 4,159 by Bernhard Mueller, 42 by Daniel Ari Friedman (`git shortlog -sne`). Commit counts are a rough proxy and measure nothing about ideas. Being a listed author carries responsibility for the paper. It does not make the program one person's position.
 
 The framing matters to the argument. 'You postulated', 'your physics', 'your theory's validity', and 'please step down' all treat a multi-author research program as one person's claim, and then address the person.
 
@@ -39,11 +39,11 @@ The framing matters to the argument. 'You postulated', 'your physics', 'your the
 
 **OPH, at the pinned upstream commit**
 
-- [`flagship/from_observer_consensus_to_standard_physics.tex:40`](https://github.com/FloatingPragma/observer-patch-holography/blob/fcc2dd173d4f48763cd0bf7cc1739751eca3b96d/flagship/from_observer_consensus_to_standard_physics.tex#L40)
+- [`flagship/from_observer_consensus_to_standard_physics.tex:40`](https://github.com/FloatingPragma/observer-patch-holography/blob/f50e4da10533b8f5d3bf92a711c07bf6d563fe74/flagship/from_observer_consensus_to_standard_physics.tex#L40)
   > Bernhard Mueller\textsuperscript{1,2,*}
-- [`flagship/from_observer_consensus_to_standard_physics.tex:67`](https://github.com/FloatingPragma/observer-patch-holography/blob/fcc2dd173d4f48763cd0bf7cc1739751eca3b96d/flagship/from_observer_consensus_to_standard_physics.tex#L67)
+- [`flagship/from_observer_consensus_to_standard_physics.tex:67`](https://github.com/FloatingPragma/observer-patch-holography/blob/f50e4da10533b8f5d3bf92a711c07bf6d563fe74/flagship/from_observer_consensus_to_standard_physics.tex#L67)
   > Corresponding author:
-- [`flagship/from_observer_consensus_to_standard_physics.tex:2956`](https://github.com/FloatingPragma/observer-patch-holography/blob/fcc2dd173d4f48763cd0bf7cc1739751eca3b96d/flagship/from_observer_consensus_to_standard_physics.tex#L2956)
+- [`flagship/from_observer_consensus_to_standard_physics.tex:2640`](https://github.com/FloatingPragma/observer-patch-holography/blob/f50e4da10533b8f5d3bf92a711c07bf6d563fe74/flagship/from_observer_consensus_to_standard_physics.tex#L2640)
   > Daniel Ari Friedman contributed independent red-team audits of the papers, the book, the claim and premise ledgers, the Lean library, continuous integration and the custody records
 
 **The response as sent**

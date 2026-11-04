@@ -27,9 +27,9 @@ The response said five review topics 'rest on premises OPH does not grant'. That
 
 ## Assessment
 
-'Rest on premises OPH does not grant' has OPH as its subject. A word search of the pinned commit finds no occurrence of LFDI, WISLIM, or Wishengrad, so the report can be checked by anyone. Nothing in that sentence is about what its author chooses.
+'Rest on premises OPH does not grant' has OPH as its subject. A word search of the text files at the pinned commit finds no occurrence of LFDI, WISLIM, or Wishengrad, so the report can be checked by anyone. Nothing in that sentence is about what its author chooses.
 
-The response's author states his position for this record: he rejects the idea that one specific framing of a cognitive encounter works as a mandate on others, binding them to its rules of language game. He does engage the inescapable relational, enactive, and cognitive setting, with an ontological pluralism. His paper on cognitive art and science says both things plainly: '[we have to exist for this exclaimation’s validity]' and 'different Alice’s respond differently to different Bob’s, as viewed by different Carla’s.'
+The response's author states his position for this record: he rejects the idea that one specific framing of a cognitive encounter works as a mandate on others, binding them to its rules of language game. He does engage the inescapable relational, enactive, and cognitive setting, with an ontological pluralism. His paper on cognitive art and science puts the setting in its own words: '[we have to exist for this exclaimation’s validity]' and 'different Alice’s respond differently to different Bob’s, as viewed by different Carla’s.'
 
 'Operational physics' needs an argument too. In WISLIM v2.0.1 the LFDI is a conditional decision rule, `if action_affects_life(context)` with an `else: pass` branch. It is a proposed rule for action. Calling it physics does not make declining it a mistake about nature. The philosophical literature has names for the distinction: for Wittgenstein 'the speaking of language is part of an activity, or of a form of life', and Carnap's principle of tolerance says 'we are not in the business of setting up prohibitions but of arriving at conventions'.
 

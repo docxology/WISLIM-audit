@@ -8,15 +8,23 @@ The tests use only the Python standard library and run under either:
 
 from __future__ import annotations
 
+import contextlib
 import importlib.util
+import io
+import json
+import os
+import subprocess
+import tempfile
 import unittest
 from pathlib import Path
+from unittest import mock
 
 ROOT = Path(__file__).resolve().parents[1]
 VALIDATOR_PATH = ROOT / "tools" / "validate.py"
 REGISTER_PATH = ROOT / "scripts" / "build_issue_register.py"
 REVIEW_REGISTER_PATH = ROOT / "scripts" / "build_review_register.py"
 REPLY_REGISTER_PATH = ROOT / "scripts" / "build_reply_register.py"
+QUOTE_CHECK_PATH = ROOT / "scripts" / "verify_oph_quotes.py"
 
 
 def load_module(name, path):
@@ -215,7 +223,25 @@ class ReviewRegisterTests(unittest.TestCase):
             for item in topic["oph_evidence"]:
                 url = self.review.external_evidence_url(review, item)
                 self.assertTrue(url.startswith(review["oph_repository"] + "/blob/"))
-                self.assertIn(review["oph_commit"], url)
+                self.assertIn(item.get("commit", review["oph_commit"]), url)
+
+    def test_evidence_with_its_own_commit_is_the_review_day_release_and_says_so(self):
+        review = self.data["review"]
+        self.assertNotEqual(review["oph_review_day"]["commit"], review["oph_commit"])
+        dated = [(t, i) for t in self.topics for i in t["oph_evidence"] if "commit" in i]
+        self.assertTrue(dated)
+        for topic, item in dated:
+            with self.subTest(topic=topic["id"], quote=item["quote"]):
+                self.assertEqual(item["commit"], review["oph_review_day"]["commit"])
+                self.assertIn(
+                    f"release {review['oph_review_day']['release']}",
+                    self.review.external_evidence_link(review, item),
+                )
+
+    def test_review_model_rejects_a_commit_it_does_not_record(self):
+        data = json.loads(json.dumps(self.data))
+        data["topics"][0]["oph_evidence"][0]["commit"] = "0" * 40
+        self.assertTrue(any("review-day release" in error for error in self.review.check_model(data)))
 
     def test_review_register_has_no_errors(self):
         self.assertEqual(self.review.check_all(self.data), [])
@@ -262,8 +288,88 @@ class ReviewRegisterTests(unittest.TestCase):
             ROOT / "reviews" / "oph-lfdi-57" / "verification.md"
         ).read_text(encoding="utf-8")
         self.assertIn(self.data["review"]["oph_commit"], text)
-        self.assertIn("2026-11-03", text)
-        self.assertIn("git grep -c -w -i", text)
+        self.assertIn(self.data["review"]["oph_checked"], text)
+        self.assertIn("git grep -I -c -w -i", text)
+
+
+class QuoteCheckTests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        cls.check = load_module("wislim_quote_check", QUOTE_CHECK_PATH)
+        cls.lines = ["first line", "", "a wrapped", "quotation here", "last line"]
+
+    def test_anchor_allows_for_wrapped_prose_near_the_line(self):
+        self.assertTrue(self.check.anchored(self.lines, 3, "a wrapped quotation here"))
+        self.assertTrue(self.check.anchored(self.lines, 5, "a wrapped quotation here"))
+        self.assertFalse(self.check.anchored(self.lines, 3, "not in the file"))
+
+    def test_locate_finds_where_a_moved_quotation_starts(self):
+        self.assertEqual(self.check.locate(self.lines, "a wrapped quotation here"), 3)
+        self.assertEqual(self.check.locate(self.lines, "quotation here last"), 4)
+        self.assertIsNone(self.check.locate(self.lines, "not in the file"))
+
+    def two_commits(self):
+        """A throwaway repository whose second commit moves one line and drops another."""
+        directory = tempfile.TemporaryDirectory()
+        self.addCleanup(directory.cleanup)
+        repo = Path(directory.name)
+        env = dict(os.environ, GIT_AUTHOR_NAME="test", GIT_AUTHOR_EMAIL="test@example.invalid")
+        env.update(GIT_COMMITTER_NAME="test", GIT_COMMITTER_EMAIL="test@example.invalid")
+
+        def git(*args):
+            return subprocess.run(
+                ["git", "-C", str(repo), *args],
+                stdin=subprocess.DEVNULL, capture_output=True, text=True, check=True, env=env,
+            ).stdout.strip()
+
+        git("init", "-q")
+        (repo / "a.md").write_text("alpha line\nbeta line\n", encoding="utf-8")
+        git("add", "a.md")
+        git("commit", "-q", "-m", "one")
+        first = git("rev-parse", "HEAD")
+        (repo / "a.md").write_text("new\n" * 7 + "alpha line\n", encoding="utf-8")
+        git("add", "a.md")
+        git("commit", "-q", "-m", "two")
+        return repo, first, git("rev-parse", "HEAD")
+
+    def run_check(self, function, *args, items):
+        output = io.StringIO()
+        with mock.patch.object(self.check, "evidence", side_effect=lambda: iter(items)):
+            with contextlib.redirect_stdout(output), contextlib.redirect_stderr(output):
+                return function(*args), output.getvalue()
+
+    def test_verify_reads_an_entry_at_its_own_commit(self):
+        repo, first, second = self.two_commits()
+        items = [
+            ("T", {"path": "a.md", "line": 8, "quote": "alpha line"}),
+            ("T", {"path": "a.md", "line": 2, "quote": "beta line", "commit": first}),
+        ]
+        self.assertEqual(self.run_check(self.check.verify, repo, "r", second, items=items)[0], 0)
+        unlabeled = [("T", {"path": "a.md", "line": 2, "quote": "beta line"})]
+        self.assertEqual(self.run_check(self.check.verify, repo, "r", second, items=unlabeled)[0], 1)
+
+    def test_verify_fails_when_the_models_record_nothing(self):
+        repo, _, second = self.two_commits()
+        self.assertEqual(self.run_check(self.check.verify, repo, "r", second, items=[])[0], 1)
+
+    def test_drift_reports_what_moved_and_what_is_gone(self):
+        repo, first, second = self.two_commits()
+        items = [
+            ("T", {"path": "a.md", "line": 1, "quote": "alpha line"}),
+            ("T", {"path": "a.md", "line": 2, "quote": "beta line"}),
+            ("T", {"path": "a.md", "line": 2, "quote": "beta line", "commit": first}),
+        ]
+        code, report = self.run_check(self.check.drift, repo, second, first, items=items)
+        self.assertEqual(code, 1)
+        self.assertIn("0 held, 1 moved, 1 gone; 1 name their own release", report)
+        self.assertIn("a.md:1 is now at line 8", report)
+        self.assertIn("a.md:2 is gone", report)
+
+    def test_drift_exits_zero_when_every_quotation_holds_and_two_on_a_bad_ref(self):
+        repo, _, second = self.two_commits()
+        items = [("T", {"path": "a.md", "line": 8, "quote": "alpha line"})]
+        self.assertEqual(self.run_check(self.check.drift, repo, second, second, items=items)[0], 0)
+        self.assertEqual(self.run_check(self.check.drift, repo, "no-such-ref", second, items=items)[0], 2)
 
 
 class ReplyRegisterTests(unittest.TestCase):
@@ -280,7 +386,7 @@ class ReplyRegisterTests(unittest.TestCase):
         )
         self.assertEqual(
             [item["id"] for item in self.data["corrections"]],
-            [f"OPH-AUD-{index:03d}" for index in range(1, 12)],
+            [f"OPH-AUD-{index:03d}" for index in range(1, self.reply.CORRECTION_COUNT + 1)],
         )
 
     def test_register_has_no_errors(self):

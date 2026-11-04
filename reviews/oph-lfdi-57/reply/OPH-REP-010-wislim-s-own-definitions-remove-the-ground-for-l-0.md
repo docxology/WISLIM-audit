@@ -31,7 +31,7 @@ The one-page review sets $L_1 = 0$ because OPH's observer is 'non-living'. WISLI
 
 ## Assessment
 
-The review says 'By defining the "observer" as a non-living, finite computational object' and 'By operationally defining the observer without the prerequisite of Life ($L_1 = 0$)'. WISLIM's formal version defines the symbol differently: 'L ≥ 0: existence of at least one choice-capable life-bearing system' and 'L = 0 ⇔ no such system exists'. Its unified definition, 'used in all versions', says 'If no such system exists, life is absent.' On those terms $L = 0$ is a claim about the world: no choice-capable system exists. OPH makes no such claim. Its authors exist, and its flagship's native observer 'chooses the next seam from the record alone'. A definition that does not require a property does not remove the property from anything.
+The review says 'By defining the "observer" as a non-living, finite computational object' and 'By operationally defining the observer without the prerequisite of Life ($L_1 = 0$)'. WISLIM's formal version defines the symbol differently: 'L ≥ 0: existence of at least one choice-capable life-bearing system' and 'L = 0 ⇔ no such system exists'. Its unified definition, 'used in all versions', says 'If no such system exists, life is absent.' On those terms $L = 0$ is a claim about the world: no choice-capable system exists. OPH makes no such claim. Its authors exist, and the observer in its executable model is 'A finite record tape and a controller that reads committed records and chooses the next seam'. A definition that does not require a property does not remove the property from anything.
 
 The reply's narrower test points the same way. A system that 'makes decisions affecting life' is 'life under the LFDI', and one that does not is 'an inert tool'. Applied observer by observer, that sorts them; it does not zero the class. The book's thermostat exists to 'throw a switch on what it finds'; one that runs a boiler affects the people in the room, so under this rule it is life and 'must be protected as such'. That is the overinclusion tracked at WISLIM-035. 'Life systems' also appears inside its own definition, which is tracked at WISLIM-006 and WISLIM-007.
 
@@ -47,11 +47,11 @@ The rest of this paragraph of the reply needs a quotation it does not have. The 
 
 **OPH, at the pinned upstream commit**
 
-- [`flagship/from_observer_consensus_to_standard_physics.tex:953`](https://github.com/FloatingPragma/observer-patch-holography/blob/fcc2dd173d4f48763cd0bf7cc1739751eca3b96d/flagship/from_observer_consensus_to_standard_physics.tex#L953)
-  > Operational observers are continuing native processes that prepare, read, retain and act on records.
-- [`flagship/from_observer_consensus_to_standard_physics.tex:962`](https://github.com/FloatingPragma/observer-patch-holography/blob/fcc2dd173d4f48763cd0bf7cc1739751eca3b96d/flagship/from_observer_consensus_to_standard_physics.tex#L962)
-  > chooses the next seam from the record alone
-- [`book/04-chapter-03.md:41`](https://github.com/FloatingPragma/observer-patch-holography/blob/fcc2dd173d4f48763cd0bf7cc1739751eca3b96d/book/04-chapter-03.md#L41)
+- [`flagship/from_observer_consensus_to_standard_physics.tex:544`](https://github.com/FloatingPragma/observer-patch-holography/blob/f50e4da10533b8f5d3bf92a711c07bf6d563fe74/flagship/from_observer_consensus_to_standard_physics.tex#L544)
+  > An observer patch is a finite object with local state, an observable boundary map, durable records, readback, and a set of authorized repair moves.
+- [`model/CONSTRUCTION.md:389`](https://github.com/FloatingPragma/observer-patch-holography/blob/f50e4da10533b8f5d3bf92a711c07bf6d563fe74/model/CONSTRUCTION.md#L389)
+  > A finite record tape and a controller that reads committed records and chooses the next seam
+- [`book/04-chapter-03.md:41`](https://github.com/FloatingPragma/observer-patch-holography/blob/f50e4da10533b8f5d3bf92a711c07bf6d563fe74/book/04-chapter-03.md#L41)
   > throw a switch on what it finds
 
 **The one-page review**

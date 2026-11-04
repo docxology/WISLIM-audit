@@ -23,13 +23,13 @@ related: [OPH-REP-001, OPH-REP-010]
 
 ## Summary
 
-The phrase came from the response, which quoted a stale fork. Upstream had rewritten the sentence on 2026-10-11, and the error is ours. In current text the computations are internal to the structure, its builders are inside it, and 'nothing outside the world is running the world'. 'You are running it' is close to what OPH says.
+The phrase came from the response, which quoted a stale fork. Upstream had rewritten the sentence on 2026-10-11, and the error is ours. In current text the computations are internal to the structure, its builders are inside it, and 'nothing outside the world is running the world'. 'You are running it' is true of a run of OPH's model and does not show that the world needs a living runner. Whether those inside must be alive is what remains in dispute.
 
 ## Assessment
 
 The response quoted 'a condition on one structure that holds or fails with nothing running it' from a fork commit (OPH-AUD-002). In that passage the phrase distinguished three orderings: the fixed point, an observer's record time, and the disagreement count. It was a statement about order, not about truth.
 
-Upstream's text now says the fixed point 'needs no first solver outside it, and it contains internal causal order, local changes and the computations through which the structure realizes its dependencies'. Elsewhere in the same appendix it says of a laptop running the rule that 'The laptop is inside the world that rule describes' and that 'nothing outside the world is running the world'. The closure hypothesis has observers inside building the hardware, and its test is that the specification 'has to run and reproduce what observers measure'. 'You are running it' therefore lands close to OPH's own hypothesis. Any restated objection should address those sentences.
+Upstream's text now says the fixed point 'needs no first solver outside it, and it contains internal causal order, local changes and the computations through which the structure realizes its dependencies'. Elsewhere in the same appendix it says of a laptop running the rule that 'The laptop is inside the world that rule describes' and that 'nothing outside the world is running the world'. The closure hypothesis has observers inside building the hardware, and its test is that the specification 'has to run and reproduce what observers measure'. So part of the reply's point is common ground: the people and machines running OPH's model are inside the world it describes. OPH adds that 'Running the program makes a model of the rule', so a run by its authors is not what runs the world. Any restated objection should address those sentences.
 
 What remains in dispute is one word: whether those who run it must be alive. 'If L1 = 0, your formal fixed point becomes undefined' depends on that definition, and WISLIM's own definitions remove the ground for the zero (OPH-REP-010). WISLIM itself prints 'The logic stands regardless of the substrate running it.'
 
@@ -39,15 +39,17 @@ What remains in dispute is one word: whether those who run it must be alive. 'If
 
 **OPH, at the pinned upstream commit**
 
-- [`book/44-appendix-a.md:153`](https://github.com/FloatingPragma/observer-patch-holography/blob/fcc2dd173d4f48763cd0bf7cc1739751eca3b96d/book/44-appendix-a.md#L153)
+- [`book/44-appendix-a.md:153`](https://github.com/FloatingPragma/observer-patch-holography/blob/f50e4da10533b8f5d3bf92a711c07bf6d563fe74/book/44-appendix-a.md#L153)
   > It needs no first solver outside it, and it contains internal causal order, local changes and the computations through which the structure realizes its dependencies.
-- [`book/44-appendix-a.md:135`](https://github.com/FloatingPragma/observer-patch-holography/blob/fcc2dd173d4f48763cd0bf7cc1739751eca3b96d/book/44-appendix-a.md#L135)
+- [`book/44-appendix-a.md:135`](https://github.com/FloatingPragma/observer-patch-holography/blob/f50e4da10533b8f5d3bf92a711c07bf6d563fe74/book/44-appendix-a.md#L135)
   > The laptop is inside the world that rule describes.
-- [`book/44-appendix-a.md:135`](https://github.com/FloatingPragma/observer-patch-holography/blob/fcc2dd173d4f48763cd0bf7cc1739751eca3b96d/book/44-appendix-a.md#L135)
+- [`book/44-appendix-a.md:135`](https://github.com/FloatingPragma/observer-patch-holography/blob/f50e4da10533b8f5d3bf92a711c07bf6d563fe74/book/44-appendix-a.md#L135)
+  > Running the program makes a model of the rule
+- [`book/44-appendix-a.md:135`](https://github.com/FloatingPragma/observer-patch-holography/blob/f50e4da10533b8f5d3bf92a711c07bf6d563fe74/book/44-appendix-a.md#L135)
   > nothing outside the world is running the world.
-- [`README.md:46`](https://github.com/FloatingPragma/observer-patch-holography/blob/fcc2dd173d4f48763cd0bf7cc1739751eca3b96d/README.md#L46)
+- [`README.md:46`](https://github.com/FloatingPragma/observer-patch-holography/blob/f50e4da10533b8f5d3bf92a711c07bf6d563fe74/README.md#L46)
   > records and build hardware that realizes that same history, including its builders.
-- [`README.md:48`](https://github.com/FloatingPragma/observer-patch-holography/blob/fcc2dd173d4f48763cd0bf7cc1739751eca3b96d/README.md#L48)
+- [`README.md:48`](https://github.com/FloatingPragma/observer-patch-holography/blob/f50e4da10533b8f5d3bf92a711c07bf6d563fe74/README.md#L48)
   > It has to run and reproduce what observers measure.
 
 **The response as sent**

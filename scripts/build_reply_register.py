@@ -44,7 +44,7 @@ AUDIT_DIR = ROOT / "docs" / "audit"
 REPO_URL = "https://github.com/docxology/WISLIM-audit"
 BRANCH = "main"
 TOPIC_COUNT = 16
-CORRECTION_COUNT = 11
+CORRECTION_COUNT = 13
 
 KINDS = {
     "attribution": "attributes to the response or its author something the text does not say",
@@ -139,7 +139,7 @@ def blob_url(rel: str, line: int | None = None) -> str:
 
 def oph_url(item: dict[str, Any]) -> str:
     repository, commit = oph_pin()
-    return f"{repository}/blob/{commit}/{item['path']}#L{item['line']}"
+    return f"{repository}/blob/{item.get('commit', commit)}/{item['path']}#L{item['line']}"
 
 
 def audit_record(issue_id: str) -> Path | None:
@@ -181,7 +181,7 @@ def check_model(data: dict[str, Any]) -> list[str]:
         errors.append("reply topic IDs are not the stable sequence OPH-REP-001..016")
     expected_fixes = [f"OPH-AUD-{index:03d}" for index in range(1, CORRECTION_COUNT + 1)]
     if [item.get("id") for item in corrections] != expected_fixes:
-        errors.append("correction IDs are not the stable sequence OPH-AUD-001..011")
+        errors.append(f"correction IDs are not the stable sequence OPH-AUD-001..{CORRECTION_COUNT:03d}")
 
     ledger = load_json(LEDGER_DATA)
     for name, info in ledger["files"].items():

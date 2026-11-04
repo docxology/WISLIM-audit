@@ -1,8 +1,9 @@
 PYTHON ?= python3
 
 OPH_REPO ?= .oph
+OPH_REF ?= origin/main
 
-.PHONY: help register review review-check reply reply-check reply-issues reply-issues-check issues issues-check verify verify-oph test
+.PHONY: help register review review-check reply reply-check reply-issues reply-issues-check issues issues-check verify verify-oph oph-drift test
 
 help:
 	@printf '%s\n' \
@@ -17,6 +18,7 @@ help:
 	  'issues-check  Verify the GitHub mirror against the register (requires gh auth)' \
 	  'verify        Run local validation and the test suite' \
 	  'verify-oph    Check every OPH quotation at the pinned commit (OPH_REPO=<clone>)' \
+	  'oph-drift     List pinned OPH quotations that moved or vanished at OPH_REF (default origin/main)' \
 	  'test          Run the unittest suite'
 
 register:
@@ -55,6 +57,9 @@ verify:
 
 verify-oph:
 	$(PYTHON) scripts/verify_oph_quotes.py --oph-repo "$(OPH_REPO)"
+
+oph-drift:
+	$(PYTHON) scripts/verify_oph_quotes.py --oph-repo "$(OPH_REPO)" --ref "$(OPH_REF)"
 
 test:
 	$(PYTHON) -m unittest discover -s tests -v

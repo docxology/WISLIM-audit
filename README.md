@@ -97,6 +97,8 @@ regarding Bernhard Mueller et al., *Observers Who Read Their Universe into
 Existence: Finite Consensus, an Executable Observer, and Standard Physics*
 ([PhilPapers `MUEFOC`](https://philpapers.org/rec/MUEFOC); public repository
 [`FloatingPragma/observer-patch-holography`](https://github.com/FloatingPragma/observer-patch-holography)).
+That was the paper's title when the review was sent. Release r2061 changed the subtitle to
+*Finite Consensus and the Reconstruction of Standard Physics*.
 
 - **Canonical topic model:** `reviews/oph-lfdi-57/model/review.json` (`OPH-REV-001`–`OPH-REV-012`).
 - **Modular topic records:** `docs/reviews/oph-lfdi-57/topics/` and `reviews/oph-lfdi-57/topics/` (4 addressed by OPH, 3 contradicted by OPH's text, 5 not addressed / external LFDI stipulations).

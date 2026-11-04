@@ -1,7 +1,7 @@
 # Response email as sent
 
 **Status:** sent 2026-11-03 at 20:18 UTC, to David Wishengrad, with the recipients of
-his original message copied. The recipient list is not reproduced here. The verbatim
+the original message copied. The recipient list is not reproduced here. The verbatim
 body is in
 [`correspondence/02-friedman-response-as-sent.txt`](correspondence/02-friedman-response-as-sent.txt),
 and the thread is in the [correspondence ledger](correspondence/README.md).

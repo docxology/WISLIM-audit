@@ -185,6 +185,8 @@ def check_model(data: dict[str, Any]) -> list[str]:
                         errors.append(f"{tid}: {field}[{index}] missing {key}")
                 if not isinstance(item.get("line"), int) or item.get("line", 0) < 1:
                     errors.append(f"{tid}: {field}[{index}].line is not positive")
+                if "commit" in item and item["commit"] != review["oph_review_day"]["commit"]:
+                    errors.append(f"{tid}: {field}[{index}] names a commit other than the review-day release")
                 if len(str(item.get("quote", "")).strip()) < 10:
                     errors.append(f"{tid}: {field}[{index}].quote is too short")
                 if field == "wislim_evidence":
@@ -214,7 +216,15 @@ def check_model(data: dict[str, Any]) -> list[str]:
 
 
 def external_evidence_url(review: dict[str, Any], item: dict[str, Any]) -> str:
-    return f"{review['oph_repository']}/blob/{review['oph_commit']}/{item['path']}#L{item['line']}"
+    commit = item.get("commit", review["oph_commit"])
+    return f"{review['oph_repository']}/blob/{commit}/{item['path']}#L{item['line']}"
+
+
+def external_evidence_link(review: dict[str, Any], item: dict[str, Any]) -> str:
+    link = f"[`{item['path']}:{item['line']}`]({external_evidence_url(review, item)})"
+    if "commit" in item:
+        link += f" (release {review['oph_review_day']['release']}, upstream when the review was sent)"
+    return link
 
 
 def render_topic(topic: dict[str, Any], review: dict[str, Any]) -> str:
@@ -264,7 +274,7 @@ def render_topic(topic: dict[str, Any], review: dict[str, Any]) -> str:
     if topic["oph_evidence"]:
         for item in topic["oph_evidence"]:
             lines += [
-                f"- [`{item['path']}:{item['line']}`]({external_evidence_url(review, item)})",
+                f"- {external_evidence_link(review, item)}",
                 f"  > {item['quote']}",
             ]
     else:
@@ -320,9 +330,11 @@ def render_index(data: dict[str, Any], audit_prefix: str = "") -> str:
         "kept beside it as a record and misreads the page's symbols; do not cite it.",
         "",
         f"- **Target:** {review['target']}",
+        f"- **Target note:** {review['target_note']}",
         f"- **Target record:** {review['target_url']}",
         f"- **OPH repository:** {review['oph_repository']}",
-        f"- **OPH commit:** `{review['oph_commit']}` (paper release {review['oph_release']})",
+        f"- **OPH commit:** `{review['oph_commit']}` (paper release {review['oph_release']}, upstream `main` on {review['oph_checked']})",
+        f"- **Release when the review was sent:** `{review['oph_review_day']['commit']}` (paper release {review['oph_review_day']['release']})",
         f"- **Source PDF:** `{review['source_pdf']}`",
         f"- **Verified transcription:** `{review['source_text']}`",
         f"- **Raw OCR text:** `{review['source_ocr']}`",
@@ -393,7 +405,9 @@ def render_docs_reviews(data: dict[str, Any]) -> str:
         f"- **Received:** {review['received']}",
         f"- **Format:** {review['review_type']}",
         f"- **Target:** {review['target']} ({review['target_url']})",
-        f"- **External verification corpus:** `{review['oph_repository']}` at commit `{review['oph_commit']}` (paper release {review['oph_release']})",
+        f"- **Target note:** {review['target_note']}",
+        f"- **External verification corpus:** `{review['oph_repository']}` at commit `{review['oph_commit']}` (paper release {review['oph_release']}, upstream `main` on {review['oph_checked']})",
+        f"- **Release when the review was sent:** `{review['oph_review_day']['commit']}` (paper release {review['oph_review_day']['release']})",
         f"- **Source PDF:** [`{review['source_pdf']}`](../{review['source_pdf']})",
         f"- **Verified transcription:** [`{review['source_text']}`](../{review['source_text']})",
         f"- **Raw OCR text:** [`{review['source_ocr']}`](../{review['source_ocr']})",
@@ -403,7 +417,7 @@ def render_docs_reviews(data: dict[str, Any]) -> str:
         "- **Response email as sent:** [`reviews/oph-lfdi-57/response-email.md`](../reviews/oph-lfdi-57/response-email.md)",
         "- **Correspondence ledger:** [`reviews/oph-lfdi-57/correspondence/README.md`](../reviews/oph-lfdi-57/correspondence/README.md)",
         "- **Reply register:** [`reviews/oph-lfdi-57/reply/README.md`](../reviews/oph-lfdi-57/reply/README.md) (`OPH-REP-001`–`OPH-REP-016`)",
-        "- **Corrections to this tracker:** [`reviews/oph-lfdi-57/corrections.md`](../reviews/oph-lfdi-57/corrections.md) (`OPH-AUD-001`–`OPH-AUD-011`)",
+        "- **Corrections to this tracker:** [`reviews/oph-lfdi-57/corrections.md`](../reviews/oph-lfdi-57/corrections.md) (`OPH-AUD-001`–`OPH-AUD-013`)",
         f"- **Tracked topics:** {len(topics)} (`OPH-REV-001`–`OPH-REV-012`)",
         f"  - **Addressed by OPH:** {len(addressed)}",
         f"  - **Contradicted by OPH's text:** {len(contradicted)}",

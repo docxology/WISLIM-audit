@@ -76,11 +76,13 @@ decomposed using the same source-bound rules:
   `reviews/oph-lfdi-57/README.md`, `docs/reviews/oph-lfdi-57/README.md`, and
   `docs/reviews.md`.
 - **Upstream evidence**: OPH quotations cite the upstream repository at a pinned
-  commit. `make verify-oph` checks the words; each passage is also read in context,
-  because a substring check cannot catch a quotation that loses its neighbors.
+  commit. An entry names its own commit only when the record is about what an earlier
+  release said, and the record labels it. `make verify-oph` checks the words, and
+  `make oph-drift` lists what has moved upstream since the pin. Each passage is also read
+  in context, because a substring check cannot catch a quotation that loses its neighbors.
 - **Replies and corrections**: a reply gets its own stable IDs and records
   (`OPH-REP-001`–`OPH-REP-016`), with one GitHub issue per claim. Errors found in this
-  tracker get stable IDs too (`OPH-AUD-001`–`OPH-AUD-011`), and the record says whether
+  tracker get stable IDs too (`OPH-AUD-001`–`OPH-AUD-013`), and the record says whether
   an email already sent carried them.
 
 Every issue opens with a publication reference built from

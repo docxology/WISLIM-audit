@@ -17,6 +17,8 @@ carried them. The IDs are stable. The email stays as sent; see
 | [OPH-AUD-009](#oph-aud-009-the-oph-quotation-check-was-a-one-off-not-a-repeatable-test) | [#91](https://github.com/docxology/WISLIM-audit/issues/91) | The OPH quotation check was a one-off, not a repeatable test | no |
 | [OPH-AUD-010](#oph-aud-010-correspondence-records-needed-a-privacy-rule) | [#92](https://github.com/docxology/WISLIM-audit/issues/92) | Correspondence records needed a privacy rule | no |
 | [OPH-AUD-011](#oph-aud-011-the-audit-missed-the-formal-and-engineering-versions-of-wislim-s-formula) | [#93](https://github.com/docxology/WISLIM-audit/issues/93) | The audit missed the formal and engineering versions of WISLIM's formula | no |
+| [OPH-AUD-012](#oph-aud-012-the-pin-fell-behind-upstream-s-release-r2061) | [#94](https://github.com/docxology/WISLIM-audit/issues/94) | The pin fell behind upstream's release r2061 | no |
+| [OPH-AUD-013](#oph-aud-013-a-receipt-and-several-records-overstated-or-assumed-details) | [#95](https://github.com/docxology/WISLIM-audit/issues/95) | A receipt and several records overstated or assumed details | no |
 
 ## OPH-AUD-001: OCR errors were read as the review's text
 
@@ -34,9 +36,9 @@ carried them. The IDs are stable. The email stays as sent; see
 
 **Affects the email sent 2026-11-03:** Yes.
 
-**What was wrong.** The tracker pinned `docxology/observer-patch-holography` at `1c5a908`, a fork 7 commits ahead of and 1,593 behind upstream `main`. Of its 15 distinct OPH quotations, 11 no longer appear verbatim at upstream. Three errors followed. OPH-REV-001 said the review's title was not the flagship's; at upstream it is exactly the flagship's title. The sent email quoted 'a condition on one structure that holds or fails with nothing running it', which upstream had rewritten on 2026-10-11. The intrinsic audit said the review 'cites no OPH passage' and does not mention fixed points, though it quotes the abstract accurately and does mention them.
+**What was wrong.** The tracker pinned `docxology/observer-patch-holography` at `1c5a908`, a fork 7 commits ahead of and 1,593 behind upstream `main`. Of its 15 distinct OPH quotations, 11 no longer appear verbatim at upstream. Three errors followed. OPH-REV-001 said the review's title was not the flagship's; at upstream, at release r2060, it was exactly the flagship's title. The sent email quoted 'a condition on one structure that holds or fails with nothing running it', which upstream had rewritten on 2026-10-11. The intrinsic audit said the review 'cites no OPH passage' and does not mention fixed points, though it quotes the abstract accurately and does mention them.
 
-**What changed.** Re-pinned all evidence to `FloatingPragma/observer-patch-holography` at `fcc2dd1` (paper release r2060) and re-read every passage. OPH-REV-001 and the intrinsic grade now credit the review's accurate citation and quotations: its title is the flagship's title. OPH-REV-006 moved from contradicted to addressed, because OPH's fixed point does contain its observers; the counts are now 4 addressed, 3 contradicted, 5 not addressed.
+**What changed.** Re-pinned all evidence to `FloatingPragma/observer-patch-holography` at `fcc2dd1` (paper release r2060) and re-read every passage. OPH-REV-001 and the intrinsic grade now credit the review's accurate citation and quotations: its title was the flagship's title at that release. OPH-REV-006 moved from contradicted to addressed, because OPH's fixed point does contain its observers; the counts are now 4 addressed, 3 contradicted, 5 not addressed.
 
 **Files.** `reviews/oph-lfdi-57/model/review.json`, `reviews/oph-lfdi-57/extrinsic-audit.md`, `reviews/oph-lfdi-57/intrinsic-audit.md`, `reviews/oph-lfdi-57/source/metadata.json`
 
@@ -149,5 +151,25 @@ carried them. The IDs are stable. The email stays as sent; see
 **Files.** `audit/05-formula-e-infinity.md`, `model/claims.json`, `model/issues.json`, `reviews/oph-lfdi-57/intrinsic-audit.md`, `reviews/oph-lfdi-57/model/review.json`
 
 **Fixed in.** `701b463`
+
+## OPH-AUD-012: The pin fell behind upstream's release r2061
+
+**Affects the email sent 2026-11-03:** No.
+
+**What was wrong.** The tracker pinned release r2060 and described that commit as upstream `main`. On 2026-11-04 upstream released r2061 with a new subtitle, a rewritten abstract, and a shorter flagship body. Against the new text, 50 of the 66 OPH quotations held at their lines, 4 had moved, and 12 no longer occurred in the flagship. Records said 'the flagship's title' and 'the abstract' without saying which release, one of them said 'incomplete' of wording r2061 no longer uses, and nothing reported the drift.
+
+**What changed.** Re-pinned to `f50e4da` (release r2061) and re-read every flagship passage. Evidence about what the review read stays at `fcc2dd1` (release r2060) and is labeled; evidence about OPH's position cites r2061, in the passages that now carry the point. OPH-REV-001 says the review's title was exact on the day it was sent and that the subtitle changed the next day. OPH-REP-002's commit counts and OPH-REP-010's evidence now cite r2061. `make oph-drift` lists the quotations that have moved or vanished at any upstream ref. No disposition changed: the counts remain 4 addressed, 3 contradicted, 5 not addressed.
+
+**Files.** `reviews/oph-lfdi-57/model/review.json`, `reviews/oph-lfdi-57/model/reply.json`, `reviews/oph-lfdi-57/source/metadata.json`, `reviews/oph-lfdi-57/extrinsic-audit.md`, `reviews/oph-lfdi-57/intrinsic-audit.md`, `reviews/oph-lfdi-57/verification.md`, `scripts/verify_oph_quotes.py`, `Makefile`, `.github/workflows/verify.yml`, `README.md`, `AGENTS.md`, `docs/method.md`, `docs/reproducibility.md`
+
+## OPH-AUD-013: A receipt and several records overstated or assumed details
+
+**Affects the email sent 2026-11-03:** No.
+
+**What was wrong.** The receipt said the word search for LFDI, WISLIM, and Wishengrad had 'no matches anywhere in the pinned tree'. As written, the command also reports two compressed binary data files, at both releases. OPH-REV-003 said 'living' does not occur in the flagship source; it occurs once, in the journal title 'Living Reviews in Relativity'. OPH-REP-004 stated its word search over the whole commit, and OPH-REP-007's phrase search covered only Markdown and TeX and did not allow for line wraps. OPH-REP-009 said 'You are running it' lands close to OPH's hypothesis, though the same passage says a run makes a model of the rule. OPH-REP-004 treated a quotation about the relational setting as stating a pluralism too. Three records called the sender 'his', though the sender's pronouns are not stated.
+
+**What changed.** The receipt's command now skips binary files with `-I`, and the receipt says what the plain command returns and why. OPH-REV-003 names the journal title. OPH-REP-004 says 'text files'. OPH-REP-007's search covers every text file and allows for line wraps, and its result is unchanged. OPH-REP-009 separates a run of the model from the running of the world, and says what remains in dispute. OPH-REP-004 ties the quotation to the setting. The three records now say 'the sender'.
+
+**Files.** `reviews/oph-lfdi-57/verification.md`, `reviews/oph-lfdi-57/model/review.json`, `reviews/oph-lfdi-57/model/reply.json`, `reviews/oph-lfdi-57/correspondence/metadata.json`, `reviews/oph-lfdi-57/response-email.md`
 
 `reviews/oph-lfdi-57/model/reply.json` is canonical; regenerate this file with `make reply`.

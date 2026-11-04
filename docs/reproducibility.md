@@ -161,10 +161,17 @@ make reply-issues-check        # read-only comparison with GitHub (needs gh)
 correspondence, reply, and correction records.
 
 Check every OPH quotation at the pinned upstream commit. This needs `git` and a clone
-that contains the commit; continuous integration runs it on every push:
+that contains the commits; continuous integration runs it on every push:
 
 ```sh
 make verify-oph OPH_REPO=/path/to/observer-patch-holography
+```
+
+Upstream changes often. To see which pinned quotations have moved or vanished since the
+pin, fetch the clone and run the comparison. It exits non-zero when anything has:
+
+```sh
+make oph-drift OPH_REPO=/path/to/observer-patch-holography
 ```
 
 ## Rebuild the stress-test catalog

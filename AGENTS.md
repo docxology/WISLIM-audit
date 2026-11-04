@@ -12,7 +12,7 @@ source-bound and reproducible.
    `ST001`–`ST210` in `model/stress-tests.json`, `WISLIM-001`–`WISLIM-066` in
    `model/issues.json`, `OPH-REV-001`–`OPH-REV-012` in
    `reviews/oph-lfdi-57/model/review.json`, and `OPH-REP-001`–`OPH-REP-016` and
-   `OPH-AUD-001`–`OPH-AUD-011` in `reviews/oph-lfdi-57/model/reply.json` are stable.
+   `OPH-AUD-001`–`OPH-AUD-013` in `reviews/oph-lfdi-57/model/reply.json` are stable.
    Add new IDs; never renumber or reuse one.
 4. **Separate quotation from verdict.** Quoted source text may contain
    overclaiming language. The audit's own prose must not repeat it as fact.
@@ -49,8 +49,11 @@ source-bound and reproducible.
     page image before citing it; keep raw OCR as a record and cite the verified
     transcription. Pin third-party evidence to the upstream repository, not a fork,
     and read each quotation in its passage before relying on it. `make verify-oph`
-    checks the words; only reading checks the sense. A quotation mark means the
-    words are verbatim; put paraphrase outside quotation marks.
+    checks the words; only reading checks the sense. Upstream moves, so run
+    `make oph-drift` before relying on the pin. Cite the current release, and give an
+    entry its own `commit` only when the record is about what an earlier release said.
+    A quotation mark means the words are verbatim; put paraphrase outside quotation
+    marks.
 13. **Keep private details out of public records.** Correspondence records carry no
     telephone numbers, email addresses, recipient lists, or mail-service identifiers.
     Quote what the exchange needs, say where something was removed, and let the

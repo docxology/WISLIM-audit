@@ -10,7 +10,9 @@ source-anchored, modular topic records under `docs/reviews/` and
 - **Received:** 2026-11-03
 - **Format:** AI-generated external critique, one page, image-only PDF
 - **Target:** Bernhard Mueller et al., Observers Who Read Their Universe into Existence: Finite Consensus, an Executable Observer, and Standard Physics (PhilPapers MUEFOC) (https://philpapers.org/rec/MUEFOC)
-- **External verification corpus:** `https://github.com/FloatingPragma/observer-patch-holography` at commit `fcc2dd173d4f48763cd0bf7cc1739751eca3b96d` (paper release r2060 (2026-11-02))
+- **Target note:** That title is the one the review cites and the flagship's title at release r2060. Release r2061 (2026-11-04) keeps the main title and changes the subtitle to Finite Consensus and the Reconstruction of Standard Physics.
+- **External verification corpus:** `https://github.com/FloatingPragma/observer-patch-holography` at commit `f50e4da10533b8f5d3bf92a711c07bf6d563fe74` (paper release r2061 (2026-11-04), upstream `main` on 2026-11-04)
+- **Release when the review was sent:** `fcc2dd173d4f48763cd0bf7cc1739751eca3b96d` (paper release r2060 (2026-11-02))
 - **Source PDF:** [`reviews/oph-lfdi-57/source/LFDI_Alignment_Audit-57.pdf`](../reviews/oph-lfdi-57/source/LFDI_Alignment_Audit-57.pdf)
 - **Verified transcription:** [`reviews/oph-lfdi-57/source/LFDI_Alignment_Audit-57.verified.txt`](../reviews/oph-lfdi-57/source/LFDI_Alignment_Audit-57.verified.txt)
 - **Raw OCR text:** [`reviews/oph-lfdi-57/source/LFDI_Alignment_Audit-57.txt`](../reviews/oph-lfdi-57/source/LFDI_Alignment_Audit-57.txt)
@@ -20,7 +22,7 @@ source-anchored, modular topic records under `docs/reviews/` and
 - **Response email as sent:** [`reviews/oph-lfdi-57/response-email.md`](../reviews/oph-lfdi-57/response-email.md)
 - **Correspondence ledger:** [`reviews/oph-lfdi-57/correspondence/README.md`](../reviews/oph-lfdi-57/correspondence/README.md)
 - **Reply register:** [`reviews/oph-lfdi-57/reply/README.md`](../reviews/oph-lfdi-57/reply/README.md) (`OPH-REP-001`–`OPH-REP-016`)
-- **Corrections to this tracker:** [`reviews/oph-lfdi-57/corrections.md`](../reviews/oph-lfdi-57/corrections.md) (`OPH-AUD-001`–`OPH-AUD-011`)
+- **Corrections to this tracker:** [`reviews/oph-lfdi-57/corrections.md`](../reviews/oph-lfdi-57/corrections.md) (`OPH-AUD-001`–`OPH-AUD-013`)
 - **Tracked topics:** 12 (`OPH-REV-001`–`OPH-REV-012`)
   - **Addressed by OPH:** 4
   - **Contradicted by OPH's text:** 3
@@ -30,8 +32,8 @@ source-anchored, modular topic records under `docs/reviews/` and
 
 | ID | Topic | Intrinsic verdict | OPH disposition | Summary |
 |---|---|---|---|---|
-| [OPH-REV-001](reviews/oph-lfdi-57/topics/OPH-REV-001-target-identification-and-citation.md) | Target identification and citation | `partly-valid` | `addressed` | The review names the flagship paper accurately: its title and lead author match the manuscript at upstream and on PhilPapers. It gives no release, date, DOI, or full author list, so the audited version cannot be fixed. |
-| [OPH-REV-002](reviews/oph-lfdi-57/topics/OPH-REV-002-summary-of-the-oph-program.md) | Summary of the OPH program | `partly-valid` | `addressed` | The paraphrase follows the flagship abstract closely and quotes it accurately. It omits the abstract's own statement that the program is incomplete and that closure is a hypothesis. |
+| [OPH-REV-001](reviews/oph-lfdi-57/topics/OPH-REV-001-target-identification-and-citation.md) | Target identification and citation | `partly-valid` | `addressed` | The review names the flagship paper accurately: on the day it was sent, its title and lead author matched the manuscript at upstream (release r2060) and on PhilPapers. It gives no release, date, DOI, or full author list, so the audited version cannot be fixed. Upstream changed the subtitle the next day (release r2061), which shows why the release matters. |
+| [OPH-REV-002](reviews/oph-lfdi-57/topics/OPH-REV-002-summary-of-the-oph-program.md) | Summary of the OPH program | `partly-valid` | `addressed` | The paraphrase follows the abstract of release r2060, upstream when the review was sent, and quotes it accurately. It omits that abstract's own statement that the program is incomplete and that closure is a hypothesis. Release r2061 rewrote the abstract and keeps the limits in new words. |
 | [OPH-REV-003](reviews/oph-lfdi-57/topics/OPH-REV-003-biological-life-and-the-observer-definition.md) | Biological life and the observer definition | `partly-valid` | `addressed` | OPH does define observers without requiring life. That is a scope decision about physics, not a denial that living agents exist or matter: the book places living things inside the observer class. |
 | [OPH-REV-004](reviews/oph-lfdi-57/topics/OPH-REV-004-performative-contradiction-charge.md) | Performative contradiction charge | `unsupported` | `contradicted` | Using living agency to write a theory does not contradict a theory that says physical observers need not be alive. OPH's closure hypothesis places its builders inside the structure it describes. The review asserts a contradiction without formalizing it. |
 | [OPH-REV-005](reviews/oph-lfdi-57/topics/OPH-REV-005-the-no-truth-outside-life-premise.md) | The 'No Truth Outside Life' premise | `question-begging` | `not-addressed` | The 'No Truth Outside Life' rule is asserted, not defended, and neither it nor the name 'Epistemic Invariant' occurs in WISLIM v2.0.1. OPH does not assert that mathematics has truth-value in a void: it says nothing lies outside its loop. The charge misses its target. |
@@ -45,8 +47,8 @@ source-anchored, modular topic records under `docs/reviews/` and
 
 ### Topics addressed by OPH
 
-- **[`OPH-REV-001`](reviews/oph-lfdi-57/topics/OPH-REV-001-target-identification-and-citation.md) — Target identification and citation** (`partly-valid`): The review names the flagship paper accurately: its title and lead author match the manuscript at upstream and on PhilPapers. It gives no release, date, DOI, or full author list, so the audited version cannot be fixed.
-- **[`OPH-REV-002`](reviews/oph-lfdi-57/topics/OPH-REV-002-summary-of-the-oph-program.md) — Summary of the OPH program** (`partly-valid`): The paraphrase follows the flagship abstract closely and quotes it accurately. It omits the abstract's own statement that the program is incomplete and that closure is a hypothesis.
+- **[`OPH-REV-001`](reviews/oph-lfdi-57/topics/OPH-REV-001-target-identification-and-citation.md) — Target identification and citation** (`partly-valid`): The review names the flagship paper accurately: on the day it was sent, its title and lead author matched the manuscript at upstream (release r2060) and on PhilPapers. It gives no release, date, DOI, or full author list, so the audited version cannot be fixed. Upstream changed the subtitle the next day (release r2061), which shows why the release matters.
+- **[`OPH-REV-002`](reviews/oph-lfdi-57/topics/OPH-REV-002-summary-of-the-oph-program.md) — Summary of the OPH program** (`partly-valid`): The paraphrase follows the abstract of release r2060, upstream when the review was sent, and quotes it accurately. It omits that abstract's own statement that the program is incomplete and that closure is a hypothesis. Release r2061 rewrote the abstract and keeps the limits in new words.
 - **[`OPH-REV-003`](reviews/oph-lfdi-57/topics/OPH-REV-003-biological-life-and-the-observer-definition.md) — Biological life and the observer definition** (`partly-valid`): OPH does define observers without requiring life. That is a scope decision about physics, not a denial that living agents exist or matter: the book places living things inside the observer class.
 - **[`OPH-REV-006`](reviews/oph-lfdi-57/topics/OPH-REV-006-the-airtight-trap-and-the-fixed-point-reply.md) — The Airtight Trap and the fixed-point reply** (`unsupported`): The 'Airtight Trap' and 'Option 2' are not defined in the review, and the sentence runs three claims together. OPH's closure hypothesis does put observers inside its fixed point, so part of the claim is common ground. What remains in dispute is 'living' and 'valued'.
 

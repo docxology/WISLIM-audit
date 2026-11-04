@@ -28,19 +28,21 @@ related: [OPH-REV-002, OPH-REV-012]
 
 ## Intrinsic assessment
 
-The target is identifiable, which is a strength. The citation is not reproducible: 'et al.' hides the other authors, no release or date is given, and the document is not linked. 'Official' has no issuing body. A reader cannot tell which manuscript release was audited, and the flagship changes release often (r2060 on 2026-11-02).
+The target is identifiable, which is a strength. The citation is not reproducible: 'et al.' hides the other authors, no release or date is given, and the document is not linked. 'Official' has no issuing body. A reader cannot tell which manuscript release was audited, and the flagship changes release often (r2060 on 2026-11-02, r2061 on 2026-11-04).
 
 ## Extrinsic assessment
 
-The flagship source at upstream carries the review's exact title, and the upstream README links PhilPapers MUEFOC as the main paper. PhilPapers, as retrieved 2026-11-03, confirms the title and Bernhard Mueller as lead author among thirteen listed authors; the flagship source at the pinned commit lists fourteen. An earlier version of this record said the title was not the flagship's. That reading came from a stale fork and is withdrawn (OPH-AUD-002).
+At release r2060, upstream on the day the review arrived, the flagship source carries the review's exact title, and the upstream README links PhilPapers MUEFOC as the main paper. PhilPapers, as retrieved 2026-11-03, confirms the title and Bernhard Mueller as lead author among thirteen listed authors; the flagship source lists fourteen. Release r2061 keeps the main title and changes the subtitle to 'Finite Consensus and the Reconstruction of Standard Physics'. That is a change upstream, not an error in the review. An earlier version of this record said the title was not the flagship's. That reading came from a stale fork and is withdrawn (OPH-AUD-002).
 
 ## OPH evidence
 
-- [`flagship/from_observer_consensus_to_standard_physics.tex:36`](https://github.com/FloatingPragma/observer-patch-holography/blob/fcc2dd173d4f48763cd0bf7cc1739751eca3b96d/flagship/from_observer_consensus_to_standard_physics.tex#L36)
+- [`flagship/from_observer_consensus_to_standard_physics.tex:36`](https://github.com/FloatingPragma/observer-patch-holography/blob/f50e4da10533b8f5d3bf92a711c07bf6d563fe74/flagship/from_observer_consensus_to_standard_physics.tex#L36)
   > Observers Who Read Their Universe into Existence:
-- [`flagship/from_observer_consensus_to_standard_physics.tex:37`](https://github.com/FloatingPragma/observer-patch-holography/blob/fcc2dd173d4f48763cd0bf7cc1739751eca3b96d/flagship/from_observer_consensus_to_standard_physics.tex#L37)
+- [`flagship/from_observer_consensus_to_standard_physics.tex:37`](https://github.com/FloatingPragma/observer-patch-holography/blob/fcc2dd173d4f48763cd0bf7cc1739751eca3b96d/flagship/from_observer_consensus_to_standard_physics.tex#L37) (release r2060 (2026-11-02), upstream when the review was sent)
   > Finite Consensus, an Executable Observer, and Standard Physics
-- [`README.md:5`](https://github.com/FloatingPragma/observer-patch-holography/blob/fcc2dd173d4f48763cd0bf7cc1739751eca3b96d/README.md#L5)
+- [`flagship/from_observer_consensus_to_standard_physics.tex:37`](https://github.com/FloatingPragma/observer-patch-holography/blob/f50e4da10533b8f5d3bf92a711c07bf6d563fe74/flagship/from_observer_consensus_to_standard_physics.tex#L37)
+  > Finite Consensus and the Reconstruction of Standard Physics
+- [`README.md:5`](https://github.com/FloatingPragma/observer-patch-holography/blob/f50e4da10533b8f5d3bf92a711c07bf6d563fe74/README.md#L5)
   > [Main paper](https://philpapers.org/rec/MUEFOC)
 
 ## WISLIM evidence
@@ -49,7 +51,7 @@ The flagship source at upstream carries the review's exact title, and the upstre
 
 ## Summary
 
-The review names the flagship paper accurately: its title and lead author match the manuscript at upstream and on PhilPapers. It gives no release, date, DOI, or full author list, so the audited version cannot be fixed.
+The review names the flagship paper accurately: on the day it was sent, its title and lead author matched the manuscript at upstream (release r2060) and on PhilPapers. It gives no release, date, DOI, or full author list, so the audited version cannot be fixed. Upstream changed the subtitle the next day (release r2061), which shows why the release matters.
 
 ## Suggested response
 

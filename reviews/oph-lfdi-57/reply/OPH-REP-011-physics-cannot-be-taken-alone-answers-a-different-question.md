@@ -43,17 +43,17 @@ That physics is done by and for living systems is a fact about practice, and it 
 
 **OPH, at the pinned upstream commit**
 
-- [`book/44-appendix-a.md:187`](https://github.com/FloatingPragma/observer-patch-holography/blob/fcc2dd173d4f48763cd0bf7cc1739751eca3b96d/book/44-appendix-a.md#L187)
+- [`book/44-appendix-a.md:187`](https://github.com/FloatingPragma/observer-patch-holography/blob/f50e4da10533b8f5d3bf92a711c07bf6d563fe74/book/44-appendix-a.md#L187)
   > Do I have to accept the ethics to accept the physics?
-- [`book/44-appendix-a.md:191`](https://github.com/FloatingPragma/observer-patch-holography/blob/fcc2dd173d4f48763cd0bf7cc1739751eca3b96d/book/44-appendix-a.md#L191)
+- [`book/44-appendix-a.md:191`](https://github.com/FloatingPragma/observer-patch-holography/blob/f50e4da10533b8f5d3bf92a711c07bf6d563fe74/book/44-appendix-a.md#L191)
   > The question assumes the join between the two is preference.
-- [`book/44-appendix-a.md:193`](https://github.com/FloatingPragma/observer-patch-holography/blob/fcc2dd173d4f48763cd0bf7cc1739751eca3b96d/book/44-appendix-a.md#L193)
+- [`book/44-appendix-a.md:193`](https://github.com/FloatingPragma/observer-patch-holography/blob/f50e4da10533b8f5d3bf92a711c07bf6d563fe74/book/44-appendix-a.md#L193)
   > They share a quantity.
-- [`book/44-appendix-a.md:195`](https://github.com/FloatingPragma/observer-patch-holography/blob/fcc2dd173d4f48763cd0bf7cc1739751eca3b96d/book/44-appendix-a.md#L195)
+- [`book/44-appendix-a.md:195`](https://github.com/FloatingPragma/observer-patch-holography/blob/f50e4da10533b8f5d3bf92a711c07bf6d563fe74/book/44-appendix-a.md#L195)
   > the physics can be taken alone and nothing above it breaks
-- [`book/44-appendix-a.md:195`](https://github.com/FloatingPragma/observer-patch-holography/blob/fcc2dd173d4f48763cd0bf7cc1739751eca3b96d/book/44-appendix-a.md#L195)
+- [`book/44-appendix-a.md:195`](https://github.com/FloatingPragma/observer-patch-holography/blob/f50e4da10533b8f5d3bf92a711c07bf6d563fe74/book/44-appendix-a.md#L195)
   > Accepting the repair law is accepting both
-- [`README.md:33`](https://github.com/FloatingPragma/observer-patch-holography/blob/fcc2dd173d4f48763cd0bf7cc1739751eca3b96d/README.md#L33)
+- [`README.md:33`](https://github.com/FloatingPragma/observer-patch-holography/blob/f50e4da10533b8f5d3bf92a711c07bf6d563fe74/README.md#L33)
   > OPH proposes that physics is what bounded observers can establish together.
 
 **The response as sent**

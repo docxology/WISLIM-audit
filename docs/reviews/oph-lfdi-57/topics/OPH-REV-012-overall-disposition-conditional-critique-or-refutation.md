@@ -36,13 +36,13 @@ OPH addresses observer definition, life, fixed points, and the relation of physi
 
 ## OPH evidence
 
-- [`book/04-chapter-03.md:85`](https://github.com/FloatingPragma/observer-patch-holography/blob/fcc2dd173d4f48763cd0bf7cc1739751eca3b96d/book/04-chapter-03.md#L85)
+- [`book/04-chapter-03.md:85`](https://github.com/FloatingPragma/observer-patch-holography/blob/f50e4da10533b8f5d3bf92a711c07bf6d563fe74/book/04-chapter-03.md#L85)
   > An observer here is any bounded system that keeps records.
-- [`book/44-appendix-a.md:153`](https://github.com/FloatingPragma/observer-patch-holography/blob/fcc2dd173d4f48763cd0bf7cc1739751eca3b96d/book/44-appendix-a.md#L153)
+- [`book/44-appendix-a.md:153`](https://github.com/FloatingPragma/observer-patch-holography/blob/f50e4da10533b8f5d3bf92a711c07bf6d563fe74/book/44-appendix-a.md#L153)
   > It needs no first solver outside it
-- [`book/44-appendix-a.md:183`](https://github.com/FloatingPragma/observer-patch-holography/blob/fcc2dd173d4f48763cd0bf7cc1739751eca3b96d/book/44-appendix-a.md#L183)
+- [`book/44-appendix-a.md:183`](https://github.com/FloatingPragma/observer-patch-holography/blob/f50e4da10533b8f5d3bf92a711c07bf6d563fe74/book/44-appendix-a.md#L183)
   > and the disagreement comes back as a number nobody chose.
-- [`book/44-appendix-a.md:195`](https://github.com/FloatingPragma/observer-patch-holography/blob/fcc2dd173d4f48763cd0bf7cc1739751eca3b96d/book/44-appendix-a.md#L195)
+- [`book/44-appendix-a.md:195`](https://github.com/FloatingPragma/observer-patch-holography/blob/f50e4da10533b8f5d3bf92a711c07bf6d563fe74/book/44-appendix-a.md#L195)
   > the physics can be taken alone and nothing above it breaks
 
 ## WISLIM evidence

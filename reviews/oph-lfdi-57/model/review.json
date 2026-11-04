@@ -10,16 +10,23 @@
     "target": "Bernhard Mueller et al., Observers Who Read Their Universe into Existence: Finite Consensus, an Executable Observer, and Standard Physics (PhilPapers MUEFOC)",
     "target_url": "https://philpapers.org/rec/MUEFOC",
     "oph_repository": "https://github.com/FloatingPragma/observer-patch-holography",
-    "oph_commit": "fcc2dd173d4f48763cd0bf7cc1739751eca3b96d",
-    "reproduction": "make review && make review-check && make verify-oph OPH_REPO=<clone of the OPH repository>",
+    "oph_commit": "f50e4da10533b8f5d3bf92a711c07bf6d563fe74",
+    "reproduction": "make review && make review-check && make verify-oph OPH_REPO=<clone of the OPH repository> && make oph-drift OPH_REPO=<clone>",
     "status": "tracked; response sent 2026-11-03; reply received 2026-11-03",
     "source_ocr": "reviews/oph-lfdi-57/source/LFDI_Alignment_Audit-57.txt",
-    "oph_release": "r2060 (2026-11-02)",
+    "oph_release": "r2061 (2026-11-04)",
     "oph_previous_pin": {
       "repository": "https://github.com/docxology/observer-patch-holography",
       "commit": "1c5a908ed3441c5d09628183af18c362dbc58bea",
-      "note": "A fork, 7 commits ahead of and 1,593 commits behind upstream main at the current pin. Retired by OPH-AUD-002."
-    }
+      "note": "A fork, 7 commits ahead of and 1,593 commits behind upstream main at release r2060. Retired by OPH-AUD-002."
+    },
+    "oph_checked": "2026-11-04",
+    "oph_review_day": {
+      "commit": "fcc2dd173d4f48763cd0bf7cc1739751eca3b96d",
+      "release": "r2060 (2026-11-02)",
+      "note": "Upstream main when the review arrived on 2026-11-03. The flagship source and the paper release did not change until 2026-11-04. Evidence about what the review read is cited at this commit and labeled."
+    },
+    "target_note": "That title is the one the review cites and the flagship's title at release r2060. Release r2061 (2026-11-04) keeps the main title and changes the subtitle to Finite Consensus and the Reconstruction of Standard Physics."
   },
   "topics": [
     {
@@ -29,9 +36,9 @@
       "review_line": 2,
       "verdict": "partly-valid",
       "oph_status": "addressed",
-      "summary": "The review names the flagship paper accurately: its title and lead author match the manuscript at upstream and on PhilPapers. It gives no release, date, DOI, or full author list, so the audited version cannot be fixed.",
-      "intrinsic": "The target is identifiable, which is a strength. The citation is not reproducible: 'et al.' hides the other authors, no release or date is given, and the document is not linked. 'Official' has no issuing body. A reader cannot tell which manuscript release was audited, and the flagship changes release often (r2060 on 2026-11-02).",
-      "extrinsic": "The flagship source at upstream carries the review's exact title, and the upstream README links PhilPapers MUEFOC as the main paper. PhilPapers, as retrieved 2026-11-03, confirms the title and Bernhard Mueller as lead author among thirteen listed authors; the flagship source at the pinned commit lists fourteen. An earlier version of this record said the title was not the flagship's. That reading came from a stale fork and is withdrawn (OPH-AUD-002).",
+      "summary": "The review names the flagship paper accurately: on the day it was sent, its title and lead author matched the manuscript at upstream (release r2060) and on PhilPapers. It gives no release, date, DOI, or full author list, so the audited version cannot be fixed. Upstream changed the subtitle the next day (release r2061), which shows why the release matters.",
+      "intrinsic": "The target is identifiable, which is a strength. The citation is not reproducible: 'et al.' hides the other authors, no release or date is given, and the document is not linked. 'Official' has no issuing body. A reader cannot tell which manuscript release was audited, and the flagship changes release often (r2060 on 2026-11-02, r2061 on 2026-11-04).",
+      "extrinsic": "At release r2060, upstream on the day the review arrived, the flagship source carries the review's exact title, and the upstream README links PhilPapers MUEFOC as the main paper. PhilPapers, as retrieved 2026-11-03, confirms the title and Bernhard Mueller as lead author among thirteen listed authors; the flagship source lists fourteen. Release r2061 keeps the main title and changes the subtitle to 'Finite Consensus and the Reconstruction of Standard Physics'. That is a change upstream, not an error in the review. An earlier version of this record said the title was not the flagship's. That reading came from a stale fork and is withdrawn (OPH-AUD-002).",
       "oph_evidence": [
         {
           "path": "flagship/from_observer_consensus_to_standard_physics.tex",
@@ -41,7 +48,13 @@
         {
           "path": "flagship/from_observer_consensus_to_standard_physics.tex",
           "line": 37,
+          "commit": "fcc2dd173d4f48763cd0bf7cc1739751eca3b96d",
           "quote": "Finite Consensus, an Executable Observer, and Standard Physics"
+        },
+        {
+          "path": "flagship/from_observer_consensus_to_standard_physics.tex",
+          "line": 37,
+          "quote": "Finite Consensus and the Reconstruction of Standard Physics"
         },
         {
           "path": "README.md",
@@ -67,34 +80,49 @@
       "review_line": 2,
       "verdict": "partly-valid",
       "oph_status": "addressed",
-      "summary": "The paraphrase follows the flagship abstract closely and quotes it accurately. It omits the abstract's own statement that the program is incomplete and that closure is a hypothesis.",
-      "intrinsic": "The review accurately reports the observer-first and timeless-self-reference framing, and its phrases 'timeless self-referential history', 'operational observers' and 'twelve-port icosahedral carrier' occur in the paper. 'Attempts' is fair. It does not report the paper's status: 'treating the universe as an executable mathematical model' omits that this is the executable-model hypothesis, not an established result.",
-      "extrinsic": "The flagship abstract says 'Measured by the four conditions, the program is incomplete' and 'Closure of one complete history is a hypothesis that the model tests'. The review's summary is directionally right but not calibrated to that status.",
+      "summary": "The paraphrase follows the abstract of release r2060, upstream when the review was sent, and quotes it accurately. It omits that abstract's own statement that the program is incomplete and that closure is a hypothesis. Release r2061 rewrote the abstract and keeps the limits in new words.",
+      "intrinsic": "The review accurately reports the observer-first and timeless-self-reference framing, and at release r2060 its phrases 'timeless self-referential history', 'operational observers' and 'twelve-port icosahedral carrier' occur in the paper. 'Attempts' is fair. It does not report the paper's status: 'treating the universe as an executable mathematical model' omits that this is the executable-model hypothesis, not an established result.",
+      "extrinsic": "The r2060 abstract says 'Measured by the four conditions, the program is incomplete' and 'Closure of one complete history is a hypothesis that the model tests'. The review's summary is directionally right but not calibrated to that status. The r2061 text puts the limit differently: 'the common physical $3+1$ limit is the remaining conclusion to be demonstrated', and the identification with our universe 'requires a common interacting chiral $3+1$-dimensional limit with the observed particle spectrum, responsive geometry and independent empirical agreement'.",
       "oph_evidence": [
         {
           "path": "flagship/from_observer_consensus_to_standard_physics.tex",
           "line": 74,
-          "quote": "universe is one timeless self-referential history whose observers recover"
+          "quote": "universe is one timeless self-referential history whose observers recover",
+          "commit": "fcc2dd173d4f48763cd0bf7cc1739751eca3b96d"
         },
         {
           "path": "flagship/from_observer_consensus_to_standard_physics.tex",
           "line": 96,
-          "quote": "Measured by the four conditions, the program is incomplete."
+          "quote": "Measured by the four conditions, the program is incomplete.",
+          "commit": "fcc2dd173d4f48763cd0bf7cc1739751eca3b96d"
         },
         {
           "path": "flagship/from_observer_consensus_to_standard_physics.tex",
           "line": 97,
-          "quote": "Closure of one complete history is a hypothesis that the model tests"
+          "quote": "Closure of one complete history is a hypothesis that the model tests",
+          "commit": "fcc2dd173d4f48763cd0bf7cc1739751eca3b96d"
         },
         {
           "path": "flagship/from_observer_consensus_to_standard_physics.tex",
           "line": 82,
-          "quote": "Its testable form is the executable-model hypothesis"
+          "quote": "Its testable form is the executable-model hypothesis",
+          "commit": "fcc2dd173d4f48763cd0bf7cc1739751eca3b96d"
         },
         {
           "path": "flagship/from_observer_consensus_to_standard_physics.tex",
           "line": 84,
-          "quote": "federated twelve-port icosahedral carrier"
+          "quote": "federated twelve-port icosahedral carrier",
+          "commit": "fcc2dd173d4f48763cd0bf7cc1739751eca3b96d"
+        },
+        {
+          "path": "flagship/from_observer_consensus_to_standard_physics.tex",
+          "line": 211,
+          "quote": "the common physical $3+1$ limit is the remaining conclusion to be demonstrated"
+        },
+        {
+          "path": "flagship/from_observer_consensus_to_standard_physics.tex",
+          "line": 89,
+          "quote": "Its identification with our universe requires a common interacting chiral $3+1$-dimensional limit with the observed particle spectrum, responsive geometry and independent empirical agreement."
         }
       ],
       "wislim_evidence": [],
@@ -118,7 +146,7 @@
       "oph_status": "addressed",
       "summary": "OPH does define observers without requiring life. That is a scope decision about physics, not a denial that living agents exist or matter: the book places living things inside the observer class.",
       "intrinsic": "The sentence is descriptively accurate if read as 'OPH's observer definition does not require biological life.' It becomes a fallacy if read as 'OPH denies the reality or value of life.' The review does not distinguish these readings, and the rest of the document relies on the stronger one. Not requiring a property is not removing it: a definition of 'vehicle' that does not require wheels takes no wheels off any car.",
-      "extrinsic": "The book lists 'Life. Obviously not' among the things an observer does not need, and says 'An observer here is any bounded system that keeps records.' The same passage says the arrival of living things 'introduced a much better one of a kind that had been there all along', and the chapter scores a person and a thermostat by one test. The flagship's wording is narrower than the review's: its operational observer is 'defined by access and record interfaces, without an additional claim about consciousness', and 'biological', 'living' and 'valuer' do not occur in the flagship source. The descriptive point is fair; 'explicitly' fits the book, not the flagship; the later inference that OPH 'subordinates Life' is not supported.",
+      "extrinsic": "The book lists 'Life. Obviously not' among the things an observer does not need, and says 'An observer here is any bounded system that keeps records.' The same passage says the arrival of living things 'introduced a much better one of a kind that had been there all along', and the chapter scores a person and a thermostat by one test. The flagship's wording is narrower than the review's: its operational observer is 'defined by access and record interfaces, without an additional claim about consciousness', and it 'needs an additional account before any claim about phenomenal qualities follows'. 'Biological', 'life' and 'valuer' do not occur in the flagship source at either release, and 'living' occurs only in the journal title 'Living Reviews in Relativity'. The descriptive point is fair; 'explicitly' fits the book, not the flagship; the later inference that OPH 'subordinates Life' is not supported.",
       "oph_evidence": [
         {
           "path": "book/04-chapter-03.md",
@@ -142,8 +170,13 @@
         },
         {
           "path": "flagship/from_observer_consensus_to_standard_physics.tex",
-          "line": 489,
+          "line": 530,
           "quote": "defined by access and record interfaces, without an additional claim about consciousness."
+        },
+        {
+          "path": "flagship/from_observer_consensus_to_standard_physics.tex",
+          "line": 149,
+          "quote": "operational observer needs an additional account before any claim about phenomenal qualities follows."
         }
       ],
       "wislim_evidence": [
@@ -294,7 +327,7 @@
         },
         {
           "path": "flagship/from_observer_consensus_to_standard_physics.tex",
-          "line": 179,
+          "line": 217,
           "quote": "and observers inside it recover its specification and realize it"
         }
       ],
@@ -339,8 +372,8 @@
         },
         {
           "path": "flagship/from_observer_consensus_to_standard_physics.tex",
-          "line": 953,
-          "quote": "Operational observers are continuing native processes that prepare, read, retain and act on records."
+          "line": 544,
+          "quote": "An observer patch is a finite object with local state, an observable boundary map, durable records, readback, and a set of authorized repair moves."
         }
       ],
       "wislim_evidence": [
@@ -441,7 +474,7 @@
       "oph_status": "not-addressed",
       "summary": "'Decision Entropy' is not defined in the review or in WISLIM v2.0.1, and no evidence links OPH's physics program to accelerated misalignment.",
       "intrinsic": "No metric, baseline, or causal mechanism is given. The symbol $D$ is called 'severe epistemic distortion' earlier in the review and 'Decision Entropy' here; WISLIM v2.0.1 calls it 'delay, distortion, or destruction' and 'ethical entropy (D)' (source/WISLIM-v2.0.1.txt:441, :481). The term 'Decision Entropy' does not occur in WISLIM v2.0.1. The DOI is a citation, not evidence of necessity. The claim is speculative and unfalsifiable as stated. An earlier version of this record read $D$ as an acronym 'SDS' and called that an equivocation; 'SDS' was an OCR misreading (OPH-AUD-001). The shift in what $D$ names is real; the acronym was not.",
-      "extrinsic": "OPH's ethics is about mismatch and repair; the review does not show that OPH increases either. OPH's claims are explicitly conditional and carry a stated falsifier ('A frozen dispersion band lets one resolved measurement exclude the entire carrier class'); the review does not engage them. The causal claim is not addressed by OPH and is not verifiable from the review.",
+      "extrinsic": "OPH's ethics is about mismatch and repair; the review does not show that OPH increases either. OPH's claims are explicitly conditional and carry a stated falsifier ('a resolved dispersion outside the band excludes the whole carrier class'); the review does not engage them. The causal claim is not addressed by OPH and is not verifiable from the review.",
       "oph_evidence": [
         {
           "path": "book/44-appendix-a.md",
@@ -450,8 +483,8 @@
         },
         {
           "path": "flagship/from_observer_consensus_to_standard_physics.tex",
-          "line": 100,
-          "quote": "A frozen dispersion band lets one resolved measurement exclude the entire carrier class."
+          "line": 1967,
+          "quote": "a resolved dispersion outside the band excludes the whole carrier class"
         }
       ],
       "wislim_evidence": [
@@ -486,22 +519,27 @@
       "oph_status": "not-addressed",
       "summary": "The review acknowledges formal work but dismisses it without identifying a theorem or Lean defect. That is not an evaluation of the formal claims.",
       "intrinsic": "No specific proof, theorem, or Lean declaration is named. The review calls $U$ 'computational utility', while WISLIM glosses U as 'The unlockable potential within life'. The dismissal runs through the LFDI formula. A formal critique would need to show an invalid inference, an admitted proof, a bad axiom, or a mismatch between statement and formalization.",
-      "extrinsic": "OPH's abstract marks the status of its formal work: key steps are 'checked in Lean', and measured particle species, an interacting chiral continuum and the Einstein premises on one responsive geometry 'are not established'. The review neither engages that status nor shows an error. The formal claims remain untouched by the review.",
+      "extrinsic": "OPH's flagship marks the status of its formal work. Consistency is tested 'through the machine-checked results' of its verification section, and each result there maps to an artifact class, starting with 'a Lean library with no admitted propositions in the dependency closure reported here'. Its abstract says the identification with our universe requires a common limit with the observed particle spectrum, and its table of open conditions says 'A universe-level fixed point and its identification with our history are not established by the finite fixed-point theorem'. The review neither engages that status nor shows an error. The formal claims remain untouched by the review.",
       "oph_evidence": [
         {
           "path": "flagship/from_observer_consensus_to_standard_physics.tex",
-          "line": 86,
-          "quote": "limit. Finite theorems on that carrier, with key steps checked in Lean,"
+          "line": 156,
+          "quote": "through the machine-checked results of Section~\\ref{sec:verification}."
         },
         {
           "path": "flagship/from_observer_consensus_to_standard_physics.tex",
-          "line": 98,
-          "quote": "hypothesis that the model tests; measured particle species, an interacting"
+          "line": 2388,
+          "quote": "a Lean library with no admitted propositions in the dependency closure reported here"
         },
         {
           "path": "flagship/from_observer_consensus_to_standard_physics.tex",
-          "line": 100,
-          "quote": "are not established."
+          "line": 89,
+          "quote": "Its identification with our universe requires a common interacting chiral $3+1$-dimensional limit with the observed particle spectrum, responsive geometry and independent empirical agreement."
+        },
+        {
+          "path": "flagship/from_observer_consensus_to_standard_physics.tex",
+          "line": 1869,
+          "quote": "A universe-level fixed point and its identification with our history are not established by the finite fixed-point theorem"
         }
       ],
       "wislim_evidence": [

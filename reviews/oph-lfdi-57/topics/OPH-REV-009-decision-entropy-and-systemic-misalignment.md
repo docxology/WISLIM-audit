@@ -32,14 +32,14 @@ No metric, baseline, or causal mechanism is given. The symbol $D$ is called 'sev
 
 ## Extrinsic assessment
 
-OPH's ethics is about mismatch and repair; the review does not show that OPH increases either. OPH's claims are explicitly conditional and carry a stated falsifier ('A frozen dispersion band lets one resolved measurement exclude the entire carrier class'); the review does not engage them. The causal claim is not addressed by OPH and is not verifiable from the review.
+OPH's ethics is about mismatch and repair; the review does not show that OPH increases either. OPH's claims are explicitly conditional and carry a stated falsifier ('a resolved dispersion outside the band excludes the whole carrier class'); the review does not engage them. The causal claim is not addressed by OPH and is not verifiable from the review.
 
 ## OPH evidence
 
-- [`book/44-appendix-a.md:183`](https://github.com/FloatingPragma/observer-patch-holography/blob/fcc2dd173d4f48763cd0bf7cc1739751eca3b96d/book/44-appendix-a.md#L183)
+- [`book/44-appendix-a.md:183`](https://github.com/FloatingPragma/observer-patch-holography/blob/f50e4da10533b8f5d3bf92a711c07bf6d563fe74/book/44-appendix-a.md#L183)
   > Mismatch scores itself at the seam.
-- [`flagship/from_observer_consensus_to_standard_physics.tex:100`](https://github.com/FloatingPragma/observer-patch-holography/blob/fcc2dd173d4f48763cd0bf7cc1739751eca3b96d/flagship/from_observer_consensus_to_standard_physics.tex#L100)
-  > A frozen dispersion band lets one resolved measurement exclude the entire carrier class.
+- [`flagship/from_observer_consensus_to_standard_physics.tex:1967`](https://github.com/FloatingPragma/observer-patch-holography/blob/f50e4da10533b8f5d3bf92a711c07bf6d563fe74/flagship/from_observer_consensus_to_standard_physics.tex#L1967)
+  > a resolved dispersion outside the band excludes the whole carrier class
 
 ## WISLIM evidence
 

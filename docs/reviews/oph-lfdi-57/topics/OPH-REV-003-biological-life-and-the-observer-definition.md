@@ -32,20 +32,22 @@ The sentence is descriptively accurate if read as 'OPH's observer definition doe
 
 ## Extrinsic assessment
 
-The book lists 'Life. Obviously not' among the things an observer does not need, and says 'An observer here is any bounded system that keeps records.' The same passage says the arrival of living things 'introduced a much better one of a kind that had been there all along', and the chapter scores a person and a thermostat by one test. The flagship's wording is narrower than the review's: its operational observer is 'defined by access and record interfaces, without an additional claim about consciousness', and 'biological', 'living' and 'valuer' do not occur in the flagship source. The descriptive point is fair; 'explicitly' fits the book, not the flagship; the later inference that OPH 'subordinates Life' is not supported.
+The book lists 'Life. Obviously not' among the things an observer does not need, and says 'An observer here is any bounded system that keeps records.' The same passage says the arrival of living things 'introduced a much better one of a kind that had been there all along', and the chapter scores a person and a thermostat by one test. The flagship's wording is narrower than the review's: its operational observer is 'defined by access and record interfaces, without an additional claim about consciousness', and it 'needs an additional account before any claim about phenomenal qualities follows'. 'Biological', 'life' and 'valuer' do not occur in the flagship source at either release, and 'living' occurs only in the journal title 'Living Reviews in Relativity'. The descriptive point is fair; 'explicitly' fits the book, not the flagship; the later inference that OPH 'subordinates Life' is not supported.
 
 ## OPH evidence
 
-- [`book/04-chapter-03.md:67`](https://github.com/FloatingPragma/observer-patch-holography/blob/fcc2dd173d4f48763cd0bf7cc1739751eca3b96d/book/04-chapter-03.md#L67)
+- [`book/04-chapter-03.md:67`](https://github.com/FloatingPragma/observer-patch-holography/blob/f50e4da10533b8f5d3bf92a711c07bf6d563fe74/book/04-chapter-03.md#L67)
   > Obviously not, and this cuts both ways
-- [`book/04-chapter-03.md:67`](https://github.com/FloatingPragma/observer-patch-holography/blob/fcc2dd173d4f48763cd0bf7cc1739751eca3b96d/book/04-chapter-03.md#L67)
+- [`book/04-chapter-03.md:67`](https://github.com/FloatingPragma/observer-patch-holography/blob/f50e4da10533b8f5d3bf92a711c07bf6d563fe74/book/04-chapter-03.md#L67)
   > It introduced a much better one of a kind that had been there all along.
-- [`book/04-chapter-03.md:85`](https://github.com/FloatingPragma/observer-patch-holography/blob/fcc2dd173d4f48763cd0bf7cc1739751eca3b96d/book/04-chapter-03.md#L85)
+- [`book/04-chapter-03.md:85`](https://github.com/FloatingPragma/observer-patch-holography/blob/f50e4da10533b8f5d3bf92a711c07bf6d563fe74/book/04-chapter-03.md#L85)
   > An observer here is any bounded system that keeps records.
-- [`book/04-chapter-03.md:51`](https://github.com/FloatingPragma/observer-patch-holography/blob/fcc2dd173d4f48763cd0bf7cc1739751eca3b96d/book/04-chapter-03.md#L51)
+- [`book/04-chapter-03.md:51`](https://github.com/FloatingPragma/observer-patch-holography/blob/f50e4da10533b8f5d3bf92a711c07bf6d563fe74/book/04-chapter-03.md#L51)
   > The thermostat passes. So does a person
-- [`flagship/from_observer_consensus_to_standard_physics.tex:489`](https://github.com/FloatingPragma/observer-patch-holography/blob/fcc2dd173d4f48763cd0bf7cc1739751eca3b96d/flagship/from_observer_consensus_to_standard_physics.tex#L489)
+- [`flagship/from_observer_consensus_to_standard_physics.tex:530`](https://github.com/FloatingPragma/observer-patch-holography/blob/f50e4da10533b8f5d3bf92a711c07bf6d563fe74/flagship/from_observer_consensus_to_standard_physics.tex#L530)
   > defined by access and record interfaces, without an additional claim about consciousness.
+- [`flagship/from_observer_consensus_to_standard_physics.tex:149`](https://github.com/FloatingPragma/observer-patch-holography/blob/f50e4da10533b8f5d3bf92a711c07bf6d563fe74/flagship/from_observer_consensus_to_standard_physics.tex#L149)
+  > operational observer needs an additional account before any claim about phenomenal qualities follows.
 
 ## WISLIM evidence
 

@@ -15,7 +15,7 @@ framework-relative normative critique, not an intrinsic refutation of OPH.
 **Corrections.** Earlier versions of this audit read OCR errors as the review's
 text and called defined symbols undefined. Those findings are corrected below and
 listed in [`corrections.md`](corrections.md) (`OPH-AUD-001`, `OPH-AUD-005`,
-`OPH-AUD-006`, `OPH-AUD-011`).
+`OPH-AUD-006`, `OPH-AUD-011`). `OPH-AUD-012` records the move from release r2060 to r2061.
 
 ## Findings
 
@@ -159,25 +159,29 @@ Tracking: `OPH-REV-012`.
 
 ### F10. What the review gets right
 
-- It identifies its target correctly. The title and lead author match the flagship
-  paper at upstream, and "timeless self-referential history", "operational
-  observers", and "executable observers" occur in that paper. The review's summary
-  is a fair paraphrase of the abstract, apart from omitting its status statements.
+- It identified its target correctly. On the day it was sent, the title and lead
+  author matched the flagship at upstream (release r2060), and "timeless
+  self-referential history", "operational observers", and "executable observers"
+  occur in that release. The review's summary is a fair paraphrase of that release's
+  abstract, apart from omitting its status statements. Release r2061 has since changed
+  the subtitle and the abstract (`OPH-AUD-012`).
 - OPH does define observers without requiring life. "Explicitly" fits the book; the
   flagship's wording is "without an additional claim about consciousness".
 - OPH's fixed point is not observer-free. The closure hypothesis says so.
 - OPH does not use LFDI or WISLIM at the pinned commit (word search; see
   `verification.md`). The review is therefore an external critique, not a report of
   an internal OPH commitment.
-- OPH's program is incomplete by its own account, so a critique of overclaiming
-  would have a target. The review's mistake is to convert "incomplete" into
+- OPH's program is unfinished by its own account, so a critique of overclaiming
+  would have a target. At release r2060 the abstract said "the program is incomplete".
+  Release r2061 says "the common physical $3+1$ limit is the remaining conclusion to be
+  demonstrated". The review's mistake is to convert an unfinished program into
   "terminal failure" without the missing argument.
 
 ## Intrinsic grade
 
 | Question | Assessment |
 |---|---|
-| Is the target identifiable? | Yes. The title and lead author match the flagship; the release is not stated. |
+| Is the target identifiable? | Yes. The title and lead author matched the flagship on the day the review was sent; the release is not stated. |
 | Are the key terms defined? | Not in the review. WISLIM v2.0.1 glosses $L_1$, $U$, $D$, and the tiers in words, with no units or estimator. "Airtight Trap", "Epistemic Invariant", and "Decision Entropy" do not occur in it. |
 | Is the central inference valid? | No. The performative-contradiction and fixed-point arguments are non sequiturs. |
 | Is the formula sound? | The arithmetic holds when $D$ is not zero. The input $L_1 = 0$ is stipulated, and the variables are unmeasured. |

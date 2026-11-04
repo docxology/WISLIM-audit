@@ -32,16 +32,18 @@ No specific proof, theorem, or Lean declaration is named. The review calls $U$ '
 
 ## Extrinsic assessment
 
-OPH's abstract marks the status of its formal work: key steps are 'checked in Lean', and measured particle species, an interacting chiral continuum and the Einstein premises on one responsive geometry 'are not established'. The review neither engages that status nor shows an error. The formal claims remain untouched by the review.
+OPH's flagship marks the status of its formal work. Consistency is tested 'through the machine-checked results' of its verification section, and each result there maps to an artifact class, starting with 'a Lean library with no admitted propositions in the dependency closure reported here'. Its abstract says the identification with our universe requires a common limit with the observed particle spectrum, and its table of open conditions says 'A universe-level fixed point and its identification with our history are not established by the finite fixed-point theorem'. The review neither engages that status nor shows an error. The formal claims remain untouched by the review.
 
 ## OPH evidence
 
-- [`flagship/from_observer_consensus_to_standard_physics.tex:86`](https://github.com/FloatingPragma/observer-patch-holography/blob/fcc2dd173d4f48763cd0bf7cc1739751eca3b96d/flagship/from_observer_consensus_to_standard_physics.tex#L86)
-  > limit. Finite theorems on that carrier, with key steps checked in Lean,
-- [`flagship/from_observer_consensus_to_standard_physics.tex:98`](https://github.com/FloatingPragma/observer-patch-holography/blob/fcc2dd173d4f48763cd0bf7cc1739751eca3b96d/flagship/from_observer_consensus_to_standard_physics.tex#L98)
-  > hypothesis that the model tests; measured particle species, an interacting
-- [`flagship/from_observer_consensus_to_standard_physics.tex:100`](https://github.com/FloatingPragma/observer-patch-holography/blob/fcc2dd173d4f48763cd0bf7cc1739751eca3b96d/flagship/from_observer_consensus_to_standard_physics.tex#L100)
-  > are not established.
+- [`flagship/from_observer_consensus_to_standard_physics.tex:156`](https://github.com/FloatingPragma/observer-patch-holography/blob/f50e4da10533b8f5d3bf92a711c07bf6d563fe74/flagship/from_observer_consensus_to_standard_physics.tex#L156)
+  > through the machine-checked results of Section~\ref{sec:verification}.
+- [`flagship/from_observer_consensus_to_standard_physics.tex:2388`](https://github.com/FloatingPragma/observer-patch-holography/blob/f50e4da10533b8f5d3bf92a711c07bf6d563fe74/flagship/from_observer_consensus_to_standard_physics.tex#L2388)
+  > a Lean library with no admitted propositions in the dependency closure reported here
+- [`flagship/from_observer_consensus_to_standard_physics.tex:89`](https://github.com/FloatingPragma/observer-patch-holography/blob/f50e4da10533b8f5d3bf92a711c07bf6d563fe74/flagship/from_observer_consensus_to_standard_physics.tex#L89)
+  > Its identification with our universe requires a common interacting chiral $3+1$-dimensional limit with the observed particle spectrum, responsive geometry and independent empirical agreement.
+- [`flagship/from_observer_consensus_to_standard_physics.tex:1869`](https://github.com/FloatingPragma/observer-patch-holography/blob/f50e4da10533b8f5d3bf92a711c07bf6d563fe74/flagship/from_observer_consensus_to_standard_physics.tex#L1869)
+  > A universe-level fixed point and its identification with our history are not established by the finite fixed-point theorem
 
 ## WISLIM evidence
 

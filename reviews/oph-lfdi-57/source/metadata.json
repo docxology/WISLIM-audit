@@ -59,19 +59,27 @@
       "Kale Arnav Anirudha",
       "Brieuc de La Fournière"
     ],
-    "philpapers_note": "The authors list above is the PhilPapers record as retrieved 2026-11-03. The flagship source at the pinned commit lists fourteen authors, adding David Matscheko."
+    "philpapers_note": "The authors list above is the PhilPapers record as retrieved 2026-11-03. The flagship source at the pinned commit lists fourteen authors, adding David Matscheko.",
+    "title_note": "The title above is the one the review cites and the flagship's title at release r2060. Release r2061 (2026-11-04) keeps the main title and changes the subtitle to 'Finite Consensus and the Reconstruction of Standard Physics'."
   },
   "external_source": {
     "repository": "https://github.com/FloatingPragma/observer-patch-holography",
-    "commit": "fcc2dd173d4f48763cd0bf7cc1739751eca3b96d",
-    "commit_date": "2026-11-03",
-    "paper_release": "r2060",
-    "paper_release_date": "2026-11-02",
-    "note": "Upstream OPH repository used for the extrinsic check. The flagship source at this commit carries the exact title the review cites.",
+    "commit": "f50e4da10533b8f5d3bf92a711c07bf6d563fe74",
+    "commit_date": "2026-11-04",
+    "paper_release": "r2061",
+    "paper_release_date": "2026-11-04",
+    "note": "Upstream OPH repository used for the extrinsic check, at upstream main on 2026-11-04.",
+    "review_day": {
+      "commit": "fcc2dd173d4f48763cd0bf7cc1739751eca3b96d",
+      "commit_date": "2026-11-03",
+      "paper_release": "r2060",
+      "paper_release_date": "2026-11-02",
+      "note": "Upstream main when the review arrived. The flagship source and the paper release did not change until 2026-11-04. The flagship source at this commit carries the exact title the review cites."
+    },
     "previous_pin": {
       "repository": "https://github.com/docxology/observer-patch-holography",
       "commit": "1c5a908ed3441c5d09628183af18c362dbc58bea",
-      "note": "A fork, 7 commits ahead of and 1,593 commits behind upstream main at the commit above. Retired by OPH-AUD-002."
+      "note": "A fork, 7 commits ahead of and 1,593 commits behind upstream main at release r2060. Retired by OPH-AUD-002."
     }
   },
   "rights": {

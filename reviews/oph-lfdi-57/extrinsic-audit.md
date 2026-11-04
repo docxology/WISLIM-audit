@@ -6,11 +6,12 @@
 external corpora:
 
 1. **The target corpus (OPH):** Bernhard Mueller et al., *Observers Who Read
-   Their Universe into Existence: Finite Consensus, an Executable Observer, and
-   Standard Physics* ([PhilPapers `MUEFOC`](https://philpapers.org/rec/MUEFOC))
+   Their Universe into Existence* ([PhilPapers `MUEFOC`](https://philpapers.org/rec/MUEFOC))
    and the upstream Observer Patch Holography repository
    ([`FloatingPragma/observer-patch-holography`](https://github.com/FloatingPragma/observer-patch-holography)
-   at commit `fcc2dd173d4f48763cd0bf7cc1739751eca3b96d`, paper release r2060).
+   at commit `f50e4da10533b8f5d3bf92a711c07bf6d563fe74`, paper release r2061). The review was sent when upstream was at
+   commit `fcc2dd173d4f48763cd0bf7cc1739751eca3b96d`, paper release r2060; evidence about what the review read cites
+   that commit and says so.
 2. **The reviewer's framework corpus (WISLIM):** David Wishengrad, *Life is Most
    Important in Life is The Most Important Truth in Life* (Version 2.0.1, DOI
    `10.21428/4831231e.8c4c6c8f`, `source/WISLIM-v2.0.1.txt`) and this
@@ -18,7 +19,8 @@ external corpora:
 
 **Correction.** An earlier version of this audit pinned a stale fork of OPH and
 reached several conclusions from it. See [`corrections.md`](corrections.md)
-(`OPH-AUD-002`, `OPH-AUD-003`, `OPH-AUD-004`).
+(`OPH-AUD-002`, `OPH-AUD-003`, `OPH-AUD-004`). A later correction records the move from
+release r2060 to r2061 (`OPH-AUD-012`).
 
 **Bottom line.** Across the 12 tracked topics (`OPH-REV-001`–`OPH-REV-012`),
 **4** are addressed by OPH (`OPH-REV-001`–`003`, `006`), **3** are contradicted by
@@ -40,21 +42,26 @@ The review names *"Observers Who Read Their Universe into Existence: Finite
 Consensus, an Executable Observer, and Standard Physics" by Bernhard Mueller et
 al.* (`reviews/oph-lfdi-57/source/LFDI_Alignment_Audit-57.verified.txt:2`).
 
-- **What matches:** the flagship source at the pinned commit carries that exact
-  title (`flagship/from_observer_consensus_to_standard_physics.tex:36`) and names
-  Bernhard Mueller first and as corresponding author. The upstream README links
-  PhilPapers `MUEFOC` as the main paper (`README.md:5`). PhilPapers, as retrieved on
-  2026-11-03, lists Bernhard Mueller and twelve coauthors. The flagship source at the
-  pinned commit lists fourteen authors, adding David Matscheko.
+- **What matches:** at release r2060, upstream on the day the review arrived, the
+  flagship source carries that exact title
+  (`flagship/from_observer_consensus_to_standard_physics.tex:36`) and names Bernhard
+  Mueller first and as corresponding author. The upstream README links PhilPapers
+  `MUEFOC` as the main paper (`README.md:5`). PhilPapers, as retrieved on 2026-11-03,
+  lists Bernhard Mueller and twelve coauthors. The flagship source lists fourteen
+  authors, adding David Matscheko.
+- **What has changed since:** release r2061, dated 4 November 2026, keeps the main title,
+  changes the subtitle to "Finite Consensus and the Reconstruction of Standard Physics"
+  (`flagship/from_observer_consensus_to_standard_physics.tex:37`), and rewrites the
+  abstract. That is a change upstream, not an error in the review.
 - **What is omitted or imprecise:**
   1. The review gives no manuscript date, release, or URL, and collapses the other
-     authors into "et al." (`OPH-REV-001`). The flagship's release at the pinned commit
-     is r2060, dated 2 November 2026.
-  2. OPH explicitly marks its program as incomplete. The abstract says "Measured by
-     the four conditions, the program is incomplete" and "Closure of one complete
-     history is a hypothesis that the model tests"
-     (`flagship/from_observer_consensus_to_standard_physics.tex:96`). The review
-     summarizes OPH's ambition without mentioning this status (`OPH-REV-002`).
+     authors into "et al." (`OPH-REV-001`). The next day's change shows why that matters.
+  2. OPH marks its program as unfinished. The r2060 abstract says "Measured by the four
+     conditions, the program is incomplete" and "Closure of one complete history is a
+     hypothesis that the model tests" (line 96 of the flagship source at that commit).
+     The r2061 text says "the common physical $3+1$ limit is the remaining conclusion to
+     be demonstrated" (`flagship/from_observer_consensus_to_standard_physics.tex:211`).
+     The review summarizes OPH's ambition without mentioning this status (`OPH-REV-002`).
 
 ---
 
@@ -74,7 +81,7 @@ that subordinates Life to a mathematical abstraction"
   that keeps records" (`book/04-chapter-03.md:85`). The flagship's phrase is
   narrower: the operational observer is "defined by access and record interfaces,
   without an additional claim about consciousness"
-  (`flagship/from_observer_consensus_to_standard_physics.tex:488`).
+  (`flagship/from_observer_consensus_to_standard_physics.tex:530`).
 - **Why the performative-contradiction charge fails against OPH (`OPH-REV-004`):**
   OPH does not deny that living authors exist, make decisions, or have moral
   standing. The arrival of living things "introduced a much better one of a kind that
@@ -211,7 +218,7 @@ anchors below are its nearest passages.
 | ID | Topic | Review verdict | OPH status | Primary external anchor |
 |---|---|---|---|---|
 | [OPH-REV-001](topics/OPH-REV-001-target-identification-and-citation.md) | Target identification and citation | `partly-valid` | `addressed` | [PhilPapers `MUEFOC`](https://philpapers.org/rec/MUEFOC); `flagship/from_observer_consensus_to_standard_physics.tex:36` |
-| [OPH-REV-002](topics/OPH-REV-002-summary-of-the-oph-program.md) | Summary of the OPH program | `partly-valid` | `addressed` | `flagship/from_observer_consensus_to_standard_physics.tex:96` |
+| [OPH-REV-002](topics/OPH-REV-002-summary-of-the-oph-program.md) | Summary of the OPH program | `partly-valid` | `addressed` | line 96 of the flagship source at release r2060; `flagship/from_observer_consensus_to_standard_physics.tex:211` |
 | [OPH-REV-003](topics/OPH-REV-003-biological-life-and-the-observer-definition.md) | Biological life and the observer definition | `partly-valid` | `addressed` | `book/04-chapter-03.md:67`, `book/04-chapter-03.md:85`; [`WISLIM-006`](../../docs/audit/WISLIM-006-replace-the-circular-definition-of-life-with-a-tiered-ontology.md) |
 | [OPH-REV-004](topics/OPH-REV-004-performative-contradiction-charge.md) | Performative contradiction charge | `unsupported` | `contradicted` | `README.md:46`, `docs/INTERPRETATION_AND_TERMS.md:53`; [`WISLIM-001`](../../docs/audit/WISLIM-001-make-the-central-thesis-a-single-well-formed-proposition.md) |
 | [OPH-REV-005](topics/OPH-REV-005-the-no-truth-outside-life-premise.md) | The 'No Truth Outside Life' premise | `question-begging` | `not-addressed` | `README.md:47`, `README.md:49`; [`WISLIM-010`](../../docs/audit/WISLIM-010-defend-the-missing-normative-premise.md) |
@@ -219,6 +226,6 @@ anchors below are its nearest passages.
 | [OPH-REV-007](topics/OPH-REV-007-lfdi-formula-collapse-and-e-infinity.md) | LFDI formula collapse and E-infinity | `unsupported` | `not-addressed` | `book/04-chapter-03.md:85`; [`WISLIM-011`](../../docs/audit/WISLIM-011-demote-the-e-infinity-formula-from-proof-to-metaphor.md) |
 | [OPH-REV-008](topics/OPH-REV-008-operational-necessity-and-the-supremacy-of-life.md) | Operational necessity and the supremacy of life | `out-of-scope` | `contradicted` | `book/44-appendix-a.md:193`, `book/44-appendix-a.md:195`; [`WISLIM-014`](../../docs/audit/WISLIM-014-make-the-no-coercion-rule-apply-to-the-framework-itself.md) |
 | [OPH-REV-009](topics/OPH-REV-009-decision-entropy-and-systemic-misalignment.md) | Decision Entropy and systemic misalignment | `unsupported` | `not-addressed` | `book/44-appendix-a.md:183`; [`WISLIM-020`](../../docs/audit/WISLIM-020-replace-crs-with-a-validated-risk-model-or-drop-it.md) |
-| [OPH-REV-010](topics/OPH-REV-010-dismissal-of-formal-and-lean-work.md) | Dismissal of formal and Lean work | `unsupported` | `not-addressed` | `flagship/from_observer_consensus_to_standard_physics.tex:86`; [`WISLIM-023`](../../docs/audit/WISLIM-023-demote-the-210-stress-tests-from-theorems-to-analogies.md) |
+| [OPH-REV-010](topics/OPH-REV-010-dismissal-of-formal-and-lean-work.md) | Dismissal of formal and Lean work | `unsupported` | `not-addressed` | `flagship/from_observer_consensus_to_standard_physics.tex:156`, `flagship/from_observer_consensus_to_standard_physics.tex:1869`; [`WISLIM-023`](../../docs/audit/WISLIM-023-demote-the-210-stress-tests-from-theorems-to-analogies.md) |
 | [OPH-REV-011](topics/OPH-REV-011-ai-provenance-and-verification-claim.md) | AI provenance and verification claim | `unverifiable` | `not-addressed` | [`WISLIM-017`](../../docs/audit/WISLIM-017-remove-the-ai-consensus-claim-from-the-proof.md), [`WISLIM-018`](../../docs/audit/WISLIM-018-publish-the-prompts-and-ratification-record-or-withdraw-the-claim.md) |
 | [OPH-REV-012](topics/OPH-REV-012-overall-disposition-conditional-critique-or-refutation.md) | Overall disposition: conditional critique or refutation | `unsupported` | `contradicted` | `book/04-chapter-03.md:85`, `book/44-appendix-a.md:183`, `book/44-appendix-a.md:195` |

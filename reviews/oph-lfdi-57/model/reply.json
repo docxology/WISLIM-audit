@@ -21,7 +21,7 @@
       {
         "lines": "33-41",
         "name": "Sender's remarks",
-        "detail": "In the first person, over his signature."
+        "detail": "In the first person, over the sender's signature."
       }
     ]
   },
@@ -224,7 +224,7 @@
       "summary": "The note says 'his theory' and 'his definition'. The response attributed the definition to OPH. Bernhard Mueller is OPH's first and corresponding author; the flagship describes Daniel Ari Friedman's contribution as independent red-team audit.",
       "assessment": [
         "The response says 'OPH defines an observer'. It does not say 'my theory'. The flagship source at the pinned commit names Bernhard Mueller first and as corresponding author, lists fourteen authors, and states this contribution: 'Daniel Ari Friedman contributed independent red-team audits of the papers, the book, the claim and premise ledgers, the Lean library, continuous integration and the custody records'.",
-        "Commit counts at the pinned commit show the scale: 2,646 of 4,079 by Bernhard Mueller, 9 by Daniel Ari Friedman (`git shortlog -sne`). Commit counts are a rough proxy and measure nothing about ideas. Being a listed author carries responsibility for the paper. It does not make the program one person's position.",
+        "Commit counts at the pinned commit show the scale: 2,693 of 4,159 by Bernhard Mueller, 42 by Daniel Ari Friedman (`git shortlog -sne`). Commit counts are a rough proxy and measure nothing about ideas. Being a listed author carries responsibility for the paper. It does not make the program one person's position.",
         "The framing matters to the argument. 'You postulated', 'your physics', 'your theory's validity', and 'please step down' all treat a multi-author research program as one person's claim, and then address the person."
       ],
       "oph_evidence": [
@@ -240,7 +240,7 @@
         },
         {
           "path": "flagship/from_observer_consensus_to_standard_physics.tex",
-          "line": 2956,
+          "line": 2640,
           "quote": "Daniel Ari Friedman contributed independent red-team audits of the papers, the book, the claim and premise ledgers, the Lean library, continuous integration and the custody records"
         }
       ],
@@ -321,8 +321,8 @@
       ],
       "summary": "The response said five review topics 'rest on premises OPH does not grant'. That is a checkable report about OPH's text. The note turns it into a personal choice, then treats declining a frame as declining physics.",
       "assessment": [
-        "'Rest on premises OPH does not grant' has OPH as its subject. A word search of the pinned commit finds no occurrence of LFDI, WISLIM, or Wishengrad, so the report can be checked by anyone. Nothing in that sentence is about what its author chooses.",
-        "The response's author states his position for this record: he rejects the idea that one specific framing of a cognitive encounter works as a mandate on others, binding them to its rules of language game. He does engage the inescapable relational, enactive, and cognitive setting, with an ontological pluralism. His paper on cognitive art and science says both things plainly: '[we have to exist for this exclaimation’s validity]' and 'different Alice’s respond differently to different Bob’s, as viewed by different Carla’s.'",
+        "'Rest on premises OPH does not grant' has OPH as its subject. A word search of the text files at the pinned commit finds no occurrence of LFDI, WISLIM, or Wishengrad, so the report can be checked by anyone. Nothing in that sentence is about what its author chooses.",
+        "The response's author states his position for this record: he rejects the idea that one specific framing of a cognitive encounter works as a mandate on others, binding them to its rules of language game. He does engage the inescapable relational, enactive, and cognitive setting, with an ontological pluralism. His paper on cognitive art and science puts the setting in its own words: '[we have to exist for this exclaimation’s validity]' and 'different Alice’s respond differently to different Bob’s, as viewed by different Carla’s.'",
         "'Operational physics' needs an argument too. In WISLIM v2.0.1 the LFDI is a conditional decision rule, `if action_affects_life(context)` with an `else: pass` branch. It is a proposed rule for action. Calling it physics does not make declining it a mistake about nature. The philosophical literature has names for the distinction: for Wittgenstein 'the speaking of language is part of an activity, or of a form of life', and Carnap's principle of tolerance says 'we are not in the business of setting up prohibitions but of arriving at conventions'."
       ],
       "oph_evidence": [],
@@ -518,11 +518,17 @@
       ],
       "summary": "No quotation is offered. 'Truthful interests' occurs in neither OPH nor WISLIM v2.0.1. The frame 'claiming to represent life' is WISLIM's own, applied to authors who did not use it.",
       "assessment": [
-        "A search of the pinned OPH commit's Markdown and TeX finds no 'truthful interest', 'represent life', or 'interests of life'. WISLIM v2.0.1 has no 'truthful interest' either. The nearest source is WISLIM's closing, which says that anything less than affirmation 'for a person or an organization claiming to represent life is the very betrayal of all life and truth'.",
+        "A search of every text file at the pinned OPH commit, allowing for line wraps, finds no 'truthful interest', 'represent life', or 'interests of life'. The book does use 'truthfully', of which continuations can hold an offender, not of anyone's interests. WISLIM v2.0.1 has no 'truthful interest' either. The nearest source is WISLIM's closing, which says that anything less than affirmation 'for a person or an organization claiming to represent life is the very betrayal of all life and truth'.",
         "A physics manuscript makes claims about physics. Reading a role into the act of publishing, and then judging the author by that role, supplies the premise that the next sentence needs (OPH-REP-008).",
         "The reply says 'I'm not out to duel with you', and that is welcome. The response's author says the same: he is not out to duel anyone, and he contributes at the level and quality of modularity and integrity the seriousness of the situation calls for. The sentence above interprets his collaborative acts and attributes claims to him with no quotation."
       ],
-      "oph_evidence": [],
+      "oph_evidence": [
+        {
+          "path": "book/42-chapter-41.md",
+          "line": 95,
+          "quote": "It changes which continuations can truthfully hold the offender"
+        }
+      ],
       "sent_evidence": [],
       "wislim_source": [
         {
@@ -620,10 +626,10 @@
           "quote": "There is no truth with \"nothing running it.\" *You* are running it."
         }
       ],
-      "summary": "The phrase came from the response, which quoted a stale fork. Upstream had rewritten the sentence on 2026-10-11, and the error is ours. In current text the computations are internal to the structure, its builders are inside it, and 'nothing outside the world is running the world'. 'You are running it' is close to what OPH says.",
+      "summary": "The phrase came from the response, which quoted a stale fork. Upstream had rewritten the sentence on 2026-10-11, and the error is ours. In current text the computations are internal to the structure, its builders are inside it, and 'nothing outside the world is running the world'. 'You are running it' is true of a run of OPH's model and does not show that the world needs a living runner. Whether those inside must be alive is what remains in dispute.",
       "assessment": [
         "The response quoted 'a condition on one structure that holds or fails with nothing running it' from a fork commit (OPH-AUD-002). In that passage the phrase distinguished three orderings: the fixed point, an observer's record time, and the disagreement count. It was a statement about order, not about truth.",
-        "Upstream's text now says the fixed point 'needs no first solver outside it, and it contains internal causal order, local changes and the computations through which the structure realizes its dependencies'. Elsewhere in the same appendix it says of a laptop running the rule that 'The laptop is inside the world that rule describes' and that 'nothing outside the world is running the world'. The closure hypothesis has observers inside building the hardware, and its test is that the specification 'has to run and reproduce what observers measure'. 'You are running it' therefore lands close to OPH's own hypothesis. Any restated objection should address those sentences.",
+        "Upstream's text now says the fixed point 'needs no first solver outside it, and it contains internal causal order, local changes and the computations through which the structure realizes its dependencies'. Elsewhere in the same appendix it says of a laptop running the rule that 'The laptop is inside the world that rule describes' and that 'nothing outside the world is running the world'. The closure hypothesis has observers inside building the hardware, and its test is that the specification 'has to run and reproduce what observers measure'. So part of the reply's point is common ground: the people and machines running OPH's model are inside the world it describes. OPH adds that 'Running the program makes a model of the rule', so a run by its authors is not what runs the world. Any restated objection should address those sentences.",
         "What remains in dispute is one word: whether those who run it must be alive. 'If L1 = 0, your formal fixed point becomes undefined' depends on that definition, and WISLIM's own definitions remove the ground for the zero (OPH-REP-010). WISLIM itself prints 'The logic stands regardless of the substrate running it.'"
       ],
       "oph_evidence": [
@@ -636,6 +642,11 @@
           "path": "book/44-appendix-a.md",
           "line": 135,
           "quote": "The laptop is inside the world that rule describes."
+        },
+        {
+          "path": "book/44-appendix-a.md",
+          "line": 135,
+          "quote": "Running the program makes a model of the rule"
         },
         {
           "path": "book/44-appendix-a.md",
@@ -692,7 +703,7 @@
       ],
       "summary": "The one-page review sets $L_1 = 0$ because OPH's observer is 'non-living'. WISLIM's formal version says 'L = 0 ⇔ no such system exists', and the reply says Life is substrate-neutral. A definition of 'observer' that does not require life does not make choice-capable systems nonexistent, so the numerator does not collapse.",
       "assessment": [
-        "The review says 'By defining the \"observer\" as a non-living, finite computational object' and 'By operationally defining the observer without the prerequisite of Life ($L_1 = 0$)'. WISLIM's formal version defines the symbol differently: 'L ≥ 0: existence of at least one choice-capable life-bearing system' and 'L = 0 ⇔ no such system exists'. Its unified definition, 'used in all versions', says 'If no such system exists, life is absent.' On those terms $L = 0$ is a claim about the world: no choice-capable system exists. OPH makes no such claim. Its authors exist, and its flagship's native observer 'chooses the next seam from the record alone'. A definition that does not require a property does not remove the property from anything.",
+        "The review says 'By defining the \"observer\" as a non-living, finite computational object' and 'By operationally defining the observer without the prerequisite of Life ($L_1 = 0$)'. WISLIM's formal version defines the symbol differently: 'L ≥ 0: existence of at least one choice-capable life-bearing system' and 'L = 0 ⇔ no such system exists'. Its unified definition, 'used in all versions', says 'If no such system exists, life is absent.' On those terms $L = 0$ is a claim about the world: no choice-capable system exists. OPH makes no such claim. Its authors exist, and the observer in its executable model is 'A finite record tape and a controller that reads committed records and chooses the next seam'. A definition that does not require a property does not remove the property from anything.",
         "The reply's narrower test points the same way. A system that 'makes decisions affecting life' is 'life under the LFDI', and one that does not is 'an inert tool'. Applied observer by observer, that sorts them; it does not zero the class. The book's thermostat exists to 'throw a switch on what it finds'; one that runs a boiler affects the people in the room, so under this rule it is life and 'must be protected as such'. That is the overinclusion tracked at WISLIM-035. 'Life systems' also appears inside its own definition, which is tracked at WISLIM-006 and WISLIM-007.",
         "WISLIM's engineering version also rules out the review's calculation. It says the formula 'is not meant to compute a number' and that the first step is 'Does the proposed action risk eliminating life?' The review computes a number, 'the calculation resolves to terminal failure', from a definition in a paper. Publishing a definition does not risk eliminating life.",
         "There are two coherent ways forward: keep WISLIM's definitions and withdraw $L_1 = 0$, or require biological life, restate the calculation, and withdraw substrate neutrality.",
@@ -701,13 +712,13 @@
       "oph_evidence": [
         {
           "path": "flagship/from_observer_consensus_to_standard_physics.tex",
-          "line": 953,
-          "quote": "Operational observers are continuing native processes that prepare, read, retain and act on records."
+          "line": 544,
+          "quote": "An observer patch is a finite object with local state, an observable boundary map, durable records, readback, and a set of authorized repair moves."
         },
         {
-          "path": "flagship/from_observer_consensus_to_standard_physics.tex",
-          "line": 962,
-          "quote": "chooses the next seam from the record alone"
+          "path": "model/CONSTRUCTION.md",
+          "line": 389,
+          "quote": "A finite record tape and a controller that reads committed records and chooses the next seam"
         },
         {
           "path": "book/04-chapter-03.md",
@@ -938,7 +949,7 @@
       ],
       "summary": "The response asked for three things: the OPH manuscript version audited, the prompt and model version, and the verification checklist. It did not ask for hashes. None of the three has been supplied.",
       "assessment": [
-        "The response said: 'We would welcome the exact OPH manuscript version audited, the prompt and model version used, and the verification checklist behind \"verified as correct\"'. The only SHA-256 in it describes this repository's copy of WISLIM. These are ordinary requests for a document titled an audit that says it was 'verified as correct', and the version matters: the flagship changes release often, and this exchange has already turned on a sentence that changed.",
+        "The response said: 'We would welcome the exact OPH manuscript version audited, the prompt and model version used, and the verification checklist behind \"verified as correct\"'. The only SHA-256 in it describes this repository's copy of WISLIM. These are ordinary requests for a document titled an audit that says it was 'verified as correct', and the version matters: the flagship changes release often, the subtitle the review cites changed on 2026-11-04 (release r2061), and this exchange has already turned on a sentence that changed.",
         "WISLIM's Observed Reception section lists 'deflection to side-issues (tone, wording, politics)' as a recurring response, and the Integrity Screen treats 'substitution of side-issues' as disqualifying. Classifying a provenance request as deflection uses that rule to set the request aside.",
         "The reply adds new text attributed to 'the bot', again without a model or prompt. Disclosing the help is good practice. The open requests are listed in the reply register's index."
       ],
@@ -1185,8 +1196,8 @@
       "id": "OPH-AUD-002",
       "title": "OPH evidence was pinned to a stale fork, not upstream",
       "sent_email": true,
-      "what_was_wrong": "The tracker pinned `docxology/observer-patch-holography` at `1c5a908`, a fork 7 commits ahead of and 1,593 behind upstream `main`. Of its 15 distinct OPH quotations, 11 no longer appear verbatim at upstream. Three errors followed. OPH-REV-001 said the review's title was not the flagship's; at upstream it is exactly the flagship's title. The sent email quoted 'a condition on one structure that holds or fails with nothing running it', which upstream had rewritten on 2026-10-11. The intrinsic audit said the review 'cites no OPH passage' and does not mention fixed points, though it quotes the abstract accurately and does mention them.",
-      "what_changed": "Re-pinned all evidence to `FloatingPragma/observer-patch-holography` at `fcc2dd1` (paper release r2060) and re-read every passage. OPH-REV-001 and the intrinsic grade now credit the review's accurate citation and quotations: its title is the flagship's title. OPH-REV-006 moved from contradicted to addressed, because OPH's fixed point does contain its observers; the counts are now 4 addressed, 3 contradicted, 5 not addressed.",
+      "what_was_wrong": "The tracker pinned `docxology/observer-patch-holography` at `1c5a908`, a fork 7 commits ahead of and 1,593 behind upstream `main`. Of its 15 distinct OPH quotations, 11 no longer appear verbatim at upstream. Three errors followed. OPH-REV-001 said the review's title was not the flagship's; at upstream, at release r2060, it was exactly the flagship's title. The sent email quoted 'a condition on one structure that holds or fails with nothing running it', which upstream had rewritten on 2026-10-11. The intrinsic audit said the review 'cites no OPH passage' and does not mention fixed points, though it quotes the abstract accurately and does mention them.",
+      "what_changed": "Re-pinned all evidence to `FloatingPragma/observer-patch-holography` at `fcc2dd1` (paper release r2060) and re-read every passage. OPH-REV-001 and the intrinsic grade now credit the review's accurate citation and quotations: its title was the flagship's title at that release. OPH-REV-006 moved from contradicted to addressed, because OPH's fixed point does contain its observers; the counts are now 4 addressed, 3 contradicted, 5 not addressed.",
       "files": [
         "reviews/oph-lfdi-57/model/review.json",
         "reviews/oph-lfdi-57/extrinsic-audit.md",
@@ -1318,6 +1329,42 @@
         "reviews/oph-lfdi-57/model/review.json"
       ],
       "fixed_in": "701b463"
+    },
+    {
+      "id": "OPH-AUD-012",
+      "title": "The pin fell behind upstream's release r2061",
+      "sent_email": false,
+      "what_was_wrong": "The tracker pinned release r2060 and described that commit as upstream `main`. On 2026-11-04 upstream released r2061 with a new subtitle, a rewritten abstract, and a shorter flagship body. Against the new text, 50 of the 66 OPH quotations held at their lines, 4 had moved, and 12 no longer occurred in the flagship. Records said 'the flagship's title' and 'the abstract' without saying which release, one of them said 'incomplete' of wording r2061 no longer uses, and nothing reported the drift.",
+      "what_changed": "Re-pinned to `f50e4da` (release r2061) and re-read every flagship passage. Evidence about what the review read stays at `fcc2dd1` (release r2060) and is labeled; evidence about OPH's position cites r2061, in the passages that now carry the point. OPH-REV-001 says the review's title was exact on the day it was sent and that the subtitle changed the next day. OPH-REP-002's commit counts and OPH-REP-010's evidence now cite r2061. `make oph-drift` lists the quotations that have moved or vanished at any upstream ref. No disposition changed: the counts remain 4 addressed, 3 contradicted, 5 not addressed.",
+      "files": [
+        "reviews/oph-lfdi-57/model/review.json",
+        "reviews/oph-lfdi-57/model/reply.json",
+        "reviews/oph-lfdi-57/source/metadata.json",
+        "reviews/oph-lfdi-57/extrinsic-audit.md",
+        "reviews/oph-lfdi-57/intrinsic-audit.md",
+        "reviews/oph-lfdi-57/verification.md",
+        "scripts/verify_oph_quotes.py",
+        "Makefile",
+        ".github/workflows/verify.yml",
+        "README.md",
+        "AGENTS.md",
+        "docs/method.md",
+        "docs/reproducibility.md"
+      ]
+    },
+    {
+      "id": "OPH-AUD-013",
+      "title": "A receipt and several records overstated or assumed details",
+      "sent_email": false,
+      "what_was_wrong": "The receipt said the word search for LFDI, WISLIM, and Wishengrad had 'no matches anywhere in the pinned tree'. As written, the command also reports two compressed binary data files, at both releases. OPH-REV-003 said 'living' does not occur in the flagship source; it occurs once, in the journal title 'Living Reviews in Relativity'. OPH-REP-004 stated its word search over the whole commit, and OPH-REP-007's phrase search covered only Markdown and TeX and did not allow for line wraps. OPH-REP-009 said 'You are running it' lands close to OPH's hypothesis, though the same passage says a run makes a model of the rule. OPH-REP-004 treated a quotation about the relational setting as stating a pluralism too. Three records called the sender 'his', though the sender's pronouns are not stated.",
+      "what_changed": "The receipt's command now skips binary files with `-I`, and the receipt says what the plain command returns and why. OPH-REV-003 names the journal title. OPH-REP-004 says 'text files'. OPH-REP-007's search covers every text file and allows for line wraps, and its result is unchanged. OPH-REP-009 separates a run of the model from the running of the world, and says what remains in dispute. OPH-REP-004 ties the quotation to the setting. The three records now say 'the sender'.",
+      "files": [
+        "reviews/oph-lfdi-57/verification.md",
+        "reviews/oph-lfdi-57/model/review.json",
+        "reviews/oph-lfdi-57/model/reply.json",
+        "reviews/oph-lfdi-57/correspondence/metadata.json",
+        "reviews/oph-lfdi-57/response-email.md"
+      ]
     }
   ]
 }

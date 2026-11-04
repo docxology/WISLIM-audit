@@ -37,11 +37,11 @@ The book addresses life by name, under 'What nobody has to add': 'Life. Obviousl
 
 **OPH, at the pinned upstream commit**
 
-- [`book/04-chapter-03.md:55`](https://github.com/FloatingPragma/observer-patch-holography/blob/fcc2dd173d4f48763cd0bf7cc1739751eca3b96d/book/04-chapter-03.md#L55)
+- [`book/04-chapter-03.md:55`](https://github.com/FloatingPragma/observer-patch-holography/blob/f50e4da10533b8f5d3bf92a711c07bf6d563fe74/book/04-chapter-03.md#L55)
   > What nobody has to add
-- [`book/04-chapter-03.md:67`](https://github.com/FloatingPragma/observer-patch-holography/blob/fcc2dd173d4f48763cd0bf7cc1739751eca3b96d/book/04-chapter-03.md#L67)
+- [`book/04-chapter-03.md:67`](https://github.com/FloatingPragma/observer-patch-holography/blob/f50e4da10533b8f5d3bf92a711c07bf6d563fe74/book/04-chapter-03.md#L67)
   > Obviously not, and this cuts both ways
-- [`book/04-chapter-03.md:67`](https://github.com/FloatingPragma/observer-patch-holography/blob/fcc2dd173d4f48763cd0bf7cc1739751eca3b96d/book/04-chapter-03.md#L67)
+- [`book/04-chapter-03.md:67`](https://github.com/FloatingPragma/observer-patch-holography/blob/f50e4da10533b8f5d3bf92a711c07bf6d563fe74/book/04-chapter-03.md#L67)
   > It introduced a much better one of a kind that had been there all along.
 
 **The response as sent**

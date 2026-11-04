@@ -36,11 +36,11 @@ OPH addresses the circularity objection directly and says the fixed point 'needs
 
 ## OPH evidence
 
-- [`book/44-appendix-a.md:153`](https://github.com/FloatingPragma/observer-patch-holography/blob/fcc2dd173d4f48763cd0bf7cc1739751eca3b96d/book/44-appendix-a.md#L153)
+- [`book/44-appendix-a.md:153`](https://github.com/FloatingPragma/observer-patch-holography/blob/f50e4da10533b8f5d3bf92a711c07bf6d563fe74/book/44-appendix-a.md#L153)
   > It needs no first solver outside it, and it contains internal causal order, local changes and the computations through which the structure realizes its dependencies.
-- [`book/44-appendix-a.md:155`](https://github.com/FloatingPragma/observer-patch-holography/blob/fcc2dd173d4f48763cd0bf7cc1739751eca3b96d/book/44-appendix-a.md#L155)
+- [`book/44-appendix-a.md:155`](https://github.com/FloatingPragma/observer-patch-holography/blob/f50e4da10533b8f5d3bf92a711c07bf6d563fe74/book/44-appendix-a.md#L155)
   > A loop of this kind is a condition.
-- [`flagship/from_observer_consensus_to_standard_physics.tex:179`](https://github.com/FloatingPragma/observer-patch-holography/blob/fcc2dd173d4f48763cd0bf7cc1739751eca3b96d/flagship/from_observer_consensus_to_standard_physics.tex#L179)
+- [`flagship/from_observer_consensus_to_standard_physics.tex:217`](https://github.com/FloatingPragma/observer-patch-holography/blob/f50e4da10533b8f5d3bf92a711c07bf6d563fe74/flagship/from_observer_consensus_to_standard_physics.tex#L217)
   > and observers inside it recover its specification and realize it
 
 ## WISLIM evidence

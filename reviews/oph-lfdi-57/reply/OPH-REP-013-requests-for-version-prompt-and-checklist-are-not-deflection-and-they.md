@@ -27,7 +27,7 @@ The response asked for three things: the OPH manuscript version audited, the pro
 
 ## Assessment
 
-The response said: 'We would welcome the exact OPH manuscript version audited, the prompt and model version used, and the verification checklist behind "verified as correct"'. The only SHA-256 in it describes this repository's copy of WISLIM. These are ordinary requests for a document titled an audit that says it was 'verified as correct', and the version matters: the flagship changes release often, and this exchange has already turned on a sentence that changed.
+The response said: 'We would welcome the exact OPH manuscript version audited, the prompt and model version used, and the verification checklist behind "verified as correct"'. The only SHA-256 in it describes this repository's copy of WISLIM. These are ordinary requests for a document titled an audit that says it was 'verified as correct', and the version matters: the flagship changes release often, the subtitle the review cites changed on 2026-11-04 (release r2061), and this exchange has already turned on a sentence that changed.
 
 WISLIM's Observed Reception section lists 'deflection to side-issues (tone, wording, politics)' as a recurring response, and the Integrity Screen treats 'substitution of side-issues' as disqualifying. Classifying a provenance request as deflection uses that rule to set the request aside.
 

@@ -27,7 +27,7 @@ No quotation is offered. 'Truthful interests' occurs in neither OPH nor WISLIM v
 
 ## Assessment
 
-A search of the pinned OPH commit's Markdown and TeX finds no 'truthful interest', 'represent life', or 'interests of life'. WISLIM v2.0.1 has no 'truthful interest' either. The nearest source is WISLIM's closing, which says that anything less than affirmation 'for a person or an organization claiming to represent life is the very betrayal of all life and truth'.
+A search of every text file at the pinned OPH commit, allowing for line wraps, finds no 'truthful interest', 'represent life', or 'interests of life'. The book does use 'truthfully', of which continuations can hold an offender, not of anyone's interests. WISLIM v2.0.1 has no 'truthful interest' either. The nearest source is WISLIM's closing, which says that anything less than affirmation 'for a person or an organization claiming to represent life is the very betrayal of all life and truth'.
 
 A physics manuscript makes claims about physics. Reading a role into the act of publishing, and then judging the author by that role, supplies the premise that the next sentence needs (OPH-REP-008).
 
@@ -36,6 +36,11 @@ The reply says 'I'm not out to duel with you', and that is welcome. The response
 **Kind of claim:** `attribution`: attributes to the response or its author something the text does not say.
 
 ## Evidence
+
+**OPH, at the pinned upstream commit**
+
+- [`book/42-chapter-41.md:95`](https://github.com/FloatingPragma/observer-patch-holography/blob/f50e4da10533b8f5d3bf92a711c07bf6d563fe74/book/42-chapter-41.md#L95)
+  > It changes which continuations can truthfully hold the offender
 
 **WISLIM v2.0.1**
 

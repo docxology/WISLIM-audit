@@ -5,7 +5,7 @@ Received 2026-11-03. The verbatim text is in
 one paragraph per line. Each record below takes one claim and quotes it exactly.
 These are observations, and the sender may answer or decline any of them.
 
-OPH evidence is pinned to `https://github.com/FloatingPragma/observer-patch-holography` at `fcc2dd173d4f48763cd0bf7cc1739751eca3b96d`.
+OPH evidence is pinned to `https://github.com/FloatingPragma/observer-patch-holography` at `f50e4da10533b8f5d3bf92a711c07bf6d563fe74`.
 
 ## Voices in the reply
 
@@ -13,7 +13,7 @@ OPH evidence is pinned to `https://github.com/FloatingPragma/observer-patch-holo
 |---|---|---|
 | 4-8 | Notes | Addressed to the sender and describing Daniel in the third person. The sender later refers to 'the bot' (line 34). |
 | 10-31 | Drafted letter | Addressed to Daniel, with its own subject line. The sender forwards it as part of the notes. |
-| 33-41 | Sender's remarks | In the first person, over his signature. |
+| 33-41 | Sender's remarks | In the first person, over the sender's signature. |
 
 ## Records
 

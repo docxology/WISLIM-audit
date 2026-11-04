@@ -41,17 +41,17 @@ The note's closing sentence is fair: the two frameworks use different definition
 
 **OPH, at the pinned upstream commit**
 
-- [`README.md:46`](https://github.com/FloatingPragma/observer-patch-holography/blob/fcc2dd173d4f48763cd0bf7cc1739751eca3b96d/README.md#L46)
+- [`README.md:46`](https://github.com/FloatingPragma/observer-patch-holography/blob/f50e4da10533b8f5d3bf92a711c07bf6d563fe74/README.md#L46)
   > records and build hardware that realizes that same history, including its builders.
-- [`README.md:47`](https://github.com/FloatingPragma/observer-patch-holography/blob/fcc2dd173d4f48763cd0bf7cc1739751eca3b96d/README.md#L47)
+- [`README.md:47`](https://github.com/FloatingPragma/observer-patch-holography/blob/f50e4da10533b8f5d3bf92a711c07bf6d563fe74/README.md#L47)
   > Nothing lies outside this loop
-- [`docs/INTERPRETATION_AND_TERMS.md:53`](https://github.com/FloatingPragma/observer-patch-holography/blob/fcc2dd173d4f48763cd0bf7cc1739751eca3b96d/docs/INTERPRETATION_AND_TERMS.md#L53)
+- [`docs/INTERPRETATION_AND_TERMS.md:53`](https://github.com/FloatingPragma/observer-patch-holography/blob/f50e4da10533b8f5d3bf92a711c07bf6d563fe74/docs/INTERPRETATION_AND_TERMS.md#L53)
   > The builders' inference, device construction, program and data initialization, controls, memory, read/write and record services, and clock comparisons must be operations available within the candidate history.
-- [`book/04-chapter-03.md:67`](https://github.com/FloatingPragma/observer-patch-holography/blob/fcc2dd173d4f48763cd0bf7cc1739751eca3b96d/book/04-chapter-03.md#L67)
+- [`book/04-chapter-03.md:67`](https://github.com/FloatingPragma/observer-patch-holography/blob/f50e4da10533b8f5d3bf92a711c07bf6d563fe74/book/04-chapter-03.md#L67)
   > the arrival of living things in the universe did not introduce a new kind of physical entity.
-- [`book/04-chapter-03.md:67`](https://github.com/FloatingPragma/observer-patch-holography/blob/fcc2dd173d4f48763cd0bf7cc1739751eca3b96d/book/04-chapter-03.md#L67)
+- [`book/04-chapter-03.md:67`](https://github.com/FloatingPragma/observer-patch-holography/blob/f50e4da10533b8f5d3bf92a711c07bf6d563fe74/book/04-chapter-03.md#L67)
   > It introduced a much better one of a kind that had been there all along.
-- [`book/44-appendix-a.md:193`](https://github.com/FloatingPragma/observer-patch-holography/blob/fcc2dd173d4f48763cd0bf7cc1739751eca3b96d/book/44-appendix-a.md#L193)
+- [`book/44-appendix-a.md:193`](https://github.com/FloatingPragma/observer-patch-holography/blob/f50e4da10533b8f5d3bf92a711c07bf6d563fe74/book/44-appendix-a.md#L193)
   > They share a quantity.
 
 **The response as sent**

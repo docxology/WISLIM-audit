@@ -36,10 +36,10 @@ In WISLIM, L₁ is 'The inherent, non-negotiable value of a single life' (source
 
 ## OPH evidence
 
-- [`book/04-chapter-03.md:85`](https://github.com/FloatingPragma/observer-patch-holography/blob/fcc2dd173d4f48763cd0bf7cc1739751eca3b96d/book/04-chapter-03.md#L85)
+- [`book/04-chapter-03.md:85`](https://github.com/FloatingPragma/observer-patch-holography/blob/f50e4da10533b8f5d3bf92a711c07bf6d563fe74/book/04-chapter-03.md#L85)
   > An observer here is any bounded system that keeps records.
-- [`flagship/from_observer_consensus_to_standard_physics.tex:953`](https://github.com/FloatingPragma/observer-patch-holography/blob/fcc2dd173d4f48763cd0bf7cc1739751eca3b96d/flagship/from_observer_consensus_to_standard_physics.tex#L953)
-  > Operational observers are continuing native processes that prepare, read, retain and act on records.
+- [`flagship/from_observer_consensus_to_standard_physics.tex:544`](https://github.com/FloatingPragma/observer-patch-holography/blob/f50e4da10533b8f5d3bf92a711c07bf6d563fe74/flagship/from_observer_consensus_to_standard_physics.tex#L544)
+  > An observer patch is a finite object with local state, an observable boundary map, durable records, readback, and a set of authorized repair moves.
 
 ## WISLIM evidence
 

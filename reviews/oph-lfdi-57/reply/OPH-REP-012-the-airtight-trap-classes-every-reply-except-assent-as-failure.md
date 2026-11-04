@@ -47,7 +47,7 @@ A sieve that returns failure for every answer but agreement has the same output 
 
 **OPH, at the pinned upstream commit**
 
-- [`README.md:47`](https://github.com/FloatingPragma/observer-patch-holography/blob/fcc2dd173d4f48763cd0bf7cc1739751eca3b96d/README.md#L47)
+- [`README.md:47`](https://github.com/FloatingPragma/observer-patch-holography/blob/f50e4da10533b8f5d3bf92a711c07bf6d563fe74/README.md#L47)
   > Nothing lies outside this loop
 
 **The response as sent**

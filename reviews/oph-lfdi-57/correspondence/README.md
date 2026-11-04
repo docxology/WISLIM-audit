@@ -6,7 +6,7 @@ The thread in which the review arrived and the tracked response and reply follow
 |---|---|---|---|---|
 | 1 | 2026-11-03 16:08 | David Wishengrad | Cover note ('The goal here is to blow your mind into Crystal clear clarity.') and the review as a one-page PDF. | [`source/LFDI_Alignment_Audit-57.pdf`](../source/LFDI_Alignment_Audit-57.pdf) |
 | 2 | 2026-11-03 20:18 | Daniel Ari Friedman | The tracked response. | [`02-friedman-response-as-sent.txt`](02-friedman-response-as-sent.txt) |
-| 3 | 2026-11-03 21:22 | David Wishengrad | Notes, a drafted letter, and his remarks. | [`03-wishengrad-reply.txt`](03-wishengrad-reply.txt) |
+| 3 | 2026-11-03 21:22 | David Wishengrad | Notes, a drafted letter, and the sender's remarks. | [`03-wishengrad-reply.txt`](03-wishengrad-reply.txt) |
 | 4 | 2026-11-03 22:34 | David Wishengrad | 'Sorry for the typos...' Repeats message 3 and marks two corrections in its opening line, with the sign-off 'PEACE Perfect Equality Among Celestial Entities'. The record of message 3 carries the corrected wording. | [`03-wishengrad-reply.txt`](03-wishengrad-reply.txt) |
 
 ## Privacy

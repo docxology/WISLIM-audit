@@ -36,13 +36,13 @@ OPH's observers are record-keeping systems, and 'our Universe' is 'the public re
 
 ## OPH evidence
 
-- [`README.md:50`](https://github.com/FloatingPragma/observer-patch-holography/blob/fcc2dd173d4f48763cd0bf7cc1739751eca3b96d/README.md#L50)
+- [`README.md:50`](https://github.com/FloatingPragma/observer-patch-holography/blob/f50e4da10533b8f5d3bf92a711c07bf6d563fe74/README.md#L50)
   > is the public record, what survives every comparison between observers.
-- [`README.md:47`](https://github.com/FloatingPragma/observer-patch-holography/blob/fcc2dd173d4f48763cd0bf7cc1739751eca3b96d/README.md#L47)
+- [`README.md:47`](https://github.com/FloatingPragma/observer-patch-holography/blob/f50e4da10533b8f5d3bf92a711c07bf6d563fe74/README.md#L47)
   > Nothing lies outside this loop
-- [`docs/BASIS.md:24`](https://github.com/FloatingPragma/observer-patch-holography/blob/fcc2dd173d4f48763cd0bf7cc1739751eca3b96d/docs/BASIS.md#L24)
+- [`docs/BASIS.md:24`](https://github.com/FloatingPragma/observer-patch-holography/blob/f50e4da10533b8f5d3bf92a711c07bf6d563fe74/docs/BASIS.md#L24)
   > No external host, external time or global clock is supplied
-- [`book/04-chapter-03.md:85`](https://github.com/FloatingPragma/observer-patch-holography/blob/fcc2dd173d4f48763cd0bf7cc1739751eca3b96d/book/04-chapter-03.md#L85)
+- [`book/04-chapter-03.md:85`](https://github.com/FloatingPragma/observer-patch-holography/blob/f50e4da10533b8f5d3bf92a711c07bf6d563fe74/book/04-chapter-03.md#L85)
   > An observer here is any bounded system that keeps records.
 
 ## WISLIM evidence

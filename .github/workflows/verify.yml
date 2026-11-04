@@ -26,7 +26,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           repository: FloatingPragma/observer-patch-holography
-          ref: fcc2dd173d4f48763cd0bf7cc1739751eca3b96d
+          ref: f50e4da10533b8f5d3bf92a711c07bf6d563fe74
           path: .oph
           fetch-depth: 1
           filter: blob:none
@@ -35,5 +35,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+      - name: Fetch the release the review was sent against
+        run: git -C .oph fetch --depth=1 --filter=blob:none origin fcc2dd173d4f48763cd0bf7cc1739751eca3b96d
       - name: Verify OPH quotations at the pinned commit
         run: make verify-oph OPH_REPO=.oph

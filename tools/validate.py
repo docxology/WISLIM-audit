@@ -574,7 +574,7 @@ def check_reply_register(v: Validator) -> None:
     for error in reply_mod.check_all(data):
         v.check(False, f"reply register: {error}")
     v.equal(len(data["topics"]), 16, "reply topic count")
-    v.equal(len(data["corrections"]), 11, "correction count")
+    v.equal(len(data["corrections"]), reply_mod.CORRECTION_COUNT, "correction count")
     sent = reply_mod.SENT_TEXT.read_text(encoding="utf-8")
     v.check(
         re.search(r"\bincorrect\b", sent, re.IGNORECASE) is None,
@@ -769,10 +769,9 @@ def check_content(v: Validator) -> None:
         ROOT / "reviews" / "oph-lfdi-57" / "verification.md"
     ).read_text(encoding="utf-8")
     review = load_json(ROOT / "reviews" / "oph-lfdi-57" / "model" / "review.json")
-    v.check(
-        review["review"]["oph_commit"] in verification,
-        "verification receipt is missing the pinned OPH commit",
-    )
+    commits = (review["review"]["oph_commit"], review["review"]["oph_review_day"]["commit"])
+    for commit in commits:
+        v.check(commit in verification, f"verification receipt is missing OPH commit {commit}")
     quote_count = sum(
         len(topic["oph_evidence"])
         for model in ("review.json", "reply.json")
@@ -784,12 +783,10 @@ def check_content(v: Validator) -> None:
         f"verification receipt does not record {quote_count}/{quote_count} OPH quotations",
     )
     workflow = (ROOT / ".github" / "workflows" / "verify.yml").read_text(encoding="utf-8")
+    for commit in commits:
+        v.check(commit in workflow, f"the OPH quotation job does not fetch commit {commit}")
     v.check(
-        review["review"]["oph_commit"] in workflow,
-        "the OPH quotation job does not check out the pinned commit",
-    )
-    v.check(
-        "2026-11-03" in verification,
+        review["review"]["oph_checked"] in verification,
         "verification receipt is missing the verification date",
     )
 
@@ -836,7 +833,8 @@ def main(argv: list[str] | None = None) -> int:
         print("  audit issues: 66")
         print("  review topics: 12")
         print("  reply topics: 16")
-        print("  corrections: 11")
+        replies = load_json(ROOT / "reviews" / "oph-lfdi-57" / "model" / "reply.json")
+        print(f"  corrections: {len(replies['corrections'])}")
         print(f"  markdown files: {len(iter_markdown())}")
         if v.warnings:
             print("Warnings:")
