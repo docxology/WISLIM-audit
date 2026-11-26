@@ -1,0 +1,103 @@
+{
+  "claims": [
+    {
+      "claim_id": "source-pages",
+      "kind": "number",
+      "value": 289,
+      "source": "source/metadata.json pages",
+      "artifact_path": "source/metadata.json",
+      "source_tier": "claim_ledger",
+      "freshness": "active"
+    },
+    {
+      "claim_id": "source-text-lines",
+      "kind": "number",
+      "value": 13255,
+      "source": "source/metadata.json text_lines",
+      "artifact_path": "source/metadata.json",
+      "source_tier": "claim_ledger",
+      "freshness": "active"
+    },
+    {
+      "claim_id": "stress-test-total",
+      "kind": "number",
+      "value": 210,
+      "source": "model/stress-tests.json audit_summary.total",
+      "artifact_path": "model/stress-tests.json",
+      "source_tier": "claim_ledger",
+      "freshness": "active"
+    },
+    {
+      "claim_id": "stress-test-category-error",
+      "kind": "number",
+      "value": 66,
+      "source": "model/stress-tests.json audit_summary.verdict_counts.category-error",
+      "artifact_path": "model/stress-tests.json",
+      "source_tier": "claim_ledger",
+      "freshness": "active"
+    },
+    {
+      "claim_id": "stress-test-empirical-unsupported",
+      "kind": "number",
+      "value": 9,
+      "source": "model/stress-tests.json audit_summary.verdict_counts.empirical-unsupported",
+      "artifact_path": "model/stress-tests.json",
+      "source_tier": "claim_ledger",
+      "freshness": "active"
+    },
+    {
+      "claim_id": "stress-test-false",
+      "kind": "number",
+      "value": 2,
+      "source": "model/stress-tests.json audit_summary.verdict_counts.false",
+      "artifact_path": "model/stress-tests.json",
+      "source_tier": "claim_ledger",
+      "freshness": "active"
+    },
+    {
+      "claim_id": "stress-test-heuristic",
+      "kind": "number",
+      "value": 51,
+      "source": "model/stress-tests.json audit_summary.verdict_counts.heuristic",
+      "artifact_path": "model/stress-tests.json",
+      "source_tier": "claim_ledger",
+      "freshness": "active"
+    },
+    {
+      "claim_id": "stress-test-misapplied-formalism",
+      "kind": "number",
+      "value": 19,
+      "source": "model/stress-tests.json audit_summary.verdict_counts.misapplied-formalism",
+      "artifact_path": "model/stress-tests.json",
+      "source_tier": "claim_ledger",
+      "freshness": "active"
+    },
+    {
+      "claim_id": "stress-test-non-sequitur",
+      "kind": "number",
+      "value": 51,
+      "source": "model/stress-tests.json audit_summary.verdict_counts.non-sequitur",
+      "artifact_path": "model/stress-tests.json",
+      "source_tier": "claim_ledger",
+      "freshness": "active"
+    },
+    {
+      "claim_id": "stress-test-rhetorical",
+      "kind": "number",
+      "value": 9,
+      "source": "model/stress-tests.json audit_summary.verdict_counts.rhetorical",
+      "artifact_path": "model/stress-tests.json",
+      "source_tier": "claim_ledger",
+      "freshness": "active"
+    },
+    {
+      "claim_id": "stress-test-valid-but-insufficient",
+      "kind": "number",
+      "value": 3,
+      "source": "model/stress-tests.json audit_summary.verdict_counts.valid-but-insufficient",
+      "artifact_path": "model/stress-tests.json",
+      "source_tier": "claim_ledger",
+      "freshness": "active"
+    }
+  ]
+}
