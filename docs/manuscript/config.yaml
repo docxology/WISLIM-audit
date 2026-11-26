@@ -1,0 +1,21 @@
+paper:
+  title: "A Source-Bound Audit of WISLIM v2.0.1"
+  subtitle: "Argument, evidence, and scope"
+  version: "0.1.0"
+
+authors:
+  - name: "WISLIM-audit contributors"
+
+keywords:
+  - textual audit
+  - argument validity
+  - provenance
+
+metadata:
+  license: "CC-BY-4.0"
+
+render:
+  formats:
+    pdf: true
+    html: true
+    slides: false

@@ -102,6 +102,19 @@ REQUIRED_FILES = [
     "Makefile",
     ".github/workflows/verify.yml",
     "docs/audit/README.md",
+    "docs/README.md",
+    "docs/manuscript-build.md",
+    "docs/manuscript/README.md",
+    "docs/manuscript/config.yaml",
+    "docs/manuscript/preamble.md",
+    "docs/manuscript/references.bib",
+    "data/claim_ledger.json",
+    "docs/manuscript/00_abstract.md",
+    "docs/manuscript/01_method.md",
+    "docs/manuscript/02_inference.md",
+    "docs/manuscript/03_evidence.md",
+    "docs/manuscript/04_limits.md",
+    "docs/manuscript/99_references.md",
     "docs/reviews.md",
     "docs/reviews/oph-lfdi-57/README.md",
     "docs/method.md",
@@ -631,6 +644,7 @@ def iter_markdown() -> list[Path]:
         if ".git" not in path.parts
         and "node_modules" not in path.parts
         and ".oph" not in path.parts
+        and path.relative_to(ROOT).parts[0] != "output"
     )
 
 

@@ -1,5 +1,8 @@
 # Reproducibility
 
+Run `make verify` for the complete local check. Use the separate
+[manuscript build](manuscript-build.md) for PDF, HTML, and rendered provenance.
+
 ## Requirements
 
 - Python 3.11 or newer, standard library only.
